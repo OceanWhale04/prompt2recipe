@@ -14,7 +14,7 @@ const items = [
   { href: "/portal/models", label: "模型对比", shortLabel: "模型", sublabel: "Models", icon: Bot },
   { href: "/portal/mcps", label: "MCP 广场", shortLabel: "MCP", sublabel: "MCPs", icon: Network },
   { href: "/portal/skills", label: "技能广场", shortLabel: "技能", sublabel: "Skills", icon: Sparkles },
-  { href: "/portal/weekly", label: "每周降噪", shortLabel: "周报", sublabel: "Weekly", icon: CalendarDays },
+  { href: "/portal/weekly", label: "每周降噪", shortLabel: "周报", sublabel: "周报", icon: CalendarDays },
 ];
 
 const providerDots = {

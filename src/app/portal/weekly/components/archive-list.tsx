@@ -8,7 +8,7 @@ export function ArchiveList({ editions }: { editions: WeeklyReportEdition[] }) {
     <section className="flex flex-col gap-4">
       <div className="flex items-center gap-2">
         <Archive className="h-5 w-5 text-zinc-500" />
-        <h2 className="text-lg font-semibold text-zinc-950">往期归档 Archive</h2>
+        <h2 className="text-lg font-semibold text-zinc-950">往期归档</h2>
       </div>
 
       <div className="divide-y divide-zinc-200 overflow-hidden rounded-lg border border-zinc-200 bg-white">

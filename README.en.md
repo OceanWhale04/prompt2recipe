@@ -132,7 +132,7 @@ Run locally:
 pnpm kb:update
 ```
 
-OpenRouter model discovery works without an API key. When tokens or network access are unavailable, external steps are skipped and existing JSON remains unchanged. When RSS news is available but DeepSeek is unavailable, the pipeline creates an RSS-cleaned draft edition and does not overwrite an existing edition for the same week. The script still validates data and rebuilds `data/index.json`.
+OpenRouter model discovery works without an API key. When tokens or network access are unavailable, external steps are skipped and existing JSON remains unchanged. Weekly editions summarize the previous Monday through Sunday and are generated only in Chinese through DeepSeek or Ollama. Without an AI provider, weekly data is left unchanged. The script still validates data and rebuilds `data/index.json`.
 
 ## Scripts
 

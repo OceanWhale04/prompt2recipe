@@ -3,7 +3,7 @@ import { afterEach, describe, expect, it, vi } from "vitest";
 import { mergeModelEntries } from "../scripts/etl/processors/clean-models";
 import { mergeSkillEntries } from "../scripts/etl/processors/clean-skills";
 import { mergeMcpEntries } from "../scripts/etl/processors/summarize-mcps";
-import { buildWeeklyEditionWithAi } from "../scripts/etl/processors/noise-reducer";
+import { buildWeeklyEditionWithAi, getPreviousCompletedWeek } from "../scripts/etl/processors/noise-reducer";
 import type { McpEntry, ModelEntry, SkillEntry } from "../src/lib/types";
 
 const model: ModelEntry = {
@@ -65,36 +65,66 @@ describe("ETL processors", () => {
     expect(merged[0].stars).toBe(100);
   });
 
-  it("uses an RSS-generated edition when no DeepSeek key is configured", async () => {
+  it("selects the previous completed Monday-Sunday week", () => {
+    const week = getPreviousCompletedWeek(new Date("2026-09-29T00:00:00.000Z"));
+    expect(week.id).toBe("2026-w39");
+    expect(week.dateRange).toBe("2026.09.21 - 2026.09.27");
+  });
+
+  it("does not generate weekly content without an AI provider", async () => {
     vi.stubEnv("DEEPSEEK_API_KEY", "");
+    vi.stubEnv("OLLAMA_BASE_URL", "");
+    vi.stubEnv("OLLAMA_MODEL", "");
+    const store = { currentEditionId: "test", editions: [] };
     const result = await buildWeeklyEditionWithAi(
-      [
-        {
-          title: "MCP protocol update",
-          link: "https://example.com/news",
-          source: "Test",
-          summary: "A new MCP capability was released.",
-        },
-      ],
-      { currentEditionId: "test", editions: [] },
-      new Date("2026-10-04T00:00:00.000Z"),
+      [{ title: "Update", link: "https://example.com", source: "Test", summary: "Summary" }],
+      store,
+      new Date("2026-09-29T00:00:00.000Z"),
     );
-    expect(result?.editions[0].generationMode).toBe("rss");
-    expect(result?.editions[0].keyHighlights[0].category).toBe("MCP");
+    expect(result).toBe(store);
   });
 
   it("does not overwrite an existing edition for the same week", async () => {
     vi.stubEnv("DEEPSEEK_API_KEY", "");
-    const first = await buildWeeklyEditionWithAi(
+    const store = {
+      currentEditionId: "test",
+      editions: [],
+    };
+    const existingId = getPreviousCompletedWeek(new Date("2026-09-29T00:00:00.000Z")).id;
+    const existingStore = {
+      currentEditionId: existingId,
+      editions: [
+        {
+          id: existingId,
+          title: "已有周报",
+          dateRange: "2026.09.21 - 2026.09.27",
+          summary: "已有内容",
+          generationMode: "ai" as const,
+          keyHighlights: [
+            {
+              category: "Workflow" as const,
+              title: "已有信号",
+              description: "已有描述",
+              impactScore: 3,
+            },
+          ],
+          nextWeekOutlook: [
+            {
+              topic: "已有主题",
+              whyItMatters: "已有判断",
+              actionableAdvice: "已有建议",
+            },
+          ],
+          fullMarkdownContent: "# 已有周报",
+        },
+      ],
+    };
+    const result = await buildWeeklyEditionWithAi(
       [{ title: "Update", link: "https://example.com", source: "Test", summary: "Summary" }],
-      { currentEditionId: "test", editions: [] },
-      new Date("2026-09-28T00:00:00.000Z"),
+      existingStore,
+      new Date("2026-09-29T00:00:00.000Z"),
     );
-    const second = await buildWeeklyEditionWithAi(
-      [{ title: "Update", link: "https://example.com", source: "Test", summary: "Summary" }],
-      first!,
-      new Date("2026-09-28T00:00:00.000Z"),
-    );
-    expect(second).toBe(first);
+    expect(result).toBe(existingStore);
+    expect(store.editions).toHaveLength(0);
   });
 });

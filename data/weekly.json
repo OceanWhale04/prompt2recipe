@@ -1,77 +1,10 @@
 {
-  "currentEditionId": "2026-w40",
+  "currentEditionId": "2026-w39",
   "editions": [
-    {
-      "id": "2026-w40",
-      "title": "第 40 期：AI 工程信号速览",
-      "dateRange": "2026.09.28 - 2026.10.04",
-      "summary": "Proaction boosts sales 60% and saves 75+ hours with Codex；Two years of OpenAI Academy；OpenAI extends cyber access to Ukraine for civilian defense",
-      "generationMode": "rss",
-      "keyHighlights": [
-        {
-          "category": "Model",
-          "title": "Proaction boosts sales 60% and saves 75+ hours with Codex",
-          "description": "With Codex, GPT-Live-1, and GPT-6 Astra, Proaction builds, operates, and sells modern fleet management faster.",
-          "impactScore": 4,
-          "link": "https://openai.com/index/proaction"
-        },
-        {
-          "category": "Workflow",
-          "title": "Two years of OpenAI Academy",
-          "description": "Marking two years of OpenAI Academy and bringing AI skills to even more communities.",
-          "impactScore": 3,
-          "link": "https://openai.com/index/two-years-of-openai-academy"
-        },
-        {
-          "category": "Workflow",
-          "title": "OpenAI extends cyber access to Ukraine for civilian defense",
-          "description": "OpenAI is extending access to its Daybreak program to the Government of Ukraine to support the cyber defense of civilian infrastructure.",
-          "impactScore": 3,
-          "link": "https://openai.com/index/openai-extends-cyber-access-to-ukraine-for-civilian-defense"
-        },
-        {
-          "category": "Workflow",
-          "title": "Sam Altman’s remarks at the United Nations Security Council",
-          "description": "OpenAI CEO Sam Altman discusses AI safety, human control, and international cooperation in remarks to the United Nations Security Council.",
-          "impactScore": 3,
-          "link": "https://openai.com/index/sam-altman-un-security-council-remarks"
-        },
-        {
-          "category": "Model",
-          "title": "Harvey turns legal context into stronger drafts with GPT-6 Astra",
-          "description": "GPT-6 Astra produces more structured, context-aware legal documents, freeing lawyers to focus on strategy.",
-          "impactScore": 4,
-          "link": "https://openai.com/index/harvey-from-context-to-confidence-with-astra"
-        }
-      ],
-      "nextWeekOutlook": [
-        {
-          "topic": "持续跟踪：Proaction boosts sales 60% and saves 75+ hours with Codex",
-          "whyItMatters": "With Codex, GPT-Live-1, and GPT-6 Astra, Proaction builds, operates, and sells modern fleet management faster.",
-          "actionableAdvice": "用项目真实任务做小样本评测，不要仅根据跑分或宣传决定模型迁移。"
-        },
-        {
-          "topic": "持续跟踪：Two years of OpenAI Academy",
-          "whyItMatters": "Marking two years of OpenAI Academy and bringing AI skills to even more communities.",
-          "actionableAdvice": "把该变化拆成一个可回滚的流程实验，补充输入输出和验证标准。"
-        },
-        {
-          "topic": "持续跟踪：OpenAI extends cyber access to Ukraine for civilian defense",
-          "whyItMatters": "OpenAI is extending access to its Daybreak program to the Government of Ukraine to support the cyber defense of civilian infrastructure.",
-          "actionableAdvice": "把该变化拆成一个可回滚的流程实验，补充输入输出和验证标准。"
-        }
-      ],
-      "fullMarkdownContent": "# 2026-w40 RSS 清洗摘要\n\n> 本版由 RSS 标题与摘要进行结构化清洗生成，未经过大模型二次降噪。\n\n## 本周信号\n1. [Proaction boosts sales 60% and saves 75+ hours with Codex](https://openai.com/index/proaction) — OpenAI · Fri, 25 Sep 2026 19:00:00 GMT\n2. [Two years of OpenAI Academy](https://openai.com/index/two-years-of-openai-academy) — OpenAI · Wed, 23 Sep 2026 16:00:00 GMT\n3. [OpenAI extends cyber access to Ukraine for civilian defense](https://openai.com/index/openai-extends-cyber-access-to-ukraine-for-civilian-defense) — OpenAI · Wed, 23 Sep 2026 13:00:00 GMT\n4. [Sam Altman’s remarks at the United Nations Security Council](https://openai.com/index/sam-altman-un-security-council-remarks) — OpenAI · Wed, 23 Sep 2026 12:00:00 GMT\n5. [Harvey turns legal context into stronger drafts with GPT-6 Astra](https://openai.com/index/harvey-from-context-to-confidence-with-astra) — OpenAI · Wed, 23 Sep 2026 12:00:00 GMT\n6. [How invideo improves color grading 3x with GPT‑6 Astra](https://openai.com/index/invideo-builds-with-gpt-6-astra) — OpenAI · Wed, 23 Sep 2026 12:00:00 GMT\n7. [Ringg’s AI agents resolve up to 65% of customer calls with OpenAI](https://openai.com/index/ringg) — OpenAI · Wed, 23 Sep 2026 12:00:00 GMT\n8. [Introducing MentalHealthBench](https://openai.com/index/introducing-mentalhealthbench) — OpenAI · Wed, 23 Sep 2026 10:00:00 GMT\n9. [ChatGPT Ads expands to Southeast Asia and Taiwan](https://openai.com/index/chatgpt-ads-expands-southeast-asia-taiwan) — OpenAI · Wed, 23 Sep 2026 02:00:00 GMT\n10. [Airbnb widens access to GPT-6 Astra and OpenAI frontier models](https://openai.com/index/airbnb-gpt-6-astra) — OpenAI · Wed, 23 Sep 2026 01:00:00 GMT\n\n## 下周观察\n### 1. 持续跟踪：Proaction boosts sales 60% and saves 75+ hours with Codex\n\nWith Codex, GPT-Live-1, and GPT-6 Astra, Proaction builds, operates, and sells modern fleet management faster.\n\n**开发者行动：** 用项目真实任务做小样本评测，不要仅根据跑分或宣传决定模型迁移。\n\n### 2. 持续跟踪：Two years of OpenAI Academy\n\nMarking two years of OpenAI Academy and bringing AI skills to even more communities.\n\n**开发者行动：** 把该变化拆成一个可回滚的流程实验，补充输入输出和验证标准。\n\n### 3. 持续跟踪：OpenAI extends cyber access to Ukraine for civilian defense\n\nOpenAI is extending access to its Daybreak program to the Government of Ukraine to support the cyber defense of civilian infrastructure.\n\n**开发者行动：** 把该变化拆成一个可回滚的流程实验，补充输入输出和验证标准。\n",
-      "recommendedPrompts": [
-        "围绕“Proaction boosts sales 60% and saves 75+ hours with Codex”设计一个可验证的 AI 工作流，并说明需要的模型、MCP 与验证方式",
-        "围绕“Two years of OpenAI Academy”设计一个可验证的 AI 工作流，并说明需要的模型、MCP 与验证方式",
-        "围绕“OpenAI extends cyber access to Ukraine for civilian defense”设计一个可验证的 AI 工作流，并说明需要的模型、MCP 与验证方式"
-      ]
-    },
     {
       "id": "2026-w39",
       "title": "第 39 期：Agent 工程进入协议与工具边界竞争",
-      "dateRange": "2026.09.22 - 2026.09.28",
+      "dateRange": "2026.09.21 - 2026.09.27",
       "summary": "本周真正值得关注的不是单次模型跑分，而是 MCP、Skills 和结构化输出正在形成可复用的工程边界。团队应优先投资工具权限、失败恢复和可验证工作流，而不是频繁更换模型。",
       "generationMode": "ai",
       "keyHighlights": [
@@ -124,7 +57,7 @@
     {
       "id": "2026-w38",
       "title": "第 38 期：轻量工作流与本地编码 Agent 进入实用阶段",
-      "dateRange": "2026.09.15 - 2026.09.21",
+      "dateRange": "2026.09.14 - 2026.09.20",
       "summary": "编码 Agent 的竞争重点转向仓库理解、工具调用和验证闭环。文件驱动、无数据库的小型工具链仍然具有很强的落地价值。",
       "generationMode": "ai",
       "keyHighlights": [
