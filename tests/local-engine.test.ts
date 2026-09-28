@@ -15,6 +15,7 @@ describe("local fallback engine", () => {
     expect(combo.skills.length).toBeGreaterThan(0);
     expect(combo.generatedBy).toBe("local");
     expect(combo.fallbackReason).toBe("missing_key");
+    expect(combo.skills.map((skill) => skill.id)).toEqual(expect.arrayContaining(["pdf", "xlsx"]));
     expect(combo.skills.every((skill) => skill.reasoning.length > 0)).toBe(true);
   });
 

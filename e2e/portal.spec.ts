@@ -49,5 +49,5 @@ test("navigates to the expanded Skill portal", async ({ page }) => {
   const search = page.getByPlaceholder(/搜索技能、框架或任务模式/);
   await search.click();
   await page.keyboard.type("skills");
-  await expect(page.getByRole("heading", { name: "skills", exact: true })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "skills", exact: true }).first()).toBeVisible();
 });
