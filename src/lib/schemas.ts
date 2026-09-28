@@ -37,6 +37,8 @@ export const skillEntrySchema = baseEntrySchema.extend({
   framework: z.string().optional(),
   skillType: z.string().optional(),
   install: z.string().optional(),
+  stars: z.number().int().nonnegative().optional(),
+  sourceUpdatedAt: z.string().optional(),
 });
 
 export const recipeEntrySchema = z.object({
@@ -146,6 +148,7 @@ export const weeklyReportEditionSchema = z.object({
   title: z.string().min(1),
   dateRange: z.string().min(1),
   summary: z.string().min(1),
+  generationMode: z.enum(["ai", "rss"]).optional(),
   keyHighlights: z.array(weeklyKeyHighlightSchema).min(1),
   nextWeekOutlook: z.array(weeklyNextWeekOutlookSchema).min(1),
   fullMarkdownContent: z.string().min(1),

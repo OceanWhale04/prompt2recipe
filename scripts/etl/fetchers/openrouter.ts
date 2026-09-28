@@ -34,14 +34,12 @@ function costTier(model: OpenRouterModel): ModelEntry["costTier"] {
 
 export async function fetchOpenRouterModels(): Promise<ModelEntry[]> {
   const apiKey = process.env.OPENROUTER_API_KEY?.trim();
-  if (!apiKey) return [];
+  const headers: Record<string, string> = {
+    "Content-Type": "application/json",
+  };
+  if (apiKey) headers.Authorization = `Bearer ${apiKey}`;
 
-  const response = await fetch("https://openrouter.ai/api/v1/models", {
-    headers: {
-      Authorization: `Bearer ${apiKey}`,
-      "Content-Type": "application/json",
-    },
-  });
+  const response = await fetch("https://openrouter.ai/api/v1/models", { headers });
 
   if (!response.ok) {
     throw new Error(`OpenRouter request failed: ${response.status} ${response.statusText}`);
@@ -54,7 +52,8 @@ export async function fetchOpenRouterModels(): Promise<ModelEntry[]> {
     .filter((model) => model.id && model.context_length)
     .slice(0, 80)
     .map((model) => {
-      const [provider = "unknown", ...nameParts] = model.id.split("/");
+      const [rawProvider = "unknown", ...nameParts] = model.id.split("/");
+      const provider = rawProvider.replace(/^~/, "");
       const displayName = model.name?.trim() || nameParts.join("/") || model.id;
       const description =
         model.description?.trim() ||

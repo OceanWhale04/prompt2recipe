@@ -105,9 +105,11 @@ scripts/etl/
   fetchers/
     openrouter.ts
     github-mcps.ts
+    github-skills.ts
     rss-news.ts
   processors/
     clean-models.ts
+    clean-skills.ts
     summarize-mcps.ts
     noise-reducer.ts
   index.ts
@@ -117,7 +119,7 @@ External steps require environment variables:
 
 - `OPENROUTER_API_KEY` for model and pricing refresh
 - `GITHUB_TOKEN` for high-star MCP repository discovery
-- `DEEPSEEK_API_KEY` for MCP summaries and weekly noise reduction
+- `DEEPSEEK_API_KEY` for MCP summaries and AI weekly noise reduction
 - `RSS_FEEDS` as an optional comma-separated RSS source list
 
 Run locally:
@@ -126,7 +128,7 @@ Run locally:
 pnpm kb:update
 ```
 
-When tokens or network access are unavailable, external steps are skipped and existing JSON remains unchanged. The script still validates data and rebuilds `data/index.json`.
+OpenRouter model discovery works without an API key. When tokens or network access are unavailable, external steps are skipped and existing JSON remains unchanged. When RSS news is available but DeepSeek is unavailable, the pipeline creates an RSS-cleaned draft edition and does not overwrite an existing edition for the same week. The script still validates data and rebuilds `data/index.json`.
 
 ## Scripts
 

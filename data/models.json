@@ -1,7 +1,2144 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-28T15:20:31.669Z",
+  "updatedAt": "2026-09-28T15:51:54.858Z",
   "items": [
+    {
+      "id": "openrouter-z-ai-glm-flash-latest",
+      "name": "Z.ai: GLM Flash Latest",
+      "url": "https://openrouter.ai/models/~z-ai/glm-flash-latest",
+      "oneLiner": "This model always redirects to the latest model in the GLM Flash family.",
+      "tags": [
+        "openrouter",
+        "z-ai",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "~z-ai/glm-flash-latest",
+        "z-ai",
+        "Z.ai: GLM Flash Latest"
+      ],
+      "provider": "z-ai",
+      "category": "text+image+video->text",
+      "costTier": "low",
+      "contextWindow": 1310720
+    },
+    {
+      "id": "openrouter-z-ai-glm-5-3-flash",
+      "name": "Z.ai: GLM 5.3 Flash",
+      "url": "https://openrouter.ai/models/z-ai/glm-5.3-flash",
+      "oneLiner": "GLM-5.3-Flash is a native multimodal model from Z.ai. It is suited for efficient coding and long-horizon agent tasks. Its hybrid sparse and linear attention architecture maintains ",
+      "tags": [
+        "openrouter",
+        "z-ai",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "z-ai/glm-5.3-flash",
+        "z-ai",
+        "Z.ai: GLM 5.3 Flash"
+      ],
+      "provider": "z-ai",
+      "category": "text+image+video->text",
+      "costTier": "low",
+      "contextWindow": 1310720
+    },
+    {
+      "id": "openrouter-z-ai-glm-latest",
+      "name": "Z.ai: GLM Latest",
+      "url": "https://openrouter.ai/models/~z-ai/glm-latest",
+      "oneLiner": "This model always redirects to the latest GLM model from Z.ai.",
+      "tags": [
+        "openrouter",
+        "z-ai",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "~z-ai/glm-latest",
+        "z-ai",
+        "Z.ai: GLM Latest"
+      ],
+      "provider": "z-ai",
+      "category": "text->text",
+      "costTier": "low",
+      "contextWindow": 1310720
+    },
+    {
+      "id": "openrouter-z-ai-glm-5-3",
+      "name": "Z.ai: GLM 5.3",
+      "url": "https://openrouter.ai/models/z-ai/glm-5.3",
+      "oneLiner": "GLM-5.3 is a large-scale reasoning model from Z.ai, built for complex software engineering and long-horizon agent tasks. It supports text input and output with a 1M-token context w",
+      "tags": [
+        "openrouter",
+        "z-ai",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "z-ai/glm-5.3",
+        "z-ai",
+        "Z.ai: GLM 5.3"
+      ],
+      "provider": "z-ai",
+      "category": "text->text",
+      "costTier": "medium",
+      "contextWindow": 1310720
+    },
+    {
+      "id": "openrouter-openai-gpt-6-luna-pro",
+      "name": "OpenAI: GPT-6 Luna Pro",
+      "url": "https://openrouter.ai/models/openai/gpt-6-luna-pro",
+      "oneLiner": "GPT-6 Luna Pro is the same underlying model as [GPT-6 Luna](https://openrouter.ai/openai/gpt-6-luna), served with `reasoning.mode` set to `pro` for higher-quality responses on comp",
+      "tags": [
+        "openrouter",
+        "openai",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "openai/gpt-6-luna-pro",
+        "openai",
+        "OpenAI: GPT-6 Luna Pro"
+      ],
+      "provider": "openai",
+      "category": "text+image+file->text",
+      "costTier": "low",
+      "contextWindow": 1050000
+    },
+    {
+      "id": "openrouter-openai-gpt-6-luna-pro-batch",
+      "name": "OpenAI: GPT-6 Luna Pro (batch)",
+      "url": "https://openrouter.ai/models/openai/gpt-6-luna-pro:batch",
+      "oneLiner": "GPT-6 Luna Pro is the same underlying model as [GPT-6 Luna](https://openrouter.ai/openai/gpt-6-luna), served with `reasoning.mode` set to `pro` for higher-quality responses on comp",
+      "tags": [
+        "openrouter",
+        "openai",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "openai/gpt-6-luna-pro:batch",
+        "openai",
+        "OpenAI: GPT-6 Luna Pro (batch)"
+      ],
+      "provider": "openai",
+      "category": "text+image+file->text",
+      "costTier": "low",
+      "contextWindow": 1050000
+    },
+    {
+      "id": "openrouter-openai-gpt-6-luna",
+      "name": "OpenAI: GPT-6 Luna",
+      "url": "https://openrouter.ai/models/openai/gpt-6-luna",
+      "oneLiner": "GPT-6 Luna is the fast, cost-efficient model in OpenAI's GPT-6 series, positioned below GPT-6 Sol. It is suited for high-volume and latency-sensitive workloads such as chat, classi",
+      "tags": [
+        "openrouter",
+        "openai",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "openai/gpt-6-luna",
+        "openai",
+        "OpenAI: GPT-6 Luna"
+      ],
+      "provider": "openai",
+      "category": "text+image+file->text",
+      "costTier": "low",
+      "contextWindow": 1050000
+    },
+    {
+      "id": "openrouter-openai-gpt-6-luna-batch",
+      "name": "OpenAI: GPT-6 Luna (batch)",
+      "url": "https://openrouter.ai/models/openai/gpt-6-luna:batch",
+      "oneLiner": "GPT-6 Luna is the fast, cost-efficient model in OpenAI's GPT-6 series, positioned below GPT-6 Sol. It is suited for high-volume and latency-sensitive workloads such as chat, classi",
+      "tags": [
+        "openrouter",
+        "openai",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "openai/gpt-6-luna:batch",
+        "openai",
+        "OpenAI: GPT-6 Luna (batch)"
+      ],
+      "provider": "openai",
+      "category": "text+image+file->text",
+      "costTier": "low",
+      "contextWindow": 1050000
+    },
+    {
+      "id": "openrouter-openai-gpt-6-sol-pro",
+      "name": "OpenAI: GPT-6 Sol Pro",
+      "url": "https://openrouter.ai/models/openai/gpt-6-sol-pro",
+      "oneLiner": "GPT-6 Sol Pro is the same underlying model as [GPT-6 Sol](https://openrouter.ai/openai/gpt-6-sol), served with `reasoning.mode` set to `pro` for higher-quality responses on complex",
+      "tags": [
+        "openrouter",
+        "openai",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "openai/gpt-6-sol-pro",
+        "openai",
+        "OpenAI: GPT-6 Sol Pro"
+      ],
+      "provider": "openai",
+      "category": "text+image+file->text",
+      "costTier": "medium",
+      "contextWindow": 1050000
+    },
+    {
+      "id": "openrouter-openai-gpt-6-sol-pro-batch",
+      "name": "OpenAI: GPT-6 Sol Pro (batch)",
+      "url": "https://openrouter.ai/models/openai/gpt-6-sol-pro:batch",
+      "oneLiner": "GPT-6 Sol Pro is the same underlying model as [GPT-6 Sol](https://openrouter.ai/openai/gpt-6-sol), served with `reasoning.mode` set to `pro` for higher-quality responses on complex",
+      "tags": [
+        "openrouter",
+        "openai",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "openai/gpt-6-sol-pro:batch",
+        "openai",
+        "OpenAI: GPT-6 Sol Pro (batch)"
+      ],
+      "provider": "openai",
+      "category": "text+image+file->text",
+      "costTier": "medium",
+      "contextWindow": 1050000
+    },
+    {
+      "id": "openrouter-openai-gpt-6-sol",
+      "name": "OpenAI: GPT-6 Sol",
+      "url": "https://openrouter.ai/models/openai/gpt-6-sol",
+      "oneLiner": "GPT-6 Sol is the cost-efficient high-end model in OpenAI's GPT-6 series, positioned below the flagship GPT-6 Astra and above the fast GPT-6 Luna tier. It is suited for demanding pr",
+      "tags": [
+        "openrouter",
+        "openai",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "openai/gpt-6-sol",
+        "openai",
+        "OpenAI: GPT-6 Sol"
+      ],
+      "provider": "openai",
+      "category": "text+image+file->text",
+      "costTier": "medium",
+      "contextWindow": 1050000
+    },
+    {
+      "id": "openrouter-openai-gpt-6-sol-batch",
+      "name": "OpenAI: GPT-6 Sol (batch)",
+      "url": "https://openrouter.ai/models/openai/gpt-6-sol:batch",
+      "oneLiner": "GPT-6 Sol is the cost-efficient high-end model in OpenAI's GPT-6 series, positioned below the flagship GPT-6 Astra and above the fast GPT-6 Luna tier. It is suited for demanding pr",
+      "tags": [
+        "openrouter",
+        "openai",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "openai/gpt-6-sol:batch",
+        "openai",
+        "OpenAI: GPT-6 Sol (batch)"
+      ],
+      "provider": "openai",
+      "category": "text+image+file->text",
+      "costTier": "medium",
+      "contextWindow": 1050000
+    },
+    {
+      "id": "openrouter-xiaomi-mimo-v2-6-pro",
+      "name": "Xiaomi: MiMo-V2.6-Pro",
+      "url": "https://openrouter.ai/models/xiaomi/mimo-v2.6-pro",
+      "oneLiner": "MiMo-V2.6-Pro is the flagship foundation model developed by Xiaomi. Built at a scale of over 1T parameters, it is designed to push the ceiling of capability for the most demanding.",
+      "tags": [
+        "openrouter",
+        "xiaomi",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "xiaomi/mimo-v2.6-pro",
+        "xiaomi",
+        "Xiaomi: MiMo-V2.6-Pro"
+      ],
+      "provider": "xiaomi",
+      "category": "text+image+audio+video->text",
+      "costTier": "low",
+      "contextWindow": 1050000
+    },
+    {
+      "id": "openrouter-openai-gpt-astra-latest",
+      "name": "OpenAI: GPT Astra Latest",
+      "url": "https://openrouter.ai/models/~openai/gpt-astra-latest",
+      "oneLiner": "This model always redirects to the latest model in the GPT Astra family.",
+      "tags": [
+        "openrouter",
+        "openai",
+        "high"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "~openai/gpt-astra-latest",
+        "openai",
+        "OpenAI: GPT Astra Latest"
+      ],
+      "provider": "openai",
+      "category": "text+image+file->text",
+      "costTier": "high",
+      "contextWindow": 1050000
+    },
+    {
+      "id": "openrouter-openai-gpt-sol-latest",
+      "name": "OpenAI: GPT Sol Latest",
+      "url": "https://openrouter.ai/models/~openai/gpt-sol-latest",
+      "oneLiner": "This model always redirects to the latest model in the GPT Sol family.",
+      "tags": [
+        "openrouter",
+        "openai",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "~openai/gpt-sol-latest",
+        "openai",
+        "OpenAI: GPT Sol Latest"
+      ],
+      "provider": "openai",
+      "category": "text+image+file->text",
+      "costTier": "medium",
+      "contextWindow": 1050000
+    },
+    {
+      "id": "openrouter-openai-gpt-terra-latest",
+      "name": "OpenAI: GPT Terra Latest",
+      "url": "https://openrouter.ai/models/~openai/gpt-terra-latest",
+      "oneLiner": "This model always redirects to the latest model in the GPT Terra family.",
+      "tags": [
+        "openrouter",
+        "openai",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "~openai/gpt-terra-latest",
+        "openai",
+        "OpenAI: GPT Terra Latest"
+      ],
+      "provider": "openai",
+      "category": "text+image+file->text",
+      "costTier": "medium",
+      "contextWindow": 1050000
+    },
+    {
+      "id": "openrouter-openai-gpt-luna-latest",
+      "name": "OpenAI: GPT Luna Latest",
+      "url": "https://openrouter.ai/models/~openai/gpt-luna-latest",
+      "oneLiner": "This model always redirects to the latest model in the GPT Luna family.",
+      "tags": [
+        "openrouter",
+        "openai",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "~openai/gpt-luna-latest",
+        "openai",
+        "OpenAI: GPT Luna Latest"
+      ],
+      "provider": "openai",
+      "category": "text+image+file->text",
+      "costTier": "low",
+      "contextWindow": 1050000
+    },
+    {
+      "id": "openrouter-openai-gpt-6-astra",
+      "name": "OpenAI: GPT-6 Astra",
+      "url": "https://openrouter.ai/models/openai/gpt-6-astra",
+      "oneLiner": "GPT-6 Astra is OpenAI's flagship model for demanding end-to-end work. It is suited for advanced analysis, software engineering, deep research, scientific work, and document creatio",
+      "tags": [
+        "openrouter",
+        "openai",
+        "high"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "openai/gpt-6-astra",
+        "openai",
+        "OpenAI: GPT-6 Astra"
+      ],
+      "provider": "openai",
+      "category": "text+image+file->text",
+      "costTier": "high",
+      "contextWindow": 1050000
+    },
+    {
+      "id": "openrouter-openai-gpt-6-astra-batch",
+      "name": "OpenAI: GPT-6 Astra (batch)",
+      "url": "https://openrouter.ai/models/openai/gpt-6-astra:batch",
+      "oneLiner": "GPT-6 Astra is OpenAI's flagship model for demanding end-to-end work. It is suited for advanced analysis, software engineering, deep research, scientific work, and document creatio",
+      "tags": [
+        "openrouter",
+        "openai",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "openai/gpt-6-astra:batch",
+        "openai",
+        "OpenAI: GPT-6 Astra (batch)"
+      ],
+      "provider": "openai",
+      "category": "text+image+file->text",
+      "costTier": "medium",
+      "contextWindow": 1050000
+    },
+    {
+      "id": "openrouter-openai-gpt-6-astra-pro",
+      "name": "OpenAI: GPT-6 Astra Pro",
+      "url": "https://openrouter.ai/models/openai/gpt-6-astra-pro",
+      "oneLiner": "GPT-6 Astra Pro is the same underlying model as [GPT-6 Astra](https://openrouter.ai/openai/gpt-6-astra), served with `reasoning.mode` set to `pro` for higher-quality responses on c",
+      "tags": [
+        "openrouter",
+        "openai",
+        "high"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "openai/gpt-6-astra-pro",
+        "openai",
+        "OpenAI: GPT-6 Astra Pro"
+      ],
+      "provider": "openai",
+      "category": "text+image+file->text",
+      "costTier": "high",
+      "contextWindow": 1050000
+    },
+    {
+      "id": "openrouter-openai-gpt-6-astra-pro-batch",
+      "name": "OpenAI: GPT-6 Astra Pro (batch)",
+      "url": "https://openrouter.ai/models/openai/gpt-6-astra-pro:batch",
+      "oneLiner": "GPT-6 Astra Pro is the same underlying model as [GPT-6 Astra](https://openrouter.ai/openai/gpt-6-astra), served with `reasoning.mode` set to `pro` for higher-quality responses on c",
+      "tags": [
+        "openrouter",
+        "openai",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "openai/gpt-6-astra-pro:batch",
+        "openai",
+        "OpenAI: GPT-6 Astra Pro (batch)"
+      ],
+      "provider": "openai",
+      "category": "text+image+file->text",
+      "costTier": "medium",
+      "contextWindow": 1050000
+    },
+    {
+      "id": "openrouter-fireworks-ember-1",
+      "name": "Fireworks: Ember-1",
+      "url": "https://openrouter.ai/models/fireworks/ember-1",
+      "oneLiner": "Ember-1 is a specialized reasoning model from Fireworks Research, built on [Kimi K3](https://openrouter.ai/moonshotai/kimi-k3). It is designed to make every token go further: it pr",
+      "tags": [
+        "openrouter",
+        "fireworks",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "fireworks/ember-1",
+        "fireworks",
+        "Fireworks: Ember-1"
+      ],
+      "provider": "fireworks",
+      "category": "text+image->text",
+      "costTier": "medium",
+      "contextWindow": 1048576
+    },
+    {
+      "id": "openrouter-xiaomi-mimo-v2-6-pro-ultraspeed",
+      "name": "Xiaomi: MiMo-V2.6-Pro-UltraSpeed",
+      "url": "https://openrouter.ai/models/xiaomi/mimo-v2.6-pro-ultraspeed",
+      "oneLiner": "MiMo-V2.6-Pro-UltraSpeed is the fast speed edition of Xiaomi's flagship foundation model, MiMo-V2.6-Pro. Built from the same 1T MiMo-V2.6-Pro checkpoint, it matches the original mo",
+      "tags": [
+        "openrouter",
+        "xiaomi",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "xiaomi/mimo-v2.6-pro-ultraspeed",
+        "xiaomi",
+        "Xiaomi: MiMo-V2.6-Pro-UltraSpeed"
+      ],
+      "provider": "xiaomi",
+      "category": "text+image+audio+video->text",
+      "costTier": "medium",
+      "contextWindow": 1048576
+    },
+    {
+      "id": "openrouter-xiaomi-mimo-v2-6-flash",
+      "name": "Xiaomi: MiMo-V2.6-Flash",
+      "url": "https://openrouter.ai/models/xiaomi/mimo-v2.6-flash",
+      "oneLiner": "MiMo-V2.6-Flash is an open-source foundation model developed by Xiaomi. Built on a Mixture-of-Experts architecture with 309B total parameters and 15B activated per token, it employ",
+      "tags": [
+        "openrouter",
+        "xiaomi",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "xiaomi/mimo-v2.6-flash",
+        "xiaomi",
+        "Xiaomi: MiMo-V2.6-Flash"
+      ],
+      "provider": "xiaomi",
+      "category": "text+image+audio+video->text",
+      "costTier": "low",
+      "contextWindow": 1048576
+    },
+    {
+      "id": "openrouter-z-ai-glm-5-3-flashx",
+      "name": "Z.ai: GLM 5.3 FlashX",
+      "url": "https://openrouter.ai/models/z-ai/glm-5.3-flashx",
+      "oneLiner": "GLM-5.3-FlashX is the high-speed variant of Z.ai's GLM-5.3-Flash, a native multimodal model delivering inference speeds of up to 200 tokens/s. Built on the same hybrid sparse and l",
+      "tags": [
+        "openrouter",
+        "z-ai",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "z-ai/glm-5.3-flashx",
+        "z-ai",
+        "Z.ai: GLM 5.3 FlashX"
+      ],
+      "provider": "z-ai",
+      "category": "text+image+video->text",
+      "costTier": "low",
+      "contextWindow": 1048576
+    },
+    {
+      "id": "openrouter-deepseek-deepseek-pro-latest",
+      "name": "DeepSeek: DeepSeek Pro Latest",
+      "url": "https://openrouter.ai/models/~deepseek/deepseek-pro-latest",
+      "oneLiner": "This model always redirects to the latest model in the DeepSeek Pro family.",
+      "tags": [
+        "openrouter",
+        "deepseek",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "~deepseek/deepseek-pro-latest",
+        "deepseek",
+        "DeepSeek: DeepSeek Pro Latest"
+      ],
+      "provider": "deepseek",
+      "category": "text->text",
+      "costTier": "low",
+      "contextWindow": 1048576
+    },
+    {
+      "id": "openrouter-deepseek-deepseek-flash-latest",
+      "name": "DeepSeek: DeepSeek Flash Latest",
+      "url": "https://openrouter.ai/models/~deepseek/deepseek-flash-latest",
+      "oneLiner": "This model always redirects to the latest model in the DeepSeek Flash family.",
+      "tags": [
+        "openrouter",
+        "deepseek",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "~deepseek/deepseek-flash-latest",
+        "deepseek",
+        "DeepSeek: DeepSeek Flash Latest"
+      ],
+      "provider": "deepseek",
+      "category": "text+image->text",
+      "costTier": "low",
+      "contextWindow": 1048576
+    },
+    {
+      "id": "openrouter-deepseek-deepseek-v4-1-flash",
+      "name": "DeepSeek: DeepSeek V4.1 Flash",
+      "url": "https://openrouter.ai/models/deepseek/deepseek-v4.1-flash",
+      "oneLiner": "DeepSeek V4.1 Flash is a sparse mixture-of-experts model from DeepSeek, and the first built on the company's Causal Encoder-Decoder (CED) architecture. It activates 8B parameters o",
+      "tags": [
+        "openrouter",
+        "deepseek",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "deepseek/deepseek-v4.1-flash",
+        "deepseek",
+        "DeepSeek: DeepSeek V4.1 Flash"
+      ],
+      "provider": "deepseek",
+      "category": "text+image->text",
+      "costTier": "low",
+      "contextWindow": 1048576
+    },
+    {
+      "id": "openrouter-deepseek-deepseek-v4-1-flash-batch",
+      "name": "DeepSeek: DeepSeek V4.1 Flash (batch)",
+      "url": "https://openrouter.ai/models/deepseek/deepseek-v4.1-flash:batch",
+      "oneLiner": "DeepSeek V4.1 Flash is a sparse mixture-of-experts model from DeepSeek, and the first built on the company's Causal Encoder-Decoder (CED) architecture. It activates 8B parameters o",
+      "tags": [
+        "openrouter",
+        "deepseek",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "deepseek/deepseek-v4.1-flash:batch",
+        "deepseek",
+        "DeepSeek: DeepSeek V4.1 Flash (batch)"
+      ],
+      "provider": "deepseek",
+      "category": "text+image->text",
+      "costTier": "low",
+      "contextWindow": 1048576
+    },
+    {
+      "id": "openrouter-meta-muse-spark-1-3-contributor",
+      "name": "Meta: Muse Spark 1.3 Contributor",
+      "url": "https://openrouter.ai/models/meta/muse-spark-1.3-contributor",
+      "oneLiner": "Muse Spark 1.3 Contributor is the cost-efficient contributor tier of Meta’s multimodal reasoning model for experimentation, learning, and early-stage agentic, multi-agent, and codi",
+      "tags": [
+        "openrouter",
+        "meta",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "meta/muse-spark-1.3-contributor",
+        "meta",
+        "Meta: Muse Spark 1.3 Contributor"
+      ],
+      "provider": "meta",
+      "category": "text+image+file+video->text",
+      "costTier": "low",
+      "contextWindow": 1048576
+    },
+    {
+      "id": "openrouter-meta-muse-spark-1-3",
+      "name": "Meta: Muse Spark 1.3",
+      "url": "https://openrouter.ai/models/meta/muse-spark-1.3",
+      "oneLiner": "Muse Spark 1.3 is a multimodal reasoning model from Meta for long-running agentic, multi-agent, and coding workflows. It is designed to keep track of information across extended ta",
+      "tags": [
+        "openrouter",
+        "meta",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "meta/muse-spark-1.3",
+        "meta",
+        "Meta: Muse Spark 1.3"
+      ],
+      "provider": "meta",
+      "category": "text+image+file+video->text",
+      "costTier": "medium",
+      "contextWindow": 1048576
+    },
+    {
+      "id": "openrouter-google-gemini-3-8-flash",
+      "name": "Google: Gemini 3.8 Flash",
+      "url": "https://openrouter.ai/models/google/gemini-3.8-flash",
+      "oneLiner": "Gemini 3.8 Flash is Google's most intelligent Flash model with significant gains from 3.7 Flash across software engineering, agentic tasks, and multi-step reasoning.",
+      "tags": [
+        "openrouter",
+        "google",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "google/gemini-3.8-flash",
+        "google",
+        "Google: Gemini 3.8 Flash"
+      ],
+      "provider": "google",
+      "category": "text+image+file+audio+video->text",
+      "costTier": "medium",
+      "contextWindow": 1048576
+    },
+    {
+      "id": "openrouter-google-gemini-3-8-flash-batch",
+      "name": "Google: Gemini 3.8 Flash (batch)",
+      "url": "https://openrouter.ai/models/google/gemini-3.8-flash:batch",
+      "oneLiner": "Gemini 3.8 Flash is Google's most intelligent Flash model with significant gains from 3.7 Flash across software engineering, agentic tasks, and multi-step reasoning.",
+      "tags": [
+        "openrouter",
+        "google",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "google/gemini-3.8-flash:batch",
+        "google",
+        "Google: Gemini 3.8 Flash (batch)"
+      ],
+      "provider": "google",
+      "category": "text+image+file+audio+video->text",
+      "costTier": "low",
+      "contextWindow": 1048576
+    },
+    {
+      "id": "openrouter-tencent-hy4-preview",
+      "name": "Tencent: Hy4 preview",
+      "url": "https://openrouter.ai/models/tencent/hy4-preview",
+      "oneLiner": "Tencent: Hy4 preview is a mixture-of-experts model from Tencent, with 49B active parameters out of 770B total. It is designed for coding agents, complex tool-use workflows, and pro",
+      "tags": [
+        "openrouter",
+        "tencent",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "tencent/hy4-preview",
+        "tencent",
+        "Tencent: Hy4 preview"
+      ],
+      "provider": "tencent",
+      "category": "text->text",
+      "costTier": "low",
+      "contextWindow": 1048576
+    },
+    {
+      "id": "openrouter-z-ai-glm-5-3-flash-batch",
+      "name": "Z.ai: GLM 5.3 Flash (batch)",
+      "url": "https://openrouter.ai/models/z-ai/glm-5.3-flash:batch",
+      "oneLiner": "GLM-5.3-Flash is a native multimodal model from Z.ai. It is suited for efficient coding and long-horizon agent tasks. Its hybrid sparse and linear attention architecture maintains ",
+      "tags": [
+        "openrouter",
+        "z-ai",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "z-ai/glm-5.3-flash:batch",
+        "z-ai",
+        "Z.ai: GLM 5.3 Flash (batch)"
+      ],
+      "provider": "z-ai",
+      "category": "text+image+video->text",
+      "costTier": "low",
+      "contextWindow": 1048576
+    },
+    {
+      "id": "openrouter-meta-muse-spark-1-2-contributor",
+      "name": "Meta: Muse Spark 1.2 Contributor",
+      "url": "https://openrouter.ai/models/meta/muse-spark-1.2-contributor",
+      "oneLiner": "Muse Spark 1.2 contributor tier is a reasoning model from Meta designed for developers who want to start building at an even lower cost. It’s meaningfully cheaper than Muse Spark..",
+      "tags": [
+        "openrouter",
+        "meta",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "meta/muse-spark-1.2-contributor",
+        "meta",
+        "Meta: Muse Spark 1.2 Contributor"
+      ],
+      "provider": "meta",
+      "category": "text+image+file+video->text",
+      "costTier": "low",
+      "contextWindow": 1048576
+    },
+    {
+      "id": "openrouter-deepseek-deepseek-v4-flash-vision-exp",
+      "name": "DeepSeek: DeepSeek V4 Flash Vision Exp",
+      "url": "https://openrouter.ai/models/deepseek/deepseek-v4-flash-vision-exp",
+      "oneLiner": "DeepSeek V4 Flash Vision Exp is an experimental vision-enabled version of [DeepSeek V4 Flash 0731](https://openrouter.ai/deepseek/deepseek-v4-flash-0731) from DeepSeek, adding imag",
+      "tags": [
+        "openrouter",
+        "deepseek",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "deepseek/deepseek-v4-flash-vision-exp",
+        "deepseek",
+        "DeepSeek: DeepSeek V4 Flash Vision Exp"
+      ],
+      "provider": "deepseek",
+      "category": "text+image->text",
+      "costTier": "low",
+      "contextWindow": 1048576
+    },
+    {
+      "id": "openrouter-z-ai-glm-5-3-batch",
+      "name": "Z.ai: GLM 5.3 (batch)",
+      "url": "https://openrouter.ai/models/z-ai/glm-5.3:batch",
+      "oneLiner": "GLM-5.3 is a large-scale reasoning model from Z.ai, built for complex software engineering and long-horizon agent tasks. It supports text input and output with a 1M-token context w",
+      "tags": [
+        "openrouter",
+        "z-ai",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "z-ai/glm-5.3:batch",
+        "z-ai",
+        "Z.ai: GLM 5.3 (batch)"
+      ],
+      "provider": "z-ai",
+      "category": "text->text",
+      "costTier": "low",
+      "contextWindow": 1048576
+    },
+    {
+      "id": "openrouter-google-gemini-3-7-flash",
+      "name": "Google: Gemini 3.7 Flash",
+      "url": "https://openrouter.ai/models/google/gemini-3.7-flash",
+      "oneLiner": "Gemini 3.7 Flash is a multimodal model from Google for fast agentic workflows, coding, and complex multi-step reasoning. It is designed for tasks that require responsive performanc",
+      "tags": [
+        "openrouter",
+        "google",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "google/gemini-3.7-flash",
+        "google",
+        "Google: Gemini 3.7 Flash"
+      ],
+      "provider": "google",
+      "category": "text+image+file+audio+video->text",
+      "costTier": "medium",
+      "contextWindow": 1048576
+    },
+    {
+      "id": "openrouter-google-gemini-3-7-flash-batch",
+      "name": "Google: Gemini 3.7 Flash (batch)",
+      "url": "https://openrouter.ai/models/google/gemini-3.7-flash:batch",
+      "oneLiner": "Gemini 3.7 Flash is a multimodal model from Google for fast agentic workflows, coding, and complex multi-step reasoning. It is designed for tasks that require responsive performanc",
+      "tags": [
+        "openrouter",
+        "google",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "google/gemini-3.7-flash:batch",
+        "google",
+        "Google: Gemini 3.7 Flash (batch)"
+      ],
+      "provider": "google",
+      "category": "text+image+file+audio+video->text",
+      "costTier": "low",
+      "contextWindow": 1048576
+    },
+    {
+      "id": "openrouter-qwen-qwen3-8-2-4t-a95b",
+      "name": "Qwen: Qwen3.8 2.4T A95B",
+      "url": "https://openrouter.ai/models/qwen/qwen3.8-2.4t-a95b",
+      "oneLiner": "Qwen3.8 2.4T A95B is an open-weight sparse mixture-of-experts model from Qwen and the open-weight variant of [Qwen3.8 Max](/qwen/qwen3.8-max), with 95 billion active parameters out",
+      "tags": [
+        "openrouter",
+        "qwen",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "qwen/qwen3.8-2.4t-a95b",
+        "qwen",
+        "Qwen: Qwen3.8 2.4T A95B"
+      ],
+      "provider": "qwen",
+      "category": "text->text",
+      "costTier": "medium",
+      "contextWindow": 1048576
+    },
+    {
+      "id": "openrouter-deepseek-deepseek-v4-pro-0813",
+      "name": "DeepSeek: DeepSeek V4 Pro 0813",
+      "url": "https://openrouter.ai/models/deepseek/deepseek-v4-pro-0813",
+      "oneLiner": "DeepSeek V4 Pro 0813 is a large-scale mixture-of-experts model from DeepSeek. This is the GA release of DeepSeek V4 Pro.",
+      "tags": [
+        "openrouter",
+        "deepseek",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "deepseek/deepseek-v4-pro-0813",
+        "deepseek",
+        "DeepSeek: DeepSeek V4 Pro 0813"
+      ],
+      "provider": "deepseek",
+      "category": "text->text",
+      "costTier": "medium",
+      "contextWindow": 1048576
+    },
+    {
+      "id": "gpt-4.1",
+      "name": "GPT-4.1",
+      "url": "https://platform.openai.com/docs/models/gpt-4.1",
+      "oneLiner": "百万级上下文与稳定指令遵循，适合长文档处理。",
+      "tags": [
+        "long-context",
+        "coding",
+        "general",
+        "api"
+      ],
+      "taskPatterns": [
+        "long document",
+        "coding",
+        "instruction following"
+      ],
+      "keywords": [
+        "openai",
+        "gpt4.1",
+        "gpt-4.1"
+      ],
+      "provider": "OpenAI",
+      "category": "general",
+      "costTier": "medium",
+      "contextWindow": 1000000
+    },
+    {
+      "id": "gemini-2.5-pro",
+      "name": "Gemini 2.5 Pro",
+      "url": "https://ai.google.dev/gemini-api/docs/models",
+      "oneLiner": "超长上下文与强推理，适合大规模资料分析。",
+      "tags": [
+        "long-context",
+        "multimodal",
+        "reasoning"
+      ],
+      "taskPatterns": [
+        "large corpus",
+        "multimodal",
+        "reasoning",
+        "research"
+      ],
+      "keywords": [
+        "google",
+        "gemini",
+        "2.5-pro"
+      ],
+      "provider": "Google",
+      "category": "multimodal",
+      "costTier": "medium",
+      "contextWindow": 1000000
+    },
+    {
+      "id": "gemini-2.5-flash",
+      "name": "Gemini 2.5 Flash",
+      "url": "https://ai.google.dev/gemini-api/docs/models",
+      "oneLiner": "低延迟、高吞吐，适合大规模抽取与分类。",
+      "tags": [
+        "cheap",
+        "fast",
+        "multimodal",
+        "long-context"
+      ],
+      "taskPatterns": [
+        "extraction",
+        "classification",
+        "multimodal"
+      ],
+      "keywords": [
+        "google",
+        "gemini",
+        "2.5-flash"
+      ],
+      "provider": "Google",
+      "category": "multimodal",
+      "costTier": "low",
+      "contextWindow": 1000000
+    },
+    {
+      "id": "llama-4-maverick",
+      "name": "Llama 4 Maverick",
+      "url": "https://www.llama.com/",
+      "oneLiner": "开源多模态模型，适合自托管与定制。",
+      "tags": [
+        "open-source",
+        "multimodal",
+        "self-hosted"
+      ],
+      "taskPatterns": [
+        "self-hosted",
+        "multimodal",
+        "customization"
+      ],
+      "keywords": [
+        "meta",
+        "llama",
+        "maverick"
+      ],
+      "provider": "Meta",
+      "category": "general",
+      "costTier": "low",
+      "contextWindow": 1000000
+    },
+    {
+      "id": "openrouter-typesafe-jev-router",
+      "name": "TypeSafe: Jev Router",
+      "url": "https://openrouter.ai/models/typesafe/jev-router",
+      "oneLiner": "Jev Router picks the best model and reasoning effort for each request, balancing quality, speed, and cost. It runs on [Jev](https://openrouter.ai/~typesafe/jev-latest), TypeSafe's ",
+      "tags": [
+        "openrouter",
+        "typesafe",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "typesafe/jev-router",
+        "typesafe",
+        "TypeSafe: Jev Router"
+      ],
+      "provider": "typesafe",
+      "category": "text+image+file+audio+video->text",
+      "costTier": "low",
+      "contextWindow": 1000000
+    },
+    {
+      "id": "openrouter-z-ai-glm-5-3-prime",
+      "name": "Z.ai: GLM 5.3 Prime",
+      "url": "https://openrouter.ai/models/z-ai/glm-5.3-prime",
+      "oneLiner": "GLM-5.3-Prime is the high-speed variant of Z.ai's GLM-5.3, inheriting its full capabilities while delivering 1.5–2× the output throughput through inference acceleration. It support",
+      "tags": [
+        "openrouter",
+        "z-ai",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "z-ai/glm-5.3-prime",
+        "z-ai",
+        "Z.ai: GLM 5.3 Prime"
+      ],
+      "provider": "z-ai",
+      "category": "text->text",
+      "costTier": "medium",
+      "contextWindow": 1000000
+    },
+    {
+      "id": "openrouter-qwen-qwen3-8-max-prime",
+      "name": "Qwen: Qwen3.8 Max Prime",
+      "url": "https://openrouter.ai/models/qwen/qwen3.8-max-prime",
+      "oneLiner": "Qwen3.8 Max Prime is a higher-throughput variant of Qwen3.8 Max from Alibaba's Qwen team, served as a separate SKU at a higher price point. It accepts text, image, and video...",
+      "tags": [
+        "openrouter",
+        "qwen",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "qwen/qwen3.8-max-prime",
+        "qwen",
+        "Qwen: Qwen3.8 Max Prime"
+      ],
+      "provider": "qwen",
+      "category": "text+image+video->text",
+      "costTier": "medium",
+      "contextWindow": 1000000
+    },
+    {
+      "id": "openrouter-stealth-space-bunny-alpha",
+      "name": "Space Bunny Alpha",
+      "url": "https://openrouter.ai/models/stealth/space-bunny-alpha",
+      "oneLiner": "Space Bunny Alpha is an anonymous large model with blazing-fast inference, strong coding capabilities and native multimodal input support. It delivers adjustable reasoning effort, ",
+      "tags": [
+        "openrouter",
+        "stealth",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "stealth/space-bunny-alpha",
+        "stealth",
+        "Space Bunny Alpha"
+      ],
+      "provider": "stealth",
+      "category": "text+image+video->text",
+      "costTier": "low",
+      "contextWindow": 1000000
+    },
+    {
+      "id": "openrouter-anthropic-claude-opus-5-5",
+      "name": "Anthropic: Claude Opus 5.5",
+      "url": "https://openrouter.ai/models/anthropic/claude-opus-5.5",
+      "oneLiner": "Claude Opus 5.5 is Anthropic's flagship model for demanding reasoning, coding, and long-horizon agentic work, succeeding Claude Opus 5. It is particularly strong at multi-step chan",
+      "tags": [
+        "openrouter",
+        "anthropic",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "anthropic/claude-opus-5.5",
+        "anthropic",
+        "Anthropic: Claude Opus 5.5"
+      ],
+      "provider": "anthropic",
+      "category": "text+image+file->text",
+      "costTier": "medium",
+      "contextWindow": 1000000
+    },
+    {
+      "id": "openrouter-anthropic-claude-opus-5-5-batch",
+      "name": "Anthropic: Claude Opus 5.5 (batch)",
+      "url": "https://openrouter.ai/models/anthropic/claude-opus-5.5:batch",
+      "oneLiner": "Claude Opus 5.5 is Anthropic's flagship model for demanding reasoning, coding, and long-horizon agentic work, succeeding Claude Opus 5. It is particularly strong at multi-step chan",
+      "tags": [
+        "openrouter",
+        "anthropic",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "anthropic/claude-opus-5.5:batch",
+        "anthropic",
+        "Anthropic: Claude Opus 5.5 (batch)"
+      ],
+      "provider": "anthropic",
+      "category": "text+image+file->text",
+      "costTier": "medium",
+      "contextWindow": 1000000
+    },
+    {
+      "id": "openrouter-qwen-qwen3-8-omni-flash",
+      "name": "Qwen: Qwen3.8 Omni Flash",
+      "url": "https://openrouter.ai/models/qwen/qwen3.8-omni-flash",
+      "oneLiner": "Qwen3.8 Omni Flash is an omni-modal reasoning model from Alibaba, the first Qwen model built around agentic capabilities with native audio-video understanding. It is suited for aud",
+      "tags": [
+        "openrouter",
+        "qwen",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "qwen/qwen3.8-omni-flash",
+        "qwen",
+        "Qwen: Qwen3.8 Omni Flash"
+      ],
+      "provider": "qwen",
+      "category": "text+image+audio+video->text",
+      "costTier": "low",
+      "contextWindow": 1000000
+    },
+    {
+      "id": "openrouter-sakana-fugu-ultra-v2",
+      "name": "Sakana: Fugu Ultra v2",
+      "url": "https://openrouter.ai/models/sakana/fugu-ultra-v2",
+      "oneLiner": "Fugu Ultra v2 is the higher-performance model in Sakana AI's Fugu family. Rather than a single monolithic model, Fugu is a learned multi-agent orchestration system: a language mode",
+      "tags": [
+        "openrouter",
+        "sakana",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "sakana/fugu-ultra-v2",
+        "sakana",
+        "Sakana: Fugu Ultra v2"
+      ],
+      "provider": "sakana",
+      "category": "text+image+file->text",
+      "costTier": "medium",
+      "contextWindow": 1000000
+    },
+    {
+      "id": "openrouter-sakana-fugu-max",
+      "name": "Sakana: Fugu Max",
+      "url": "https://openrouter.ai/models/sakana/fugu-max",
+      "oneLiner": "Fugu Max is the cost-performance model in Sakana AI's Fugu family. Rather than a single monolithic model, Fugu is a learned multi-agent orchestration system: a language model train",
+      "tags": [
+        "openrouter",
+        "sakana",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "sakana/fugu-max",
+        "sakana",
+        "Sakana: Fugu Max"
+      ],
+      "provider": "sakana",
+      "category": "text+image+file->text",
+      "costTier": "medium",
+      "contextWindow": 1000000
+    },
+    {
+      "id": "openrouter-qwen-qwen3-8-max-0902",
+      "name": "Qwen: Qwen3.8 Max (0902)",
+      "url": "https://openrouter.ai/models/qwen/qwen3.8-max-0902",
+      "oneLiner": "Qwen3.8 Max 0902 is an updated snapshot of Qwen3.8 Max from Alibaba's Qwen team. It is a 2.4-trillion-parameter mixture-of-experts model that accepts text, image, and video input a",
+      "tags": [
+        "openrouter",
+        "qwen",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "qwen/qwen3.8-max-0902",
+        "qwen",
+        "Qwen: Qwen3.8 Max (0902)"
+      ],
+      "provider": "qwen",
+      "category": "text+image+video->text",
+      "costTier": "medium",
+      "contextWindow": 1000000
+    },
+    {
+      "id": "openrouter-anthropic-claude-fable-5-1",
+      "name": "Anthropic: Claude Fable 5.1",
+      "url": "https://openrouter.ai/models/anthropic/claude-fable-5.1",
+      "oneLiner": "Claude Fable 5.1 improves on Claude Fable 5 across the board, with the biggest gains in agentic coding, long-running agentic workflows, and knowledge work: long code refactors, fro",
+      "tags": [
+        "openrouter",
+        "anthropic",
+        "high"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "anthropic/claude-fable-5.1",
+        "anthropic",
+        "Anthropic: Claude Fable 5.1"
+      ],
+      "provider": "anthropic",
+      "category": "text+image+file->text",
+      "costTier": "high",
+      "contextWindow": 1000000
+    },
+    {
+      "id": "openrouter-anthropic-claude-fable-5-1-batch",
+      "name": "Anthropic: Claude Fable 5.1 (batch)",
+      "url": "https://openrouter.ai/models/anthropic/claude-fable-5.1:batch",
+      "oneLiner": "Claude Fable 5.1 improves on Claude Fable 5 across the board, with the biggest gains in agentic coding, long-running agentic workflows, and knowledge work: long code refactors, fro",
+      "tags": [
+        "openrouter",
+        "anthropic",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "anthropic/claude-fable-5.1:batch",
+        "anthropic",
+        "Anthropic: Claude Fable 5.1 (batch)"
+      ],
+      "provider": "anthropic",
+      "category": "text+image+file->text",
+      "costTier": "medium",
+      "contextWindow": 1000000
+    },
+    {
+      "id": "openrouter-qwen-qwen3-8-flash",
+      "name": "Qwen: Qwen3.8 Flash",
+      "url": "https://openrouter.ai/models/qwen/qwen3.8-flash",
+      "oneLiner": "Qwen3.8 Flash is a multimodal reasoning model from Alibaba. It is suited for coding assistance, agentic workflows, visual understanding, document and codebase analysis, desktop int",
+      "tags": [
+        "openrouter",
+        "qwen",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "qwen/qwen3.8-flash",
+        "qwen",
+        "Qwen: Qwen3.8 Flash"
+      ],
+      "provider": "qwen",
+      "category": "text+image+video->text",
+      "costTier": "low",
+      "contextWindow": 1000000
+    },
+    {
+      "id": "openrouter-qwen-qwen3-8-27b",
+      "name": "Qwen: Qwen3.8 27B",
+      "url": "https://openrouter.ai/models/qwen/qwen3.8-27b",
+      "oneLiner": "Qwen3.8 27B is an open-weight dense vision-language model from Qwen. It is suited for coding, professional workflows, research, multimodal interaction, and long-running agent tasks",
+      "tags": [
+        "openrouter",
+        "qwen",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "qwen/qwen3.8-27b",
+        "qwen",
+        "Qwen: Qwen3.8 27B"
+      ],
+      "provider": "qwen",
+      "category": "text+image+video->text",
+      "costTier": "low",
+      "contextWindow": 1000000
+    },
+    {
+      "id": "openrouter-upstage-solar-mini4",
+      "name": "Upstage: Solar Mini 4",
+      "url": "https://openrouter.ai/models/upstage/solar-mini4",
+      "oneLiner": "Solar Mini 4 is Upstage's compact, cost-efficient language model, a 35B-parameter mixture-of-experts with 3B active parameters and a 524K context window. It is built for agentic us",
+      "tags": [
+        "openrouter",
+        "upstage",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "upstage/solar-mini4",
+        "upstage",
+        "Upstage: Solar Mini 4"
+      ],
+      "provider": "upstage",
+      "category": "text->text",
+      "costTier": "low",
+      "contextWindow": 524288
+    },
+    {
+      "id": "openrouter-dots-studio-dots-3-note-preview-free",
+      "name": "Dots Studio: Dots3-Note Preview (free)",
+      "url": "https://openrouter.ai/models/dots-studio/dots-3-note-preview:free",
+      "oneLiner": "Dots3-Note Preview is an open-weight mixture-of-experts model from Dots Studio, with 16B active parameters out of 280B total. It is the lightest model in the Dots 3 family and is..",
+      "tags": [
+        "openrouter",
+        "dots-studio",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "dots-studio/dots-3-note-preview:free",
+        "dots-studio",
+        "Dots Studio: Dots3-Note Preview (free)"
+      ],
+      "provider": "dots-studio",
+      "category": "text+image->text",
+      "costTier": "low",
+      "contextWindow": 512000
+    },
+    {
+      "id": "openrouter-x-ai-grok-4-7",
+      "name": "SpaceXAI: Grok 4.7",
+      "url": "https://openrouter.ai/models/x-ai/grok-4.7",
+      "oneLiner": "Grok 4.7 is SpaceXAI's flagship model for coding, agentic tasks, and knowledge work, succeeding Grok 4.6. It is particularly strong at long-running software engineering tasks, veri",
+      "tags": [
+        "openrouter",
+        "x-ai",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "x-ai/grok-4.7",
+        "x-ai",
+        "SpaceXAI: Grok 4.7"
+      ],
+      "provider": "x-ai",
+      "category": "text+image+file->text",
+      "costTier": "medium",
+      "contextWindow": 500000
+    },
+    {
+      "id": "openrouter-x-ai-grok-4-6",
+      "name": "SpaceXAI: Grok 4.6",
+      "url": "https://openrouter.ai/models/x-ai/grok-4.6",
+      "oneLiner": "Grok 4.6 is a model from SpaceXAI with frontier performance on coding, knowledge work, and STEM. It is succeeded by [Grok 4.7](/x-ai/grok-4.7).",
+      "tags": [
+        "openrouter",
+        "x-ai",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "x-ai/grok-4.6",
+        "x-ai",
+        "SpaceXAI: Grok 4.6"
+      ],
+      "provider": "x-ai",
+      "category": "text+image+file->text",
+      "costTier": "medium",
+      "contextWindow": 500000
+    },
+    {
+      "id": "openrouter-aion-labs-aion-3-5-mini",
+      "name": "AionLabs: Aion 3.5 Mini",
+      "url": "https://openrouter.ai/models/aion-labs/aion-3.5-mini",
+      "oneLiner": "Aion 3.5 Mini is a multi-model roleplaying and storytelling system from AionLabs, built on the GLM family of models. It is the smaller, lower-cost sibling of Aion 3.5 and uses...",
+      "tags": [
+        "openrouter",
+        "aion-labs",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "aion-labs/aion-3.5-mini",
+        "aion-labs",
+        "AionLabs: Aion 3.5 Mini"
+      ],
+      "provider": "aion-labs",
+      "category": "text->text",
+      "costTier": "low",
+      "contextWindow": 262144
+    },
+    {
+      "id": "openrouter-aion-labs-aion-3-5",
+      "name": "AionLabs: Aion 3.5",
+      "url": "https://openrouter.ai/models/aion-labs/aion-3.5",
+      "oneLiner": "Aion 3.5 is a multi-model roleplaying and storytelling system from AionLabs, built on the GLM family of models. It uses a collaborative generation process in which multiple special",
+      "tags": [
+        "openrouter",
+        "aion-labs",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "aion-labs/aion-3.5",
+        "aion-labs",
+        "AionLabs: Aion 3.5"
+      ],
+      "provider": "aion-labs",
+      "category": "text->text",
+      "costTier": "medium",
+      "contextWindow": 262144
+    },
+    {
+      "id": "openrouter-prism-ml-ternary-bonsai-2-27b",
+      "name": "PrismML: Ternary Bonsai 2 27B",
+      "url": "https://openrouter.ai/models/prism-ml/ternary-bonsai-2-27b",
+      "oneLiner": "Bonsai 2 27B is a 27B-parameter reasoning model from PrismML derived from Qwen3.8-27B. It supports coding, mathematics, tool calling, and image understanding with a 262K-token cont",
+      "tags": [
+        "openrouter",
+        "prism-ml",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "prism-ml/ternary-bonsai-2-27b",
+        "prism-ml",
+        "PrismML: Ternary Bonsai 2 27B"
+      ],
+      "provider": "prism-ml",
+      "category": "text+image->text",
+      "costTier": "low",
+      "contextWindow": 262144
+    },
+    {
+      "id": "openrouter-unbiased-pareto",
+      "name": "Pareto",
+      "url": "https://openrouter.ai/models/unbiased/pareto",
+      "oneLiner": "Pareto is a multimodal composite model built for research, coding, and agentic workflows, while delivering frontier-level performance across a broad range of general-purpose tasks.",
+      "tags": [
+        "openrouter",
+        "unbiased",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "unbiased/pareto",
+        "unbiased",
+        "Pareto"
+      ],
+      "provider": "unbiased",
+      "category": "text+image->text",
+      "costTier": "medium",
+      "contextWindow": 262144
+    },
+    {
+      "id": "openrouter-inclusionai-ling-3-0-flash-vl",
+      "name": "inclusionAI: Ling 3.0 Flash VL",
+      "url": "https://openrouter.ai/models/inclusionai/ling-3.0-flash-vl",
+      "oneLiner": "Ling 3.0 Flash VL builds on Ling 3.0 Flash (124B total / 5.5B active MoE from InclusionAI), further strengthening its language capabilities while adding native visual perception an",
+      "tags": [
+        "openrouter",
+        "inclusionai",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "inclusionai/ling-3.0-flash-vl",
+        "inclusionai",
+        "inclusionAI: Ling 3.0 Flash VL"
+      ],
+      "provider": "inclusionai",
+      "category": "text+image+video->text",
+      "costTier": "low",
+      "contextWindow": 262144
+    },
+    {
+      "id": "openrouter-inclusionai-ling-3-0-flash-sante-free",
+      "name": "inclusionAI: Ling 3.0 Flash Sante (free)",
+      "url": "https://openrouter.ai/models/inclusionai/ling-3.0-flash-sante:free",
+      "oneLiner": "Ling 3.0 Flash Sante is a health and medicine-focused mixture-of-experts model from InclusionAI, built on Ling 3.0 Flash with 5.1B active parameters out of 124B total. It is design",
+      "tags": [
+        "openrouter",
+        "inclusionai",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "inclusionai/ling-3.0-flash-sante:free",
+        "inclusionai",
+        "inclusionAI: Ling 3.0 Flash Sante (free)"
+      ],
+      "provider": "inclusionai",
+      "category": "text->text",
+      "costTier": "low",
+      "contextWindow": 262144
+    },
+    {
+      "id": "openrouter-inclusionai-ling-3-0-flash-fin",
+      "name": "inclusionAI: Ling 3.0 Flash Fin",
+      "url": "https://openrouter.ai/models/inclusionai/ling-3.0-flash-fin",
+      "oneLiner": "Ling 3.0 Flash Fin is a finance-focused mixture-of-experts model from InclusionAI, built on Ling 3.0 Flash with 5.1B active parameters out of 124B total. It is designed for real-wo",
+      "tags": [
+        "openrouter",
+        "inclusionai",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "inclusionai/ling-3.0-flash-fin",
+        "inclusionai",
+        "inclusionAI: Ling 3.0 Flash Fin"
+      ],
+      "provider": "inclusionai",
+      "category": "text->text",
+      "costTier": "low",
+      "contextWindow": 262144
+    },
+    {
+      "id": "openrouter-inclusionai-ling-3-0-flash-fin-free",
+      "name": "inclusionAI: Ling 3.0 Flash Fin (free)",
+      "url": "https://openrouter.ai/models/inclusionai/ling-3.0-flash-fin:free",
+      "oneLiner": "Ling 3.0 Flash Fin is a finance-focused mixture-of-experts model from InclusionAI, built on Ling 3.0 Flash with 5.1B active parameters out of 124B total. It is designed for real-wo",
+      "tags": [
+        "openrouter",
+        "inclusionai",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "inclusionai/ling-3.0-flash-fin:free",
+        "inclusionai",
+        "inclusionAI: Ling 3.0 Flash Fin (free)"
+      ],
+      "provider": "inclusionai",
+      "category": "text->text",
+      "costTier": "low",
+      "contextWindow": 262144
+    },
+    {
+      "id": "openrouter-qwen-qwen3-8-27b-free",
+      "name": "Qwen: Qwen3.8 27B (free)",
+      "url": "https://openrouter.ai/models/qwen/qwen3.8-27b:free",
+      "oneLiner": "Qwen3.8 27B is an open-weight dense vision-language model from Qwen. It is suited for coding, professional workflows, research, multimodal interaction, and long-running agent tasks",
+      "tags": [
+        "openrouter",
+        "qwen",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "qwen/qwen3.8-27b:free",
+        "qwen",
+        "Qwen: Qwen3.8 27B (free)"
+      ],
+      "provider": "qwen",
+      "category": "text+image+video->text",
+      "costTier": "low",
+      "contextWindow": 262144
+    },
+    {
+      "id": "openrouter-bytedance-seed-seed-2-1-turbo",
+      "name": "ByteDance Seed: Seed 2.1 Turbo",
+      "url": "https://openrouter.ai/models/bytedance-seed/seed-2-1-turbo",
+      "oneLiner": "Seed 2.1 Turbo is a multimodal model from ByteDance Seed for coding and long-horizon agent workflows. It is suited for end-to-end software delivery, multi-step task execution, and ",
+      "tags": [
+        "openrouter",
+        "bytedance-seed",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "bytedance-seed/seed-2-1-turbo",
+        "bytedance-seed",
+        "ByteDance Seed: Seed 2.1 Turbo"
+      ],
+      "provider": "bytedance-seed",
+      "category": "text+image+video->text",
+      "costTier": "low",
+      "contextWindow": 262144
+    },
+    {
+      "id": "openrouter-bytedance-seed-seed-2-0-code",
+      "name": "ByteDance Seed: Seed-2.0-Code",
+      "url": "https://openrouter.ai/models/bytedance-seed/seed-2.0-code",
+      "oneLiner": "Seed 2.0 Code is a model from ByteDance Seed optimized for agentic coding. It is suited for frontend development, multilingual programming tasks, and coding-agent workflows in tool",
+      "tags": [
+        "openrouter",
+        "bytedance-seed",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "bytedance-seed/seed-2.0-code",
+        "bytedance-seed",
+        "ByteDance Seed: Seed-2.0-Code"
+      ],
+      "provider": "bytedance-seed",
+      "category": "text+image+video->text",
+      "costTier": "low",
+      "contextWindow": 262144
+    },
+    {
+      "id": "openrouter-inception-mercury-2-5",
+      "name": "Inception: Mercury 2.5",
+      "url": "https://openrouter.ai/models/inception/mercury-2.5",
+      "oneLiner": "Mercury 2.5 is the fastest reasoning LLM, and the latest diffusion LLM (dLLM) from Inception. Instead of generating tokens sequentially, Mercury 2.5 produces and refines multiple t",
+      "tags": [
+        "openrouter",
+        "inception",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "inception/mercury-2.5",
+        "inception",
+        "Inception: Mercury 2.5"
+      ],
+      "provider": "inception",
+      "category": "text->text",
+      "costTier": "low",
+      "contextWindow": 260000
+    },
+    {
+      "id": "kimi-k2",
+      "name": "Kimi K2",
+      "url": "https://platform.moonshot.cn/docs",
+      "oneLiner": "长上下文与强推理，适合知识工作流。",
+      "tags": [
+        "long-context",
+        "reasoning",
+        "chinese",
+        "api"
+      ],
+      "taskPatterns": [
+        "long document",
+        "research",
+        "analysis"
+      ],
+      "keywords": [
+        "moonshot",
+        "kimi",
+        "k2"
+      ],
+      "provider": "Moonshot",
+      "category": "reasoning",
+      "costTier": "low",
+      "contextWindow": 256000
+    },
+    {
+      "id": "minimax-m2",
+      "name": "MiniMax M2",
+      "url": "https://platform.minimaxi.com/document",
+      "oneLiner": "长上下文与高性价比，适合知识问答。",
+      "tags": [
+        "long-context",
+        "cheap",
+        "chinese",
+        "api"
+      ],
+      "taskPatterns": [
+        "knowledge qa",
+        "summarization",
+        "chinese"
+      ],
+      "keywords": [
+        "minimax",
+        "m2"
+      ],
+      "provider": "MiniMax",
+      "category": "general",
+      "costTier": "low",
+      "contextWindow": 245760
+    },
+    {
+      "id": "o4-mini",
+      "name": "o4-mini",
+      "url": "https://platform.openai.com/docs/models/o4-mini",
+      "oneLiner": "高性价比推理模型，适合代码与结构化输出。",
+      "tags": [
+        "reasoning",
+        "cheap",
+        "coding",
+        "api"
+      ],
+      "taskPatterns": [
+        "coding",
+        "structured output",
+        "logic"
+      ],
+      "keywords": [
+        "openai",
+        "o4",
+        "o4-mini"
+      ],
+      "provider": "OpenAI",
+      "category": "reasoning",
+      "costTier": "low",
+      "contextWindow": 200000
+    },
+    {
+      "id": "claude-sonnet-4-5",
+      "name": "Claude Sonnet 4.5",
+      "url": "https://docs.anthropic.com/en/docs/about-claude/models",
+      "oneLiner": "平衡速度与质量的通用模型，适合 Agent 与长文本。",
+      "tags": [
+        "agent",
+        "long-context",
+        "general",
+        "coding"
+      ],
+      "taskPatterns": [
+        "agent workflow",
+        "coding",
+        "summarization",
+        "analysis"
+      ],
+      "keywords": [
+        "anthropic",
+        "claude",
+        "sonnet"
+      ],
+      "provider": "Anthropic",
+      "category": "general",
+      "costTier": "medium",
+      "contextWindow": 200000
+    },
+    {
+      "id": "claude-opus-4-1",
+      "name": "Claude Opus 4.1",
+      "url": "https://docs.anthropic.com/en/docs/about-claude/models",
+      "oneLiner": "复杂推理与高质量长文本生成的首选。",
+      "tags": [
+        "reasoning",
+        "long-context",
+        "writing",
+        "coding"
+      ],
+      "taskPatterns": [
+        "complex reasoning",
+        "writing",
+        "research",
+        "coding"
+      ],
+      "keywords": [
+        "anthropic",
+        "claude",
+        "opus"
+      ],
+      "provider": "Anthropic",
+      "category": "general",
+      "costTier": "high",
+      "contextWindow": 200000
+    },
+    {
+      "id": "glm-4.6",
+      "name": "GLM-4.6",
+      "url": "https://open.bigmodel.cn/dev/howuse/model",
+      "oneLiner": "中文能力与工具调用均衡，生态成熟。",
+      "tags": [
+        "chinese",
+        "tool-calling",
+        "general",
+        "api"
+      ],
+      "taskPatterns": [
+        "chinese nlp",
+        "tool calling",
+        "chat"
+      ],
+      "keywords": [
+        "zhipu",
+        "glm",
+        "glm-4.6"
+      ],
+      "provider": "Zhipu",
+      "category": "general",
+      "costTier": "medium",
+      "contextWindow": 200000
+    },
+    {
+      "id": "openrouter-cohere-command-a-plus",
+      "name": "Cohere: Command A+",
+      "url": "https://openrouter.ai/models/cohere/command-a-plus",
+      "oneLiner": "Command A+ is Cohere's flagship model for enterprise agentic workflows. It accepts text and image inputs with a 192K context window, supports native tool calling with strict tool s",
+      "tags": [
+        "openrouter",
+        "cohere",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "cohere/command-a-plus",
+        "cohere",
+        "Cohere: Command A+"
+      ],
+      "provider": "cohere",
+      "category": "text+image->text",
+      "costTier": "low",
+      "contextWindow": 192000
+    },
+    {
+      "id": "qwen3-235b",
+      "name": "Qwen3 235B",
+      "url": "https://qwenlm.github.io/",
+      "oneLiner": "开源强推理模型，可本地或云上部署。",
+      "tags": [
+        "open-source",
+        "reasoning",
+        "chinese",
+        "coding"
+      ],
+      "taskPatterns": [
+        "coding",
+        "reasoning",
+        "agent",
+        "local deploy"
+      ],
+      "keywords": [
+        "qwen",
+        "qwen3",
+        "235b"
+      ],
+      "provider": "Alibaba",
+      "category": "reasoning",
+      "costTier": "medium",
+      "contextWindow": 131072
+    },
+    {
+      "id": "openrouter-ibm-granite-granite-4-2-8b",
+      "name": "IBM: Granite 4.2 8B",
+      "url": "https://openrouter.ai/models/ibm-granite/granite-4.2-8b",
+      "oneLiner": "Granite 4.2 8B is a dense reasoning model from IBM. It is suited for mathematics, code generation, multilingual dialogue, and agentic workflows that need multi-step reasoning. It s",
+      "tags": [
+        "openrouter",
+        "ibm-granite",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "ibm-granite/granite-4.2-8b",
+        "ibm-granite",
+        "IBM: Granite 4.2 8B"
+      ],
+      "provider": "ibm-granite",
+      "category": "text->text",
+      "costTier": "low",
+      "contextWindow": 131072
+    },
     {
       "id": "deepseek-chat",
       "name": "DeepSeek V3.2",
@@ -87,294 +2224,6 @@
       "contextWindow": 128000
     },
     {
-      "id": "gpt-4.1",
-      "name": "GPT-4.1",
-      "url": "https://platform.openai.com/docs/models/gpt-4.1",
-      "oneLiner": "百万级上下文与稳定指令遵循，适合长文档处理。",
-      "tags": [
-        "long-context",
-        "coding",
-        "general",
-        "api"
-      ],
-      "taskPatterns": [
-        "long document",
-        "coding",
-        "instruction following"
-      ],
-      "keywords": [
-        "openai",
-        "gpt4.1",
-        "gpt-4.1"
-      ],
-      "provider": "OpenAI",
-      "category": "general",
-      "costTier": "medium",
-      "contextWindow": 1000000
-    },
-    {
-      "id": "o4-mini",
-      "name": "o4-mini",
-      "url": "https://platform.openai.com/docs/models/o4-mini",
-      "oneLiner": "高性价比推理模型，适合代码与结构化输出。",
-      "tags": [
-        "reasoning",
-        "cheap",
-        "coding",
-        "api"
-      ],
-      "taskPatterns": [
-        "coding",
-        "structured output",
-        "logic"
-      ],
-      "keywords": [
-        "openai",
-        "o4",
-        "o4-mini"
-      ],
-      "provider": "OpenAI",
-      "category": "reasoning",
-      "costTier": "low",
-      "contextWindow": 200000
-    },
-    {
-      "id": "claude-sonnet-4-5",
-      "name": "Claude Sonnet 4.5",
-      "url": "https://docs.anthropic.com/en/docs/about-claude/models",
-      "oneLiner": "平衡速度与质量的通用模型，适合 Agent 与长文本。",
-      "tags": [
-        "agent",
-        "long-context",
-        "general",
-        "coding"
-      ],
-      "taskPatterns": [
-        "agent workflow",
-        "coding",
-        "summarization",
-        "analysis"
-      ],
-      "keywords": [
-        "anthropic",
-        "claude",
-        "sonnet"
-      ],
-      "provider": "Anthropic",
-      "category": "general",
-      "costTier": "medium",
-      "contextWindow": 200000
-    },
-    {
-      "id": "claude-opus-4-1",
-      "name": "Claude Opus 4.1",
-      "url": "https://docs.anthropic.com/en/docs/about-claude/models",
-      "oneLiner": "复杂推理与高质量长文本生成的首选。",
-      "tags": [
-        "reasoning",
-        "long-context",
-        "writing",
-        "coding"
-      ],
-      "taskPatterns": [
-        "complex reasoning",
-        "writing",
-        "research",
-        "coding"
-      ],
-      "keywords": [
-        "anthropic",
-        "claude",
-        "opus"
-      ],
-      "provider": "Anthropic",
-      "category": "general",
-      "costTier": "high",
-      "contextWindow": 200000
-    },
-    {
-      "id": "gemini-2.5-pro",
-      "name": "Gemini 2.5 Pro",
-      "url": "https://ai.google.dev/gemini-api/docs/models",
-      "oneLiner": "超长上下文与强推理，适合大规模资料分析。",
-      "tags": [
-        "long-context",
-        "multimodal",
-        "reasoning"
-      ],
-      "taskPatterns": [
-        "large corpus",
-        "multimodal",
-        "reasoning",
-        "research"
-      ],
-      "keywords": [
-        "google",
-        "gemini",
-        "2.5-pro"
-      ],
-      "provider": "Google",
-      "category": "multimodal",
-      "costTier": "medium",
-      "contextWindow": 1000000
-    },
-    {
-      "id": "gemini-2.5-flash",
-      "name": "Gemini 2.5 Flash",
-      "url": "https://ai.google.dev/gemini-api/docs/models",
-      "oneLiner": "低延迟、高吞吐，适合大规模抽取与分类。",
-      "tags": [
-        "cheap",
-        "fast",
-        "multimodal",
-        "long-context"
-      ],
-      "taskPatterns": [
-        "extraction",
-        "classification",
-        "multimodal"
-      ],
-      "keywords": [
-        "google",
-        "gemini",
-        "2.5-flash"
-      ],
-      "provider": "Google",
-      "category": "multimodal",
-      "costTier": "low",
-      "contextWindow": 1000000
-    },
-    {
-      "id": "qwen-max",
-      "name": "Qwen-Max",
-      "url": "https://help.aliyun.com/zh/model-studio/",
-      "oneLiner": "中文场景表现稳健，适合企业级通用任务。",
-      "tags": [
-        "chinese",
-        "general",
-        "api",
-        "alibaba"
-      ],
-      "taskPatterns": [
-        "chinese nlp",
-        "summarization",
-        "chat"
-      ],
-      "keywords": [
-        "qwen",
-        "qwen-max",
-        "tongyi"
-      ],
-      "provider": "Alibaba",
-      "category": "general",
-      "costTier": "medium",
-      "contextWindow": 32768
-    },
-    {
-      "id": "qwen3-235b",
-      "name": "Qwen3 235B",
-      "url": "https://qwenlm.github.io/",
-      "oneLiner": "开源强推理模型，可本地或云上部署。",
-      "tags": [
-        "open-source",
-        "reasoning",
-        "chinese",
-        "coding"
-      ],
-      "taskPatterns": [
-        "coding",
-        "reasoning",
-        "agent",
-        "local deploy"
-      ],
-      "keywords": [
-        "qwen",
-        "qwen3",
-        "235b"
-      ],
-      "provider": "Alibaba",
-      "category": "reasoning",
-      "costTier": "medium",
-      "contextWindow": 131072
-    },
-    {
-      "id": "kimi-k2",
-      "name": "Kimi K2",
-      "url": "https://platform.moonshot.cn/docs",
-      "oneLiner": "长上下文与强推理，适合知识工作流。",
-      "tags": [
-        "long-context",
-        "reasoning",
-        "chinese",
-        "api"
-      ],
-      "taskPatterns": [
-        "long document",
-        "research",
-        "analysis"
-      ],
-      "keywords": [
-        "moonshot",
-        "kimi",
-        "k2"
-      ],
-      "provider": "Moonshot",
-      "category": "reasoning",
-      "costTier": "low",
-      "contextWindow": 256000
-    },
-    {
-      "id": "glm-4.6",
-      "name": "GLM-4.6",
-      "url": "https://open.bigmodel.cn/dev/howuse/model",
-      "oneLiner": "中文能力与工具调用均衡，生态成熟。",
-      "tags": [
-        "chinese",
-        "tool-calling",
-        "general",
-        "api"
-      ],
-      "taskPatterns": [
-        "chinese nlp",
-        "tool calling",
-        "chat"
-      ],
-      "keywords": [
-        "zhipu",
-        "glm",
-        "glm-4.6"
-      ],
-      "provider": "Zhipu",
-      "category": "general",
-      "costTier": "medium",
-      "contextWindow": 200000
-    },
-    {
-      "id": "llama-4-maverick",
-      "name": "Llama 4 Maverick",
-      "url": "https://www.llama.com/",
-      "oneLiner": "开源多模态模型，适合自托管与定制。",
-      "tags": [
-        "open-source",
-        "multimodal",
-        "self-hosted"
-      ],
-      "taskPatterns": [
-        "self-hosted",
-        "multimodal",
-        "customization"
-      ],
-      "keywords": [
-        "meta",
-        "llama",
-        "maverick"
-      ],
-      "provider": "Meta",
-      "category": "general",
-      "costTier": "low",
-      "contextWindow": 1000000
-    },
-    {
       "id": "mistral-large",
       "name": "Mistral Large",
       "url": "https://docs.mistral.ai/",
@@ -425,31 +2274,6 @@
       "contextWindow": 128000
     },
     {
-      "id": "minimax-m2",
-      "name": "MiniMax M2",
-      "url": "https://platform.minimaxi.com/document",
-      "oneLiner": "长上下文与高性价比，适合知识问答。",
-      "tags": [
-        "long-context",
-        "cheap",
-        "chinese",
-        "api"
-      ],
-      "taskPatterns": [
-        "knowledge qa",
-        "summarization",
-        "chinese"
-      ],
-      "keywords": [
-        "minimax",
-        "m2"
-      ],
-      "provider": "MiniMax",
-      "category": "general",
-      "costTier": "low",
-      "contextWindow": 245760
-    },
-    {
       "id": "ernie-4.5",
       "name": "ERNIE 4.5",
       "url": "https://cloud.baidu.com/doc/WENXINWORKSHOP/index.html",
@@ -474,6 +2298,182 @@
       "category": "general",
       "costTier": "medium",
       "contextWindow": 128000
+    },
+    {
+      "id": "openrouter-inference-net-schematron-v2-turbo",
+      "name": "Inference.net: Schematron V2 Turbo",
+      "url": "https://openrouter.ai/models/inference-net/schematron-v2-turbo",
+      "oneLiner": "Schematron V2 Turbo is a 3B-parameter HTML-to-JSON extraction model from Inference.net. It prioritizes throughput for high-volume extraction workloads. Extraction instructions must",
+      "tags": [
+        "openrouter",
+        "inference-net",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "inference-net/schematron-v2-turbo",
+        "inference-net",
+        "Inference.net: Schematron V2 Turbo"
+      ],
+      "provider": "inference-net",
+      "category": "text->text",
+      "costTier": "low",
+      "contextWindow": 128000
+    },
+    {
+      "id": "openrouter-inference-net-schematron-v2-small",
+      "name": "Inference.net: Schematron V2 Small",
+      "url": "https://openrouter.ai/models/inference-net/schematron-v2-small",
+      "oneLiner": "Schematron V2 Small is a 3B-parameter HTML-to-JSON extraction model from Inference.net. It prioritizes extraction quality for complex schemas and long pages. Extraction instruction",
+      "tags": [
+        "openrouter",
+        "inference-net",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "inference-net/schematron-v2-small",
+        "inference-net",
+        "Inference.net: Schematron V2 Small"
+      ],
+      "provider": "inference-net",
+      "category": "text->text",
+      "costTier": "low",
+      "contextWindow": 128000
+    },
+    {
+      "id": "openrouter-perceptron-perceptron-mk1-5",
+      "name": "Perceptron: Perceptron Mk1.5",
+      "url": "https://openrouter.ai/models/perceptron/perceptron-mk1.5",
+      "oneLiner": "Perceptron Mk1.5 is Perceptron's embodied reasoning model for physical agents. It accepts text, image, video, and audio input, and answers with text plus optional structured annota",
+      "tags": [
+        "openrouter",
+        "perceptron",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "perceptron/perceptron-mk1.5",
+        "perceptron",
+        "Perceptron: Perceptron Mk1.5"
+      ],
+      "provider": "perceptron",
+      "category": "text+image+audio+video->text",
+      "costTier": "low",
+      "contextWindow": 36864
+    },
+    {
+      "id": "qwen-max",
+      "name": "Qwen-Max",
+      "url": "https://help.aliyun.com/zh/model-studio/",
+      "oneLiner": "中文场景表现稳健，适合企业级通用任务。",
+      "tags": [
+        "chinese",
+        "general",
+        "api",
+        "alibaba"
+      ],
+      "taskPatterns": [
+        "chinese nlp",
+        "summarization",
+        "chat"
+      ],
+      "keywords": [
+        "qwen",
+        "qwen-max",
+        "tongyi"
+      ],
+      "provider": "Alibaba",
+      "category": "general",
+      "costTier": "medium",
+      "contextWindow": 32768
+    },
+    {
+      "id": "openrouter-tencent-hy-mt2-1-8b",
+      "name": "Tencent: Hy-MT2-1.8B",
+      "url": "https://openrouter.ai/models/tencent/hy-mt2-1.8b",
+      "oneLiner": "Hy-MT2-1.8B is a compact 1.8B-parameter translation model from Tencent. It supports 33 language pairs and five Chinese dialect and minority-language pairs, with workflows for struc",
+      "tags": [
+        "openrouter",
+        "tencent",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "tencent/hy-mt2-1.8b",
+        "tencent",
+        "Tencent: Hy-MT2-1.8B"
+      ],
+      "provider": "tencent",
+      "category": "text->text",
+      "costTier": "low",
+      "contextWindow": 8192
+    },
+    {
+      "id": "openrouter-tencent-hy-mt2-30b-a3b",
+      "name": "Tencent: Hy-MT2-30B-A3B",
+      "url": "https://openrouter.ai/models/tencent/hy-mt2-30b-a3b",
+      "oneLiner": "Hy-MT2-30B-A3B is Tencent's flagship translation model in the Hy-MT2 family. It supports 33 language pairs and five Chinese dialect and minority-language pairs, with workflows for ",
+      "tags": [
+        "openrouter",
+        "tencent",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "tencent/hy-mt2-30b-a3b",
+        "tencent",
+        "Tencent: Hy-MT2-30B-A3B"
+      ],
+      "provider": "tencent",
+      "category": "text->text",
+      "costTier": "low",
+      "contextWindow": 8192
+    },
+    {
+      "id": "openrouter-tencent-hy-mt2-7b",
+      "name": "Tencent: Hy-MT2-7B",
+      "url": "https://openrouter.ai/models/tencent/hy-mt2-7b",
+      "oneLiner": "Hy-MT2-7B is a 7B-parameter translation model from Tencent. It supports 33 language pairs and five Chinese dialect and minority-language pairs, with workflows for structured, delim",
+      "tags": [
+        "openrouter",
+        "tencent",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "tencent/hy-mt2-7b",
+        "tencent",
+        "Tencent: Hy-MT2-7B"
+      ],
+      "provider": "tencent",
+      "category": "text->text",
+      "costTier": "low",
+      "contextWindow": 8192
     }
   ]
 }
