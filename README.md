@@ -9,9 +9,9 @@ The project is currently a pre-release MVP. It intentionally stays lightweight: 
 - Two-stage decision engine: fast tool combination first, optional deep workflow second.
 - Intent-aware recommendations for Fetch, Puppeteer, Filesystem, GitHub, and XLSX capabilities.
 - Per-request compute sources: server DeepSeek, personal API Key (BYOK), local Ollama, or static experience mode.
-- Static intelligence portal for model comparison, MCP discovery, and weekly signal reports.
+- Static intelligence portal for model comparison, MCP discovery, Agent Skills, and weekly signal reports.
 - Weekly editions with next-week outlook, Markdown detail pages, archive navigation, and prompt handoff back to the decision engine.
-- TypeScript ETL pipeline for OpenRouter models, GitHub MCP repositories, RSS news, and AI noise reduction.
+- TypeScript ETL pipeline for OpenRouter models, GitHub MCP and Skill repositories, RSS news, and AI noise reduction.
 - Bilingual Chinese/English interface with responsive desktop and mobile layouts.
 
 ## Architecture
@@ -21,6 +21,7 @@ Next.js App Router
 ├── /                          Decision engine
 ├── /portal/models             Model intelligence
 ├── /portal/mcps               MCP directory
+├── /portal/skills             Agent Skill directory
 ├── /portal/weekly             Weekly report and archive
 ├── /portal/weekly/[id]        Statically generated weekly detail
 └── /api/recommend             Provider proxy and recommendation API
@@ -117,7 +118,7 @@ scripts/etl/
 
 External steps require environment variables:
 
-- `OPENROUTER_API_KEY` for model and pricing refresh
+- `OPENROUTER_API_KEY` is optional for higher-rate OpenRouter model refresh
 - `GITHUB_TOKEN` for high-star MCP repository discovery
 - `DEEPSEEK_API_KEY` for MCP summaries and AI weekly noise reduction
 - `RSS_FEEDS` as an optional comma-separated RSS source list

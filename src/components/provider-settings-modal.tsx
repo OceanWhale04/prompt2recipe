@@ -241,7 +241,7 @@ export function ProviderSettingsModal({ onClose }: { onClose: () => void }) {
                 <input
                   value={draft.ollamaModel}
                   onChange={(event) => updateDraft("ollamaModel", event.target.value)}
-                  placeholder="deepseek-r1:7b"
+                  placeholder="qwen2.5:7b"
                   className={inputClass}
                 />
               </label>

@@ -5,7 +5,7 @@ test("persists Ollama settings and updates the compute source label", async ({ p
   await page.evaluate(() => window.localStorage.clear());
   await page.reload();
 
-  await expect(page.getByText(/算力来源: 体验模式/)).toBeVisible();
+  await expect(page.getByText("算力来源: 体验模式（静态匹配）", { exact: true })).toBeVisible();
   await page.locator('button[aria-label="打开算力来源设置"]:visible').click();
 
   await page.getByRole("dialog").getByText("本地 Ollama", { exact: true }).click();

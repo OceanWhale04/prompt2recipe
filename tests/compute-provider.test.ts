@@ -14,6 +14,14 @@ describe("compute provider settings", () => {
     expect(parseStoredProviderSettings("{invalid")).toEqual(DEFAULT_PROVIDER_SETTINGS);
   });
 
+  it("defaults to qwen2.5:7b and migrates the legacy Ollama default", () => {
+    expect(DEFAULT_PROVIDER_SETTINGS.ollamaModel).toBe("qwen2.5:7b");
+    expect(
+      parseStoredProviderSettings(
+        JSON.stringify({ ...DEFAULT_PROVIDER_SETTINGS, ollamaModel: "deepseek-r1:7b" }),
+      ).ollamaModel,
+    ).toBe("qwen2.5:7b");
+  });
   it("validates BYOK and Ollama requirements", () => {
     const byok: ProviderSettings = {
       ...DEFAULT_PROVIDER_SETTINGS,
