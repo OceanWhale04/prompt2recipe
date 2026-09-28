@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Blocks, Bot, CalendarDays, Network, Settings } from "lucide-react";
+import { Blocks, Bot, CalendarDays, Network, Settings, Sparkles } from "lucide-react";
 import { useState } from "react";
 
 import { ProviderSettingsModal } from "@/components/provider-settings-modal";
@@ -13,6 +13,7 @@ const items = [
   { href: "/", label: "架构决策", shortLabel: "决策", sublabel: "Engine", icon: Blocks },
   { href: "/portal/models", label: "模型对比", shortLabel: "模型", sublabel: "Models", icon: Bot },
   { href: "/portal/mcps", label: "MCP 广场", shortLabel: "MCP", sublabel: "MCPs", icon: Network },
+  { href: "/portal/skills", label: "技能广场", shortLabel: "技能", sublabel: "Skills", icon: Sparkles },
   { href: "/portal/weekly", label: "每周降噪", shortLabel: "周报", sublabel: "Weekly", icon: CalendarDays },
 ];
 
@@ -43,7 +44,7 @@ export function Navbar() {
   return (
     <>
       <header className="sticky top-0 z-40 border-b border-zinc-200 bg-white/95 backdrop-blur">
-        <div className="mx-auto flex w-full max-w-6xl flex-col gap-2 px-4 py-2 sm:h-14 sm:flex-row sm:items-center sm:gap-4 sm:px-6 sm:py-0 lg:px-8">
+        <div className="mx-auto flex w-full max-w-6xl flex-col gap-2 px-4 py-2 sm:h-14 sm:flex-row sm:items-center sm:gap-3 sm:px-6 sm:py-0 lg:px-8">
           <div className="flex w-full items-center justify-between gap-3 sm:contents">
             <Link href="/" className="flex w-fit shrink-0 items-center gap-2">
               <span className="flex h-7 w-7 items-center justify-center rounded-md bg-zinc-900 text-white">
@@ -56,7 +57,7 @@ export function Navbar() {
 
           <nav
             aria-label="Primary navigation"
-            className="grid w-full grid-cols-4 gap-1 sm:flex sm:w-auto sm:flex-1 sm:items-center"
+            className="grid w-full grid-cols-5 gap-1 sm:flex sm:w-auto sm:min-w-0 sm:flex-1 sm:items-center"
           >
             {items.map((item) => {
               const active =
@@ -69,16 +70,16 @@ export function Navbar() {
                   href={item.href}
                   aria-label={`${item.label} ${item.sublabel}`}
                   className={cn(
-                    "flex min-w-0 items-center justify-center gap-1 rounded-md px-1 py-2 text-[11px] font-medium transition-colors sm:shrink-0 sm:gap-2 sm:px-3 sm:text-xs",
+                    "flex min-w-0 items-center justify-center gap-1 rounded-md px-1 py-2 text-[11px] font-medium transition-colors sm:shrink-0 sm:gap-1.5 sm:px-2 sm:text-xs lg:px-3",
                     active
                       ? "bg-zinc-900 text-white"
                       : "text-zinc-500 hover:bg-zinc-100 hover:text-zinc-900",
                   )}
                 >
-                  <Icon className="h-3.5 w-3.5 shrink-0" />
+                  <Icon className="hidden h-3.5 w-3.5 shrink-0 min-[380px]:block" />
                   <span className="truncate sm:hidden">{item.shortLabel}</span>
                   <span className="hidden sm:inline">{item.label}</span>
-                  <span className={cn("hidden lg:inline", active ? "text-zinc-300" : "text-zinc-400")}>
+                  <span className="hidden xl:inline">
                     {item.sublabel}
                   </span>
                 </Link>

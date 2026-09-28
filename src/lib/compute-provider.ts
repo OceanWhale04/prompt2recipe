@@ -19,8 +19,10 @@ export const DEFAULT_PROVIDER_SETTINGS: ProviderSettings = {
   byokApiKey: "",
   byokModel: "deepseek-chat",
   ollamaBaseUrl: "http://localhost:11434",
-  ollamaModel: "deepseek-r1:7b",
+  ollamaModel: "qwen2.5:7b",
 };
+
+const LEGACY_DEFAULT_OLLAMA_MODEL = "deepseek-r1:7b";
 
 function cleanUrl(value: string) {
   return value.trim().replace(/\/+$/, "");
@@ -45,13 +47,19 @@ export function parseStoredProviderSettings(raw: string | null): ProviderSetting
         ? parsed.provider
         : DEFAULT_PROVIDER_SETTINGS.provider;
 
+    const storedOllamaModel =
+      parsed.ollamaModel?.trim() || DEFAULT_PROVIDER_SETTINGS.ollamaModel;
+
     return {
       provider,
       byokBaseUrl: parsed.byokBaseUrl?.trim() || DEFAULT_PROVIDER_SETTINGS.byokBaseUrl,
       byokApiKey: parsed.byokApiKey?.trim() || "",
       byokModel: parsed.byokModel?.trim() || DEFAULT_PROVIDER_SETTINGS.byokModel,
       ollamaBaseUrl: parsed.ollamaBaseUrl?.trim() || DEFAULT_PROVIDER_SETTINGS.ollamaBaseUrl,
-      ollamaModel: parsed.ollamaModel?.trim() || DEFAULT_PROVIDER_SETTINGS.ollamaModel,
+      ollamaModel:
+        storedOllamaModel === LEGACY_DEFAULT_OLLAMA_MODEL
+          ? DEFAULT_PROVIDER_SETTINGS.ollamaModel
+          : storedOllamaModel,
     };
   } catch {
     return DEFAULT_PROVIDER_SETTINGS;
