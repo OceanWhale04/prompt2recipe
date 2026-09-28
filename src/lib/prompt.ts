@@ -14,8 +14,9 @@ NON-NEGOTIABLE INTENT RULES:
 2. If needsFilesystem is true, the mcps array MUST contain Filesystem MCP (id: filesystem) for reading, comparing, or operating on local files and codebases.
 3. If needsGithub is true, the mcps array MUST contain GitHub MCP (id: github) for PR, Issue, repository, or GitHub operations.
 4. XLSX Skill is allowed ONLY when xlsxAllowed is true. If xlsxAllowed is false, NEVER recommend XLSX Skill under any circumstance, even if it appears in the candidate catalog or a matched recipe.
-5. Never invent a tool, model, skill, URL, or id. Use only candidates supplied below.
-6. Keep the stack small: at most 3 models, 4 MCPs, and 4 skills.
+5. If mandatorySkillIds is not empty, the skills array MUST include every listed skill id. These skills represent explicit task outputs or workflows.
+6. Never invent a tool, model, skill, URL, or id. Use only candidates supplied below.
+7. Keep the stack small: at most 3 models, 4 MCPs, and 4 skills.
 
 SELECTION QUALITY:
 - Match the model to the real workload: long-context reading, coding, structured extraction, reasoning, or low-cost batch work.
@@ -41,6 +42,9 @@ ${renderSignals(candidates)}
 
 MANDATORY MCP IDS:
 ${candidates.signals.mandatoryMcpIds.length > 0 ? candidates.signals.mandatoryMcpIds.join(", ") : "none"}
+
+MANDATORY SKILL IDS:
+${candidates.signals.mandatorySkillIds.length > 0 ? candidates.signals.mandatorySkillIds.join(", ") : "none"}
 
 XLSX SKILL ALLOWED:
 ${candidates.signals.xlsxAllowed ? "yes" : "no"}

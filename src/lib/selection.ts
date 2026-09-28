@@ -45,7 +45,7 @@ export async function selectCandidates(
   const hits = await retriever.search(task, 80);
   const modelIds: string[] = [];
   const mcpIds: string[] = [...signals.mandatoryMcpIds];
-  const skillIds: string[] = [];
+  const skillIds: string[] = [...signals.mandatorySkillIds];
 
   for (const hit of hits) {
     if (hit.kind === "model" && modelIds.length < 5) modelIds.push(hit.id);

@@ -57,9 +57,30 @@ function enforceDecisionSignals(
     return reasoning ? { ...entry, reasoning } : entry;
   });
 
-  const skills = candidates.signals.xlsxAllowed
+  const filteredSkills = candidates.signals.xlsxAllowed
     ? combo.skills
     : combo.skills.filter((entry) => entry.id !== "xlsx");
+  const existingSkillIds = new Set(filteredSkills.map((entry) => entry.id));
+  const mandatorySkills = candidates.signals.mandatorySkillIds
+    .filter((id) => !existingSkillIds.has(id))
+    .map((id) => candidates.skills.find((entry) => entry.id === id))
+    .filter((entry): entry is NonNullable<typeof entry> => Boolean(entry))
+    .map((entry) =>
+      item(
+        "skill",
+        entry.id,
+        entry.name,
+        entry.url,
+        entry.oneLiner,
+        "任务所需专业技能",
+        candidates.signals.rationale.find((reason) => reason.includes(entry.name)) ??
+          "该 Skill 与任务中的明确输出类型或操作场景直接相关。",
+      ),
+    );
+  const skills = [...mandatorySkills, ...filteredSkills].slice(
+    0,
+    Math.max(4, candidates.signals.mandatorySkillIds.length),
+  );
 
   return {
     ...combo,

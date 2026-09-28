@@ -171,6 +171,25 @@ function hydrateComboSelection(
     selection.skills,
     new Set(candidates.skills.map((entry) => entry.id)),
   );
+  const selectedSkillIds = new Set(skills.map((item) => item.id));
+
+  for (const id of candidates.signals.mandatorySkillIds) {
+    if (selectedSkillIds.has(id)) continue;
+    const entry = candidates.skills.find((item) => item.id === id);
+    if (!entry) continue;
+
+    skills.push({
+      kind: "skill",
+      id: entry.id,
+      name: entry.name,
+      url: entry.url,
+      oneLiner: entry.oneLiner,
+      role: "任务所需专业技能",
+      reasoning:
+        candidates.signals.rationale.find((reason) => reason.includes(entry.name)) ??
+        "该 Skill 与任务中的明确输出类型或操作场景直接相关。",
+    });
+  }
 
   if (models.length === 0) {
     throw new Error("Model returned no valid model selections.");
