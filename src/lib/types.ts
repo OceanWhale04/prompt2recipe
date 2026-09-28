@@ -41,6 +41,8 @@ export interface SkillEntry extends BaseEntry {
   framework?: string;
   skillType?: string;
   install?: string;
+  stars?: number;
+  sourceUpdatedAt?: string;
 }
 
 export interface RecipeComponent {

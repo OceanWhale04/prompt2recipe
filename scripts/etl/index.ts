@@ -1,12 +1,14 @@
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 
-import type { Catalog, McpEntry, ModelEntry } from "../../src/lib/types";
+import type { Catalog, McpEntry, ModelEntry, SkillEntry } from "../../src/lib/types";
 import type { WeeklyDataStore } from "../../src/types/weekly";
 import { fetchGitHubMcpRepositories } from "./fetchers/github-mcps";
+import { fetchGitHubSkillRepositories } from "./fetchers/github-skills";
 import { fetchOpenRouterModels } from "./fetchers/openrouter";
 import { fetchRssNews } from "./fetchers/rss-news";
 import { mergeModelEntries } from "./processors/clean-models";
+import { mergeSkillEntries } from "./processors/clean-skills";
 import { buildWeeklyEditionWithAi } from "./processors/noise-reducer";
 import { mergeMcpEntries, summarizeMcpsWithDeepSeek } from "./processors/summarize-mcps";
 
@@ -15,10 +17,12 @@ const dataDir = path.resolve(process.cwd(), "data");
 export interface EtlResult {
   models: ModelEntry[];
   mcps: McpEntry[];
+  skills: SkillEntry[];
   weekly: WeeklyDataStore;
   refreshed: {
     models: boolean;
     mcps: boolean;
+    skills: boolean;
     weekly: boolean;
   };
 }
@@ -43,17 +47,17 @@ async function settle<T>(label: string, task: Promise<T>): Promise<T | null> {
 }
 
 export async function runEtlPipeline(): Promise<EtlResult> {
-  const [existingModels, existingMcps, existingWeekly] = await Promise.all([
+  const [existingModels, existingMcps, existingSkills, existingWeekly] = await Promise.all([
     readCatalog<ModelEntry>("models.json"),
     readCatalog<McpEntry>("mcps.json"),
+    readCatalog<SkillEntry>("skills.json"),
     readWeekly(),
   ]);
-
-  const shouldBuildWeekly = Boolean(process.env.DEEPSEEK_API_KEY?.trim());
-  const [remoteModels, remoteMcps, news] = await Promise.all([
+  const [remoteModels, remoteMcps, remoteSkills, news] = await Promise.all([
     settle("OpenRouter models", fetchOpenRouterModels()),
     settle("GitHub MCPs", fetchGitHubMcpRepositories()),
-    shouldBuildWeekly ? settle("RSS news", fetchRssNews()) : Promise.resolve(null),
+    settle("GitHub Agent Skills", fetchGitHubSkillRepositories()),
+    settle("RSS news", fetchRssNews()),
   ]);
 
   const models =
@@ -70,6 +74,11 @@ export async function runEtlPipeline(): Promise<EtlResult> {
     mcps = await settle("DeepSeek MCP summaries", summarizeMcpsWithDeepSeek(mcps)) ?? mcps;
   }
 
+  const skills =
+    remoteSkills && remoteSkills.length > 0
+      ? mergeSkillEntries(existingSkills, remoteSkills)
+      : existingSkills;
+
   const weekly =
     news && news.length > 0
       ? (await settle(
@@ -81,10 +90,12 @@ export async function runEtlPipeline(): Promise<EtlResult> {
   return {
     models,
     mcps,
+    skills,
     weekly,
     refreshed: {
       models: Boolean(remoteModels?.length),
       mcps: Boolean(remoteMcps?.length),
+      skills: Boolean(remoteSkills?.length),
       weekly: weekly !== existingWeekly,
     },
   };

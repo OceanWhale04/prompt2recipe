@@ -79,6 +79,14 @@ async function main() {
     });
   }
 
+  if (etl.refreshed.skills) {
+    await writeJson("skills.json", {
+      version: 1,
+      updatedAt: now,
+      items: etl.skills,
+    });
+  }
+
   if (etl.refreshed.weekly) {
     await writeJson("weekly.json", weeklyDataStoreSchema.parse(etl.weekly));
   }
@@ -117,7 +125,8 @@ async function main() {
 
   console.log(
     `Knowledge base validated and index rebuilt at ${now}. ` +
-      `ETL refreshed: models=${etl.refreshed.models}, mcps=${etl.refreshed.mcps}, weekly=${etl.refreshed.weekly}`,
+      `ETL refreshed: models=${etl.refreshed.models}, mcps=${etl.refreshed.mcps}, ` +
+      `skills=${etl.refreshed.skills}, weekly=${etl.refreshed.weekly}`,
   );
 }
 
