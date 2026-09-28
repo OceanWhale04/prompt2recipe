@@ -1,7 +1,1317 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-28T15:20:31.669Z",
+  "updatedAt": "2026-09-28T15:51:54.858Z",
   "items": [
+    {
+      "id": "github-skill-anthropics-skills",
+      "name": "skills",
+      "url": "https://github.com/anthropics/skills",
+      "oneLiner": "Public repository for Agent Skills",
+      "tags": [
+        "agent-skills"
+      ],
+      "taskPatterns": [
+        "agent skills"
+      ],
+      "keywords": [
+        "anthropics/skills",
+        "agent-skills"
+      ],
+      "framework": "GitHub",
+      "skillType": "Agent Skill",
+      "install": "https://github.com/anthropics/skills",
+      "stars": 178773,
+      "sourceUpdatedAt": "2026-09-28T15:33:49Z"
+    },
+    {
+      "id": "github-skill-dietrichgebert-ponytail",
+      "name": "ponytail",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "oneLiner": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+      "tags": [
+        "agent-skills",
+        "ai-agents",
+        "claude",
+        "claude-code",
+        "claude-code-plugin",
+        "cursor-rules",
+        "developer-tools",
+        "llm"
+      ],
+      "taskPatterns": [
+        "agent skills",
+        "ai agents",
+        "claude",
+        "claude code",
+        "claude code plugin",
+        "cursor rules"
+      ],
+      "keywords": [
+        "DietrichGebert/ponytail",
+        "agent-skills",
+        "ai-agents",
+        "claude",
+        "claude-code",
+        "claude-code-plugin",
+        "cursor-rules",
+        "developer-tools",
+        "llm",
+        "prompt-engineering",
+        "yagni"
+      ],
+      "framework": "GitHub",
+      "skillType": "Agent Skill",
+      "install": "https://github.com/DietrichGebert/ponytail",
+      "stars": 147341,
+      "sourceUpdatedAt": "2026-09-28T15:51:09Z"
+    },
+    {
+      "id": "github-skill-addyosmani-agent-skills",
+      "name": "agent-skills",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "oneLiner": "Production-grade engineering skills for AI coding agents.",
+      "tags": [
+        "agent-skills",
+        "antigravity",
+        "claude-code",
+        "codex",
+        "cursor",
+        "skills"
+      ],
+      "taskPatterns": [
+        "agent skills",
+        "antigravity",
+        "claude code",
+        "codex",
+        "cursor",
+        "skills"
+      ],
+      "keywords": [
+        "addyosmani/agent-skills",
+        "agent-skills",
+        "antigravity",
+        "claude-code",
+        "codex",
+        "cursor",
+        "skills"
+      ],
+      "framework": "GitHub",
+      "skillType": "Agent Skill",
+      "install": "https://github.com/addyosmani/agent-skills",
+      "stars": 99651,
+      "sourceUpdatedAt": "2026-09-28T15:49:37Z"
+    },
+    {
+      "id": "github-skill-nexu-io-open-design",
+      "name": "open-design",
+      "url": "https://github.com/nexu-io/open-design",
+      "oneLiner": "🎨 Best DeepSeek Harness Design Plugin. The open-source Claude Design alternative. 🖥️ Local-first desktop app. 🖼️ Your coding agent becomes the design engine: prototypes, landing",
+      "tags": [
+        "agent-skills",
+        "ai-design",
+        "byok",
+        "claude-code-for-design",
+        "claude-design",
+        "codex-design",
+        "coding-agents",
+        "cursor-design"
+      ],
+      "taskPatterns": [
+        "agent skills",
+        "ai design",
+        "byok",
+        "claude code for design",
+        "claude design",
+        "codex design"
+      ],
+      "keywords": [
+        "nexu-io/open-design",
+        "agent-skills",
+        "ai-design",
+        "byok",
+        "claude-code-for-design",
+        "claude-design",
+        "codex-design",
+        "coding-agents",
+        "cursor-design",
+        "deepseek",
+        "deepseek-harness",
+        "design-systems",
+        "desktop-app",
+        "dsh",
+        "dsh-plugin",
+        "figma-alternative",
+        "hermes-agent",
+        "local-first",
+        "prototyping",
+        "ui-generator",
+        "vibe-coding"
+      ],
+      "framework": "GitHub",
+      "skillType": "Agent Skill",
+      "install": "https://github.com/nexu-io/open-design",
+      "stars": 98471,
+      "sourceUpdatedAt": "2026-09-28T15:51:35Z"
+    },
+    {
+      "id": "github-skill-composiohq-awesome-claude-skills",
+      "name": "awesome-claude-skills",
+      "url": "https://github.com/ComposioHQ/awesome-claude-skills",
+      "oneLiner": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
+      "tags": [
+        "agent-skills",
+        "ai-agents",
+        "antigravity",
+        "automation",
+        "claude",
+        "claude-code",
+        "codex",
+        "composio"
+      ],
+      "taskPatterns": [
+        "agent skills",
+        "ai agents",
+        "antigravity",
+        "automation",
+        "claude",
+        "claude code"
+      ],
+      "keywords": [
+        "ComposioHQ/awesome-claude-skills",
+        "agent-skills",
+        "ai-agents",
+        "antigravity",
+        "automation",
+        "claude",
+        "claude-code",
+        "codex",
+        "composio",
+        "cursor",
+        "developer-tools",
+        "gemini-cli",
+        "mcp",
+        "openai-codex",
+        "rube",
+        "saas",
+        "skill",
+        "workflow-automation"
+      ],
+      "framework": "GitHub",
+      "skillType": "Agent Skill",
+      "install": "https://github.com/ComposioHQ/awesome-claude-skills",
+      "stars": 75779,
+      "sourceUpdatedAt": "2026-09-28T14:42:38Z"
+    },
+    {
+      "id": "github-skill-tt-a1i-archify",
+      "name": "archify",
+      "url": "https://github.com/tt-a1i/archify",
+      "oneLiner": "Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams—self-contained HTML with motion and crisp export.",
+      "tags": [
+        "agent-skills",
+        "architecture-as-code",
+        "architecture-diagram",
+        "claude-skill",
+        "code-visualization",
+        "codex",
+        "coding-agents",
+        "data-flow-diagram"
+      ],
+      "taskPatterns": [
+        "agent skills",
+        "architecture as code",
+        "architecture diagram",
+        "claude skill",
+        "code visualization",
+        "codex"
+      ],
+      "keywords": [
+        "tt-a1i/archify",
+        "agent-skills",
+        "architecture-as-code",
+        "architecture-diagram",
+        "claude-skill",
+        "code-visualization",
+        "codex",
+        "coding-agents",
+        "data-flow-diagram",
+        "deepseek-harness",
+        "developer-tools",
+        "diagram-as-code",
+        "diagrams",
+        "diagrams-as-code",
+        "dsh-plugin",
+        "mermaid-alternative",
+        "opencode",
+        "sequence-diagram",
+        "software-architecture",
+        "system-design",
+        "text-to-diagram"
+      ],
+      "framework": "GitHub",
+      "skillType": "Agent Skill",
+      "install": "https://github.com/tt-a1i/archify",
+      "stars": 73351,
+      "sourceUpdatedAt": "2026-09-28T15:51:48Z"
+    },
+    {
+      "id": "github-skill-hesreallyhim-awesome-claude-code",
+      "name": "awesome-claude-code",
+      "url": "https://github.com/hesreallyhim/awesome-claude-code",
+      "oneLiner": "A hand-picked collection of the finest of resources for the most awesome of agents, Claude Code, the undisputed champion of coding companions, from the unstoppable team at Anthropi",
+      "tags": [
+        "agent-skills",
+        "agentic-code",
+        "agentic-coding",
+        "ai-workflow-optimization",
+        "ai-workflows",
+        "anthropic",
+        "anthropic-claude",
+        "awesome"
+      ],
+      "taskPatterns": [
+        "agent skills",
+        "agentic code",
+        "agentic coding",
+        "ai workflow optimization",
+        "ai workflows",
+        "anthropic"
+      ],
+      "keywords": [
+        "hesreallyhim/awesome-claude-code",
+        "agent-skills",
+        "agentic-code",
+        "agentic-coding",
+        "ai-workflow-optimization",
+        "ai-workflows",
+        "anthropic",
+        "anthropic-claude",
+        "awesome",
+        "awesome-claude-code",
+        "awesome-list",
+        "awesome-lists",
+        "awesome-resources",
+        "claude",
+        "claude-code",
+        "coding-agent",
+        "coding-agents",
+        "coding-assistant",
+        "coding-assistants",
+        "llm"
+      ],
+      "framework": "GitHub",
+      "skillType": "Agent Skill",
+      "install": "https://github.com/hesreallyhim/awesome-claude-code",
+      "stars": 54747,
+      "sourceUpdatedAt": "2026-09-28T15:37:58Z"
+    },
+    {
+      "id": "github-skill-voltagent-awesome-openclaw-skills",
+      "name": "awesome-openclaw-skills",
+      "url": "https://github.com/VoltAgent/awesome-openclaw-skills",
+      "oneLiner": "The awesome collection of OpenClaw skills. 5,400+ skills filtered and categorized from the official OpenClaw Skills Registry.🦞",
+      "tags": [
+        "agent-skills",
+        "awesome",
+        "awesome-list",
+        "awesome-lists",
+        "clawd",
+        "clawdbot",
+        "clawdbot-skill",
+        "clawdhub"
+      ],
+      "taskPatterns": [
+        "agent skills",
+        "awesome",
+        "awesome list",
+        "awesome lists",
+        "clawd",
+        "clawdbot"
+      ],
+      "keywords": [
+        "VoltAgent/awesome-openclaw-skills",
+        "agent-skills",
+        "awesome",
+        "awesome-list",
+        "awesome-lists",
+        "clawd",
+        "clawdbot",
+        "clawdbot-skill",
+        "clawdhub",
+        "moltbot",
+        "moltbot-skills",
+        "openclaw",
+        "openclaw-skills"
+      ],
+      "framework": "GitHub",
+      "skillType": "Agent Skill",
+      "install": "https://github.com/VoltAgent/awesome-openclaw-skills",
+      "stars": 52848,
+      "sourceUpdatedAt": "2026-09-28T15:17:11Z"
+    },
+    {
+      "id": "github-skill-blader-humanizer",
+      "name": "humanizer",
+      "url": "https://github.com/blader/humanizer",
+      "oneLiner": "Agent skill that removes signs of AI-generated writing from text",
+      "tags": [
+        "agent-skills",
+        "ai-humanizer",
+        "ai-writing",
+        "chatgpt",
+        "claude",
+        "claude-code",
+        "codex",
+        "cursor"
+      ],
+      "taskPatterns": [
+        "agent skills",
+        "ai humanizer",
+        "ai writing",
+        "chatgpt",
+        "claude",
+        "claude code"
+      ],
+      "keywords": [
+        "blader/humanizer",
+        "agent-skills",
+        "ai-humanizer",
+        "ai-writing",
+        "chatgpt",
+        "claude",
+        "claude-code",
+        "codex",
+        "cursor",
+        "humanize-ai-text",
+        "humanizer",
+        "llm",
+        "prompt-engineering",
+        "writing-tools"
+      ],
+      "framework": "GitHub",
+      "skillType": "Agent Skill",
+      "install": "https://github.com/blader/humanizer",
+      "stars": 52570,
+      "sourceUpdatedAt": "2026-09-28T15:50:16Z"
+    },
+    {
+      "id": "github-skill-cherryhq-cherry-studio",
+      "name": "cherry-studio",
+      "url": "https://github.com/CherryHQ/cherry-studio",
+      "oneLiner": "AI productivity studio with smart chat, autonomous agents, and 300+ assistants. Unified access to frontier LLMs",
+      "tags": [
+        "agent-skills",
+        "ai-agent",
+        "claude-code",
+        "codex",
+        "deepseek",
+        "hermes-agent",
+        "open-code-review",
+        "skills"
+      ],
+      "taskPatterns": [
+        "agent skills",
+        "ai agent",
+        "claude code",
+        "codex",
+        "deepseek",
+        "hermes agent"
+      ],
+      "keywords": [
+        "CherryHQ/cherry-studio",
+        "agent-skills",
+        "ai-agent",
+        "claude-code",
+        "codex",
+        "deepseek",
+        "hermes-agent",
+        "open-code-review",
+        "skills",
+        "vibe-coding"
+      ],
+      "framework": "GitHub",
+      "skillType": "Agent Skill",
+      "install": "https://github.com/CherryHQ/cherry-studio",
+      "stars": 52211,
+      "sourceUpdatedAt": "2026-09-28T15:37:12Z"
+    },
+    {
+      "id": "github-skill-sickn33-agentic-awesome-skills",
+      "name": "agentic-awesome-skills",
+      "url": "https://github.com/sickn33/agentic-awesome-skills",
+      "oneLiner": "AAS Core is the local, agent-first control plane for complete catalog discovery, agent-owned selection, stack validation, and planning, backed by 2,400+ agentic skills. Includes CL",
+      "tags": [
+        "agent-skills",
+        "agentic-skills",
+        "ai-agent-skills",
+        "ai-agents",
+        "ai-coding",
+        "ai-workflows",
+        "antigravity",
+        "antigravity-skills"
+      ],
+      "taskPatterns": [
+        "agent skills",
+        "agentic skills",
+        "ai agent skills",
+        "ai agents",
+        "ai coding",
+        "ai workflows"
+      ],
+      "keywords": [
+        "sickn33/agentic-awesome-skills",
+        "agent-skills",
+        "agentic-skills",
+        "ai-agent-skills",
+        "ai-agents",
+        "ai-coding",
+        "ai-workflows",
+        "antigravity",
+        "antigravity-skills",
+        "claude-code",
+        "claude-code-skills",
+        "codex-cli",
+        "codex-skills",
+        "cursor",
+        "cursor-skills",
+        "developer-tools",
+        "gemini-cli",
+        "gemini-skills",
+        "kiro",
+        "mcp",
+        "skill-library"
+      ],
+      "framework": "GitHub",
+      "skillType": "Agent Skill",
+      "install": "https://github.com/sickn33/agentic-awesome-skills",
+      "stars": 47023,
+      "sourceUpdatedAt": "2026-09-28T15:49:32Z"
+    },
+    {
+      "id": "github-skill-k-dense-ai-scientific-agent-skills",
+      "name": "scientific-agent-skills",
+      "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+      "oneLiner": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 190,000+ scientists worldwide. 165 ready-to-use validated skills plus 100+ scientific datab",
+      "tags": [
+        "agent-skills",
+        "ai-scientist",
+        "bioinformatics",
+        "chemoinformatics",
+        "claude",
+        "claude-skills",
+        "claudecode",
+        "clinical-research"
+      ],
+      "taskPatterns": [
+        "agent skills",
+        "ai scientist",
+        "bioinformatics",
+        "chemoinformatics",
+        "claude",
+        "claude skills"
+      ],
+      "keywords": [
+        "K-Dense-AI/scientific-agent-skills",
+        "agent-skills",
+        "ai-scientist",
+        "bioinformatics",
+        "chemoinformatics",
+        "claude",
+        "claude-skills",
+        "claudecode",
+        "clinical-research",
+        "computational-biology",
+        "data-analysis",
+        "drug-discovery",
+        "genomics",
+        "materials-science",
+        "metabolomics",
+        "proteomics",
+        "scientific-computing",
+        "scientific-visualization"
+      ],
+      "framework": "GitHub",
+      "skillType": "Claude Skill",
+      "install": "https://github.com/K-Dense-AI/scientific-agent-skills",
+      "stars": 46963,
+      "sourceUpdatedAt": "2026-09-28T15:48:45Z"
+    },
+    {
+      "id": "github-skill-reactive-resume-reactive-resume",
+      "name": "reactive-resume",
+      "url": "https://github.com/reactive-resume/reactive-resume",
+      "oneLiner": "A one-of-a-kind resume builder that keeps your privacy in mind. Completely secure, customizable, portable, open-source and free forever. Try it out today!",
+      "tags": [
+        "agent-skills",
+        "ai",
+        "dsh-plugin",
+        "hacktoberfest",
+        "javascript",
+        "mcp-server",
+        "react",
+        "resume-builder"
+      ],
+      "taskPatterns": [
+        "agent skills",
+        "ai",
+        "dsh plugin",
+        "hacktoberfest",
+        "javascript",
+        "mcp server"
+      ],
+      "keywords": [
+        "reactive-resume/reactive-resume",
+        "agent-skills",
+        "ai",
+        "dsh-plugin",
+        "hacktoberfest",
+        "javascript",
+        "mcp-server",
+        "react",
+        "resume-builder",
+        "self-hosted",
+        "typescript"
+      ],
+      "framework": "GitHub",
+      "skillType": "Agent Skill",
+      "install": "https://github.com/reactive-resume/reactive-resume",
+      "stars": 43513,
+      "sourceUpdatedAt": "2026-09-28T15:36:22Z"
+    },
+    {
+      "id": "github-skill-cathrynlavery-diagram-design",
+      "name": "diagram-design",
+      "url": "https://github.com/cathrynlavery/diagram-design",
+      "oneLiner": "Editorial diagram design for Claude Code, Codex, and Pi. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+      "tags": [
+        "agent-skills",
+        "claude-code",
+        "codex",
+        "data-visualization",
+        "diagrams",
+        "drawio",
+        "mermaid",
+        "svg"
+      ],
+      "taskPatterns": [
+        "agent skills",
+        "claude code",
+        "codex",
+        "data visualization",
+        "diagrams",
+        "drawio"
+      ],
+      "keywords": [
+        "cathrynlavery/diagram-design",
+        "agent-skills",
+        "claude-code",
+        "codex",
+        "data-visualization",
+        "diagrams",
+        "drawio",
+        "mermaid",
+        "svg"
+      ],
+      "framework": "GitHub",
+      "skillType": "Agent Skill",
+      "install": "https://github.com/cathrynlavery/diagram-design",
+      "stars": 42648,
+      "sourceUpdatedAt": "2026-09-28T15:36:52Z"
+    },
+    {
+      "id": "github-skill-alibaba-open-code-review",
+      "name": "open-code-review",
+      "url": "https://github.com/alibaba/open-code-review",
+      "oneLiner": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-la",
+      "tags": [
+        "agent",
+        "agent-skills",
+        "code-review",
+        "code-review-assistant",
+        "harness",
+        "repository-level-context"
+      ],
+      "taskPatterns": [
+        "agent",
+        "agent skills",
+        "code review",
+        "code review assistant",
+        "harness",
+        "repository level context"
+      ],
+      "keywords": [
+        "alibaba/open-code-review",
+        "agent",
+        "agent-skills",
+        "code-review",
+        "code-review-assistant",
+        "harness",
+        "repository-level-context"
+      ],
+      "framework": "GitHub",
+      "skillType": "Agent Skill",
+      "install": "https://github.com/alibaba/open-code-review",
+      "stars": 42204,
+      "sourceUpdatedAt": "2026-09-28T15:50:30Z"
+    },
+    {
+      "id": "github-skill-wshobson-agents",
+      "name": "agents",
+      "url": "https://github.com/wshobson/agents",
+      "oneLiner": "Multi-harness agentic plugin marketplace for Claude Code, Codex, Cursor, OpenCode, GitHub Copilot, Google Antigravity, and Pi",
+      "tags": [
+        "agent-skills",
+        "agentic-ai",
+        "ai-agents",
+        "anthropic",
+        "antigravity",
+        "claude",
+        "claude-code",
+        "claude-code-marketplace"
+      ],
+      "taskPatterns": [
+        "agent skills",
+        "agentic ai",
+        "ai agents",
+        "anthropic",
+        "antigravity",
+        "claude"
+      ],
+      "keywords": [
+        "wshobson/agents",
+        "agent-skills",
+        "agentic-ai",
+        "ai-agents",
+        "anthropic",
+        "antigravity",
+        "claude",
+        "claude-code",
+        "claude-code-marketplace",
+        "claude-code-plugin",
+        "claude-skills",
+        "codex",
+        "coding-agents",
+        "cursor",
+        "cursor-rules",
+        "github-copilot",
+        "mcp",
+        "multi-agent",
+        "opencode",
+        "pi-coding-agent",
+        "subagents"
+      ],
+      "framework": "GitHub",
+      "skillType": "Claude Skill",
+      "install": "https://github.com/wshobson/agents",
+      "stars": 40054,
+      "sourceUpdatedAt": "2026-09-28T13:39:04Z"
+    },
+    {
+      "id": "github-skill-github-awesome-copilot",
+      "name": "awesome-copilot",
+      "url": "https://github.com/github/awesome-copilot",
+      "oneLiner": "Community-contributed instructions, agents, skills, and configurations to help you make the most of GitHub Copilot.",
+      "tags": [
+        "agent-skills",
+        "agents",
+        "ai",
+        "awesome",
+        "custom-agents",
+        "github-copilot",
+        "hacktoberfest",
+        "prompt-engineering"
+      ],
+      "taskPatterns": [
+        "agent skills",
+        "agents",
+        "ai",
+        "awesome",
+        "custom agents",
+        "github copilot"
+      ],
+      "keywords": [
+        "github/awesome-copilot",
+        "agent-skills",
+        "agents",
+        "ai",
+        "awesome",
+        "custom-agents",
+        "github-copilot",
+        "hacktoberfest",
+        "prompt-engineering"
+      ],
+      "framework": "GitHub",
+      "skillType": "Agent Skill",
+      "install": "https://github.com/github/awesome-copilot",
+      "stars": 39474,
+      "sourceUpdatedAt": "2026-09-28T15:41:36Z"
+    },
+    {
+      "id": "github-skill-voltagent-awesome-agent-skills",
+      "name": "awesome-agent-skills",
+      "url": "https://github.com/VoltAgent/awesome-agent-skills",
+      "oneLiner": "A curated collection of 1000+ agent skills from official dev teams and the community, compatible with Claude Code, Codex, Gemini CLI, Cursor, and more.",
+      "tags": [
+        "agent-skills",
+        "ai-agents",
+        "awesome",
+        "awesome-list",
+        "claude-code",
+        "claude-code-skills",
+        "claude-skills",
+        "codex-skills"
+      ],
+      "taskPatterns": [
+        "agent skills",
+        "ai agents",
+        "awesome",
+        "awesome list",
+        "claude code",
+        "claude code skills"
+      ],
+      "keywords": [
+        "VoltAgent/awesome-agent-skills",
+        "agent-skills",
+        "ai-agents",
+        "awesome",
+        "awesome-list",
+        "claude-code",
+        "claude-code-skills",
+        "claude-skills",
+        "codex-skills",
+        "cursor-skills",
+        "gemini-skills",
+        "opencode-skills",
+        "skills"
+      ],
+      "framework": "GitHub",
+      "skillType": "Claude Skill",
+      "install": "https://github.com/VoltAgent/awesome-agent-skills",
+      "stars": 34985,
+      "sourceUpdatedAt": "2026-09-28T15:40:38Z"
+    },
+    {
+      "id": "github-skill-virgiliojr94-book-to-skill",
+      "name": "book-to-skill",
+      "url": "https://github.com/virgiliojr94/book-to-skill",
+      "oneLiner": "Turn any technical book PDF into a Claude Code skill — ready to study, reference, and use while you work.",
+      "tags": [
+        "agent-skills",
+        "ai-agents",
+        "book-to-skill",
+        "context-engineering",
+        "document-processing",
+        "edtech",
+        "knowledge-base",
+        "knowledge-management"
+      ],
+      "taskPatterns": [
+        "agent skills",
+        "ai agents",
+        "book to skill",
+        "context engineering",
+        "document processing",
+        "edtech"
+      ],
+      "keywords": [
+        "virgiliojr94/book-to-skill",
+        "agent-skills",
+        "ai-agents",
+        "book-to-skill",
+        "context-engineering",
+        "document-processing",
+        "edtech",
+        "knowledge-base",
+        "knowledge-management",
+        "llm",
+        "pdf-to-markdown",
+        "rag",
+        "self-study",
+        "study-tools"
+      ],
+      "framework": "GitHub",
+      "skillType": "Agent Skill",
+      "install": "https://github.com/virgiliojr94/book-to-skill",
+      "stars": 32871,
+      "sourceUpdatedAt": "2026-09-28T15:51:31Z"
+    },
+    {
+      "id": "github-skill-googleworkspace-cli",
+      "name": "cli",
+      "url": "https://github.com/googleworkspace/cli",
+      "oneLiner": "Google Workspace CLI — one command-line tool for Drive, Gmail, Calendar, Sheets, Docs, Chat, Admin, and more. Dynamically built from Google Discovery Service. Includes AI agent ski",
+      "tags": [
+        "agent-skills",
+        "ai-agent",
+        "automation",
+        "cli",
+        "discovery-api",
+        "gemini-cli-extension",
+        "google-admin",
+        "google-api"
+      ],
+      "taskPatterns": [
+        "agent skills",
+        "ai agent",
+        "automation",
+        "cli",
+        "discovery api",
+        "gemini cli extension"
+      ],
+      "keywords": [
+        "googleworkspace/cli",
+        "agent-skills",
+        "ai-agent",
+        "automation",
+        "cli",
+        "discovery-api",
+        "gemini-cli-extension",
+        "google-admin",
+        "google-api",
+        "google-calendar",
+        "google-chat",
+        "google-docs",
+        "google-drive",
+        "google-sheets",
+        "google-workspace",
+        "oauth2",
+        "rust"
+      ],
+      "framework": "GitHub",
+      "skillType": "Agent Skill",
+      "install": "https://github.com/googleworkspace/cli",
+      "stars": 31181,
+      "sourceUpdatedAt": "2026-09-28T13:19:40Z"
+    },
+    {
+      "id": "github-skill-topoteretes-cognee",
+      "name": "cognee",
+      "url": "https://github.com/topoteretes/cognee",
+      "oneLiner": "Cognee is the open-source AI memory platform for agents. Give your AI agents persistent long-term memory with small models for free",
+      "tags": [
+        "agent-memory",
+        "agent-skills",
+        "ai",
+        "ai-agents",
+        "ai-memory",
+        "cognitive-architecture",
+        "cognitive-memory",
+        "context-engineering"
+      ],
+      "taskPatterns": [
+        "agent memory",
+        "agent skills",
+        "ai",
+        "ai agents",
+        "ai memory",
+        "cognitive architecture"
+      ],
+      "keywords": [
+        "topoteretes/cognee",
+        "agent-memory",
+        "agent-skills",
+        "ai",
+        "ai-agents",
+        "ai-memory",
+        "cognitive-architecture",
+        "cognitive-memory",
+        "context-engineering",
+        "contributions-welcome",
+        "good-first-issue",
+        "good-first-pr",
+        "graph-database",
+        "graph-rag",
+        "help-wanted",
+        "knowledge",
+        "knowledge-graph",
+        "memory-management",
+        "open-source",
+        "vector-database"
+      ],
+      "framework": "GitHub",
+      "skillType": "Agent Skill",
+      "install": "https://github.com/topoteretes/cognee",
+      "stars": 31124,
+      "sourceUpdatedAt": "2026-09-28T15:50:48Z"
+    },
+    {
+      "id": "github-skill-othmanadi-planning-with-files",
+      "name": "planning-with-files",
+      "url": "https://github.com/OthmanAdi/planning-with-files",
+      "oneLiner": "Persistent file-based planning for AI coding agents and long-running tasks. Crash-proof markdown plans, session recovery after /clear and compaction, per-turn re-injection against ",
+      "tags": [
+        "agent-skills",
+        "autonomous-agents",
+        "claude",
+        "claude-code",
+        "claude-code-skills",
+        "claude-skills",
+        "codex",
+        "coding-agent"
+      ],
+      "taskPatterns": [
+        "agent skills",
+        "autonomous agents",
+        "claude",
+        "claude code",
+        "claude code skills",
+        "claude skills"
+      ],
+      "keywords": [
+        "OthmanAdi/planning-with-files",
+        "agent-skills",
+        "autonomous-agents",
+        "claude",
+        "claude-code",
+        "claude-code-skills",
+        "claude-skills",
+        "codex",
+        "coding-agent",
+        "context-engineering",
+        "context-rot",
+        "cursor",
+        "github-copilot",
+        "hermes-plugin",
+        "hermes-skill",
+        "llm-agents",
+        "long-running-agents",
+        "manus",
+        "multi-agent-systems",
+        "planning",
+        "session-recovery"
+      ],
+      "framework": "GitHub",
+      "skillType": "Claude Skill",
+      "install": "https://github.com/OthmanAdi/planning-with-files",
+      "stars": 27165,
+      "sourceUpdatedAt": "2026-09-28T15:39:05Z"
+    },
+    {
+      "id": "github-skill-alirezarezvani-claude-skills",
+      "name": "claude-skills",
+      "url": "https://github.com/alirezarezvani/claude-skills",
+      "oneLiner": "380 Claude Code skills & agent skills & plugins (30+ Agents, 70+ custom commands, 380+ skills, customizable references, scripts)for Claude Code, Codex, Gemini CLI, Cursor, and 8 mo",
+      "tags": [
+        "agent-plugins",
+        "agent-skills",
+        "agentic-ai",
+        "ai-coding-agent",
+        "anthropic-claude",
+        "claude-ai",
+        "claude-code",
+        "claude-code-plugins"
+      ],
+      "taskPatterns": [
+        "agent plugins",
+        "agent skills",
+        "agentic ai",
+        "ai coding agent",
+        "anthropic claude",
+        "claude ai"
+      ],
+      "keywords": [
+        "alirezarezvani/claude-skills",
+        "agent-plugins",
+        "agent-skills",
+        "agentic-ai",
+        "ai-coding-agent",
+        "anthropic-claude",
+        "claude-ai",
+        "claude-code",
+        "claude-code-plugins",
+        "claude-code-skills",
+        "claude-skills",
+        "codex-skills",
+        "coding-agent-plugins",
+        "cursor-skills",
+        "developer-tools",
+        "gemini-cli-skills",
+        "openai-codex",
+        "openclaw",
+        "openclaw-plugins",
+        "openclaw-skills",
+        "prompt-engineering"
+      ],
+      "framework": "GitHub",
+      "skillType": "Claude Skill",
+      "install": "https://github.com/alirezarezvani/claude-skills",
+      "stars": 26734,
+      "sourceUpdatedAt": "2026-09-28T15:47:09Z"
+    },
+    {
+      "id": "github-skill-phuryn-pm-skills",
+      "name": "pm-skills",
+      "url": "https://github.com/phuryn/pm-skills",
+      "oneLiner": "PM Skills Marketplace: 100+ agentic skills, commands, and plugins — from discovery to strategy, execution, launch, and growth.",
+      "tags": [
+        "agent-skill-repository",
+        "agent-skills",
+        "agentic-skills",
+        "claude-code-marketplace",
+        "claude-code-plugins",
+        "claude-cowork-plugin",
+        "product-management"
+      ],
+      "taskPatterns": [
+        "agent skill repository",
+        "agent skills",
+        "agentic skills",
+        "claude code marketplace",
+        "claude code plugins",
+        "claude cowork plugin"
+      ],
+      "keywords": [
+        "phuryn/pm-skills",
+        "agent-skill-repository",
+        "agent-skills",
+        "agentic-skills",
+        "claude-code-marketplace",
+        "claude-code-plugins",
+        "claude-cowork-plugin",
+        "product-management"
+      ],
+      "framework": "GitHub",
+      "skillType": "Agent Skill",
+      "install": "https://github.com/phuryn/pm-skills",
+      "stars": 26638,
+      "sourceUpdatedAt": "2026-09-28T15:50:25Z"
+    },
+    {
+      "id": "github-skill-jimliu-baoyu-skills",
+      "name": "baoyu-skills",
+      "url": "https://github.com/JimLiu/baoyu-skills",
+      "oneLiner": "JimLiu/baoyu-skills Agent Skill repository.",
+      "tags": [
+        "agent-skills",
+        "claude-skills",
+        "codex-skills",
+        "openclaw-skills"
+      ],
+      "taskPatterns": [
+        "agent skills",
+        "claude skills",
+        "codex skills",
+        "openclaw skills"
+      ],
+      "keywords": [
+        "JimLiu/baoyu-skills",
+        "agent-skills",
+        "claude-skills",
+        "codex-skills",
+        "openclaw-skills"
+      ],
+      "framework": "GitHub",
+      "skillType": "Claude Skill",
+      "install": "https://github.com/JimLiu/baoyu-skills",
+      "stars": 26200,
+      "sourceUpdatedAt": "2026-09-28T15:49:25Z"
+    },
+    {
+      "id": "github-skill-agentskills-agentskills",
+      "name": "agentskills",
+      "url": "https://github.com/agentskills/agentskills",
+      "oneLiner": "Specification and documentation for Agent Skills",
+      "tags": [
+        "agent-skills"
+      ],
+      "taskPatterns": [
+        "agent skills"
+      ],
+      "keywords": [
+        "agentskills/agentskills",
+        "agent-skills"
+      ],
+      "framework": "GitHub",
+      "skillType": "Agent Skill",
+      "install": "https://github.com/agentskills/agentskills",
+      "stars": 25758,
+      "sourceUpdatedAt": "2026-09-28T15:12:16Z"
+    },
+    {
+      "id": "github-skill-titanwings-distilly",
+      "name": "distilly",
+      "url": "https://github.com/titanwings/distilly",
+      "oneLiner": "Distilly — Distill how they think into reusable Skills for any Agent or Bot. Formerly Colleague Skill（原同事 Skill）.",
+      "tags": [
+        "agent-skills",
+        "agentic-ai",
+        "ai-agent",
+        "ai-agents",
+        "ai-assistants",
+        "ai-persona",
+        "claude-code",
+        "claude-skills"
+      ],
+      "taskPatterns": [
+        "agent skills",
+        "agentic ai",
+        "ai agent",
+        "ai agents",
+        "ai assistants",
+        "ai persona"
+      ],
+      "keywords": [
+        "titanwings/distilly",
+        "agent-skills",
+        "agentic-ai",
+        "ai-agent",
+        "ai-agents",
+        "ai-assistants",
+        "ai-persona",
+        "claude-code",
+        "claude-skills",
+        "codex",
+        "codex-skills",
+        "deepseek-harness",
+        "digital-human",
+        "dsh-plugin",
+        "hermes-agent",
+        "knowledge-distillation",
+        "llm-agent",
+        "meta-skill",
+        "openclaw",
+        "opencode"
+      ],
+      "framework": "GitHub",
+      "skillType": "Claude Skill",
+      "install": "https://github.com/titanwings/distilly",
+      "stars": 25090,
+      "sourceUpdatedAt": "2026-09-28T14:37:07Z"
+    },
+    {
+      "id": "github-skill-pascalorg-editor",
+      "name": "editor",
+      "url": "https://github.com/pascalorg/editor",
+      "oneLiner": "Open-source 3D architectural editor with a local CLI, MCP tools, and practical workflows for humans and AI agents.",
+      "tags": [
+        "3d",
+        "agent-skills",
+        "ai-agents",
+        "architecture",
+        "bim",
+        "cad",
+        "editor",
+        "floorplan"
+      ],
+      "taskPatterns": [
+        "3d",
+        "agent skills",
+        "ai agents",
+        "architecture",
+        "bim",
+        "cad"
+      ],
+      "keywords": [
+        "pascalorg/editor",
+        "3d",
+        "agent-skills",
+        "ai-agents",
+        "architecture",
+        "bim",
+        "cad",
+        "editor",
+        "floorplan",
+        "gemini-cli-extension",
+        "local-first",
+        "mcp",
+        "mcp-server",
+        "model-context-protocol",
+        "nextjs",
+        "parametric-design",
+        "react-three-fiber",
+        "threejs",
+        "typescript"
+      ],
+      "framework": "GitHub",
+      "skillType": "Agent Skill",
+      "install": "https://github.com/pascalorg/editor",
+      "stars": 24348,
+      "sourceUpdatedAt": "2026-09-28T14:46:18Z"
+    },
+    {
+      "id": "github-skill-kkkkhazix-khazix-skills",
+      "name": "khazix-skills",
+      "url": "https://github.com/KKKKhazix/khazix-skills",
+      "oneLiner": "数字生命卡兹克开源的 AI Skills 合集 | Agent Skills: leader（帮你定义目标）, neat-freak 洁癖, hv-analysis, khazix-writer & more — Claude Code, Codex & 40+ agents",
+      "tags": [
+        "agent-skills",
+        "ai-agents",
+        "claude",
+        "claude-code",
+        "codex",
+        "developer-tools",
+        "llm",
+        "skills"
+      ],
+      "taskPatterns": [
+        "agent skills",
+        "ai agents",
+        "claude",
+        "claude code",
+        "codex",
+        "developer tools"
+      ],
+      "keywords": [
+        "KKKKhazix/khazix-skills",
+        "agent-skills",
+        "ai-agents",
+        "claude",
+        "claude-code",
+        "codex",
+        "developer-tools",
+        "llm",
+        "skills",
+        "vibe-coding"
+      ],
+      "framework": "GitHub",
+      "skillType": "Agent Skill",
+      "install": "https://github.com/KKKKhazix/khazix-skills",
+      "stars": 20970,
+      "sourceUpdatedAt": "2026-09-28T15:20:22Z"
+    },
+    {
+      "id": "github-skill-nvidia-skillspector",
+      "name": "SkillSpector",
+      "url": "https://github.com/NVIDIA/SkillSpector",
+      "oneLiner": "Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, security risks, prompt injection, data exfiltration, and supply-chain risks in Claude Code, Codex,",
+      "tags": [
+        "agent-security",
+        "agent-skills",
+        "agentic-ai",
+        "ai-security",
+        "claude-code",
+        "mcp",
+        "prompt-injection",
+        "security-scanner"
+      ],
+      "taskPatterns": [
+        "agent security",
+        "agent skills",
+        "agentic ai",
+        "ai security",
+        "claude code",
+        "mcp"
+      ],
+      "keywords": [
+        "NVIDIA/SkillSpector",
+        "agent-security",
+        "agent-skills",
+        "agentic-ai",
+        "ai-security",
+        "claude-code",
+        "mcp",
+        "prompt-injection",
+        "security-scanner",
+        "security-tools",
+        "security-workflow",
+        "supply-chain-security"
+      ],
+      "framework": "GitHub",
+      "skillType": "Agent Skill",
+      "install": "https://github.com/NVIDIA/SkillSpector",
+      "stars": 18496,
+      "sourceUpdatedAt": "2026-09-28T15:32:52Z"
+    },
     {
       "id": "skill-creator",
       "name": "Skill Creator",
@@ -23,7 +1333,8 @@
       ],
       "framework": "Claude Skills",
       "skillType": "meta",
-      "install": "https://github.com/anthropics/skills/tree/main/skills/skill-creator"
+      "install": "https://github.com/anthropics/skills/tree/main/skills/skill-creator",
+      "stars": 0
     },
     {
       "id": "mcp-builder",
@@ -46,7 +1357,8 @@
       ],
       "framework": "Claude Skills",
       "skillType": "meta",
-      "install": "https://github.com/anthropics/skills/tree/main/skills/mcp-builder"
+      "install": "https://github.com/anthropics/skills/tree/main/skills/mcp-builder",
+      "stars": 0
     },
     {
       "id": "pdf",
@@ -69,7 +1381,8 @@
       ],
       "framework": "Claude Skills",
       "skillType": "document",
-      "install": "https://github.com/anthropics/skills/tree/main/skills/pdf"
+      "install": "https://github.com/anthropics/skills/tree/main/skills/pdf",
+      "stars": 0
     },
     {
       "id": "pptx",
@@ -92,7 +1405,8 @@
       ],
       "framework": "Claude Skills",
       "skillType": "document",
-      "install": "https://github.com/anthropics/skills/tree/main/skills/pptx"
+      "install": "https://github.com/anthropics/skills/tree/main/skills/pptx",
+      "stars": 0
     },
     {
       "id": "xlsx",
@@ -116,7 +1430,8 @@
       ],
       "framework": "Claude Skills",
       "skillType": "document",
-      "install": "https://github.com/anthropics/skills/tree/main/skills/xlsx"
+      "install": "https://github.com/anthropics/skills/tree/main/skills/xlsx",
+      "stars": 0
     },
     {
       "id": "docx",
@@ -140,7 +1455,8 @@
       ],
       "framework": "Claude Skills",
       "skillType": "document",
-      "install": "https://github.com/anthropics/skills/tree/main/skills/docx"
+      "install": "https://github.com/anthropics/skills/tree/main/skills/docx",
+      "stars": 0
     },
     {
       "id": "webapp-testing",
@@ -164,7 +1480,8 @@
       ],
       "framework": "Claude Skills",
       "skillType": "testing",
-      "install": "https://github.com/anthropics/skills/tree/main/skills/webapp-testing"
+      "install": "https://github.com/anthropics/skills/tree/main/skills/webapp-testing",
+      "stars": 0
     },
     {
       "id": "canvas-design",
@@ -187,7 +1504,8 @@
       ],
       "framework": "Claude Skills",
       "skillType": "design",
-      "install": "https://github.com/anthropics/skills/tree/main/skills/canvas-design"
+      "install": "https://github.com/anthropics/skills/tree/main/skills/canvas-design",
+      "stars": 0
     },
     {
       "id": "artifact-builder",
@@ -211,7 +1529,8 @@
       ],
       "framework": "Claude Skills",
       "skillType": "frontend",
-      "install": "https://github.com/anthropics/skills/tree/main/skills/artifact-builder"
+      "install": "https://github.com/anthropics/skills/tree/main/skills/artifact-builder",
+      "stars": 0
     },
     {
       "id": "brand-guidelines",
@@ -234,7 +1553,8 @@
       ],
       "framework": "Claude Skills",
       "skillType": "design",
-      "install": "https://github.com/anthropics/skills/tree/main/skills/brand-guidelines"
+      "install": "https://github.com/anthropics/skills/tree/main/skills/brand-guidelines",
+      "stars": 0
     },
     {
       "id": "slack-gif-creator",
@@ -257,7 +1577,8 @@
       ],
       "framework": "Claude Skills",
       "skillType": "media",
-      "install": "https://github.com/anthropics/skills/tree/main/skills/slack-gif-creator"
+      "install": "https://github.com/anthropics/skills/tree/main/skills/slack-gif-creator",
+      "stars": 0
     },
     {
       "id": "mcp-servers-usage",
@@ -280,7 +1601,8 @@
       ],
       "framework": "Claude Skills",
       "skillType": "integration",
-      "install": "https://github.com/anthropics/skills/tree/main/skills/mcp-servers-usage"
+      "install": "https://github.com/anthropics/skills/tree/main/skills/mcp-servers-usage",
+      "stars": 0
     },
     {
       "id": "awesome-cursorrules",
@@ -303,7 +1625,8 @@
       ],
       "framework": "Cursor",
       "skillType": "prompt",
-      "install": "https://github.com/PatrickJS/awesome-cursorrules"
+      "install": "https://github.com/PatrickJS/awesome-cursorrules",
+      "stars": 0
     },
     {
       "id": "browser-use",
@@ -326,7 +1649,8 @@
       ],
       "framework": "Python",
       "skillType": "agent",
-      "install": "https://github.com/browser-use/browser-use"
+      "install": "https://github.com/browser-use/browser-use",
+      "stars": 0
     },
     {
       "id": "crewai",
@@ -349,7 +1673,8 @@
       ],
       "framework": "Python",
       "skillType": "orchestration",
-      "install": "https://github.com/crewAIInc/crewAI"
+      "install": "https://github.com/crewAIInc/crewAI",
+      "stars": 0
     },
     {
       "id": "langgraph",
@@ -373,7 +1698,8 @@
       ],
       "framework": "Python/TypeScript",
       "skillType": "orchestration",
-      "install": "https://github.com/langchain-ai/langgraph"
+      "install": "https://github.com/langchain-ai/langgraph",
+      "stars": 0
     },
     {
       "id": "smolagents",
@@ -396,7 +1722,8 @@
       ],
       "framework": "Python",
       "skillType": "agent",
-      "install": "https://github.com/huggingface/smolagents"
+      "install": "https://github.com/huggingface/smolagents",
+      "stars": 0
     },
     {
       "id": "openai-codex",
@@ -420,7 +1747,8 @@
       ],
       "framework": "CLI",
       "skillType": "coding agent",
-      "install": "https://github.com/openai/codex"
+      "install": "https://github.com/openai/codex",
+      "stars": 0
     }
   ]
 }

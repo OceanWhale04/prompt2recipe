@@ -20,6 +20,7 @@ export interface WeeklyReportEdition {
   title: string;
   dateRange: string;
   summary: string;
+  generationMode?: "ai" | "rss";
   keyHighlights: WeeklyKeyHighlight[];
   nextWeekOutlook: WeeklyNextWeekOutlook[];
   fullMarkdownContent: string;
