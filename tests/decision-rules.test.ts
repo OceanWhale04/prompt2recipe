@@ -16,6 +16,10 @@ describe("decision signals", () => {
     expect(signals.mandatoryMcpIds).toEqual(expect.arrayContaining(["filesystem", "github"]));
   });
 
+  it("maps task outputs to required skills", () => {
+    const signals = detectDecisionSignals("解析 PDF 财报并导出 Excel 报表");
+    expect(signals.mandatorySkillIds).toEqual(expect.arrayContaining(["pdf", "xlsx"]));
+  });
   it("allows XLSX only for explicit spreadsheet tasks", () => {
     expect(detectDecisionSignals("把财报导出成 Excel 报表").xlsxAllowed).toBe(true);
     expect(detectDecisionSignals("总结网页内容并生成 Markdown").xlsxAllowed).toBe(false);

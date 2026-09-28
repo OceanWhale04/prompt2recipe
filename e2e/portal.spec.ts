@@ -38,3 +38,16 @@ test("opens a weekly edition and applies its prompt to the engine", async ({ pag
   await expect(page).toHaveURL(/\/\?task=/);
   await expect(page.getByPlaceholder(/自动解析|parse 100/i)).not.toHaveValue("");
 });
+
+test("navigates to the expanded Skill portal", async ({ page }) => {
+  await page.goto("/");
+  await page.getByRole("link", { name: /技能广场 Skills/ }).click();
+
+  await expect(page).toHaveURL(/\/portal\/skills$/);
+  await expect(page.getByRole("heading", { name: "Agent Skill 广场 Skills" })).toBeVisible();
+
+  const search = page.getByPlaceholder(/搜索技能、框架或任务模式/);
+  await search.click();
+  await page.keyboard.type("skills");
+  await expect(page.getByRole("heading", { name: "skills", exact: true }).first()).toBeVisible();
+});

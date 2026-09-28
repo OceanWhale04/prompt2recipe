@@ -1,38 +1,41 @@
 # Prompt2Recipe / StackForge
 
-Prompt2Recipe is a task-driven AI architecture configuration engine. Users describe a task in natural language and receive a structured tool combination plus an optional four-step implementation plan.
+[中文](README.md) | [English](README.en.md)
 
-The project is currently a pre-release MVP. It intentionally stays lightweight: no database, no authentication, and no user history. Knowledge and weekly reports are stored as versioned JSON files.
+Prompt2Recipe 是一个任务驱动的 AI 架构配置引擎。用户输入自然语言任务后，系统会推荐一套可执行的 AI 工具组合，并按需生成四步实施方案。
 
-## Features
+项目目前是预发布 MVP，保持无数据库、无登录、无用户历史的轻量架构。模型、MCP、Skill、Recipe 和周刊数据全部保存在版本化 JSON 文件中。
 
-- Two-stage decision engine: fast tool combination first, optional deep workflow second.
-- Intent-aware recommendations for Fetch, Puppeteer, Filesystem, GitHub, and XLSX capabilities.
-- Per-request compute sources: server DeepSeek, personal API Key (BYOK), local Ollama, or static experience mode.
-- Static intelligence portal for model comparison, MCP discovery, and weekly signal reports.
-- Weekly editions with next-week outlook, Markdown detail pages, archive navigation, and prompt handoff back to the decision engine.
-- TypeScript ETL pipeline for OpenRouter models, GitHub MCP repositories, RSS news, and AI noise reduction.
-- Bilingual Chinese/English interface with responsive desktop and mobile layouts.
+## 核心能力
 
-## Architecture
+- 两阶段决策：先快速生成工具组合，再按需生成完整实施工作流。
+- 意图识别规则覆盖 Fetch、Puppeteer、Filesystem、GitHub、PDF、XLSX 等工具与 Skill。
+- 支持服务端 DeepSeek、个人 API Key（BYOK）、本地 Ollama 和静态体验模式。
+- 提供模型对比、MCP 广场、Agent Skill 广场和每周降噪 Portal。
+- 周刊支持下周观察、Markdown 详情、往期归档和 Prompt 回填决策引擎。
+- TypeScript ETL 自动抓取 OpenRouter、GitHub MCP、GitHub Skills 和 RSS，并执行清洗与归档。
+- 中英文界面，桌面和移动端响应式布局。
+
+## 项目结构
 
 ```text
 Next.js App Router
-├── /                          Decision engine
-├── /portal/models             Model intelligence
-├── /portal/mcps               MCP directory
-├── /portal/weekly             Weekly report and archive
-├── /portal/weekly/[id]        Statically generated weekly detail
-└── /api/recommend             Provider proxy and recommendation API
+├── /                          架构决策引擎
+├── /portal/models             模型数据库
+├── /portal/mcps               MCP 广场
+├── /portal/skills             Agent Skill 广场
+├── /portal/weekly             每周降噪与往期归档
+├── /portal/weekly/[id]        静态生成的周刊详情
+└── /api/recommend             Provider 代理与推荐接口
 
-data/*.json                    Static knowledge base
-scripts/etl/                   Fetch, clean, summarize, and archive pipeline
-.github/workflows/cron.yml     Weekly ETL automation
+data/*.json                    静态知识库
+scripts/etl/                   抓取、清洗、摘要和归档管线
+.github/workflows/cron.yml     每周自动执行 ETL
 ```
 
-The decision engine keeps retrieval and LLM orchestration separate. Keyword retrieval selects a compact candidate set, then the configured provider returns a lightweight selection containing only `id`, `role`, and `reasoning`. The server hydrates names, URLs, and descriptions from the local JSON catalog.
+决策引擎将检索与模型推理分离。系统先从静态知识库选出精简候选，模型只返回 `id`、`role` 和 `reasoning`，随后由服务端补齐名称、URL、简介和必要 Skill。
 
-## Getting Started
+## 本地运行
 
 ```bash
 pnpm install
@@ -40,9 +43,9 @@ cp .env.example .env.local
 pnpm dev
 ```
 
-Open http://localhost:3000.
+打开 http://localhost:3000。
 
-Without a server API key, the UI defaults to Experience mode and uses static matching. To enable server-side DeepSeek, configure:
+未配置服务端 API Key 时，网页默认使用体验模式。需要启用服务端 DeepSeek 时配置：
 
 ```env
 DEEPSEEK_API_KEY=your_key
@@ -50,21 +53,19 @@ DEEPSEEK_BASE_URL=https://api.deepseek.com
 DEEPSEEK_MODEL=deepseek-chat
 ```
 
-`GET /api/recommend` reports server provider status without exposing the key.
+`GET /api/recommend` 可查看服务端 Provider 状态，不会返回密钥。
 
-## Compute Sources
+## 算力来源
 
-The settings button in the top navigation supports three per-browser modes:
+网页设置支持三种模式：
 
-- `BYOK`: sends a user-provided OpenAI-compatible Base URL, API Key, and model with each request. The key is stored only in browser `localStorage` and is not persisted by the server.
-- `Ollama`: sends a user-provided Ollama Base URL and model. The endpoint is normalized to `/v1`.
-- `Experience mode`: uses local static JSON only and does not call an external model API.
+- `自定义 API Key`：使用用户自己的 OpenAI-compatible Base URL、Model 和 API Key。密钥只保存在当前浏览器 `localStorage`，服务端不持久化。
+- `本地 Ollama`：默认 `http://localhost:11434` 和 `qwen2.5:7b`，自动使用 `/v1` 接口。
+- `体验模式`：只读取静态 JSON，不调用外部模型。
 
-When a request includes an explicit BYOK or Ollama provider, server environment variables are ignored. Provider failures return an error instead of silently switching to static matching. Requests without a provider field retain the server DeepSeek compatibility path.
+Ollama 模型需要支持 OpenAI-compatible `/v1/chat/completions`、JSON 输出和指令跟随。低于 3B 的模型不支持结构化工作流，3B 到 7B 属于实验范围，推荐使用 `qwen2.5:7b`、`qwen2.5-coder:7b`、`deepseek-r1:7b` 或 `llama3.1:8b`。
 
-Ollama models must support OpenAI-compatible `/v1/chat/completions`, JSON output, and instruction following. Models below 3B are not supported for this structured workflow. Models between 3B and 7B are experimental. Recommended models are `qwen2.5:7b`, `qwen2.5-coder:7b`, `deepseek-r1:7b`, and `llama3.1:8b`.
-
-## Knowledge Base
+## 数据目录
 
 ```text
 data/
@@ -76,29 +77,9 @@ data/
   index.json
 ```
 
-Catalog files use `{ version, updatedAt, items }`. `weekly.json` uses an edition-based store:
+普通目录使用 `{ version, updatedAt, items }`。`weekly.json` 使用期次结构，保存当前期、往期归档、下周观察和完整 Markdown 内容。
 
-```text
-{
-  currentEditionId,
-  editions: [
-    {
-      id,
-      title,
-      dateRange,
-      summary,
-      keyHighlights,
-      nextWeekOutlook,
-      fullMarkdownContent,
-      recommendedPrompts
-    }
-  ]
-}
-```
-
-## ETL Pipeline
-
-The ETL entry point is `scripts/update-kb.ts`.
+## ETL 管线
 
 ```text
 scripts/etl/
@@ -115,48 +96,44 @@ scripts/etl/
   index.ts
 ```
 
-External steps require environment variables:
+环境变量：
 
-- `OPENROUTER_API_KEY` for model and pricing refresh
-- `GITHUB_TOKEN` for high-star MCP repository discovery
-- `DEEPSEEK_API_KEY` for MCP summaries and AI weekly noise reduction
-- `RSS_FEEDS` as an optional comma-separated RSS source list
+- `OPENROUTER_API_KEY`：可选，用于提高 OpenRouter 模型刷新额度。
+- `GITHUB_TOKEN`：用于抓取高星 MCP 和 Agent Skill 仓库。
+- `DEEPSEEK_API_KEY`：用于 MCP 摘要和 AI 周刊降噪。
+- `RSS_FEEDS`：可选，逗号分隔的自定义 RSS 来源。
 
-Run locally:
+执行：
 
 ```bash
 pnpm kb:update
 ```
 
-OpenRouter model discovery works without an API key. When tokens or network access are unavailable, external steps are skipped and existing JSON remains unchanged. When RSS news is available but DeepSeek is unavailable, the pipeline creates an RSS-cleaned draft edition and does not overwrite an existing edition for the same week. The script still validates data and rebuilds `data/index.json`.
+OpenRouter 模型接口可匿名访问。缺少 Token 或网络失败时会跳过对应来源，保留现有 JSON。无 DeepSeek 但有 RSS 时，系统会生成 RSS 清洗版周刊草稿，不会覆盖同一周已有编辑版。
 
-## Scripts
+## 常用命令
 
-- `pnpm dev` - start the development server
-- `pnpm build` - create a production build
-- `pnpm lint` - run ESLint
-- `pnpm typecheck` - run TypeScript checks
-- `pnpm test` - run unit tests
-- `pnpm e2e` - run Playwright smoke tests
-- `pnpm kb:update` - run ETL, validate data, and rebuild the index
+- `pnpm dev`：启动开发服务器
+- `pnpm build`：生产构建
+- `pnpm lint`：ESLint
+- `pnpm typecheck`：TypeScript 检查
+- `pnpm test`：单元测试
+- `pnpm e2e`：Playwright 端到端测试
+- `pnpm kb:update`：执行 ETL、校验数据并重建索引
 
-## Deployment
+## 部署
 
-The project is ready for Vercel:
+项目可直接部署到 Vercel：
 
-1. Import the GitHub repository into Vercel.
-2. Configure the DeepSeek variables when server-side inference is desired.
-3. Deploy. The `/portal/*` pages are statically generated; `/api/recommend` remains dynamic.
+1. 在 Vercel 导入 GitHub 仓库。
+2. 按需配置 DeepSeek 环境变量。
+3. 部署。`/portal/*` 会静态生成，`/api/recommend` 保持动态。
 
-The weekly GitHub Actions workflow is `.github/workflows/cron.yml`. It runs every Sunday at 16:00 UTC, calls the ETL pipeline, and commits updated JSON files when data changes.
+`.github/workflows/cron.yml` 每周执行一次 ETL，并在数据变化时自动提交 JSON。
 
-## Security Notes
+## 安全说明
 
-- Never commit `.env.local`.
-- API Keys entered in the settings dialog are stored in browser `localStorage`; use the application only over HTTPS outside local development.
-- Provider keys are forwarded only for the current request and are not written to the repository or a database.
-- Review MCP permissions before granting filesystem, database, GitHub, or browser access.
-
-## License
-
-No license has been selected yet.
+- 不要提交 `.env.local`。
+- 网页中保存的 API Key 位于浏览器 `localStorage`，生产环境必须使用 HTTPS。
+- 用户 Provider Key 只在当前请求中转发，不写入数据库。
+- 授予文件系统、数据库、GitHub 或浏览器 MCP 权限前，应检查最小权限范围。

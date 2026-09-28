@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-28T15:51:54.858Z",
+  "updatedAt": "2026-09-28T16:42:54.422Z",
   "items": [
     {
       "id": "openrouter-z-ai-glm-flash-latest",
@@ -1877,6 +1877,56 @@
       ],
       "provider": "bytedance-seed",
       "category": "text+image+video->text",
+      "costTier": "low",
+      "contextWindow": 262144
+    },
+    {
+      "id": "openrouter-nex-agi-nex-n2-5-mini",
+      "name": "Nex AGI: Nex-N2.5-Mini",
+      "url": "https://openrouter.ai/models/nex-agi/nex-n2.5-mini",
+      "oneLiner": "Nex-N2.5 is an agentic model built to turn goals into working, verified outcomes. Its core strength is agentic coding within a visual feedback loop: it can explore codebases, imple",
+      "tags": [
+        "openrouter",
+        "nex-agi",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "nex-agi/nex-n2.5-mini",
+        "nex-agi",
+        "Nex AGI: Nex-N2.5-Mini"
+      ],
+      "provider": "nex-agi",
+      "category": "text+image->text",
+      "costTier": "low",
+      "contextWindow": 262144
+    },
+    {
+      "id": "openrouter-nex-agi-nex-n2-5-pro",
+      "name": "Nex AGI: Nex-N2.5-Pro",
+      "url": "https://openrouter.ai/models/nex-agi/nex-n2.5-pro",
+      "oneLiner": "Nex-N2.5 is an agentic model built to turn goals into working, verified outcomes. Its core strength is agentic coding within a visual feedback loop: it can explore codebases, imple",
+      "tags": [
+        "openrouter",
+        "nex-agi",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "nex-agi/nex-n2.5-pro",
+        "nex-agi",
+        "Nex AGI: Nex-N2.5-Pro"
+      ],
+      "provider": "nex-agi",
+      "category": "text+image->text",
       "costTier": "low",
       "contextWindow": 262144
     },
