@@ -14,7 +14,7 @@ export function CurrentIssue({ edition }: { edition: WeeklyReportEdition }) {
       <div className="flex flex-col gap-3 border-b border-zinc-200 pb-5">
         <div className="flex flex-wrap items-center gap-2">
           <span className="rounded-full bg-zinc-900 px-3 py-1 text-[11px] font-medium text-white">
-            Latest Edition
+            最新一期
           </span>
           <span className="text-xs text-zinc-400">{edition.dateRange}</span>
         </div>
@@ -34,11 +34,11 @@ export function CurrentIssue({ edition }: { edition: WeeklyReportEdition }) {
               <span
                 className={`rounded-full px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wide ${categoryStyles[highlight.category]}`}
               >
-                {highlight.category}
+                {highlight.category === "Model" ? "模型" : highlight.category === "Workflow" ? "工作流" : "MCP"}
               </span>
               <span className="flex items-center gap-1 text-xs font-medium text-zinc-500">
                 <CircleDot className="h-3.5 w-3.5" />
-                Impact {highlight.impactScore}/5
+                影响指数 {highlight.impactScore}/5
               </span>
             </div>
             <h3 className="text-base font-semibold leading-6 text-zinc-950">{highlight.title}</h3>

@@ -109,7 +109,7 @@ scripts/etl/
 pnpm kb:update
 ```
 
-OpenRouter 模型接口可匿名访问。缺少 Token 或网络失败时会跳过对应来源，保留现有 JSON。无 DeepSeek 但有 RSS 时，系统会生成 RSS 清洗版周刊草稿，不会覆盖同一周已有编辑版。
+OpenRouter 模型接口可匿名访问。缺少 Token 或网络失败时会跳过对应来源，保留现有 JSON。每周一只总结上一周周一至周日的内容；周报必须通过 DeepSeek 或 Ollama 生成中文内容，无可用模型时不更新周报。
 
 ## 常用命令
 
