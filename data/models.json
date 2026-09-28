@@ -1,0 +1,479 @@
+{
+  "version": 1,
+  "updatedAt": "2026-09-28T15:20:31.669Z",
+  "items": [
+    {
+      "id": "deepseek-chat",
+      "name": "DeepSeek V3.2",
+      "url": "https://api-docs.deepseek.com/",
+      "oneLiner": "低成本、强推理的中文友好模型，适合大多数自动化任务。",
+      "tags": [
+        "reasoning",
+        "cheap",
+        "api",
+        "openai-compatible",
+        "chinese"
+      ],
+      "taskPatterns": [
+        "document parsing",
+        "data extraction",
+        "agent workflow",
+        "summarization"
+      ],
+      "keywords": [
+        "deepseek",
+        "v3",
+        "deepseek-chat"
+      ],
+      "provider": "DeepSeek",
+      "category": "chat",
+      "costTier": "low",
+      "contextWindow": 128000,
+      "configSnippet": "DEEPSEEK_API_KEY=..."
+    },
+    {
+      "id": "deepseek-reasoner",
+      "name": "DeepSeek R1",
+      "url": "https://api-docs.deepseek.com/",
+      "oneLiner": "长链推理与复杂逻辑分析能力强，适合数学与代码推演。",
+      "tags": [
+        "reasoning",
+        "math",
+        "code",
+        "cheap",
+        "api"
+      ],
+      "taskPatterns": [
+        "math",
+        "code review",
+        "logic",
+        "research"
+      ],
+      "keywords": [
+        "deepseek",
+        "r1",
+        "reasoner"
+      ],
+      "provider": "DeepSeek",
+      "category": "reasoning",
+      "costTier": "low",
+      "contextWindow": 128000
+    },
+    {
+      "id": "gpt-4o",
+      "name": "GPT-4o",
+      "url": "https://platform.openai.com/docs/models/gpt-4o",
+      "oneLiner": "多模态通用模型，适合图像理解与快速对话。",
+      "tags": [
+        "multimodal",
+        "vision",
+        "general",
+        "api"
+      ],
+      "taskPatterns": [
+        "image understanding",
+        "chat",
+        "summarization",
+        "vision"
+      ],
+      "keywords": [
+        "openai",
+        "gpt4o",
+        "gpt-4o"
+      ],
+      "provider": "OpenAI",
+      "category": "multimodal",
+      "costTier": "medium",
+      "contextWindow": 128000
+    },
+    {
+      "id": "gpt-4.1",
+      "name": "GPT-4.1",
+      "url": "https://platform.openai.com/docs/models/gpt-4.1",
+      "oneLiner": "百万级上下文与稳定指令遵循，适合长文档处理。",
+      "tags": [
+        "long-context",
+        "coding",
+        "general",
+        "api"
+      ],
+      "taskPatterns": [
+        "long document",
+        "coding",
+        "instruction following"
+      ],
+      "keywords": [
+        "openai",
+        "gpt4.1",
+        "gpt-4.1"
+      ],
+      "provider": "OpenAI",
+      "category": "general",
+      "costTier": "medium",
+      "contextWindow": 1000000
+    },
+    {
+      "id": "o4-mini",
+      "name": "o4-mini",
+      "url": "https://platform.openai.com/docs/models/o4-mini",
+      "oneLiner": "高性价比推理模型，适合代码与结构化输出。",
+      "tags": [
+        "reasoning",
+        "cheap",
+        "coding",
+        "api"
+      ],
+      "taskPatterns": [
+        "coding",
+        "structured output",
+        "logic"
+      ],
+      "keywords": [
+        "openai",
+        "o4",
+        "o4-mini"
+      ],
+      "provider": "OpenAI",
+      "category": "reasoning",
+      "costTier": "low",
+      "contextWindow": 200000
+    },
+    {
+      "id": "claude-sonnet-4-5",
+      "name": "Claude Sonnet 4.5",
+      "url": "https://docs.anthropic.com/en/docs/about-claude/models",
+      "oneLiner": "平衡速度与质量的通用模型，适合 Agent 与长文本。",
+      "tags": [
+        "agent",
+        "long-context",
+        "general",
+        "coding"
+      ],
+      "taskPatterns": [
+        "agent workflow",
+        "coding",
+        "summarization",
+        "analysis"
+      ],
+      "keywords": [
+        "anthropic",
+        "claude",
+        "sonnet"
+      ],
+      "provider": "Anthropic",
+      "category": "general",
+      "costTier": "medium",
+      "contextWindow": 200000
+    },
+    {
+      "id": "claude-opus-4-1",
+      "name": "Claude Opus 4.1",
+      "url": "https://docs.anthropic.com/en/docs/about-claude/models",
+      "oneLiner": "复杂推理与高质量长文本生成的首选。",
+      "tags": [
+        "reasoning",
+        "long-context",
+        "writing",
+        "coding"
+      ],
+      "taskPatterns": [
+        "complex reasoning",
+        "writing",
+        "research",
+        "coding"
+      ],
+      "keywords": [
+        "anthropic",
+        "claude",
+        "opus"
+      ],
+      "provider": "Anthropic",
+      "category": "general",
+      "costTier": "high",
+      "contextWindow": 200000
+    },
+    {
+      "id": "gemini-2.5-pro",
+      "name": "Gemini 2.5 Pro",
+      "url": "https://ai.google.dev/gemini-api/docs/models",
+      "oneLiner": "超长上下文与强推理，适合大规模资料分析。",
+      "tags": [
+        "long-context",
+        "multimodal",
+        "reasoning"
+      ],
+      "taskPatterns": [
+        "large corpus",
+        "multimodal",
+        "reasoning",
+        "research"
+      ],
+      "keywords": [
+        "google",
+        "gemini",
+        "2.5-pro"
+      ],
+      "provider": "Google",
+      "category": "multimodal",
+      "costTier": "medium",
+      "contextWindow": 1000000
+    },
+    {
+      "id": "gemini-2.5-flash",
+      "name": "Gemini 2.5 Flash",
+      "url": "https://ai.google.dev/gemini-api/docs/models",
+      "oneLiner": "低延迟、高吞吐，适合大规模抽取与分类。",
+      "tags": [
+        "cheap",
+        "fast",
+        "multimodal",
+        "long-context"
+      ],
+      "taskPatterns": [
+        "extraction",
+        "classification",
+        "multimodal"
+      ],
+      "keywords": [
+        "google",
+        "gemini",
+        "2.5-flash"
+      ],
+      "provider": "Google",
+      "category": "multimodal",
+      "costTier": "low",
+      "contextWindow": 1000000
+    },
+    {
+      "id": "qwen-max",
+      "name": "Qwen-Max",
+      "url": "https://help.aliyun.com/zh/model-studio/",
+      "oneLiner": "中文场景表现稳健，适合企业级通用任务。",
+      "tags": [
+        "chinese",
+        "general",
+        "api",
+        "alibaba"
+      ],
+      "taskPatterns": [
+        "chinese nlp",
+        "summarization",
+        "chat"
+      ],
+      "keywords": [
+        "qwen",
+        "qwen-max",
+        "tongyi"
+      ],
+      "provider": "Alibaba",
+      "category": "general",
+      "costTier": "medium",
+      "contextWindow": 32768
+    },
+    {
+      "id": "qwen3-235b",
+      "name": "Qwen3 235B",
+      "url": "https://qwenlm.github.io/",
+      "oneLiner": "开源强推理模型，可本地或云上部署。",
+      "tags": [
+        "open-source",
+        "reasoning",
+        "chinese",
+        "coding"
+      ],
+      "taskPatterns": [
+        "coding",
+        "reasoning",
+        "agent",
+        "local deploy"
+      ],
+      "keywords": [
+        "qwen",
+        "qwen3",
+        "235b"
+      ],
+      "provider": "Alibaba",
+      "category": "reasoning",
+      "costTier": "medium",
+      "contextWindow": 131072
+    },
+    {
+      "id": "kimi-k2",
+      "name": "Kimi K2",
+      "url": "https://platform.moonshot.cn/docs",
+      "oneLiner": "长上下文与强推理，适合知识工作流。",
+      "tags": [
+        "long-context",
+        "reasoning",
+        "chinese",
+        "api"
+      ],
+      "taskPatterns": [
+        "long document",
+        "research",
+        "analysis"
+      ],
+      "keywords": [
+        "moonshot",
+        "kimi",
+        "k2"
+      ],
+      "provider": "Moonshot",
+      "category": "reasoning",
+      "costTier": "low",
+      "contextWindow": 256000
+    },
+    {
+      "id": "glm-4.6",
+      "name": "GLM-4.6",
+      "url": "https://open.bigmodel.cn/dev/howuse/model",
+      "oneLiner": "中文能力与工具调用均衡，生态成熟。",
+      "tags": [
+        "chinese",
+        "tool-calling",
+        "general",
+        "api"
+      ],
+      "taskPatterns": [
+        "chinese nlp",
+        "tool calling",
+        "chat"
+      ],
+      "keywords": [
+        "zhipu",
+        "glm",
+        "glm-4.6"
+      ],
+      "provider": "Zhipu",
+      "category": "general",
+      "costTier": "medium",
+      "contextWindow": 200000
+    },
+    {
+      "id": "llama-4-maverick",
+      "name": "Llama 4 Maverick",
+      "url": "https://www.llama.com/",
+      "oneLiner": "开源多模态模型，适合自托管与定制。",
+      "tags": [
+        "open-source",
+        "multimodal",
+        "self-hosted"
+      ],
+      "taskPatterns": [
+        "self-hosted",
+        "multimodal",
+        "customization"
+      ],
+      "keywords": [
+        "meta",
+        "llama",
+        "maverick"
+      ],
+      "provider": "Meta",
+      "category": "general",
+      "costTier": "low",
+      "contextWindow": 1000000
+    },
+    {
+      "id": "mistral-large",
+      "name": "Mistral Large",
+      "url": "https://docs.mistral.ai/",
+      "oneLiner": "欧洲生态通用模型，支持函数调用与多语言。",
+      "tags": [
+        "general",
+        "multilingual",
+        "function-calling",
+        "api"
+      ],
+      "taskPatterns": [
+        "multilingual",
+        "function calling",
+        "summarization"
+      ],
+      "keywords": [
+        "mistral",
+        "large"
+      ],
+      "provider": "Mistral",
+      "category": "general",
+      "costTier": "medium",
+      "contextWindow": 128000
+    },
+    {
+      "id": "grok-4",
+      "name": "Grok 4",
+      "url": "https://docs.x.ai/",
+      "oneLiner": "实时信息与强推理，适合研究型问答。",
+      "tags": [
+        "reasoning",
+        "research",
+        "multimodal"
+      ],
+      "taskPatterns": [
+        "research",
+        "reasoning",
+        "real-time qa"
+      ],
+      "keywords": [
+        "xai",
+        "grok",
+        "grok-4"
+      ],
+      "provider": "xAI",
+      "category": "general",
+      "costTier": "high",
+      "contextWindow": 128000
+    },
+    {
+      "id": "minimax-m2",
+      "name": "MiniMax M2",
+      "url": "https://platform.minimaxi.com/document",
+      "oneLiner": "长上下文与高性价比，适合知识问答。",
+      "tags": [
+        "long-context",
+        "cheap",
+        "chinese",
+        "api"
+      ],
+      "taskPatterns": [
+        "knowledge qa",
+        "summarization",
+        "chinese"
+      ],
+      "keywords": [
+        "minimax",
+        "m2"
+      ],
+      "provider": "MiniMax",
+      "category": "general",
+      "costTier": "low",
+      "contextWindow": 245760
+    },
+    {
+      "id": "ernie-4.5",
+      "name": "ERNIE 4.5",
+      "url": "https://cloud.baidu.com/doc/WENXINWORKSHOP/index.html",
+      "oneLiner": "百度文心旗舰，中文知识与检索增强较强。",
+      "tags": [
+        "chinese",
+        "rag",
+        "general",
+        "api"
+      ],
+      "taskPatterns": [
+        "chinese qa",
+        "rag",
+        "summarization"
+      ],
+      "keywords": [
+        "baidu",
+        "ernie",
+        "wenxin"
+      ],
+      "provider": "Baidu",
+      "category": "general",
+      "costTier": "medium",
+      "contextWindow": 128000
+    }
+  ]
+}

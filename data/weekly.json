@@ -1,0 +1,102 @@
+{
+  "currentEditionId": "2026-w39",
+  "editions": [
+    {
+      "id": "2026-w39",
+      "title": "第 39 期：Agent 工程进入协议与工具边界竞争",
+      "dateRange": "2026.09.22 - 2026.09.28",
+      "summary": "本周真正值得关注的不是单次模型跑分，而是 MCP、Skills 和结构化输出正在形成可复用的工程边界。团队应优先投资工具权限、失败恢复和可验证工作流，而不是频繁更换模型。",
+      "keyHighlights": [
+        {
+          "category": "MCP",
+          "title": "MCP 从工具接入转向权限与审计能力竞争",
+          "description": "浏览器、数据库、搜索和项目协作类 MCP 持续扩张，实际接入时的最小权限、凭据隔离和调用审计开始比工具数量更重要。",
+          "impactScore": 5,
+          "link": "https://modelcontextprotocol.io/"
+        },
+        {
+          "category": "Workflow",
+          "title": "Skills 成为可版本化的流程资产",
+          "description": "将领域步骤沉淀为 Skill 后，团队能够单独评审、回滚和复用，不必把所有上下文堆进超长 Prompt。",
+          "impactScore": 5,
+          "link": "https://github.com/anthropics/skills"
+        },
+        {
+          "category": "Model",
+          "title": "长上下文模型的瓶颈转向检索与证据组织",
+          "description": "百万级上下文降低了搬运成本，但去重、来源追踪和证据组织仍决定最终准确率，静态知识库需要先做结构化筛选。",
+          "impactScore": 4,
+          "link": "https://ai.google.dev/gemini-api/docs"
+        }
+      ],
+      "nextWeekOutlook": [
+        {
+          "topic": "MCP 身份认证与远程传输规范更新",
+          "expectedDate": "2026-10-03",
+          "whyItMatters": "远程 MCP 的可信身份和权限范围会直接影响企业是否能把 Agent 接入真实生产系统。",
+          "actionableAdvice": "为新接入的 MCP 建立 allowlist，记录凭据来源和可访问资源，并优先选择支持最小权限配置的服务。"
+        },
+        {
+          "topic": "结构化输出在小模型上的稳定性讨论",
+          "whyItMatters": "更多团队开始用 3B 到 7B 本地模型替代云端调用，但 JSON Schema 执行能力差异很大。",
+          "actionableAdvice": "在评测中加入真实任务 Schema，不要只看 FAQ 或聊天质量；低于 3B 的模型不要用于核心工作流。"
+        },
+        {
+          "topic": "Agent 记忆与隐私边界",
+          "whyItMatters": "持久化记忆能提升连续性，也扩大了用户数据泄漏和错误记忆传播的风险。",
+          "actionableAdvice": "把记忆内容按敏感等级分区，提供删除和导出能力，并避免默认写入完整对话。"
+        }
+      ],
+      "fullMarkdownContent": "# 本周降噪\n\n## 核心判断\n\n本周的主线是 **Agent 工程从模型能力竞争转向协议、权限和可验证工作流竞争**。模型仍然重要，但真正阻碍落地的通常是工具边界不清、凭据过宽、失败无法恢复以及输出无法验证。\n\n## 三个值得跟踪的信号\n\n### 1. MCP 的权限模型开始成为选型标准\n\nMCP 生态正在从“能接多少工具”转向“能否安全地接”。企业评估时至少需要确认：\n\n- 是否支持按工具或资源授权\n- 凭据是否与 Agent 运行环境隔离\n- 是否记录调用来源、参数摘要和失败原因\n- 是否支持超时、重试与人工确认\n\n### 2. Skills 是 Prompt 的工程化载体\n\n把稳定流程沉淀为 Skill，可以独立版本控制并降低每次请求的上下文成本。适合沉淀的内容包括数据源约定、输出格式、质量检查规则和常见失败恢复。\n\n### 3. 长上下文不等于高质量检索\n\n大上下文模型能容纳更多资料，但无关内容会稀释注意力。更稳的方式是先做标签、关键词或混合检索，再只把高相关片段交给模型。\n\n## 对开发者的建议\n\n1. 先定义每个工具的最小权限和失败边界。\n2. 将常用流程拆成可测试的 Skill，而不是继续堆 Prompt。\n3. 对结构化输出执行真实 Schema 测试。\n4. 为所有自动提交、写文件和发布动作保留人工确认点。\n\n## 结论\n\n本周应暂缓无目的增加模型数量，把精力放在工具治理、可观测性和流程复用上。",
+      "recommendedPrompts": [
+        "设计一个安全的 MCP 工具接入方案，包含最小权限、凭据隔离和调用审计",
+        "把现有的 AI 工作流拆成可版本化的 Agent Skills，并给出目录结构"
+      ]
+    },
+    {
+      "id": "2026-w38",
+      "title": "第 38 期：轻量工作流与本地编码 Agent 进入实用阶段",
+      "dateRange": "2026.09.15 - 2026.09.21",
+      "summary": "编码 Agent 的竞争重点转向仓库理解、工具调用和验证闭环。文件驱动、无数据库的小型工具链仍然具有很强的落地价值。",
+      "keyHighlights": [
+        {
+          "category": "Workflow",
+          "title": "配置即代码成为 AI 工具集成的重要形态",
+          "description": "MCP 配置、Skill 清单和模型参数开始像基础设施代码一样被版本控制，静态仓库可以承担配置分发层。",
+          "impactScore": 4,
+          "link": "https://github.com/openai/codex"
+        },
+        {
+          "category": "MCP",
+          "title": "浏览器自动化从脚本走向可观测 Agent",
+          "description": "Playwright 与 DevTools 类 MCP 让 Agent 能感知页面状态并验证操作结果，测试与自动化的边界开始重合。",
+          "impactScore": 4,
+          "link": "https://github.com/microsoft/playwright-mcp"
+        },
+        {
+          "category": "Model",
+          "title": "本地推理继续向低成本和隐私场景渗透",
+          "description": "7B 级量化模型在摘要、分类和抽取任务上已经可以承担部分本地工作，但工具调用与复杂 Schema 仍需要更大模型。",
+          "impactScore": 3
+        }
+      ],
+      "nextWeekOutlook": [
+        {
+          "topic": "本地 Agent 的评测标准",
+          "whyItMatters": "模型参数规模不能代表工具调用和长流程执行能力，团队需要基于真实任务建立评测。",
+          "actionableAdvice": "准备一组包含文件处理、浏览器操作和结构化输出的固定任务，对不同 Ollama 模型运行回归测试。"
+        },
+        {
+          "topic": "Agent 生成的 PR 如何进入代码审查流程",
+          "whyItMatters": "自动提交不等于自动合并，PR 描述、测试证据和变更边界需要适合人工审查。",
+          "actionableAdvice": "要求 Agent 默认创建 Draft PR，附上变更来源、测试命令和未验证项。"
+        }
+      ],
+      "fullMarkdownContent": "# 第 38 期摘要\n\n## 本周变化\n\n轻量工作流和本地编码 Agent 已经进入可用阶段。主要价值不是“完全自动写代码”，而是把仓库检索、修改、测试和生成 Draft PR 组成可审查的闭环。\n\n## 实践建议\n\n- 用结构化文件管理 MCP 和 Skill 配置。\n- 让 Agent 默认生成 Draft PR，而不是直接修改主分支。\n- 为浏览器操作加入结果断言和截图证据。\n- 本地模型先从摘要、分类和抽取任务开始接入。",
+      "recommendedPrompts": [
+        "搭建一个本地编码 Agent 工作流，包含仓库检索、修改、测试和创建 GitHub Draft PR",
+        "为 Playwright MCP 设计一个可验证的浏览器自动化工作流"
+      ]
+    }
+  ]
+}

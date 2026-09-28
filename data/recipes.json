@@ -1,0 +1,307 @@
+{
+  "version": 1,
+  "updatedAt": "2026-09-28T15:20:31.669Z",
+  "items": [
+    {
+      "id": "pdf-to-excel",
+      "title": "PDF 财报批量解析并导出 Excel",
+      "taskPattern": "自动解析多份 PDF 财报并导出成 Excel",
+      "components": [
+        {
+          "kind": "model",
+          "id": "claude-sonnet-4-5",
+          "role": "解析文本与抽取字段"
+        },
+        {
+          "kind": "skill",
+          "id": "pdf",
+          "role": "读取与提取 PDF 内容"
+        },
+        {
+          "kind": "skill",
+          "id": "xlsx",
+          "role": "生成结构化 Excel"
+        },
+        {
+          "kind": "mcp",
+          "id": "filesystem",
+          "role": "读取输入目录并写入输出文件"
+        }
+      ],
+      "steps": [
+        "整理待解析 PDF 到统一目录",
+        "用 PDF 技能逐份提取文本",
+        "定义字段并让模型抽取结构化数据",
+        "用 XLSX 技能写入工作表",
+        "抽查结果并修正异常行"
+      ],
+      "rationale": "PDF 与 XLSX 技能分别负责输入输出，模型只做抽取与纠错，分工清晰。",
+      "tags": [
+        "pdf",
+        "excel",
+        "finance",
+        "extraction"
+      ]
+    },
+    {
+      "id": "web-research-report",
+      "title": "联网研究并生成 Word 报告",
+      "taskPattern": "围绕一个主题联网检索并生成可交付的报告",
+      "components": [
+        {
+          "kind": "model",
+          "id": "gemini-2.5-pro",
+          "role": "综合分析并撰写长报告"
+        },
+        {
+          "kind": "mcp",
+          "id": "tavily",
+          "role": "获取最新网络资料"
+        },
+        {
+          "kind": "mcp",
+          "id": "fetch",
+          "role": "读取来源网页"
+        },
+        {
+          "kind": "skill",
+          "id": "docx",
+          "role": "生成 Word 文档"
+        }
+      ],
+      "steps": [
+        "明确研究问题与资料边界",
+        "用 Tavily 检索相关来源",
+        "用 Fetch 读取关键网页",
+        "让模型归纳结论与引用",
+        "用 DOCX 技能生成报告"
+      ],
+      "rationale": "搜索、读取、写作、导出四段分离，适合研究型任务。",
+      "tags": [
+        "research",
+        "web",
+        "report",
+        "docx"
+      ]
+    },
+    {
+      "id": "local-code-agent",
+      "title": "本地编码 Agent 工作流",
+      "taskPattern": "在本地仓库实现功能并提交代码",
+      "components": [
+        {
+          "kind": "model",
+          "id": "deepseek-chat",
+          "role": "生成与审查代码"
+        },
+        {
+          "kind": "mcp",
+          "id": "github",
+          "role": "管理 Issue 与 PR"
+        },
+        {
+          "kind": "mcp",
+          "id": "git",
+          "role": "执行本地版本控制"
+        },
+        {
+          "kind": "skill",
+          "id": "skill-creator",
+          "role": "沉淀可复用技能"
+        }
+      ],
+      "steps": [
+        "理解需求并检索仓库",
+        "用模型生成代码修改",
+        "运行测试与类型检查",
+        "用 Git 提交变更",
+        "用 GitHub 创建 PR"
+      ],
+      "rationale": "DeepSeek 成本低，配合 Git/GitHub 完成闭环。",
+      "tags": [
+        "coding",
+        "git",
+        "github",
+        "agent"
+      ]
+    },
+    {
+      "id": "data-pipeline",
+      "title": "数据库分析与报表导出",
+      "taskPattern": "从数据库提取数据并生成分析报表",
+      "components": [
+        {
+          "kind": "model",
+          "id": "gpt-4.1",
+          "role": "生成 SQL 与分析结论"
+        },
+        {
+          "kind": "mcp",
+          "id": "postgres",
+          "role": "查询数据库"
+        },
+        {
+          "kind": "skill",
+          "id": "xlsx",
+          "role": "导出报表"
+        }
+      ],
+      "steps": [
+        "确认指标与查询范围",
+        "让模型生成并执行 SQL",
+        "检查结果数据质量",
+        "让模型总结分析结论",
+        "导出 Excel 报表"
+      ],
+      "rationale": "Postgres MCP 直接查库，XLSX 技能负责交付格式。",
+      "tags": [
+        "database",
+        "sql",
+        "analysis",
+        "excel"
+      ]
+    },
+    {
+      "id": "browser-automation",
+      "title": "网页自动化操作",
+      "taskPattern": "自动登录网站并完成重复操作",
+      "components": [
+        {
+          "kind": "model",
+          "id": "claude-sonnet-4-5",
+          "role": "规划操作步骤"
+        },
+        {
+          "kind": "mcp",
+          "id": "playwright",
+          "role": "驱动浏览器执行"
+        },
+        {
+          "kind": "skill",
+          "id": "webapp-testing",
+          "role": "校验交互结果"
+        }
+      ],
+      "steps": [
+        "定义目标页面与操作序列",
+        "让模型生成步骤脚本",
+        "用 Playwright 执行浏览器操作",
+        "用 Web 测试技能验证结果",
+        "输出执行报告"
+      ],
+      "rationale": "Playwright 提供稳定浏览器控制，测试技能负责断言。",
+      "tags": [
+        "browser",
+        "automation",
+        "playwright"
+      ]
+    },
+    {
+      "id": "knowledge-rag",
+      "title": "知识库问答与长期记忆",
+      "taskPattern": "基于本地资料做检索增强问答并记住上下文",
+      "components": [
+        {
+          "kind": "model",
+          "id": "kimi-k2",
+          "role": "长文阅读与问答"
+        },
+        {
+          "kind": "mcp",
+          "id": "memory",
+          "role": "持久化知识图谱"
+        },
+        {
+          "kind": "mcp",
+          "id": "fetch",
+          "role": "读取本地或网络资料"
+        }
+      ],
+      "steps": [
+        "整理知识资料",
+        "用 Fetch 读取资料",
+        "用 Memory 建立知识图谱",
+        "让模型基于资料回答问题",
+        "更新记忆与引用"
+      ],
+      "rationale": "Memory MCP 提供跨会话记忆，Kimi 长上下文适合引用。",
+      "tags": [
+        "rag",
+        "memory",
+        "knowledge",
+        "qa"
+      ]
+    },
+    {
+      "id": "multi-agent-orchestration",
+      "title": "多 Agent 协作编排",
+      "taskPattern": "把复杂任务拆给多个 Agent 并行执行",
+      "components": [
+        {
+          "kind": "model",
+          "id": "claude-opus-4-1",
+          "role": "高层规划与质量把关"
+        },
+        {
+          "kind": "skill",
+          "id": "crewai",
+          "role": "编排多 Agent 角色"
+        },
+        {
+          "kind": "mcp",
+          "id": "sequential-thinking",
+          "role": "分步推理"
+        }
+      ],
+      "steps": [
+        "拆解任务为角色与子目标",
+        "定义各 Agent 的输入输出",
+        "用 CrewAI 编排协作流程",
+        "汇总结果并让主模型校验",
+        "输出最终交付物"
+      ],
+      "rationale": "CrewAI 负责编排，Sequential Thinking 负责逻辑拆解。",
+      "tags": [
+        "multi-agent",
+        "orchestration",
+        "crewai"
+      ]
+    },
+    {
+      "id": "slides-from-notes",
+      "title": "会议纪要生成演示文稿",
+      "taskPattern": "把笔记或纪要转成演示文稿",
+      "components": [
+        {
+          "kind": "model",
+          "id": "gpt-4o",
+          "role": "提炼要点与视觉结构"
+        },
+        {
+          "kind": "skill",
+          "id": "docx",
+          "role": "读取源文档"
+        },
+        {
+          "kind": "skill",
+          "id": "pptx",
+          "role": "生成幻灯片"
+        }
+      ],
+      "steps": [
+        "读取源文档或纪要",
+        "让模型提炼关键信息",
+        "设计幻灯片大纲",
+        "用 PPTX 技能生成演示文稿",
+        "检查版式与文字溢出"
+      ],
+      "rationale": "文档读取与幻灯片生成均由专用技能完成。",
+      "tags": [
+        "slides",
+        "presentation",
+        "ppt",
+        "notes"
+      ]
+    }
+  ]
+}

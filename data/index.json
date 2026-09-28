@@ -1,0 +1,1002 @@
+{
+  "version": 1,
+  "updatedAt": "2026-09-28T15:20:31.669Z",
+  "items": [
+    {
+      "kind": "model",
+      "id": "deepseek-chat",
+      "name": "DeepSeek V3.2",
+      "tags": [
+        "reasoning",
+        "cheap",
+        "api",
+        "openai-compatible",
+        "chinese"
+      ],
+      "taskPatterns": [
+        "document parsing",
+        "data extraction",
+        "agent workflow",
+        "summarization"
+      ],
+      "oneLiner": "低成本、强推理的中文友好模型，适合大多数自动化任务。"
+    },
+    {
+      "kind": "model",
+      "id": "deepseek-reasoner",
+      "name": "DeepSeek R1",
+      "tags": [
+        "reasoning",
+        "math",
+        "code",
+        "cheap",
+        "api"
+      ],
+      "taskPatterns": [
+        "math",
+        "code review",
+        "logic",
+        "research"
+      ],
+      "oneLiner": "长链推理与复杂逻辑分析能力强，适合数学与代码推演。"
+    },
+    {
+      "kind": "model",
+      "id": "gpt-4o",
+      "name": "GPT-4o",
+      "tags": [
+        "multimodal",
+        "vision",
+        "general",
+        "api"
+      ],
+      "taskPatterns": [
+        "image understanding",
+        "chat",
+        "summarization",
+        "vision"
+      ],
+      "oneLiner": "多模态通用模型，适合图像理解与快速对话。"
+    },
+    {
+      "kind": "model",
+      "id": "gpt-4.1",
+      "name": "GPT-4.1",
+      "tags": [
+        "long-context",
+        "coding",
+        "general",
+        "api"
+      ],
+      "taskPatterns": [
+        "long document",
+        "coding",
+        "instruction following"
+      ],
+      "oneLiner": "百万级上下文与稳定指令遵循，适合长文档处理。"
+    },
+    {
+      "kind": "model",
+      "id": "o4-mini",
+      "name": "o4-mini",
+      "tags": [
+        "reasoning",
+        "cheap",
+        "coding",
+        "api"
+      ],
+      "taskPatterns": [
+        "coding",
+        "structured output",
+        "logic"
+      ],
+      "oneLiner": "高性价比推理模型，适合代码与结构化输出。"
+    },
+    {
+      "kind": "model",
+      "id": "claude-sonnet-4-5",
+      "name": "Claude Sonnet 4.5",
+      "tags": [
+        "agent",
+        "long-context",
+        "general",
+        "coding"
+      ],
+      "taskPatterns": [
+        "agent workflow",
+        "coding",
+        "summarization",
+        "analysis"
+      ],
+      "oneLiner": "平衡速度与质量的通用模型，适合 Agent 与长文本。"
+    },
+    {
+      "kind": "model",
+      "id": "claude-opus-4-1",
+      "name": "Claude Opus 4.1",
+      "tags": [
+        "reasoning",
+        "long-context",
+        "writing",
+        "coding"
+      ],
+      "taskPatterns": [
+        "complex reasoning",
+        "writing",
+        "research",
+        "coding"
+      ],
+      "oneLiner": "复杂推理与高质量长文本生成的首选。"
+    },
+    {
+      "kind": "model",
+      "id": "gemini-2.5-pro",
+      "name": "Gemini 2.5 Pro",
+      "tags": [
+        "long-context",
+        "multimodal",
+        "reasoning"
+      ],
+      "taskPatterns": [
+        "large corpus",
+        "multimodal",
+        "reasoning",
+        "research"
+      ],
+      "oneLiner": "超长上下文与强推理，适合大规模资料分析。"
+    },
+    {
+      "kind": "model",
+      "id": "gemini-2.5-flash",
+      "name": "Gemini 2.5 Flash",
+      "tags": [
+        "cheap",
+        "fast",
+        "multimodal",
+        "long-context"
+      ],
+      "taskPatterns": [
+        "extraction",
+        "classification",
+        "multimodal"
+      ],
+      "oneLiner": "低延迟、高吞吐，适合大规模抽取与分类。"
+    },
+    {
+      "kind": "model",
+      "id": "qwen-max",
+      "name": "Qwen-Max",
+      "tags": [
+        "chinese",
+        "general",
+        "api",
+        "alibaba"
+      ],
+      "taskPatterns": [
+        "chinese nlp",
+        "summarization",
+        "chat"
+      ],
+      "oneLiner": "中文场景表现稳健，适合企业级通用任务。"
+    },
+    {
+      "kind": "model",
+      "id": "qwen3-235b",
+      "name": "Qwen3 235B",
+      "tags": [
+        "open-source",
+        "reasoning",
+        "chinese",
+        "coding"
+      ],
+      "taskPatterns": [
+        "coding",
+        "reasoning",
+        "agent",
+        "local deploy"
+      ],
+      "oneLiner": "开源强推理模型，可本地或云上部署。"
+    },
+    {
+      "kind": "model",
+      "id": "kimi-k2",
+      "name": "Kimi K2",
+      "tags": [
+        "long-context",
+        "reasoning",
+        "chinese",
+        "api"
+      ],
+      "taskPatterns": [
+        "long document",
+        "research",
+        "analysis"
+      ],
+      "oneLiner": "长上下文与强推理，适合知识工作流。"
+    },
+    {
+      "kind": "model",
+      "id": "glm-4.6",
+      "name": "GLM-4.6",
+      "tags": [
+        "chinese",
+        "tool-calling",
+        "general",
+        "api"
+      ],
+      "taskPatterns": [
+        "chinese nlp",
+        "tool calling",
+        "chat"
+      ],
+      "oneLiner": "中文能力与工具调用均衡，生态成熟。"
+    },
+    {
+      "kind": "model",
+      "id": "llama-4-maverick",
+      "name": "Llama 4 Maverick",
+      "tags": [
+        "open-source",
+        "multimodal",
+        "self-hosted"
+      ],
+      "taskPatterns": [
+        "self-hosted",
+        "multimodal",
+        "customization"
+      ],
+      "oneLiner": "开源多模态模型，适合自托管与定制。"
+    },
+    {
+      "kind": "model",
+      "id": "mistral-large",
+      "name": "Mistral Large",
+      "tags": [
+        "general",
+        "multilingual",
+        "function-calling",
+        "api"
+      ],
+      "taskPatterns": [
+        "multilingual",
+        "function calling",
+        "summarization"
+      ],
+      "oneLiner": "欧洲生态通用模型，支持函数调用与多语言。"
+    },
+    {
+      "kind": "model",
+      "id": "grok-4",
+      "name": "Grok 4",
+      "tags": [
+        "reasoning",
+        "research",
+        "multimodal"
+      ],
+      "taskPatterns": [
+        "research",
+        "reasoning",
+        "real-time qa"
+      ],
+      "oneLiner": "实时信息与强推理，适合研究型问答。"
+    },
+    {
+      "kind": "model",
+      "id": "minimax-m2",
+      "name": "MiniMax M2",
+      "tags": [
+        "long-context",
+        "cheap",
+        "chinese",
+        "api"
+      ],
+      "taskPatterns": [
+        "knowledge qa",
+        "summarization",
+        "chinese"
+      ],
+      "oneLiner": "长上下文与高性价比，适合知识问答。"
+    },
+    {
+      "kind": "model",
+      "id": "ernie-4.5",
+      "name": "ERNIE 4.5",
+      "tags": [
+        "chinese",
+        "rag",
+        "general",
+        "api"
+      ],
+      "taskPatterns": [
+        "chinese qa",
+        "rag",
+        "summarization"
+      ],
+      "oneLiner": "百度文心旗舰，中文知识与检索增强较强。"
+    },
+    {
+      "kind": "mcp",
+      "id": "filesystem",
+      "name": "Filesystem MCP",
+      "tags": [
+        "files",
+        "local",
+        "stdio"
+      ],
+      "taskPatterns": [
+        "file read",
+        "file write",
+        "local automation"
+      ],
+      "oneLiner": "安全读写指定目录，用于本地文件任务。"
+    },
+    {
+      "kind": "mcp",
+      "id": "memory",
+      "name": "Memory MCP",
+      "tags": [
+        "memory",
+        "knowledge graph",
+        "state"
+      ],
+      "taskPatterns": [
+        "persistent memory",
+        "context",
+        "knowledge"
+      ],
+      "oneLiner": "为 Agent 提供持久化知识图谱记忆。"
+    },
+    {
+      "kind": "mcp",
+      "id": "fetch",
+      "name": "Fetch MCP",
+      "tags": [
+        "web",
+        "http",
+        "fetch"
+      ],
+      "taskPatterns": [
+        "web fetch",
+        "url read",
+        "scraping"
+      ],
+      "oneLiner": "抓取网页并转换为 Markdown 供模型阅读。"
+    },
+    {
+      "kind": "mcp",
+      "id": "sequential-thinking",
+      "name": "Sequential Thinking MCP",
+      "tags": [
+        "reasoning",
+        "planning",
+        "structured"
+      ],
+      "taskPatterns": [
+        "planning",
+        "reasoning",
+        "problem solving"
+      ],
+      "oneLiner": "引导模型分步推理，适合复杂规划。"
+    },
+    {
+      "kind": "mcp",
+      "id": "playwright",
+      "name": "Playwright MCP",
+      "tags": [
+        "browser",
+        "automation",
+        "testing"
+      ],
+      "taskPatterns": [
+        "browser automation",
+        "web testing",
+        "e2e"
+      ],
+      "oneLiner": "驱动真实浏览器进行自动化与网页测试。"
+    },
+    {
+      "kind": "mcp",
+      "id": "puppeteer",
+      "name": "Puppeteer MCP",
+      "tags": [
+        "browser",
+        "headless",
+        "automation"
+      ],
+      "taskPatterns": [
+        "headless browser",
+        "scraping",
+        "interaction"
+      ],
+      "oneLiner": "控制无头浏览器，用于抓取与交互。"
+    },
+    {
+      "kind": "mcp",
+      "id": "firecrawl",
+      "name": "Firecrawl MCP",
+      "tags": [
+        "web",
+        "scraping",
+        "markdown"
+      ],
+      "taskPatterns": [
+        "site scraping",
+        "markdown conversion",
+        "crawling"
+      ],
+      "oneLiner": "将网站转成干净 Markdown，支持批量抓取。"
+    },
+    {
+      "kind": "mcp",
+      "id": "exa",
+      "name": "Exa MCP",
+      "tags": [
+        "search",
+        "web",
+        "semantic"
+      ],
+      "taskPatterns": [
+        "web search",
+        "research",
+        "semantic search"
+      ],
+      "oneLiner": "语义化网页搜索，适合联网研究。"
+    },
+    {
+      "kind": "mcp",
+      "id": "brave-search",
+      "name": "Brave Search MCP",
+      "tags": [
+        "search",
+        "web",
+        "api"
+      ],
+      "taskPatterns": [
+        "web search",
+        "news",
+        "research"
+      ],
+      "oneLiner": "调用 Brave 搜索 API 获取实时网页结果。"
+    },
+    {
+      "kind": "mcp",
+      "id": "tavily",
+      "name": "Tavily MCP",
+      "tags": [
+        "search",
+        "web",
+        "llm"
+      ],
+      "taskPatterns": [
+        "web search",
+        "extraction",
+        "research"
+      ],
+      "oneLiner": "面向 LLM 的联网搜索与内容抽取。"
+    },
+    {
+      "kind": "mcp",
+      "id": "slack",
+      "name": "Slack MCP",
+      "tags": [
+        "communication",
+        "slack",
+        "team"
+      ],
+      "taskPatterns": [
+        "team communication",
+        "notification",
+        "collaboration"
+      ],
+      "oneLiner": "读写 Slack 消息与频道，用于协作自动化。"
+    },
+    {
+      "kind": "mcp",
+      "id": "notion",
+      "name": "Notion MCP",
+      "tags": [
+        "notes",
+        "knowledge",
+        "database"
+      ],
+      "taskPatterns": [
+        "note management",
+        "knowledge base",
+        "database"
+      ],
+      "oneLiner": "访问 Notion 页面与数据库，用于知识管理。"
+    },
+    {
+      "kind": "mcp",
+      "id": "linear",
+      "name": "Linear MCP",
+      "tags": [
+        "project management",
+        "issue",
+        "dev"
+      ],
+      "taskPatterns": [
+        "issue tracking",
+        "project management",
+        "workflow"
+      ],
+      "oneLiner": "管理 Linear 项目与 Issue，适合研发流程。"
+    },
+    {
+      "kind": "mcp",
+      "id": "postgres",
+      "name": "PostgreSQL MCP",
+      "tags": [
+        "database",
+        "sql",
+        "postgres"
+      ],
+      "taskPatterns": [
+        "sql query",
+        "database",
+        "data analysis"
+      ],
+      "oneLiner": "直接查询 PostgreSQL 数据库。"
+    },
+    {
+      "kind": "mcp",
+      "id": "sqlite",
+      "name": "SQLite MCP",
+      "tags": [
+        "database",
+        "sqlite",
+        "local"
+      ],
+      "taskPatterns": [
+        "local database",
+        "sql query",
+        "analysis"
+      ],
+      "oneLiner": "本地 SQLite 查询，无需外部服务。"
+    },
+    {
+      "kind": "mcp",
+      "id": "github",
+      "name": "GitHub MCP",
+      "tags": [
+        "git",
+        "github",
+        "repository"
+      ],
+      "taskPatterns": [
+        "repository automation",
+        "issue",
+        "pr",
+        "code search"
+      ],
+      "oneLiner": "操作 GitHub 仓库、Issue、PR 与搜索。"
+    },
+    {
+      "kind": "mcp",
+      "id": "git",
+      "name": "Git MCP",
+      "tags": [
+        "git",
+        "repository",
+        "local"
+      ],
+      "taskPatterns": [
+        "git automation",
+        "repository",
+        "version control"
+      ],
+      "oneLiner": "在本地仓库执行 Git 操作。"
+    },
+    {
+      "kind": "mcp",
+      "id": "chrome-devtools",
+      "name": "Chrome DevTools MCP",
+      "tags": [
+        "browser",
+        "debug",
+        "chrome"
+      ],
+      "taskPatterns": [
+        "browser automation",
+        "performance",
+        "debugging"
+      ],
+      "oneLiner": "连接 Chrome 调试器进行页面自动化与性能分析。"
+    },
+    {
+      "kind": "skill",
+      "id": "skill-creator",
+      "name": "Skill Creator",
+      "tags": [
+        "meta",
+        "authoring",
+        "claude"
+      ],
+      "taskPatterns": [
+        "skill creation",
+        "prompt authoring"
+      ],
+      "oneLiner": "指导创建高质量、可复用的 Agent Skill。"
+    },
+    {
+      "kind": "skill",
+      "id": "mcp-builder",
+      "name": "MCP Builder",
+      "tags": [
+        "mcp",
+        "authoring",
+        "meta"
+      ],
+      "taskPatterns": [
+        "mcp server",
+        "tool building"
+      ],
+      "oneLiner": "构建高质量 MCP Server 的指南与脚手架。"
+    },
+    {
+      "kind": "skill",
+      "id": "pdf",
+      "name": "PDF Skill",
+      "tags": [
+        "pdf",
+        "document",
+        "extraction"
+      ],
+      "taskPatterns": [
+        "pdf reading",
+        "pdf generation",
+        "form filling"
+      ],
+      "oneLiner": "读取、生成与校验 PDF 文档。"
+    },
+    {
+      "kind": "skill",
+      "id": "pptx",
+      "name": "PPTX Skill",
+      "tags": [
+        "pptx",
+        "presentation",
+        "document"
+      ],
+      "taskPatterns": [
+        "presentation",
+        "slide deck"
+      ],
+      "oneLiner": "创建与编辑 PowerPoint 演示文稿。"
+    },
+    {
+      "kind": "skill",
+      "id": "xlsx",
+      "name": "XLSX Skill",
+      "tags": [
+        "xlsx",
+        "spreadsheet",
+        "document"
+      ],
+      "taskPatterns": [
+        "spreadsheet",
+        "data analysis",
+        "formula"
+      ],
+      "oneLiner": "读写 Excel 工作簿与公式。"
+    },
+    {
+      "kind": "skill",
+      "id": "docx",
+      "name": "DOCX Skill",
+      "tags": [
+        "docx",
+        "word",
+        "document"
+      ],
+      "taskPatterns": [
+        "word document",
+        "editing",
+        "redline"
+      ],
+      "oneLiner": "创建、编辑与审阅 Word 文档。"
+    },
+    {
+      "kind": "skill",
+      "id": "webapp-testing",
+      "name": "Web App Testing",
+      "tags": [
+        "testing",
+        "playwright",
+        "web"
+      ],
+      "taskPatterns": [
+        "web testing",
+        "e2e",
+        "playwright"
+      ],
+      "oneLiner": "使用 Playwright 对 Web 应用做交互测试。"
+    },
+    {
+      "kind": "skill",
+      "id": "canvas-design",
+      "name": "Canvas Design",
+      "tags": [
+        "design",
+        "visual",
+        "creative"
+      ],
+      "taskPatterns": [
+        "poster",
+        "visual design"
+      ],
+      "oneLiner": "创建海报与视觉设计。"
+    },
+    {
+      "kind": "skill",
+      "id": "artifact-builder",
+      "name": "Artifact Builder",
+      "tags": [
+        "frontend",
+        "react",
+        "artifact"
+      ],
+      "taskPatterns": [
+        "frontend app",
+        "react",
+        "prototype"
+      ],
+      "oneLiner": "构建复杂前端 Artifact 应用。"
+    },
+    {
+      "kind": "skill",
+      "id": "brand-guidelines",
+      "name": "Brand Guidelines",
+      "tags": [
+        "brand",
+        "design",
+        "guidelines"
+      ],
+      "taskPatterns": [
+        "brand asset",
+        "visual design"
+      ],
+      "oneLiner": "按 Anthropic 品牌规范生成视觉内容。"
+    },
+    {
+      "kind": "skill",
+      "id": "slack-gif-creator",
+      "name": "Slack GIF Creator",
+      "tags": [
+        "gif",
+        "media",
+        "animation"
+      ],
+      "taskPatterns": [
+        "gif creation",
+        "animation"
+      ],
+      "oneLiner": "生成适合 Slack 分享的 GIF。"
+    },
+    {
+      "kind": "skill",
+      "id": "mcp-servers-usage",
+      "name": "MCP Servers Usage",
+      "tags": [
+        "mcp",
+        "integration",
+        "usage"
+      ],
+      "taskPatterns": [
+        "mcp usage",
+        "tool integration"
+      ],
+      "oneLiner": "接入并使用外部 MCP Server 的指引。"
+    },
+    {
+      "kind": "skill",
+      "id": "awesome-cursorrules",
+      "name": "Awesome Cursor Rules",
+      "tags": [
+        "cursor",
+        "rules",
+        "prompt"
+      ],
+      "taskPatterns": [
+        "cursor rules",
+        "coding context"
+      ],
+      "oneLiner": "精选 Cursor 规则与上下文模板合集。"
+    },
+    {
+      "kind": "skill",
+      "id": "browser-use",
+      "name": "Browser Use",
+      "tags": [
+        "browser",
+        "agent",
+        "python"
+      ],
+      "taskPatterns": [
+        "browser automation",
+        "agent"
+      ],
+      "oneLiner": "让 LLM 控制浏览器的 Python Agent 库。"
+    },
+    {
+      "kind": "skill",
+      "id": "crewai",
+      "name": "CrewAI",
+      "tags": [
+        "multi-agent",
+        "orchestration",
+        "python"
+      ],
+      "taskPatterns": [
+        "multi-agent",
+        "workflow orchestration"
+      ],
+      "oneLiner": "多 Agent 角色编排框架。"
+    },
+    {
+      "kind": "skill",
+      "id": "langgraph",
+      "name": "LangGraph",
+      "tags": [
+        "agent",
+        "graph",
+        "stateful"
+      ],
+      "taskPatterns": [
+        "agent workflow",
+        "state machine",
+        "orchestration"
+      ],
+      "oneLiner": "构建有状态、可循环的 Agent 工作流。"
+    },
+    {
+      "kind": "skill",
+      "id": "smolagents",
+      "name": "SmolAgents",
+      "tags": [
+        "agent",
+        "python",
+        "lightweight"
+      ],
+      "taskPatterns": [
+        "agent",
+        "code execution"
+      ],
+      "oneLiner": "Hugging Face 的轻量代码 Agent 框架。"
+    },
+    {
+      "kind": "skill",
+      "id": "openai-codex",
+      "name": "OpenAI Codex CLI",
+      "tags": [
+        "coding agent",
+        "cli",
+        "mcp"
+      ],
+      "taskPatterns": [
+        "coding",
+        "agent",
+        "cli"
+      ],
+      "oneLiner": "本地运行的编码 Agent，可结合 MCP 与 Skills。"
+    },
+    {
+      "kind": "recipe",
+      "id": "pdf-to-excel",
+      "name": "PDF 财报批量解析并导出 Excel",
+      "tags": [
+        "pdf",
+        "excel",
+        "finance",
+        "extraction"
+      ],
+      "taskPatterns": [
+        "自动解析多份 PDF 财报并导出成 Excel"
+      ],
+      "oneLiner": "PDF 与 XLSX 技能分别负责输入输出，模型只做抽取与纠错，分工清晰。"
+    },
+    {
+      "kind": "recipe",
+      "id": "web-research-report",
+      "name": "联网研究并生成 Word 报告",
+      "tags": [
+        "research",
+        "web",
+        "report",
+        "docx"
+      ],
+      "taskPatterns": [
+        "围绕一个主题联网检索并生成可交付的报告"
+      ],
+      "oneLiner": "搜索、读取、写作、导出四段分离，适合研究型任务。"
+    },
+    {
+      "kind": "recipe",
+      "id": "local-code-agent",
+      "name": "本地编码 Agent 工作流",
+      "tags": [
+        "coding",
+        "git",
+        "github",
+        "agent"
+      ],
+      "taskPatterns": [
+        "在本地仓库实现功能并提交代码"
+      ],
+      "oneLiner": "DeepSeek 成本低，配合 Git/GitHub 完成闭环。"
+    },
+    {
+      "kind": "recipe",
+      "id": "data-pipeline",
+      "name": "数据库分析与报表导出",
+      "tags": [
+        "database",
+        "sql",
+        "analysis",
+        "excel"
+      ],
+      "taskPatterns": [
+        "从数据库提取数据并生成分析报表"
+      ],
+      "oneLiner": "Postgres MCP 直接查库，XLSX 技能负责交付格式。"
+    },
+    {
+      "kind": "recipe",
+      "id": "browser-automation",
+      "name": "网页自动化操作",
+      "tags": [
+        "browser",
+        "automation",
+        "playwright"
+      ],
+      "taskPatterns": [
+        "自动登录网站并完成重复操作"
+      ],
+      "oneLiner": "Playwright 提供稳定浏览器控制，测试技能负责断言。"
+    },
+    {
+      "kind": "recipe",
+      "id": "knowledge-rag",
+      "name": "知识库问答与长期记忆",
+      "tags": [
+        "rag",
+        "memory",
+        "knowledge",
+        "qa"
+      ],
+      "taskPatterns": [
+        "基于本地资料做检索增强问答并记住上下文"
+      ],
+      "oneLiner": "Memory MCP 提供跨会话记忆，Kimi 长上下文适合引用。"
+    },
+    {
+      "kind": "recipe",
+      "id": "multi-agent-orchestration",
+      "name": "多 Agent 协作编排",
+      "tags": [
+        "multi-agent",
+        "orchestration",
+        "crewai"
+      ],
+      "taskPatterns": [
+        "把复杂任务拆给多个 Agent 并行执行"
+      ],
+      "oneLiner": "CrewAI 负责编排，Sequential Thinking 负责逻辑拆解。"
+    },
+    {
+      "kind": "recipe",
+      "id": "slides-from-notes",
+      "name": "会议纪要生成演示文稿",
+      "tags": [
+        "slides",
+        "presentation",
+        "ppt",
+        "notes"
+      ],
+      "taskPatterns": [
+        "把笔记或纪要转成演示文稿"
+      ],
+      "oneLiner": "文档读取与幻灯片生成均由专用技能完成。"
+    }
+  ]
+}

@@ -1,0 +1,464 @@
+{
+  "version": 1,
+  "updatedAt": "2026-09-28T15:20:31.669Z",
+  "items": [
+    {
+      "id": "filesystem",
+      "name": "Filesystem MCP",
+      "url": "https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem",
+      "oneLiner": "安全读写指定目录，用于本地文件任务。",
+      "tags": [
+        "files",
+        "local",
+        "stdio"
+      ],
+      "taskPatterns": [
+        "file read",
+        "file write",
+        "local automation"
+      ],
+      "keywords": [
+        "filesystem",
+        "files",
+        "mcp"
+      ],
+      "transport": "npx",
+      "command": "npx -y @modelcontextprotocol/server-filesystem",
+      "github": "https://github.com/modelcontextprotocol/servers",
+      "verified": true
+    },
+    {
+      "id": "memory",
+      "name": "Memory MCP",
+      "url": "https://github.com/modelcontextprotocol/servers/tree/main/src/memory",
+      "oneLiner": "为 Agent 提供持久化知识图谱记忆。",
+      "tags": [
+        "memory",
+        "knowledge graph",
+        "state"
+      ],
+      "taskPatterns": [
+        "persistent memory",
+        "context",
+        "knowledge"
+      ],
+      "keywords": [
+        "memory",
+        "knowledge graph",
+        "mcp"
+      ],
+      "transport": "npx",
+      "command": "npx -y @modelcontextprotocol/server-memory",
+      "github": "https://github.com/modelcontextprotocol/servers",
+      "verified": true
+    },
+    {
+      "id": "fetch",
+      "name": "Fetch MCP",
+      "url": "https://github.com/modelcontextprotocol/servers/tree/main/src/fetch",
+      "oneLiner": "抓取网页并转换为 Markdown 供模型阅读。",
+      "tags": [
+        "web",
+        "http",
+        "fetch"
+      ],
+      "taskPatterns": [
+        "web fetch",
+        "url read",
+        "scraping"
+      ],
+      "keywords": [
+        "fetch",
+        "http",
+        "web"
+      ],
+      "transport": "npx",
+      "command": "npx -y @modelcontextprotocol/server-fetch",
+      "github": "https://github.com/modelcontextprotocol/servers",
+      "verified": true
+    },
+    {
+      "id": "sequential-thinking",
+      "name": "Sequential Thinking MCP",
+      "url": "https://github.com/modelcontextprotocol/servers/tree/main/src/sequentialthinking",
+      "oneLiner": "引导模型分步推理，适合复杂规划。",
+      "tags": [
+        "reasoning",
+        "planning",
+        "structured"
+      ],
+      "taskPatterns": [
+        "planning",
+        "reasoning",
+        "problem solving"
+      ],
+      "keywords": [
+        "sequential thinking",
+        "reasoning",
+        "mcp"
+      ],
+      "transport": "npx",
+      "command": "npx -y @modelcontextprotocol/server-sequential-thinking",
+      "github": "https://github.com/modelcontextprotocol/servers",
+      "verified": true
+    },
+    {
+      "id": "playwright",
+      "name": "Playwright MCP",
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "oneLiner": "驱动真实浏览器进行自动化与网页测试。",
+      "tags": [
+        "browser",
+        "automation",
+        "testing"
+      ],
+      "taskPatterns": [
+        "browser automation",
+        "web testing",
+        "e2e"
+      ],
+      "keywords": [
+        "playwright",
+        "browser",
+        "e2e"
+      ],
+      "transport": "npx",
+      "command": "npx -y @playwright/mcp@latest",
+      "github": "https://github.com/microsoft/playwright-mcp",
+      "verified": true
+    },
+    {
+      "id": "puppeteer",
+      "name": "Puppeteer MCP",
+      "url": "https://github.com/modelcontextprotocol/servers/tree/main/src/puppeteer",
+      "oneLiner": "控制无头浏览器，用于抓取与交互。",
+      "tags": [
+        "browser",
+        "headless",
+        "automation"
+      ],
+      "taskPatterns": [
+        "headless browser",
+        "scraping",
+        "interaction"
+      ],
+      "keywords": [
+        "puppeteer",
+        "browser",
+        "mcp"
+      ],
+      "transport": "npx",
+      "command": "npx -y @modelcontextprotocol/server-puppeteer",
+      "github": "https://github.com/modelcontextprotocol/servers",
+      "verified": false
+    },
+    {
+      "id": "firecrawl",
+      "name": "Firecrawl MCP",
+      "url": "https://github.com/firecrawl/firecrawl-mcp-server",
+      "oneLiner": "将网站转成干净 Markdown，支持批量抓取。",
+      "tags": [
+        "web",
+        "scraping",
+        "markdown"
+      ],
+      "taskPatterns": [
+        "site scraping",
+        "markdown conversion",
+        "crawling"
+      ],
+      "keywords": [
+        "firecrawl",
+        "crawl",
+        "markdown"
+      ],
+      "transport": "npx",
+      "command": "npx -y firecrawl-mcp",
+      "github": "https://github.com/firecrawl/firecrawl-mcp-server",
+      "verified": false
+    },
+    {
+      "id": "exa",
+      "name": "Exa MCP",
+      "url": "https://github.com/exa-labs/exa-mcp-server",
+      "oneLiner": "语义化网页搜索，适合联网研究。",
+      "tags": [
+        "search",
+        "web",
+        "semantic"
+      ],
+      "taskPatterns": [
+        "web search",
+        "research",
+        "semantic search"
+      ],
+      "keywords": [
+        "exa",
+        "search",
+        "semantic"
+      ],
+      "transport": "npx",
+      "command": "npx -y exa-mcp-server",
+      "github": "https://github.com/exa-labs/exa-mcp-server",
+      "verified": false
+    },
+    {
+      "id": "brave-search",
+      "name": "Brave Search MCP",
+      "url": "https://github.com/modelcontextprotocol/servers/tree/main/src/brave-search",
+      "oneLiner": "调用 Brave 搜索 API 获取实时网页结果。",
+      "tags": [
+        "search",
+        "web",
+        "api"
+      ],
+      "taskPatterns": [
+        "web search",
+        "news",
+        "research"
+      ],
+      "keywords": [
+        "brave",
+        "search",
+        "mcp"
+      ],
+      "transport": "npx",
+      "command": "npx -y @modelcontextprotocol/server-brave-search",
+      "github": "https://github.com/modelcontextprotocol/servers",
+      "verified": false,
+      "securityNote": "需要 BRAVE_API_KEY"
+    },
+    {
+      "id": "tavily",
+      "name": "Tavily MCP",
+      "url": "https://github.com/tavily-ai/tavily-mcp",
+      "oneLiner": "面向 LLM 的联网搜索与内容抽取。",
+      "tags": [
+        "search",
+        "web",
+        "llm"
+      ],
+      "taskPatterns": [
+        "web search",
+        "extraction",
+        "research"
+      ],
+      "keywords": [
+        "tavily",
+        "search",
+        "mcp"
+      ],
+      "transport": "npx",
+      "command": "npx -y tavily-mcp@latest",
+      "github": "https://github.com/tavily-ai/tavily-mcp",
+      "verified": false,
+      "securityNote": "需要 TAVILY_API_KEY"
+    },
+    {
+      "id": "slack",
+      "name": "Slack MCP",
+      "url": "https://github.com/slackapi/slack-mcp-server",
+      "oneLiner": "读写 Slack 消息与频道，用于协作自动化。",
+      "tags": [
+        "communication",
+        "slack",
+        "team"
+      ],
+      "taskPatterns": [
+        "team communication",
+        "notification",
+        "collaboration"
+      ],
+      "keywords": [
+        "slack",
+        "chat",
+        "mcp"
+      ],
+      "transport": "npx",
+      "command": "npx -y @slack/mcp-server-slack",
+      "github": "https://github.com/slackapi/slack-mcp-server",
+      "verified": false,
+      "securityNote": "需要 SLACK_BOT_TOKEN"
+    },
+    {
+      "id": "notion",
+      "name": "Notion MCP",
+      "url": "https://github.com/makenotion/notion-mcp-server",
+      "oneLiner": "访问 Notion 页面与数据库，用于知识管理。",
+      "tags": [
+        "notes",
+        "knowledge",
+        "database"
+      ],
+      "taskPatterns": [
+        "note management",
+        "knowledge base",
+        "database"
+      ],
+      "keywords": [
+        "notion",
+        "notes",
+        "mcp"
+      ],
+      "transport": "npx",
+      "command": "npx -y @notionhq/notion-mcp-server",
+      "github": "https://github.com/makenotion/notion-mcp-server",
+      "verified": false,
+      "securityNote": "需要 NOTION_API_TOKEN"
+    },
+    {
+      "id": "linear",
+      "name": "Linear MCP",
+      "url": "https://github.com/linear/linear-mcp",
+      "oneLiner": "管理 Linear 项目与 Issue，适合研发流程。",
+      "tags": [
+        "project management",
+        "issue",
+        "dev"
+      ],
+      "taskPatterns": [
+        "issue tracking",
+        "project management",
+        "workflow"
+      ],
+      "keywords": [
+        "linear",
+        "issue",
+        "mcp"
+      ],
+      "transport": "npx",
+      "command": "npx -y @linear/mcp-server",
+      "github": "https://github.com/linear/linear-mcp",
+      "verified": false,
+      "securityNote": "需要 LINEAR_API_KEY"
+    },
+    {
+      "id": "postgres",
+      "name": "PostgreSQL MCP",
+      "url": "https://github.com/modelcontextprotocol/servers/tree/main/src/postgres",
+      "oneLiner": "直接查询 PostgreSQL 数据库。",
+      "tags": [
+        "database",
+        "sql",
+        "postgres"
+      ],
+      "taskPatterns": [
+        "sql query",
+        "database",
+        "data analysis"
+      ],
+      "keywords": [
+        "postgres",
+        "sql",
+        "database"
+      ],
+      "transport": "npx",
+      "command": "npx -y @modelcontextprotocol/server-postgres",
+      "github": "https://github.com/modelcontextprotocol/servers",
+      "verified": true,
+      "securityNote": "需要数据库连接串"
+    },
+    {
+      "id": "sqlite",
+      "name": "SQLite MCP",
+      "url": "https://github.com/modelcontextprotocol/servers/tree/main/src/sqlite",
+      "oneLiner": "本地 SQLite 查询，无需外部服务。",
+      "tags": [
+        "database",
+        "sqlite",
+        "local"
+      ],
+      "taskPatterns": [
+        "local database",
+        "sql query",
+        "analysis"
+      ],
+      "keywords": [
+        "sqlite",
+        "sql",
+        "database"
+      ],
+      "transport": "npx",
+      "command": "npx -y @modelcontextprotocol/server-sqlite",
+      "github": "https://github.com/modelcontextprotocol/servers",
+      "verified": true
+    },
+    {
+      "id": "github",
+      "name": "GitHub MCP",
+      "url": "https://github.com/modelcontextprotocol/servers/tree/main/src/github",
+      "oneLiner": "操作 GitHub 仓库、Issue、PR 与搜索。",
+      "tags": [
+        "git",
+        "github",
+        "repository"
+      ],
+      "taskPatterns": [
+        "repository automation",
+        "issue",
+        "pr",
+        "code search"
+      ],
+      "keywords": [
+        "github",
+        "git",
+        "mcp"
+      ],
+      "transport": "npx",
+      "command": "npx -y @modelcontextprotocol/server-github",
+      "github": "https://github.com/modelcontextprotocol/servers",
+      "verified": true,
+      "securityNote": "需要 GITHUB_PERSONAL_ACCESS_TOKEN"
+    },
+    {
+      "id": "git",
+      "name": "Git MCP",
+      "url": "https://github.com/modelcontextprotocol/servers/tree/main/src/git",
+      "oneLiner": "在本地仓库执行 Git 操作。",
+      "tags": [
+        "git",
+        "repository",
+        "local"
+      ],
+      "taskPatterns": [
+        "git automation",
+        "repository",
+        "version control"
+      ],
+      "keywords": [
+        "git",
+        "mcp",
+        "version"
+      ],
+      "transport": "npx",
+      "command": "npx -y @modelcontextprotocol/server-git",
+      "github": "https://github.com/modelcontextprotocol/servers",
+      "verified": true
+    },
+    {
+      "id": "chrome-devtools",
+      "name": "Chrome DevTools MCP",
+      "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+      "oneLiner": "连接 Chrome 调试器进行页面自动化与性能分析。",
+      "tags": [
+        "browser",
+        "debug",
+        "chrome"
+      ],
+      "taskPatterns": [
+        "browser automation",
+        "performance",
+        "debugging"
+      ],
+      "keywords": [
+        "chrome",
+        "devtools",
+        "browser"
+      ],
+      "transport": "npx",
+      "command": "npx -y chrome-devtools-mcp@latest",
+      "github": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+      "verified": false
+    }
+  ]
+}

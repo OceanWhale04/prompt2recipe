@@ -1,0 +1,426 @@
+{
+  "version": 1,
+  "updatedAt": "2026-09-28T15:20:31.669Z",
+  "items": [
+    {
+      "id": "skill-creator",
+      "name": "Skill Creator",
+      "url": "https://github.com/anthropics/skills/tree/main/skills/skill-creator",
+      "oneLiner": "指导创建高质量、可复用的 Agent Skill。",
+      "tags": [
+        "meta",
+        "authoring",
+        "claude"
+      ],
+      "taskPatterns": [
+        "skill creation",
+        "prompt authoring"
+      ],
+      "keywords": [
+        "skill-creator",
+        "skill",
+        "anthropic"
+      ],
+      "framework": "Claude Skills",
+      "skillType": "meta",
+      "install": "https://github.com/anthropics/skills/tree/main/skills/skill-creator"
+    },
+    {
+      "id": "mcp-builder",
+      "name": "MCP Builder",
+      "url": "https://github.com/anthropics/skills/tree/main/skills/mcp-builder",
+      "oneLiner": "构建高质量 MCP Server 的指南与脚手架。",
+      "tags": [
+        "mcp",
+        "authoring",
+        "meta"
+      ],
+      "taskPatterns": [
+        "mcp server",
+        "tool building"
+      ],
+      "keywords": [
+        "mcp-builder",
+        "mcp",
+        "server"
+      ],
+      "framework": "Claude Skills",
+      "skillType": "meta",
+      "install": "https://github.com/anthropics/skills/tree/main/skills/mcp-builder"
+    },
+    {
+      "id": "pdf",
+      "name": "PDF Skill",
+      "url": "https://github.com/anthropics/skills/tree/main/skills/pdf",
+      "oneLiner": "读取、生成与校验 PDF 文档。",
+      "tags": [
+        "pdf",
+        "document",
+        "extraction"
+      ],
+      "taskPatterns": [
+        "pdf reading",
+        "pdf generation",
+        "form filling"
+      ],
+      "keywords": [
+        "pdf",
+        "document"
+      ],
+      "framework": "Claude Skills",
+      "skillType": "document",
+      "install": "https://github.com/anthropics/skills/tree/main/skills/pdf"
+    },
+    {
+      "id": "pptx",
+      "name": "PPTX Skill",
+      "url": "https://github.com/anthropics/skills/tree/main/skills/pptx",
+      "oneLiner": "创建与编辑 PowerPoint 演示文稿。",
+      "tags": [
+        "pptx",
+        "presentation",
+        "document"
+      ],
+      "taskPatterns": [
+        "presentation",
+        "slide deck"
+      ],
+      "keywords": [
+        "pptx",
+        "powerpoint",
+        "slides"
+      ],
+      "framework": "Claude Skills",
+      "skillType": "document",
+      "install": "https://github.com/anthropics/skills/tree/main/skills/pptx"
+    },
+    {
+      "id": "xlsx",
+      "name": "XLSX Skill",
+      "url": "https://github.com/anthropics/skills/tree/main/skills/xlsx",
+      "oneLiner": "读写 Excel 工作簿与公式。",
+      "tags": [
+        "xlsx",
+        "spreadsheet",
+        "document"
+      ],
+      "taskPatterns": [
+        "spreadsheet",
+        "data analysis",
+        "formula"
+      ],
+      "keywords": [
+        "xlsx",
+        "excel",
+        "spreadsheet"
+      ],
+      "framework": "Claude Skills",
+      "skillType": "document",
+      "install": "https://github.com/anthropics/skills/tree/main/skills/xlsx"
+    },
+    {
+      "id": "docx",
+      "name": "DOCX Skill",
+      "url": "https://github.com/anthropics/skills/tree/main/skills/docx",
+      "oneLiner": "创建、编辑与审阅 Word 文档。",
+      "tags": [
+        "docx",
+        "word",
+        "document"
+      ],
+      "taskPatterns": [
+        "word document",
+        "editing",
+        "redline"
+      ],
+      "keywords": [
+        "docx",
+        "word",
+        "document"
+      ],
+      "framework": "Claude Skills",
+      "skillType": "document",
+      "install": "https://github.com/anthropics/skills/tree/main/skills/docx"
+    },
+    {
+      "id": "webapp-testing",
+      "name": "Web App Testing",
+      "url": "https://github.com/anthropics/skills/tree/main/skills/webapp-testing",
+      "oneLiner": "使用 Playwright 对 Web 应用做交互测试。",
+      "tags": [
+        "testing",
+        "playwright",
+        "web"
+      ],
+      "taskPatterns": [
+        "web testing",
+        "e2e",
+        "playwright"
+      ],
+      "keywords": [
+        "webapp-testing",
+        "playwright",
+        "testing"
+      ],
+      "framework": "Claude Skills",
+      "skillType": "testing",
+      "install": "https://github.com/anthropics/skills/tree/main/skills/webapp-testing"
+    },
+    {
+      "id": "canvas-design",
+      "name": "Canvas Design",
+      "url": "https://github.com/anthropics/skills/tree/main/skills/canvas-design",
+      "oneLiner": "创建海报与视觉设计。",
+      "tags": [
+        "design",
+        "visual",
+        "creative"
+      ],
+      "taskPatterns": [
+        "poster",
+        "visual design"
+      ],
+      "keywords": [
+        "canvas-design",
+        "design",
+        "poster"
+      ],
+      "framework": "Claude Skills",
+      "skillType": "design",
+      "install": "https://github.com/anthropics/skills/tree/main/skills/canvas-design"
+    },
+    {
+      "id": "artifact-builder",
+      "name": "Artifact Builder",
+      "url": "https://github.com/anthropics/skills/tree/main/skills/artifact-builder",
+      "oneLiner": "构建复杂前端 Artifact 应用。",
+      "tags": [
+        "frontend",
+        "react",
+        "artifact"
+      ],
+      "taskPatterns": [
+        "frontend app",
+        "react",
+        "prototype"
+      ],
+      "keywords": [
+        "artifact-builder",
+        "react",
+        "frontend"
+      ],
+      "framework": "Claude Skills",
+      "skillType": "frontend",
+      "install": "https://github.com/anthropics/skills/tree/main/skills/artifact-builder"
+    },
+    {
+      "id": "brand-guidelines",
+      "name": "Brand Guidelines",
+      "url": "https://github.com/anthropics/skills/tree/main/skills/brand-guidelines",
+      "oneLiner": "按 Anthropic 品牌规范生成视觉内容。",
+      "tags": [
+        "brand",
+        "design",
+        "guidelines"
+      ],
+      "taskPatterns": [
+        "brand asset",
+        "visual design"
+      ],
+      "keywords": [
+        "brand-guidelines",
+        "brand",
+        "design"
+      ],
+      "framework": "Claude Skills",
+      "skillType": "design",
+      "install": "https://github.com/anthropics/skills/tree/main/skills/brand-guidelines"
+    },
+    {
+      "id": "slack-gif-creator",
+      "name": "Slack GIF Creator",
+      "url": "https://github.com/anthropics/skills/tree/main/skills/slack-gif-creator",
+      "oneLiner": "生成适合 Slack 分享的 GIF。",
+      "tags": [
+        "gif",
+        "media",
+        "animation"
+      ],
+      "taskPatterns": [
+        "gif creation",
+        "animation"
+      ],
+      "keywords": [
+        "slack-gif",
+        "gif",
+        "animation"
+      ],
+      "framework": "Claude Skills",
+      "skillType": "media",
+      "install": "https://github.com/anthropics/skills/tree/main/skills/slack-gif-creator"
+    },
+    {
+      "id": "mcp-servers-usage",
+      "name": "MCP Servers Usage",
+      "url": "https://github.com/anthropics/skills/tree/main/skills/mcp-servers-usage",
+      "oneLiner": "接入并使用外部 MCP Server 的指引。",
+      "tags": [
+        "mcp",
+        "integration",
+        "usage"
+      ],
+      "taskPatterns": [
+        "mcp usage",
+        "tool integration"
+      ],
+      "keywords": [
+        "mcp-servers",
+        "mcp",
+        "usage"
+      ],
+      "framework": "Claude Skills",
+      "skillType": "integration",
+      "install": "https://github.com/anthropics/skills/tree/main/skills/mcp-servers-usage"
+    },
+    {
+      "id": "awesome-cursorrules",
+      "name": "Awesome Cursor Rules",
+      "url": "https://github.com/PatrickJS/awesome-cursorrules",
+      "oneLiner": "精选 Cursor 规则与上下文模板合集。",
+      "tags": [
+        "cursor",
+        "rules",
+        "prompt"
+      ],
+      "taskPatterns": [
+        "cursor rules",
+        "coding context"
+      ],
+      "keywords": [
+        "cursor",
+        "rules",
+        "awesome"
+      ],
+      "framework": "Cursor",
+      "skillType": "prompt",
+      "install": "https://github.com/PatrickJS/awesome-cursorrules"
+    },
+    {
+      "id": "browser-use",
+      "name": "Browser Use",
+      "url": "https://github.com/browser-use/browser-use",
+      "oneLiner": "让 LLM 控制浏览器的 Python Agent 库。",
+      "tags": [
+        "browser",
+        "agent",
+        "python"
+      ],
+      "taskPatterns": [
+        "browser automation",
+        "agent"
+      ],
+      "keywords": [
+        "browser-use",
+        "browser",
+        "agent"
+      ],
+      "framework": "Python",
+      "skillType": "agent",
+      "install": "https://github.com/browser-use/browser-use"
+    },
+    {
+      "id": "crewai",
+      "name": "CrewAI",
+      "url": "https://github.com/crewAIInc/crewAI",
+      "oneLiner": "多 Agent 角色编排框架。",
+      "tags": [
+        "multi-agent",
+        "orchestration",
+        "python"
+      ],
+      "taskPatterns": [
+        "multi-agent",
+        "workflow orchestration"
+      ],
+      "keywords": [
+        "crewai",
+        "multi-agent",
+        "orchestration"
+      ],
+      "framework": "Python",
+      "skillType": "orchestration",
+      "install": "https://github.com/crewAIInc/crewAI"
+    },
+    {
+      "id": "langgraph",
+      "name": "LangGraph",
+      "url": "https://github.com/langchain-ai/langgraph",
+      "oneLiner": "构建有状态、可循环的 Agent 工作流。",
+      "tags": [
+        "agent",
+        "graph",
+        "stateful"
+      ],
+      "taskPatterns": [
+        "agent workflow",
+        "state machine",
+        "orchestration"
+      ],
+      "keywords": [
+        "langgraph",
+        "agent",
+        "graph"
+      ],
+      "framework": "Python/TypeScript",
+      "skillType": "orchestration",
+      "install": "https://github.com/langchain-ai/langgraph"
+    },
+    {
+      "id": "smolagents",
+      "name": "SmolAgents",
+      "url": "https://github.com/huggingface/smolagents",
+      "oneLiner": "Hugging Face 的轻量代码 Agent 框架。",
+      "tags": [
+        "agent",
+        "python",
+        "lightweight"
+      ],
+      "taskPatterns": [
+        "agent",
+        "code execution"
+      ],
+      "keywords": [
+        "smolagents",
+        "agent",
+        "huggingface"
+      ],
+      "framework": "Python",
+      "skillType": "agent",
+      "install": "https://github.com/huggingface/smolagents"
+    },
+    {
+      "id": "openai-codex",
+      "name": "OpenAI Codex CLI",
+      "url": "https://github.com/openai/codex",
+      "oneLiner": "本地运行的编码 Agent，可结合 MCP 与 Skills。",
+      "tags": [
+        "coding agent",
+        "cli",
+        "mcp"
+      ],
+      "taskPatterns": [
+        "coding",
+        "agent",
+        "cli"
+      ],
+      "keywords": [
+        "codex",
+        "openai",
+        "cli"
+      ],
+      "framework": "CLI",
+      "skillType": "coding agent",
+      "install": "https://github.com/openai/codex"
+    }
+  ]
+}

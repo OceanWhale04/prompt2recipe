@@ -1,0 +1,38 @@
+name: Weekly Knowledge Base Update
+
+on:
+  schedule:
+    - cron: "0 16 * * 0"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-kb:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 11.19.0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - name: Install Dependencies
+        run: pnpm install --frozen-lockfile
+      - name: Run ETL Pipeline
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          DEEPSEEK_BASE_URL: https://api.deepseek.com
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: pnpm exec tsx scripts/update-kb.ts
+      - name: Commit and Push
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/*.json
+          git commit -m "chore(data): auto-update models, mcps and weekly report [skip ci]" || exit 0
+          git push
