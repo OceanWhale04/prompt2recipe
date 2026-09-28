@@ -1,13 +1,29 @@
 import { createDeepSeek } from "@ai-sdk/deepseek";
+import { createOpenAICompatible } from "@ai-sdk/openai-compatible";
 import { generateText } from "ai";
 
 import { weeklyReportEditionSchema } from "../../../src/lib/schemas";
-import type {
-  WeeklyDataStore,
-  WeeklyKeyHighlight,
-  WeeklyReportEdition,
-} from "../../../src/types/weekly";
+import type { WeeklyDataStore, WeeklyReportEdition } from "../../../src/types/weekly";
 import type { NewsItem } from "../fetchers/rss-news";
+
+const REPORT_TIME_ZONE = process.env.WEEKLY_TIME_ZONE?.trim() || "Asia/Shanghai";
+
+function zonedDateParts(date: Date, timeZone: string) {
+  const parts = new Intl.DateTimeFormat("en-CA", {
+    timeZone,
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  }).formatToParts(date);
+
+  const value = (type: Intl.DateTimeFormatPartTypes) =>
+    Number(parts.find((part) => part.type === type)?.value);
+  return { year: value("year"), month: value("month"), day: value("day") };
+}
+
+function formatDate(date: Date) {
+  return date.toISOString().slice(0, 10).replaceAll("-", ".");
+}
 
 function weekId(date: Date) {
   const utc = new Date(Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate()));
@@ -18,14 +34,24 @@ function weekId(date: Date) {
   return `${utc.getUTCFullYear()}-w${String(week).padStart(2, "0")}`;
 }
 
-function dateRange(date: Date) {
-  const day = date.getUTCDay() || 7;
-  const start = new Date(date);
-  const end = new Date(date);
-  start.setUTCDate(start.getUTCDate() - day + 1);
-  end.setUTCDate(start.getUTCDate() + 6);
-  const format = (value: Date) => value.toISOString().slice(0, 10).replaceAll("-", ".");
-  return `${format(start)} - ${format(end)}`;
+export function getPreviousCompletedWeek(now = new Date()) {
+  const { year, month, day } = zonedDateParts(now, REPORT_TIME_ZONE);
+  const localDate = new Date(Date.UTC(year, month - 1, day));
+  const weekday = localDate.getUTCDay() || 7;
+  const currentMonday = new Date(localDate);
+  currentMonday.setUTCDate(localDate.getUTCDate() - weekday + 1);
+
+  const monday = new Date(currentMonday);
+  monday.setUTCDate(currentMonday.getUTCDate() - 7);
+  const sunday = new Date(monday);
+  sunday.setUTCDate(monday.getUTCDate() + 6);
+
+  return {
+    id: weekId(monday),
+    dateRange: `${formatDate(monday)} - ${formatDate(sunday)}`,
+    monday,
+    sunday,
+  };
 }
 
 function parseJsonObject(text: string): unknown {
@@ -37,94 +63,38 @@ function parseJsonObject(text: string): unknown {
   return JSON.parse(text.slice(start, end + 1));
 }
 
-function stripHtml(value: string) {
-  return value
-    .replace(/<[^>]+>/g, " ")
-    .replace(/&nbsp;/g, " ")
-    .replace(/&amp;/g, "&")
-    .replace(/\s+/g, " ")
-    .trim();
-}
+function getWeeklyModel() {
+  const providerMode = process.env.WEEKLY_AI_PROVIDER?.trim().toLowerCase() || "deepseek";
 
-function categoryForNews(item: NewsItem): WeeklyKeyHighlight["category"] {
-  const text = `${item.title} ${item.summary}`.toLowerCase();
-  if (/mcp|model context protocol|server|connector/.test(text)) return "MCP";
-  if (/model|llm|gpt|claude|gemini|qwen|deepseek|reasoning/.test(text)) return "Model";
-  return "Workflow";
-}
+  if (providerMode !== "ollama") {
+    const deepSeekKey = process.env.DEEPSEEK_API_KEY?.trim();
+    if (!deepSeekKey) return null;
 
-function actionForCategory(category: WeeklyKeyHighlight["category"]) {
-  if (category === "MCP") {
-    return "复核该 MCP 的权限范围、凭据来源和调用审计，再决定是否进入试验环境。";
-  }
-  if (category === "Model") {
-    return "用项目真实任务做小样本评测，不要仅根据跑分或宣传决定模型迁移。";
-  }
-  return "把该变化拆成一个可回滚的流程实验，补充输入输出和验证标准。";
-}
-
-function buildRssEdition(
-  news: NewsItem[],
-  editionId: string,
-  range: string,
-): WeeklyReportEdition {
-  const highlights = news.slice(0, 5).map((item) => {
-    const category = categoryForNews(item);
+    const provider = createDeepSeek({
+      apiKey: deepSeekKey,
+      baseURL: process.env.DEEPSEEK_BASE_URL?.trim() || "https://api.deepseek.com",
+    });
     return {
-      category,
-      title: item.title,
-      description: stripHtml(item.summary || item.title).slice(0, 220),
-      impactScore: category === "Workflow" ? 3 : 4,
-      link: item.link,
-    } satisfies WeeklyKeyHighlight;
-  });
+      model: provider(process.env.DEEPSEEK_MODEL?.trim() || "deepseek-chat"),
+      source: "DeepSeek",
+    };
+  }
 
-  const outlook = news.slice(0, 3).map((item) => ({
-    topic: `持续跟踪：${item.title}`,
-    whyItMatters: stripHtml(item.summary || item.title).slice(0, 220),
-    actionableAdvice: actionForCategory(categoryForNews(item)),
-  }));
+  const ollamaBaseUrl = process.env.OLLAMA_BASE_URL?.trim();
+  const ollamaModel = process.env.OLLAMA_MODEL?.trim();
+  if (ollamaBaseUrl && ollamaModel) {
+    const normalizedBaseUrl = ollamaBaseUrl.replace(/\/+$/, "").endsWith("/v1")
+      ? ollamaBaseUrl.replace(/\/+$/, "")
+      : `${ollamaBaseUrl.replace(/\/+$/, "")}/v1`;
+    const provider = createOpenAICompatible({
+      name: "ollama",
+      baseURL: normalizedBaseUrl,
+      apiKey: "ollama",
+    });
+    return { model: provider(ollamaModel), source: "Ollama" };
+  }
 
-  const markdown = [
-    `# ${editionId} RSS 清洗摘要`,
-    "",
-    "> 本版由 RSS 标题与摘要进行结构化清洗生成，未经过大模型二次降噪。",
-    "",
-    "## 本周信号",
-    ...news.slice(0, 10).map(
-      (item, index) =>
-        `${index + 1}. [${item.title}](${item.link}) — ${item.source}${item.publishedAt ? ` · ${item.publishedAt}` : ""}`,
-    ),
-    "",
-    "## 下周观察",
-    ...outlook.flatMap((item, index) => [
-      `### ${index + 1}. ${item.topic}`,
-      "",
-      item.whyItMatters,
-      "",
-      `**开发者行动：** ${item.actionableAdvice}`,
-      "",
-    ]),
-  ].join("\n");
-
-  return {
-    id: editionId,
-    title: `第 ${editionId.replace(/^.*-w/, "")} 期：AI 工程信号速览`,
-    dateRange: range,
-    summary:
-      highlights
-        .slice(0, 3)
-        .map((item) => item.title)
-        .join("；")
-        .slice(0, 320) || "本周暂无可提炼的新信号。",
-    generationMode: "rss",
-    keyHighlights: highlights,
-    nextWeekOutlook: outlook,
-    fullMarkdownContent: markdown,
-    recommendedPrompts: highlights.slice(0, 3).map(
-      (item) => `围绕“${item.title}”设计一个可验证的 AI 工作流，并说明需要的模型、MCP 与验证方式`,
-    ),
-  };
+  return null;
 }
 
 export async function buildWeeklyEditionWithAi(
@@ -134,69 +104,54 @@ export async function buildWeeklyEditionWithAi(
 ): Promise<WeeklyDataStore | null> {
   if (news.length === 0) return null;
 
-  const editionId = weekId(now);
-  const range = dateRange(now);
-  const existing = store.editions.find((edition) => edition.id === editionId);
-  const apiKey = process.env.DEEPSEEK_API_KEY?.trim();
+  const week = getPreviousCompletedWeek(now);
+  const hasExistingEdition = store.editions.some((edition) => edition.id === week.id);
+  if (hasExistingEdition) return store;
 
-  if (!apiKey) {
-    if (existing) return store;
-    const edition = buildRssEdition(news, editionId, range);
-    return {
-      currentEditionId: edition.id,
-      editions: [edition, ...store.editions].slice(0, 24),
-    };
-  }
-
-  const provider = createDeepSeek({
-    apiKey,
-    baseURL: process.env.DEEPSEEK_BASE_URL?.trim() || "https://api.deepseek.com",
-  });
-  const model = provider(process.env.DEEPSEEK_MODEL?.trim() || "deepseek-chat");
+  const runtime = getWeeklyModel();
+  if (!runtime) return store;
 
   const { text } = await generateText({
-    model,
-    system: `You are the editor of a high-signal AI engineering weekly.
-Reduce marketing noise and return valid JSON only with:
+    model: runtime.model,
+    system: `你是 AI 工程周报的中文编辑。请从资讯中去掉营销噪音，总结上一周真正影响技术选型和工作流设计的信号。
+只输出合法 JSON，禁止 Markdown 代码围栏，格式必须为：
 {
-  "title": "edition title",
-  "summary": "three-sentence synthesis",
+  "title": "中文期数标题",
+  "summary": "三条以内的中文摘要",
   "keyHighlights": [
     {
       "category": "Model | MCP | Workflow",
-      "title": "signal title",
-      "description": "why it matters",
+      "title": "中文标题",
+      "description": "中文说明",
       "impactScore": 1,
-      "link": "source url"
+      "link": "来源链接"
     }
   ],
   "nextWeekOutlook": [
     {
-      "topic": "event or trend",
-      "expectedDate": "optional ISO date",
-      "whyItMatters": "objective value after removing hype",
-      "actionableAdvice": "what a developer should do next"
+      "topic": "中文主题",
+      "expectedDate": "可选日期",
+      "whyItMatters": "中文判断",
+      "actionableAdvice": "中文行动建议"
     }
   ],
-  "fullMarkdownContent": "complete markdown report",
-  "recommendedPrompts": ["prompt to apply in the decision engine"]
-}`,
-    prompt: `Generate the weekly edition for ${editionId} (${range}) from these recent items:\n${JSON.stringify(news.slice(0, 30), null, 2)}`,
+  "fullMarkdownContent": "完整中文 Markdown 周报",
+  "recommendedPrompts": ["可直接用于决策引擎的中文 Prompt"]
+}
+除 MCP、API、RSS、LLM、Agent、JSON、PR 等通用术语缩写外，所有内容必须使用简体中文。`,
+    prompt: `上一周范围：${week.dateRange}。请根据以下资讯生成第 ${week.id} 期周报：\n${JSON.stringify(news.slice(0, 30), null, 2)}`,
   });
 
-  const generated = parseJsonObject(text) as Omit<
-    WeeklyReportEdition,
-    "id" | "dateRange" | "generationMode"
-  >;
+  const generated = parseJsonObject(text) as Omit<WeeklyReportEdition, "id" | "dateRange" | "generationMode">;
   const edition = weeklyReportEditionSchema.parse({
-    id: editionId,
-    dateRange: range,
+    id: week.id,
+    dateRange: week.dateRange,
     generationMode: "ai",
     ...generated,
   });
 
   return {
     currentEditionId: edition.id,
-    editions: [edition, ...store.editions.filter((item) => item.id !== edition.id)].slice(0, 24),
+    editions: [edition, ...store.editions].slice(0, 24),
   };
 }

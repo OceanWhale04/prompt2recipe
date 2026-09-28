@@ -8,7 +8,7 @@ import { PortalHeader } from "@/components/portal-header";
 import { currentWeeklyEdition, weeklyIssues } from "@/lib/kb";
 
 export const metadata: Metadata = {
-  title: "每周降噪 Weekly | StackForge",
+  title: "每周降噪 | StackForge",
   description: "AI 行业技术降噪、下周观察与往期归档。",
 };
 
@@ -16,8 +16,8 @@ export default function WeeklyPage() {
   return (
     <>
       <PortalHeader
-        eyebrow="Weekly signal"
-        title="每周降噪 Weekly"
+        eyebrow="每周降噪"
+        title="每周降噪"
         description="只保留会影响技术选型与工作流设计的行业信号，并提供下周观察和可回溯的往期报告。"
         icon={CalendarDays}
         count={weeklyIssues.length}

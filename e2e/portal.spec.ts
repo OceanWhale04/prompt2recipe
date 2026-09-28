@@ -28,7 +28,7 @@ test("runs a featured recipe from the homepage", async ({ page }) => {
 test("opens a weekly edition and applies its prompt to the engine", async ({ page }) => {
   await page.goto("/portal/weekly");
 
-  await expect(page.getByRole("heading", { name: "下周观察 Next Week Outlook" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "下周观察" })).toBeVisible();
   await page.getByRole("link", { name: /第 39 期/ }).click();
 
   await expect(page).toHaveURL(/\/portal\/weekly\/2026-w39$/);

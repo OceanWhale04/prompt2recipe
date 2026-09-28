@@ -148,7 +148,7 @@ export const weeklyReportEditionSchema = z.object({
   title: z.string().min(1),
   dateRange: z.string().min(1),
   summary: z.string().min(1),
-  generationMode: z.enum(["ai", "rss"]).optional(),
+  generationMode: z.enum(["ai"]).optional(),
   keyHighlights: z.array(weeklyKeyHighlightSchema).min(1),
   nextWeekOutlook: z.array(weeklyNextWeekOutlookSchema).min(1),
   fullMarkdownContent: z.string().min(1),

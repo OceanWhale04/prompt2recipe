@@ -9,7 +9,7 @@ export function NextWeekOutlook({ items }: { items: WeeklyNextWeekOutlook[] }) {
     <section className="flex flex-col gap-4">
       <div className="flex items-center gap-2">
         <Radar className="h-5 w-5 text-zinc-500" />
-        <h2 className="text-lg font-semibold text-zinc-950">下周观察 Next Week Outlook</h2>
+        <h2 className="text-lg font-semibold text-zinc-950">下周观察</h2>
       </div>
 
       <div className="grid gap-4 xl:grid-cols-3">

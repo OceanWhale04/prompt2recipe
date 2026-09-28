@@ -53,11 +53,16 @@ export async function runEtlPipeline(): Promise<EtlResult> {
     readCatalog<SkillEntry>("skills.json"),
     readWeekly(),
   ]);
+  const weeklyProvider = process.env.WEEKLY_AI_PROVIDER?.trim().toLowerCase() || "deepseek";
+  const hasWeeklyProvider =
+    weeklyProvider === "ollama"
+      ? Boolean(process.env.OLLAMA_BASE_URL?.trim() && process.env.OLLAMA_MODEL?.trim())
+      : Boolean(process.env.DEEPSEEK_API_KEY?.trim());
   const [remoteModels, remoteMcps, remoteSkills, news] = await Promise.all([
     settle("OpenRouter models", fetchOpenRouterModels()),
     settle("GitHub MCPs", fetchGitHubMcpRepositories()),
     settle("GitHub Agent Skills", fetchGitHubSkillRepositories()),
-    settle("RSS news", fetchRssNews()),
+    hasWeeklyProvider ? settle("RSS news", fetchRssNews()) : Promise.resolve(null),
   ]);
 
   const models =
