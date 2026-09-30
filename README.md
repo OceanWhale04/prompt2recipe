@@ -123,6 +123,8 @@ OpenRouter 模型接口可匿名访问。缺少 Token 或网络失败时会跳�
 
 ## 部署
 
+### Vercel
+
 项目可直接部署到 Vercel：
 
 1. 在 Vercel 导入 GitHub 仓库。
@@ -130,6 +132,23 @@ OpenRouter 模型接口可匿名访问。缺少 Token 或网络失败时会跳�
 3. 部署。`/portal/*` 会静态生成，`/api/recommend` 保持动态。
 
 `.github/workflows/cron.yml` 每周执行一次 ETL，并在数据变化时自动提交 JSON。
+
+### Cloudflare Pages / Workers Builds
+
+项目使用 `@opennextjs/cloudflare` 适配器，根目录包含 `wrangler.jsonc` 与 `open-next.config.ts`。
+
+Cloudflare 后台设置：
+
+- **Build command**：`pnpm build`
+- **Build output directory**：`.open-next`
+- **Environment variable**：`NODE_VERSION=22`
+
+`pnpm build` 会执行 `opennextjs-cloudflare build`，再由 OpenNext 调用 `pnpm build:next` 生成 Next.js 产物，最终输出：
+
+- `.open-next/worker.js`
+- `.open-next/assets`
+
+如果使用 Cloudflare Workers 的 Git 集成，确保 Workerd 与 esbuild 的原生构建脚本已授权。仓库已在 `pnpm-workspace.yaml` 的 `allowBuilds` 和 `package.json` 的 `pnpm.onlyBuiltDependencies` 中同时声明。
 
 ## 安全说明
 

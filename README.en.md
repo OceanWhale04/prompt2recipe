@@ -146,6 +146,8 @@ OpenRouter model discovery works without an API key. When tokens or network acce
 
 ## Deployment
 
+### Vercel
+
 The project is ready for Vercel:
 
 1. Import the GitHub repository into Vercel.
@@ -153,6 +155,23 @@ The project is ready for Vercel:
 3. Deploy. The `/portal/*` pages are statically generated; `/api/recommend` remains dynamic.
 
 The weekly GitHub Actions workflow is `.github/workflows/cron.yml`. It runs every Sunday at 16:00 UTC, calls the ETL pipeline, and commits updated JSON files when data changes.
+
+### Cloudflare Pages / Workers Builds
+
+The project uses the `@opennextjs/cloudflare` adapter with root-level `wrangler.jsonc` and `open-next.config.ts`.
+
+Cloudflare dashboard settings:
+
+- **Build command**: `pnpm build`
+- **Build output directory**: `.open-next`
+- **Environment variable**: `NODE_VERSION=22`
+
+`pnpm build` runs `opennextjs-cloudflare build`; OpenNext then invokes `pnpm build:next`, producing:
+
+- `.open-next/worker.js`
+- `.open-next/assets`
+
+For Cloudflare Workers Git builds, allow the Workerd and esbuild native postinstall scripts. This repository declares both `pnpm-workspace.yaml` `allowBuilds` and `package.json` `pnpm.onlyBuiltDependencies`.
 
 ## Security Notes
 
