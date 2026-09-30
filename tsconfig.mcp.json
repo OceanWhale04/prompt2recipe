@@ -1,0 +1,22 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "outDir": "dist",
+    "rootDir": ".",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "declaration": true,
+    "sourceMap": true,
+    "incremental": false
+  },
+  "include": [
+    "src/services/**/*.ts",
+    "src/mcp/**/*.ts",
+    "src/lib/**/*.ts",
+    "src/types/**/*.ts",
+    "data/**/*.json"
+  ],
+  "exclude": ["node_modules", "src/app", "src/components", "tests"]
+}

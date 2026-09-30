@@ -7,7 +7,6 @@ import {
   getOllamaModelCompatibility,
   OllamaCompatibilityError,
 } from "./compute-provider";
-import { getEntry } from "./kb";
 import { generateLocalCombo, generateLocalWorkflow } from "./local-engine";
 import { buildComboPrompt, buildWorkflowPrompt } from "./prompt";
 import {
@@ -123,11 +122,12 @@ type SelectionItem = {
 function hydrateSelection(
   kind: "model" | "mcp" | "skill",
   items: SelectionItem[],
-  allowedIds: Set<string>,
+  entries: Array<{ id: string; name: string; url: string; oneLiner: string }>,
 ): RecommendationCombo["models"] {
+  const entryById = new Map(entries.map((entry) => [entry.id, entry]));
+
   return items.flatMap((item) => {
-    if (!allowedIds.has(item.id)) return [];
-    const entry = getEntry(kind, item.id);
+    const entry = entryById.get(item.id);
     if (!entry) return [];
 
     return [
@@ -159,17 +159,17 @@ function hydrateComboSelection(
   const models = hydrateSelection(
     "model",
     selection.models,
-    new Set(candidates.models.map((entry) => entry.id)),
+    candidates.models,
   );
   const mcps = hydrateSelection(
     "mcp",
     selection.mcps,
-    new Set(candidates.mcps.map((entry) => entry.id)),
+    candidates.mcps,
   );
   const skills = hydrateSelection(
     "skill",
     selection.skills,
-    new Set(candidates.skills.map((entry) => entry.id)),
+    candidates.skills,
   );
   const selectedSkillIds = new Set(skills.map((item) => item.id));
 
@@ -352,6 +352,41 @@ export async function generateCombo(
       throw error;
     }
     return generateLocalCombo(task, candidates, "provider_error", resolved.source);
+  }
+}
+
+export async function generateWorkflowPlan(
+  task: string,
+  combo: RecommendationCombo,
+  provider?: RuntimeProviderConfig,
+): Promise<WorkflowPlan> {
+  const resolved = resolveProvider(provider);
+  if (!resolved.model) {
+    const fallbackReason = resolved.source === "demo" ? null : "missing_key";
+    return generateLocalWorkflow(task, combo, fallbackReason, resolved.source);
+  }
+
+  const { system, prompt } = buildWorkflowPrompt(task, combo);
+
+  try {
+    const result = await generateObject({
+      model: resolved.model,
+      schema: workflowPlanSchema,
+      system,
+      prompt,
+    });
+
+    return {
+      ...result.object,
+      generatedBy: "ai",
+      computeSource: resolved.source,
+    };
+  } catch (error) {
+    logProviderError("workflow", resolved.source, error);
+    if (resolved.source === "byok" || resolved.source === "ollama") {
+      throw error;
+    }
+    return generateLocalWorkflow(task, combo, "provider_error", resolved.source);
   }
 }
 

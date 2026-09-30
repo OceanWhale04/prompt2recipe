@@ -1,5 +1,5 @@
 import { mcps, models, skills } from "./kb";
-import type { BaseEntry, Retriever, SearchHit } from "./types";
+import type { BaseEntry, McpEntry, ModelEntry, Retriever, SearchHit, SkillEntry } from "./types";
 
 const CJK_RANGE = /[\u4e00-\u9fff]/;
 
@@ -52,21 +52,37 @@ function scoreEntry(entry: BaseEntry, queryTokens: string[]): number {
 }
 
 export class KeywordRetriever implements Retriever {
+  private readonly catalog: {
+    models: ModelEntry[];
+    mcps: McpEntry[];
+    skills: SkillEntry[];
+  };
+
+  constructor(
+    catalog: {
+      models: ModelEntry[];
+      mcps: McpEntry[];
+      skills: SkillEntry[];
+    } = { models, mcps, skills },
+  ) {
+    this.catalog = catalog;
+  }
+
   async search(query: string, k: number): Promise<SearchHit[]> {
     const queryTokens = tokenize(query);
     if (queryTokens.length === 0) return [];
 
     const hits: SearchHit[] = [];
 
-    for (const entry of models) {
+    for (const entry of this.catalog.models) {
       const score = scoreEntry(entry, queryTokens);
       if (score > 0) hits.push({ kind: "model", id: entry.id, score });
     }
-    for (const entry of mcps) {
+    for (const entry of this.catalog.mcps) {
       const score = scoreEntry(entry, queryTokens);
       if (score > 0) hits.push({ kind: "mcp", id: entry.id, score });
     }
-    for (const entry of skills) {
+    for (const entry of this.catalog.skills) {
       const score = scoreEntry(entry, queryTokens);
       if (score > 0) hits.push({ kind: "skill", id: entry.id, score });
     }
