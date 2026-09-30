@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
+import { SpeedInsights } from "@vercel/speed-insights/next";
+
 import { Navbar } from "@/components/navbar";
 import { ProviderSettingsProvider } from "@/components/provider-settings-provider";
 
@@ -19,6 +21,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           <Navbar />
           {children}
         </ProviderSettingsProvider>
+        <SpeedInsights />
       </body>
     </html>
   );
