@@ -1,5 +1,6 @@
 import { detectDecisionSignals, type DecisionSignals } from "./decision-rules";
-import { getEntry, recipes } from "./kb";
+import { KnowledgeBase } from "./knowledge-base";
+import { mcps, models, recipes, skills } from "./kb";
 import { tokenize } from "./retriever";
 import type {
   ComboItem,
@@ -9,6 +10,8 @@ import type {
   Retriever,
   SkillEntry,
 } from "./types";
+
+const defaultKnowledgeBase = new KnowledgeBase({ models, mcps, skills, recipes });
 
 export interface ComboCandidates {
   models: ModelEntry[];
@@ -40,6 +43,7 @@ function scoreRecipe(recipe: RecipeEntry, queryTokens: string[]): number {
 export async function selectCandidates(
   task: string,
   retriever: Retriever,
+  knowledgeBase: KnowledgeBase = defaultKnowledgeBase,
 ): Promise<ComboCandidates> {
   const signals = detectDecisionSignals(task);
   const hits = await retriever.search(task, 80);
@@ -60,14 +64,13 @@ export async function selectCandidates(
   }
 
   const queryTokens = tokenize(task);
-  const matchedRecipes = recipes
+  const matchedRecipes = knowledgeBase.recipes
     .map((recipe) => ({ recipe, score: scoreRecipe(recipe, queryTokens) }))
     .filter((item) => item.score >= 3)
     .sort((a, b) => b.score - a.score)
     .slice(0, 3)
     .map((item) => item.recipe);
 
-  // Include recipe components so local fallback and the model have full context.
   for (const recipe of matchedRecipes) {
     for (const component of recipe.components) {
       if (component.kind === "model" && !modelIds.includes(component.id)) modelIds.push(component.id);
@@ -86,15 +89,15 @@ export async function selectCandidates(
 
   return {
     models: resolvedModelIds
-      .map((id) => getEntry("model", id))
+      .map((id) => knowledgeBase.getEntry("model", id))
       .filter((item): item is ModelEntry => Boolean(item))
       .slice(0, 6),
     mcps: mcpIds
-      .map((id) => getEntry("mcp", id))
+      .map((id) => knowledgeBase.getEntry("mcp", id))
       .filter((item): item is McpEntry => Boolean(item))
       .slice(0, 7),
     skills: skillIds
-      .map((id) => getEntry("skill", id))
+      .map((id) => knowledgeBase.getEntry("skill", id))
       .filter((item): item is SkillEntry => Boolean(item))
       .slice(0, 7),
     recipes: matchedRecipes,
@@ -107,8 +110,9 @@ function toComboItem(
   id: string,
   role: string,
   reasoning: string,
+  knowledgeBase: KnowledgeBase,
 ): ComboItem | null {
-  const entry = getEntry(kind, id);
+  const entry = knowledgeBase.getEntry(kind, id);
   if (!entry) return null;
   return {
     kind,
@@ -125,20 +129,27 @@ export function buildComboFromRecipe(
   task: string,
   recipe: RecipeEntry,
   candidates: ComboCandidates,
+  knowledgeBase: KnowledgeBase = defaultKnowledgeBase,
 ) {
   const modelsItems = recipe.components
     .filter((component) => component.kind === "model")
-    .map((component) => toComboItem("model", component.id, component.role, recipe.rationale))
+    .map((component) =>
+      toComboItem("model", component.id, component.role, recipe.rationale, knowledgeBase),
+    )
     .filter((item): item is ComboItem => Boolean(item));
 
   const mcpItems = recipe.components
     .filter((component) => component.kind === "mcp")
-    .map((component) => toComboItem("mcp", component.id, component.role, recipe.rationale))
+    .map((component) =>
+      toComboItem("mcp", component.id, component.role, recipe.rationale, knowledgeBase),
+    )
     .filter((item): item is ComboItem => Boolean(item));
 
   const skillItems = recipe.components
     .filter((component) => component.kind === "skill")
-    .map((component) => toComboItem("skill", component.id, component.role, recipe.rationale))
+    .map((component) =>
+      toComboItem("skill", component.id, component.role, recipe.rationale, knowledgeBase),
+    )
     .filter((item): item is ComboItem => Boolean(item));
 
   const fill = <T extends { id: string }>(
@@ -155,9 +166,27 @@ export function buildComboFromRecipe(
     }
   };
 
-  fill(modelsItems, candidates.models, (entry) => toComboItem("model", entry.id, "通用模型候选", "可作为组合中的备选模型")!, 1);
-  fill(mcpItems, candidates.mcps, (entry) => toComboItem("mcp", entry.id, "工具集成", "可补充任务所需的工具能力")!, 2);
-  fill(skillItems, candidates.skills, (entry) => toComboItem("skill", entry.id, "技能补充", "可补充流程中的专业技能")!, 2);
+  fill(
+    modelsItems,
+    candidates.models,
+    (entry) =>
+      toComboItem("model", entry.id, "通用模型候选", "可作为组合中的备选模型", knowledgeBase)!,
+    1,
+  );
+  fill(
+    mcpItems,
+    candidates.mcps,
+    (entry) =>
+      toComboItem("mcp", entry.id, "工具集成", "可补充任务所需的工具能力", knowledgeBase)!,
+    2,
+  );
+  fill(
+    skillItems,
+    candidates.skills,
+    (entry) =>
+      toComboItem("skill", entry.id, "技能补充", "可补充流程中的专业技能", knowledgeBase)!,
+    2,
+  );
 
   return {
     task,

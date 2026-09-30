@@ -150,9 +150,54 @@ Cloudflare 后台设置：
 
 如果使用 Cloudflare Workers 的 Git 集成，确保 Workerd 与 esbuild 的原生构建脚本已授权。仓库已在 `pnpm-workspace.yaml` 的 `allowBuilds` 和 `package.json` 的 `pnpm.onlyBuiltDependencies` 中同时声明。
 
+## MCP Server
+
+项目同时发布为 `stackforge-mcp` npm 包，提供 `recommend_ai_stack` 工具。
+
+```bash
+pnpm build:mcp
+npx stackforge-mcp
+```
+
+数据加载采用远程优先：
+
+- 优先请求 GitHub Raw 数据源
+- 写入本地缓存并保留 24 小时
+- 网络失败或超时回退到 npm 包内置 JSON
+
+可用环境变量：
+
+```text
+STACKFORGE_MCP_REMOTE_BASE_URL=https://raw.githubusercontent.com/OceanWhale04/prompt2recipe/main/data
+STACKFORGE_MCP_CACHE_DIR=<本地缓存目录>
+STACKFORGE_MCP_TTL_MS=86400000
+STACKFORGE_MCP_TIMEOUT_MS=2000
+DEEPSEEK_API_KEY=<可选服务端密钥>
+```
+
+Cursor 或 Claude Desktop 配置示例：
+
+```json
+{
+  "mcpServers": {
+    "stackforge": {
+      "command": "npx",
+      "args": ["stackforge-mcp"],
+      "env": {
+        "DEEPSEEK_API_KEY": "your_key"
+      }
+    }
+  }
+}
+```
+
 ## 安全说明
 
 - 不要提交 `.env.local`。
 - 网页中保存的 API Key 位于浏览器 `localStorage`，生产环境必须使用 HTTPS。
 - 用户 Provider Key 只在当前请求中转发，不写入数据库。
 - 授予文件系统、数据库、GitHub 或浏览器 MCP 权限前，应检查最小权限范围。
+
+## 许可证
+
+MIT

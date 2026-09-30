@@ -173,6 +173,47 @@ Cloudflare dashboard settings:
 
 For Cloudflare Workers Git builds, allow the Workerd and esbuild native postinstall scripts. This repository declares both `pnpm-workspace.yaml` `allowBuilds` and `package.json` `pnpm.onlyBuiltDependencies`.
 
+## MCP Server
+
+The project is also published as `stackforge-mcp` and exposes the `recommend_ai_stack` tool.
+
+```bash
+pnpm build:mcp
+npx stackforge-mcp
+```
+
+Data loading is remote-first:
+
+- fetch the latest GitHub Raw data source
+- cache it locally for 24 hours
+- fall back to the bundled JSON when the network fails or times out
+
+Available environment variables:
+
+```text
+STACKFORGE_MCP_REMOTE_BASE_URL=https://raw.githubusercontent.com/OceanWhale04/prompt2recipe/main/data
+STACKFORGE_MCP_CACHE_DIR=<local cache directory>
+STACKFORGE_MCP_TTL_MS=86400000
+STACKFORGE_MCP_TIMEOUT_MS=2000
+DEEPSEEK_API_KEY=<optional server key>
+```
+
+Cursor or Claude Desktop configuration example:
+
+```json
+{
+  "mcpServers": {
+    "stackforge": {
+      "command": "npx",
+      "args": ["stackforge-mcp"],
+      "env": {
+        "DEEPSEEK_API_KEY": "your_key"
+      }
+    }
+  }
+}
+```
+
 ## Security Notes
 
 - Never commit `.env.local`.
@@ -182,4 +223,4 @@ For Cloudflare Workers Git builds, allow the Workerd and esbuild native postinst
 
 ## License
 
-No license has been selected yet.
+MIT
