@@ -1,71 +1,7 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-28T17:04:13.596Z",
+  "updatedAt": "2026-10-04T18:58:13.395Z",
   "items": [
-    {
-      "kind": "model",
-      "id": "openrouter-z-ai-glm-flash-latest",
-      "name": "Z.ai: GLM Flash Latest",
-      "tags": [
-        "openrouter",
-        "z-ai",
-        "low"
-      ],
-      "taskPatterns": [
-        "general reasoning",
-        "chat",
-        "structured generation"
-      ],
-      "oneLiner": "This model always redirects to the latest model in the GLM Flash family."
-    },
-    {
-      "kind": "model",
-      "id": "openrouter-z-ai-glm-5-3-flash",
-      "name": "Z.ai: GLM 5.3 Flash",
-      "tags": [
-        "openrouter",
-        "z-ai",
-        "low"
-      ],
-      "taskPatterns": [
-        "general reasoning",
-        "chat",
-        "structured generation"
-      ],
-      "oneLiner": "GLM-5.3-Flash is a native multimodal model from Z.ai. It is suited for efficient coding and long-horizon agent tasks. Its hybrid sparse and linear attention architecture maintains "
-    },
-    {
-      "kind": "model",
-      "id": "openrouter-z-ai-glm-latest",
-      "name": "Z.ai: GLM Latest",
-      "tags": [
-        "openrouter",
-        "z-ai",
-        "low"
-      ],
-      "taskPatterns": [
-        "general reasoning",
-        "chat",
-        "structured generation"
-      ],
-      "oneLiner": "This model always redirects to the latest GLM model from Z.ai."
-    },
-    {
-      "kind": "model",
-      "id": "openrouter-z-ai-glm-5-3",
-      "name": "Z.ai: GLM 5.3",
-      "tags": [
-        "openrouter",
-        "z-ai",
-        "medium"
-      ],
-      "taskPatterns": [
-        "general reasoning",
-        "chat",
-        "structured generation"
-      ],
-      "oneLiner": "GLM-5.3 is a large-scale reasoning model from Z.ai, built for complex software engineering and long-horizon agent tasks. It supports text input and output with a 1M-token context w"
-    },
     {
       "kind": "model",
       "id": "openrouter-openai-gpt-6-luna-pro",
@@ -340,6 +276,118 @@
     },
     {
       "kind": "model",
+      "id": "openrouter-xiaomi-mimo-v2-6-flash",
+      "name": "Xiaomi: MiMo-V2.6-Flash",
+      "tags": [
+        "openrouter",
+        "xiaomi",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "oneLiner": "MiMo-V2.6-Flash is an open-source foundation model developed by Xiaomi. Built on a Mixture-of-Experts architecture with 309B total parameters and 15B activated per token, it employ"
+    },
+    {
+      "kind": "model",
+      "id": "openrouter-openai-gpt-6-1-sol-pro",
+      "name": "OpenAI: GPT-6.1 Sol Pro",
+      "tags": [
+        "openrouter",
+        "openai",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "oneLiner": "GPT-6.1 Sol Pro is the same underlying model as [GPT-6.1 Sol](https://openrouter.ai/openai/gpt-6.1-sol), served with `reasoning.mode` set to `pro` for higher-quality responses on c"
+    },
+    {
+      "kind": "model",
+      "id": "openrouter-openai-gpt-6-1-sol",
+      "name": "OpenAI: GPT-6.1 Sol",
+      "tags": [
+        "openrouter",
+        "openai",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "oneLiner": "GPT-6.1 Sol is an upgrade to GPT-6 Sol from OpenAI, positioned below the flagship GPT-6 Astra in the GPT-6 series. It is suited for agentic coding, computer use, document-heavy pro"
+    },
+    {
+      "kind": "model",
+      "id": "openrouter-z-ai-glm-flash-latest",
+      "name": "Z.ai: GLM Flash Latest",
+      "tags": [
+        "openrouter",
+        "z-ai",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "oneLiner": "This model always redirects to the latest model in the GLM Flash family."
+    },
+    {
+      "kind": "model",
+      "id": "openrouter-z-ai-glm-5-3-flash",
+      "name": "Z.ai: GLM 5.3 Flash",
+      "tags": [
+        "openrouter",
+        "z-ai",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "oneLiner": "GLM-5.3-Flash is a native multimodal model from Z.ai. It is suited for efficient coding and long-horizon agent tasks. Its hybrid sparse and linear attention architecture maintains "
+    },
+    {
+      "kind": "model",
+      "id": "openrouter-z-ai-glm-latest",
+      "name": "Z.ai: GLM Latest",
+      "tags": [
+        "openrouter",
+        "z-ai",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "oneLiner": "This model always redirects to the latest GLM model from Z.ai."
+    },
+    {
+      "kind": "model",
+      "id": "openrouter-z-ai-glm-5-3",
+      "name": "Z.ai: GLM 5.3",
+      "tags": [
+        "openrouter",
+        "z-ai",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "oneLiner": "GLM-5.3 is a large-scale reasoning model from Z.ai, built for complex software engineering and long-horizon agent tasks. It supports text input and output with a 1M-token context w"
+    },
+    {
+      "kind": "model",
       "id": "openrouter-fireworks-ember-1",
       "name": "Fireworks: Ember-1",
       "tags": [
@@ -372,22 +420,6 @@
     },
     {
       "kind": "model",
-      "id": "openrouter-xiaomi-mimo-v2-6-flash",
-      "name": "Xiaomi: MiMo-V2.6-Flash",
-      "tags": [
-        "openrouter",
-        "xiaomi",
-        "low"
-      ],
-      "taskPatterns": [
-        "general reasoning",
-        "chat",
-        "structured generation"
-      ],
-      "oneLiner": "MiMo-V2.6-Flash is an open-source foundation model developed by Xiaomi. Built on a Mixture-of-Experts architecture with 309B total parameters and 15B activated per token, it employ"
-    },
-    {
-      "kind": "model",
       "id": "openrouter-z-ai-glm-5-3-flashx",
       "name": "Z.ai: GLM 5.3 FlashX",
       "tags": [
@@ -409,7 +441,7 @@
       "tags": [
         "openrouter",
         "deepseek",
-        "low"
+        "medium"
       ],
       "taskPatterns": [
         "general reasoning",
@@ -673,6 +705,22 @@
         "structured generation"
       ],
       "oneLiner": "DeepSeek V4 Pro 0813 is a large-scale mixture-of-experts model from DeepSeek. This is the GA release of DeepSeek V4 Pro."
+    },
+    {
+      "kind": "model",
+      "id": "openrouter-unbiased-pareto-26-10-preview",
+      "name": "Pareto 26.10 Preview",
+      "tags": [
+        "openrouter",
+        "unbiased",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "oneLiner": "Pareto is a multimodal composite model built for research, coding, and agentic workflows, while delivering frontier-level performance across a broad range of general-purpose tasks."
     },
     {
       "kind": "model",
@@ -967,6 +1015,54 @@
     },
     {
       "kind": "model",
+      "id": "openrouter-anthropic-claude-sonnet-5-5",
+      "name": "Anthropic: Claude Sonnet 5.5",
+      "tags": [
+        "openrouter",
+        "anthropic",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "oneLiner": "Claude Sonnet 5.5 is Anthropic's Sonnet-class model for well-scoped everyday work, succeeding Claude Sonnet 5 as a direct upgrade. It is especially strong at building features, fix"
+    },
+    {
+      "kind": "model",
+      "id": "openrouter-anthropic-claude-sonnet-5-5-batch",
+      "name": "Anthropic: Claude Sonnet 5.5 (batch)",
+      "tags": [
+        "openrouter",
+        "anthropic",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "oneLiner": "Claude Sonnet 5.5 is Anthropic's Sonnet-class model for well-scoped everyday work, succeeding Claude Sonnet 5 as a direct upgrade. It is especially strong at building features, fix"
+    },
+    {
+      "kind": "model",
+      "id": "openrouter-nvidia-switchyard",
+      "name": "NVIDIA: Switchyard",
+      "tags": [
+        "openrouter",
+        "nvidia",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "oneLiner": "Switchyard is an open-source model router that switches between multiple models to optimize the cost of requests. By default it will use OpenRouter market data to select the most p"
+    },
+    {
+      "kind": "model",
       "id": "openrouter-upstage-solar-mini4",
       "name": "Upstage: Solar Mini 4",
       "tags": [
@@ -1236,6 +1332,38 @@
         "structured generation"
       ],
       "oneLiner": "Nex-N2.5 is an agentic model built to turn goals into working, verified outcomes. Its core strength is agentic coding within a visual feedback loop: it can explore codebases, imple"
+    },
+    {
+      "kind": "model",
+      "id": "openrouter-inclusionai-ling-3-1-flash",
+      "name": "inclusionAI: Ling 3.1 Flash",
+      "tags": [
+        "openrouter",
+        "inclusionai",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "oneLiner": "Ling 3.1 Flash is a hybrid reasoning mixture-of-experts model from inclusionAI, with 25B active parameters out of 560B total."
+    },
+    {
+      "kind": "model",
+      "id": "openrouter-apodex-apodex-1-1-mini-free",
+      "name": "Apodex: Apodex 1.1 Mini (free)",
+      "tags": [
+        "openrouter",
+        "apodex",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "oneLiner": "Apodex 1.1 Mini is a reasoning-first model from Apodex, built for complex, long-horizon research and forecasting tasks. It works directly with files, data, code, and tools to produ"
     },
     {
       "kind": "model",
@@ -1747,6 +1875,24 @@
     },
     {
       "kind": "mcp",
+      "id": "github-upstash-context7",
+      "name": "context7",
+      "tags": [
+        "llm",
+        "mcp",
+        "mcp-server",
+        "vibe-coding"
+      ],
+      "taskPatterns": [
+        "llm",
+        "mcp",
+        "mcp server",
+        "vibe coding"
+      ],
+      "oneLiner": "Context7 Platform -- Up-to-date code documentation for LLMs and AI code editors"
+    },
+    {
+      "kind": "mcp",
       "id": "github-sansan0-trendradar",
       "name": "TrendRadar",
       "tags": [
@@ -1768,24 +1914,6 @@
         "llm"
       ],
       "oneLiner": "⭐AI-driven public opinion & trend monitor with multi-platform aggregation, RSS, and smart alerts.🎯 告别信息过载，你的 AI 舆情监控助手与热点筛选工具！聚合多平台热点 +  RSS 订阅，支持关键词精准筛选。AI 智能筛选新闻 + AI 翻译 +  AI 分"
-    },
-    {
-      "kind": "mcp",
-      "id": "github-upstash-context7",
-      "name": "context7",
-      "tags": [
-        "llm",
-        "mcp",
-        "mcp-server",
-        "vibe-coding"
-      ],
-      "taskPatterns": [
-        "llm",
-        "mcp",
-        "mcp server",
-        "vibe coding"
-      ],
-      "oneLiner": "Context7 Platform -- Up-to-date code documentation for LLMs and AI code editors"
     },
     {
       "kind": "mcp",
@@ -1973,6 +2101,30 @@
     },
     {
       "kind": "mcp",
+      "id": "github-mksglu-context-mode",
+      "name": "context-mode",
+      "tags": [
+        "antigravity",
+        "claude",
+        "claude-code",
+        "claude-code-hooks",
+        "claude-code-plugins",
+        "claude-code-skill",
+        "codex",
+        "codex-cli"
+      ],
+      "taskPatterns": [
+        "antigravity",
+        "claude",
+        "claude code",
+        "claude code hooks",
+        "claude code plugins",
+        "claude code skill"
+      ],
+      "oneLiner": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and   enforces routing across 17 platforms via MCP + hooks."
+    },
+    {
+      "kind": "mcp",
       "id": "github-activepieces-activepieces",
       "name": "activepieces",
       "tags": [
@@ -1994,24 +2146,6 @@
         "mcp server"
       ],
       "oneLiner": "AI Agents & MCPs & AI Workflow Automation • (~400 MCP servers for AI agents) • AI Automation / AI Agent with MCPs • AI Workflows & AI Agents • MCPs for AI Agents"
-    },
-    {
-      "kind": "mcp",
-      "id": "github-modelcontextprotocol-python-sdk",
-      "name": "python-sdk",
-      "tags": [
-        "mcp",
-        "mcp-client",
-        "mcp-server",
-        "python"
-      ],
-      "taskPatterns": [
-        "mcp",
-        "mcp client",
-        "mcp server",
-        "python"
-      ],
-      "oneLiner": "The official Python SDK for Model Context Protocol servers and clients"
     },
     {
       "kind": "mcp",
@@ -2039,27 +2173,21 @@
     },
     {
       "kind": "mcp",
-      "id": "github-mksglu-context-mode",
-      "name": "context-mode",
+      "id": "github-modelcontextprotocol-python-sdk",
+      "name": "python-sdk",
       "tags": [
-        "antigravity",
-        "claude",
-        "claude-code",
-        "claude-code-hooks",
-        "claude-code-plugins",
-        "claude-code-skill",
-        "codex",
-        "codex-cli"
+        "mcp",
+        "mcp-client",
+        "mcp-server",
+        "python"
       ],
       "taskPatterns": [
-        "antigravity",
-        "claude",
-        "claude code",
-        "claude code hooks",
-        "claude code plugins",
-        "claude code skill"
+        "mcp",
+        "mcp client",
+        "mcp server",
+        "python"
       ],
-      "oneLiner": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and   enforces routing across 17 platforms via MCP + hooks."
+      "oneLiner": "The official Python SDK for Model Context Protocol servers and clients"
     },
     {
       "kind": "mcp",
@@ -2688,7 +2816,7 @@
         "ai search",
         "crawler"
       ],
-      "oneLiner": "The web data API to search, scrape, and interact at scale. 🔥"
+      "oneLiner": "Supercharge your AI agents with data from the web and beyond. Building the library for superintelligence. 🔥"
     },
     {
       "kind": "skill",
@@ -3273,6 +3401,30 @@
     },
     {
       "kind": "skill",
+      "id": "github-skill-stablyai-orca",
+      "name": "orca",
+      "tags": [
+        "ade",
+        "agent-ide",
+        "ai-agents",
+        "claude-code",
+        "cli",
+        "codex",
+        "cursor-agent",
+        "devtools"
+      ],
+      "taskPatterns": [
+        "ade",
+        "agent ide",
+        "ai agents",
+        "claude code",
+        "cli",
+        "codex"
+      ],
+      "oneLiner": "Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime."
+    },
+    {
+      "kind": "skill",
       "id": "github-skill-unclecode-crawl4ai",
       "name": "crawl4ai",
       "tags": [
@@ -3321,30 +3473,6 @@
     },
     {
       "kind": "skill",
-      "id": "github-skill-stablyai-orca",
-      "name": "orca",
-      "tags": [
-        "ade",
-        "agent-ide",
-        "ai-agents",
-        "claude-code",
-        "cli",
-        "codex",
-        "cursor-agent",
-        "devtools"
-      ],
-      "taskPatterns": [
-        "ade",
-        "agent ide",
-        "ai agents",
-        "claude code",
-        "cli",
-        "codex"
-      ],
-      "oneLiner": "Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime."
-    },
-    {
-      "kind": "skill",
       "id": "github-skill-dair-ai-prompt-engineering-guide",
       "name": "Prompt-Engineering-Guide",
       "tags": [
@@ -3369,27 +3497,34 @@
     },
     {
       "kind": "skill",
-      "id": "github-skill-microsoft-ai-agents-for-beginners",
-      "name": "ai-agents-for-beginners",
+      "id": "github-skill-tt-a1i-archify",
+      "name": "archify",
       "tags": [
-        "agentic-ai",
-        "agentic-framework",
-        "agentic-rag",
+        "agent-skills",
+        "architecture-as-code",
+        "architecture-diagram",
+        "claude-skill",
+        "code-visualization",
+        "codex",
+        "coding-agents",
+        "data-flow-diagram",
         "ai-agents",
-        "ai-agents-framework",
-        "autogen",
-        "foundry",
-        "foundry-local"
+        "claude-code",
+        "claude-skills",
+        "deepseek-harness"
       ],
       "taskPatterns": [
-        "agentic ai",
-        "agentic framework",
-        "agentic rag",
+        "agent skills",
+        "architecture as code",
+        "architecture diagram",
+        "claude skill",
+        "code visualization",
+        "codex",
         "ai agents",
-        "ai agents framework",
-        "autogen"
+        "claude code",
+        "claude skills"
       ],
-      "oneLiner": "18 Lessons to Get Started Building AI Agents"
+      "oneLiner": "Turn any idea, plan, or codebase into a beautiful interactive diagram. An agent skill for Claude Code, Codex, and more."
     },
     {
       "kind": "skill",
@@ -3414,6 +3549,30 @@
         "claude code"
       ],
       "oneLiner": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows"
+    },
+    {
+      "kind": "skill",
+      "id": "github-skill-microsoft-ai-agents-for-beginners",
+      "name": "ai-agents-for-beginners",
+      "tags": [
+        "agentic-ai",
+        "agentic-framework",
+        "agentic-rag",
+        "ai-agents",
+        "ai-agents-framework",
+        "autogen",
+        "foundry",
+        "foundry-local"
+      ],
+      "taskPatterns": [
+        "agentic ai",
+        "agentic framework",
+        "agentic rag",
+        "ai agents",
+        "ai agents framework",
+        "autogen"
+      ],
+      "oneLiner": "18 Lessons to Get Started Building AI Agents"
     },
     {
       "kind": "skill",
@@ -3465,51 +3624,27 @@
     },
     {
       "kind": "skill",
-      "id": "github-skill-tt-a1i-archify",
-      "name": "archify",
+      "id": "github-skill-career-ops-hq-career-ops",
+      "name": "career-ops",
       "tags": [
         "agent-skills",
-        "architecture-as-code",
-        "architecture-diagram",
-        "claude-skill",
-        "code-visualization",
-        "codex",
-        "coding-agents",
-        "data-flow-diagram"
+        "ai-agent",
+        "ai-job-search",
+        "ats",
+        "career",
+        "career-ops",
+        "careerops",
+        "claude-code"
       ],
       "taskPatterns": [
         "agent skills",
-        "architecture as code",
-        "architecture diagram",
-        "claude skill",
-        "code visualization",
-        "codex"
+        "ai agent",
+        "ai job search",
+        "ats",
+        "career",
+        "career ops"
       ],
-      "oneLiner": "Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams—self-contained HTML with motion and crisp export."
-    },
-    {
-      "kind": "skill",
-      "id": "github-skill-daytonaio-daytona",
-      "name": "daytona",
-      "tags": [
-        "agentic-workflow",
-        "ai",
-        "ai-agents",
-        "ai-runtime",
-        "ai-sandboxes",
-        "code-execution",
-        "code-interpreter",
-        "developer-tools"
-      ],
-      "taskPatterns": [
-        "agentic workflow",
-        "ai",
-        "ai agents",
-        "ai runtime",
-        "ai sandboxes",
-        "code execution"
-      ],
-      "oneLiner": "Daytona is a Secure and Elastic Infrastructure for Running AI-Generated Code"
+      "oneLiner": "Open-source AI job search agent and job finder: scan job boards, score each job 1-5 against your CV before you apply, tailor an ATS-friendly resume and cover letter, get interview "
     },
     {
       "kind": "skill",
@@ -3534,6 +3669,30 @@
         "claude code"
       ],
       "oneLiner": "Never stop coding. Free MIT AI gateway: one endpoint, 359 providers (150+ free), 1200+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Curs"
+    },
+    {
+      "kind": "skill",
+      "id": "github-skill-daytonaio-daytona",
+      "name": "daytona",
+      "tags": [
+        "agentic-workflow",
+        "ai",
+        "ai-agents",
+        "ai-runtime",
+        "ai-sandboxes",
+        "code-execution",
+        "code-interpreter",
+        "developer-tools"
+      ],
+      "taskPatterns": [
+        "agentic workflow",
+        "ai",
+        "ai agents",
+        "ai runtime",
+        "ai sandboxes",
+        "code execution"
+      ],
+      "oneLiner": "Daytona is a Secure and Elastic Infrastructure for Running AI-Generated Code"
     },
     {
       "kind": "skill",
@@ -3585,30 +3744,6 @@
     },
     {
       "kind": "skill",
-      "id": "github-skill-mintplex-labs-anything-llm",
-      "name": "anything-llm",
-      "tags": [
-        "agent-computer",
-        "agent-harness",
-        "agent-orchestration",
-        "agentic-ai",
-        "agentic-workflow",
-        "ai-agents",
-        "computer-use",
-        "hermes-agent"
-      ],
-      "taskPatterns": [
-        "agent computer",
-        "agent harness",
-        "agent orchestration",
-        "agentic ai",
-        "agentic workflow",
-        "ai agents"
-      ],
-      "oneLiner": "Stop renting your intelligence. Own it with AnythingLLM. Everything you need for a powerful local-first agent experience"
-    },
-    {
-      "kind": "skill",
       "id": "github-skill-shanraisshan-claude-code-best-practice",
       "name": "claude-code-best-practice",
       "tags": [
@@ -3630,6 +3765,30 @@
         "ai agents"
       ],
       "oneLiner": "from vibe coding to agentic engineering - practice makes claude perfect"
+    },
+    {
+      "kind": "skill",
+      "id": "github-skill-mintplex-labs-anything-llm",
+      "name": "anything-llm",
+      "tags": [
+        "agent-computer",
+        "agent-harness",
+        "agent-orchestration",
+        "agentic-ai",
+        "agentic-workflow",
+        "ai-agents",
+        "computer-use",
+        "hermes-agent"
+      ],
+      "taskPatterns": [
+        "agent computer",
+        "agent harness",
+        "agent orchestration",
+        "agentic ai",
+        "agentic workflow",
+        "ai agents"
+      ],
+      "oneLiner": "Stop renting your intelligence. Own it with AnythingLLM. Everything you need for a powerful local-first agent experience"
     },
     {
       "kind": "skill",
@@ -3657,30 +3816,6 @@
     },
     {
       "kind": "skill",
-      "id": "github-skill-microsoft-autogen",
-      "name": "autogen",
-      "tags": [
-        "agentic",
-        "agentic-agi",
-        "agents",
-        "ai",
-        "autogen",
-        "autogen-ecosystem",
-        "chatgpt",
-        "framework"
-      ],
-      "taskPatterns": [
-        "agentic",
-        "agentic agi",
-        "agents",
-        "ai",
-        "autogen",
-        "autogen ecosystem"
-      ],
-      "oneLiner": "A programming framework for agentic AI"
-    },
-    {
-      "kind": "skill",
       "id": "github-skill-rohitg00-ai-engineering-from-scratch",
       "name": "ai-engineering-from-scratch",
       "tags": [
@@ -3702,6 +3837,30 @@
         "course"
       ],
       "oneLiner": "Learn it. Build it. Ship it for others."
+    },
+    {
+      "kind": "skill",
+      "id": "github-skill-microsoft-autogen",
+      "name": "autogen",
+      "tags": [
+        "agentic",
+        "agentic-agi",
+        "agents",
+        "ai",
+        "autogen",
+        "autogen-ecosystem",
+        "chatgpt",
+        "framework"
+      ],
+      "taskPatterns": [
+        "agentic",
+        "agentic agi",
+        "agents",
+        "ai",
+        "autogen",
+        "autogen ecosystem"
+      ],
+      "oneLiner": "A programming framework for agentic AI"
     },
     {
       "kind": "skill",
@@ -3767,30 +3926,6 @@
     },
     {
       "kind": "skill",
-      "id": "github-skill-voltagent-awesome-openclaw-skills",
-      "name": "awesome-openclaw-skills",
-      "tags": [
-        "agent-skills",
-        "awesome",
-        "awesome-list",
-        "awesome-lists",
-        "clawd",
-        "clawdbot",
-        "clawdbot-skill",
-        "clawdhub"
-      ],
-      "taskPatterns": [
-        "agent skills",
-        "awesome",
-        "awesome list",
-        "awesome lists",
-        "clawd",
-        "clawdbot"
-      ],
-      "oneLiner": "The awesome collection of OpenClaw skills. 5,400+ skills filtered and categorized from the official OpenClaw Skills Registry.🦞"
-    },
-    {
-      "kind": "skill",
       "id": "github-skill-blader-humanizer",
       "name": "humanizer",
       "tags": [
@@ -3812,6 +3947,52 @@
         "claude code"
       ],
       "oneLiner": "Agent skill that removes signs of AI-generated writing from text"
+    },
+    {
+      "kind": "skill",
+      "id": "github-skill-ayghri-i-have-adhd",
+      "name": "i-have-adhd",
+      "tags": [
+        "adhd",
+        "claude-",
+        "claude-code-plugin",
+        "claude-skills",
+        "developer-tools",
+        "productivity"
+      ],
+      "taskPatterns": [
+        "adhd",
+        "claude ",
+        "claude code plugin",
+        "claude skills",
+        "developer tools",
+        "productivity"
+      ],
+      "oneLiner": "A skill to stop your coding agent from burying the answer. ADHD-friendly output."
+    },
+    {
+      "kind": "skill",
+      "id": "github-skill-voltagent-awesome-openclaw-skills",
+      "name": "awesome-openclaw-skills",
+      "tags": [
+        "agent-skills",
+        "awesome",
+        "awesome-list",
+        "awesome-lists",
+        "clawd",
+        "clawdbot",
+        "clawdbot-skill",
+        "clawdhub"
+      ],
+      "taskPatterns": [
+        "agent skills",
+        "awesome",
+        "awesome list",
+        "awesome lists",
+        "clawd",
+        "clawdbot"
+      ],
+      "oneLiner": "The awesome collection of OpenClaw skills. 5,400+ skills filtered and categorized from the official OpenClaw Skills Registry.🦞"
     },
     {
       "kind": "skill",
@@ -3839,28 +4020,6 @@
     },
     {
       "kind": "skill",
-      "id": "github-skill-ayghri-i-have-adhd",
-      "name": "i-have-adhd",
-      "tags": [
-        "adhd",
-        "claude-",
-        "claude-code-plugin",
-        "claude-skills",
-        "developer-tools",
-        "productivity"
-      ],
-      "taskPatterns": [
-        "adhd",
-        "claude ",
-        "claude code plugin",
-        "claude skills",
-        "developer tools",
-        "productivity"
-      ],
-      "oneLiner": "A skill to stop your coding agent from burying the answer. ADHD-friendly output."
-    },
-    {
-      "kind": "skill",
       "id": "github-skill-hkuds-nanobot",
       "name": "nanobot",
       "tags": [
@@ -3885,27 +4044,27 @@
     },
     {
       "kind": "skill",
-      "id": "github-skill-zhayujie-cowagent",
-      "name": "CowAgent",
+      "id": "github-skill-k-dense-ai-scientific-agent-skills",
+      "name": "scientific-agent-skills",
       "tags": [
-        "ai",
-        "ai-agent",
-        "ai-agents",
-        "chatgpt-on-wechat",
+        "agent-skills",
+        "ai-scientist",
+        "bioinformatics",
+        "chemoinformatics",
         "claude",
-        "claude-code",
-        "codex",
-        "cowagent"
+        "claude-skills",
+        "claudecode",
+        "clinical-research"
       ],
       "taskPatterns": [
-        "ai",
-        "ai agent",
-        "ai agents",
-        "chatgpt on wechat",
+        "agent skills",
+        "ai scientist",
+        "bioinformatics",
+        "chemoinformatics",
         "claude",
-        "claude code"
+        "claude skills"
       ],
-      "oneLiner": "Open-source super AI assistant & Agent Harness. Plans tasks, runs tools and skills, self-evolves with memory and knowledge. Multi-agent, multi-model, multi-channel. Lightweight, ex"
+      "oneLiner": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 250,000+ scientists worldwide. 177 ready-to-use validated skills plus 100+ scientific datab"
     },
     {
       "kind": "skill",
@@ -3933,27 +4092,27 @@
     },
     {
       "kind": "skill",
-      "id": "github-skill-k-dense-ai-scientific-agent-skills",
-      "name": "scientific-agent-skills",
+      "id": "github-skill-zhayujie-cowagent",
+      "name": "CowAgent",
       "tags": [
-        "agent-skills",
-        "ai-scientist",
-        "bioinformatics",
-        "chemoinformatics",
+        "ai",
+        "ai-agent",
+        "ai-agents",
+        "chatgpt-on-wechat",
         "claude",
-        "claude-skills",
-        "claudecode",
-        "clinical-research"
+        "claude-code",
+        "codex",
+        "cowagent"
       ],
       "taskPatterns": [
-        "agent skills",
-        "ai scientist",
-        "bioinformatics",
-        "chemoinformatics",
+        "ai",
+        "ai agent",
+        "ai agents",
+        "chatgpt on wechat",
         "claude",
-        "claude skills"
+        "claude code"
       ],
-      "oneLiner": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 190,000+ scientists worldwide. 165 ready-to-use validated skills plus 100+ scientific datab"
+      "oneLiner": "Open-source personal AI assistant & Agent Harness. Plans tasks, runs tools and skills, self-evolves with memory and knowledge. Multi-agent, multi-model, multi-channel. Lightweight,"
     },
     {
       "kind": "skill",
@@ -4005,6 +4164,28 @@
     },
     {
       "kind": "skill",
+      "id": "github-skill-alibaba-open-code-review",
+      "name": "open-code-review",
+      "tags": [
+        "agent",
+        "agent-skills",
+        "code-review",
+        "code-review-assistant",
+        "harness",
+        "repository-level-context"
+      ],
+      "taskPatterns": [
+        "agent",
+        "agent skills",
+        "code review",
+        "code review assistant",
+        "harness",
+        "repository level context"
+      ],
+      "oneLiner": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-la"
+    },
+    {
+      "kind": "skill",
       "id": "github-skill-cathrynlavery-diagram-design",
       "name": "diagram-design",
       "tags": [
@@ -4025,7 +4206,7 @@
         "diagrams",
         "drawio"
       ],
-      "oneLiner": "Editorial diagram design for Claude Code, Codex, and Pi. Self-contained HTML + SVG. No shadows. No Mermaid slop."
+      "oneLiner": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Factory Droid, and Pi. 42 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop."
     },
     {
       "kind": "skill",
@@ -4070,28 +4251,6 @@
         "python"
       ],
       "oneLiner": "Build, run, and manage agent platforms."
-    },
-    {
-      "kind": "skill",
-      "id": "github-skill-alibaba-open-code-review",
-      "name": "open-code-review",
-      "tags": [
-        "agent",
-        "agent-skills",
-        "code-review",
-        "code-review-assistant",
-        "harness",
-        "repository-level-context"
-      ],
-      "taskPatterns": [
-        "agent",
-        "agent skills",
-        "code review",
-        "code review assistant",
-        "harness",
-        "repository level context"
-      ],
-      "oneLiner": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-la"
     },
     {
       "kind": "skill",
@@ -4263,6 +4422,30 @@
     },
     {
       "kind": "skill",
+      "id": "github-skill-vectifyai-pageindex",
+      "name": "PageIndex",
+      "tags": [
+        "agentic-ai",
+        "agents",
+        "ai",
+        "ai-agents",
+        "context-engineering",
+        "information-retrieval",
+        "llm",
+        "rag"
+      ],
+      "taskPatterns": [
+        "agentic ai",
+        "agents",
+        "ai",
+        "ai agents",
+        "context engineering",
+        "information retrieval"
+      ],
+      "oneLiner": "📑 PageIndex: Document Index for Vectorless, Reasoning-based RAG"
+    },
+    {
+      "kind": "skill",
       "id": "github-skill-ashishpatel26-500-ai-agents-projects",
       "name": "500-AI-Agents-Projects",
       "tags": [
@@ -4322,30 +4505,6 @@
         "ai agents"
       ],
       "oneLiner": "🤖 Assemble, configure, and deploy autonomous AI Agents in your browser."
-    },
-    {
-      "kind": "skill",
-      "id": "github-skill-vectifyai-pageindex",
-      "name": "PageIndex",
-      "tags": [
-        "agentic-ai",
-        "agents",
-        "ai",
-        "ai-agents",
-        "context-engineering",
-        "information-retrieval",
-        "llm",
-        "rag"
-      ],
-      "taskPatterns": [
-        "agentic ai",
-        "agents",
-        "ai",
-        "ai agents",
-        "context engineering",
-        "information retrieval"
-      ],
-      "oneLiner": "📑 PageIndex: Document Index for Vectorless, Reasoning-based RAG"
     },
     {
       "kind": "skill",
@@ -4541,30 +4700,6 @@
     },
     {
       "kind": "skill",
-      "id": "github-skill-googleworkspace-cli",
-      "name": "cli",
-      "tags": [
-        "agent-skills",
-        "ai-agent",
-        "automation",
-        "cli",
-        "discovery-api",
-        "gemini-cli-extension",
-        "google-admin",
-        "google-api"
-      ],
-      "taskPatterns": [
-        "agent skills",
-        "ai agent",
-        "automation",
-        "cli",
-        "discovery api",
-        "gemini cli extension"
-      ],
-      "oneLiner": "Google Workspace CLI — one command-line tool for Drive, Gmail, Calendar, Sheets, Docs, Chat, Admin, and more. Dynamically built from Google Discovery Service. Includes AI agent ski"
-    },
-    {
-      "kind": "skill",
       "id": "github-skill-topoteretes-cognee",
       "name": "cognee",
       "tags": [
@@ -4589,6 +4724,30 @@
     },
     {
       "kind": "skill",
+      "id": "github-skill-googleworkspace-cli",
+      "name": "cli",
+      "tags": [
+        "agent-skills",
+        "ai-agent",
+        "automation",
+        "cli",
+        "discovery-api",
+        "gemini-cli-extension",
+        "google-admin",
+        "google-api"
+      ],
+      "taskPatterns": [
+        "agent skills",
+        "ai agent",
+        "automation",
+        "cli",
+        "discovery api",
+        "gemini cli extension"
+      ],
+      "oneLiner": "Google Workspace CLI — one command-line tool for Drive, Gmail, Calendar, Sheets, Docs, Chat, Admin, and more. Dynamically built from Google Discovery Service. Includes AI agent ski"
+    },
+    {
+      "kind": "skill",
       "id": "github-skill-nanocoai-nanoclaw",
       "name": "nanoclaw",
       "tags": [
@@ -4606,30 +4765,6 @@
         "openclaw"
       ],
       "oneLiner": "A lightweight alternative to OpenClaw that runs in containers for security. Connects to WhatsApp, Telegram, Slack, Discord, Gmail and other messaging apps,, has memory, scheduled j"
-    },
-    {
-      "kind": "skill",
-      "id": "github-skill-othmanadi-planning-with-files",
-      "name": "planning-with-files",
-      "tags": [
-        "agent-skills",
-        "autonomous-agents",
-        "claude",
-        "claude-code",
-        "claude-code-skills",
-        "claude-skills",
-        "codex",
-        "coding-agent"
-      ],
-      "taskPatterns": [
-        "agent skills",
-        "autonomous agents",
-        "claude",
-        "claude code",
-        "claude code skills",
-        "claude skills"
-      ],
-      "oneLiner": "Persistent file-based planning for AI coding agents and long-running tasks. Crash-proof markdown plans, session recovery after /clear and compaction, per-turn re-injection against "
     },
     {
       "kind": "skill",
@@ -4654,6 +4789,30 @@
         "claude ai"
       ],
       "oneLiner": "380 Claude Code skills & agent skills & plugins (30+ Agents, 70+ custom commands, 380+ skills, customizable references, scripts)for Claude Code, Codex, Gemini CLI, Cursor, and 8 mo"
+    },
+    {
+      "kind": "skill",
+      "id": "github-skill-othmanadi-planning-with-files",
+      "name": "planning-with-files",
+      "tags": [
+        "agent-skills",
+        "autonomous-agents",
+        "claude",
+        "claude-code",
+        "claude-code-skills",
+        "claude-skills",
+        "codex",
+        "coding-agent"
+      ],
+      "taskPatterns": [
+        "agent skills",
+        "autonomous agents",
+        "claude",
+        "claude code",
+        "claude code skills",
+        "claude skills"
+      ],
+      "oneLiner": "Persistent file-based planning for AI coding agents and long-running tasks. Crash-proof markdown plans, session recovery after /clear and compaction, per-turn re-injection against "
     },
     {
       "kind": "skill",
@@ -4886,22 +5045,6 @@
     },
     {
       "kind": "skill",
-      "id": "github-skill-hkuds-deepcode",
-      "name": "DeepCode",
-      "tags": [
-        "agentic-coding",
-        "harness-engineering",
-        "llm-agent"
-      ],
-      "taskPatterns": [
-        "agentic coding",
-        "harness engineering",
-        "llm agent"
-      ],
-      "oneLiner": "\"DeepCode: Open Agentic Coding (Agent Harness & Loop Engineering & Multi-Agent Orchestration)\""
-    },
-    {
-      "kind": "skill",
       "id": "github-skill-citrolabs-ego-lite",
       "name": "ego-lite",
       "tags": [
@@ -4923,6 +5066,22 @@
         "claude code"
       ],
       "oneLiner": "The fastest browser for AI agents to run browser automation, built for sharing your logged-in browser state with your AI agents, like Codex or Claude Code, without disturbing you. "
+    },
+    {
+      "kind": "skill",
+      "id": "github-skill-hkuds-deepcode",
+      "name": "DeepCode",
+      "tags": [
+        "agentic-coding",
+        "harness-engineering",
+        "llm-agent"
+      ],
+      "taskPatterns": [
+        "agentic coding",
+        "harness engineering",
+        "llm agent"
+      ],
+      "oneLiner": "\"DeepCode: Open Agentic Coding (Agent Harness & Loop Engineering & Multi-Agent Orchestration)\""
     },
     {
       "kind": "skill",
@@ -5112,6 +5271,28 @@
     },
     {
       "kind": "skill",
+      "id": "github-skill-latent-spaces-brag",
+      "name": "brag",
+      "tags": [
+        "agent-skills",
+        "claude-code",
+        "claude-skills",
+        "hyperframes",
+        "launch-video",
+        "video-generation"
+      ],
+      "taskPatterns": [
+        "agent skills",
+        "claude code",
+        "claude skills",
+        "hyperframes",
+        "launch video",
+        "video generation"
+      ],
+      "oneLiner": "You built it. Now brag. Turn the project you just created into a short, shareable launch video with one command."
+    },
+    {
+      "kind": "skill",
       "id": "github-skill-orchestra-research-ai-research-skills",
       "name": "AI-Research-SKILLs",
       "tags": [
@@ -5276,30 +5457,6 @@
     },
     {
       "kind": "skill",
-      "id": "github-skill-vincentwei1021-video-shotcraft",
-      "name": "video-shotcraft",
-      "tags": [
-        "agent-skills",
-        "ai-agents",
-        "ai-video",
-        "claude-code",
-        "claude-code-skills",
-        "claude-skills",
-        "codex",
-        "motion-design"
-      ],
-      "taskPatterns": [
-        "agent skills",
-        "ai agents",
-        "ai video",
-        "claude code",
-        "claude code skills",
-        "claude skills"
-      ],
-      "oneLiner": "AI video skill for Claude Code & Codex — cinematic product videos with Remotion: 152 shot recipe cards, 209 motion previews, a production-ready template"
-    },
-    {
-      "kind": "skill",
       "id": "github-skill-agents365-ai-drawio-skill",
       "name": "drawio-skill",
       "tags": [
@@ -5321,6 +5478,30 @@
         "c4 model"
       ],
       "oneLiner": "Agent skill that turns natural language, code, Terraform/K8s, SQL, OpenAPI, AsyncAPI, Protobuf and GraphQL sources into editable, tested draw.io architecture diagrams: incremental "
+    },
+    {
+      "kind": "skill",
+      "id": "github-skill-vincentwei1021-video-shotcraft",
+      "name": "video-shotcraft",
+      "tags": [
+        "agent-skills",
+        "ai-agents",
+        "ai-video",
+        "claude-code",
+        "claude-code-skills",
+        "claude-skills",
+        "codex",
+        "motion-design"
+      ],
+      "taskPatterns": [
+        "agent skills",
+        "ai agents",
+        "ai video",
+        "claude code",
+        "claude code skills",
+        "claude skills"
+      ],
+      "oneLiner": "AI video skill for Claude Code & Codex — cinematic product videos with Remotion: 152 shot recipe cards, 209 motion previews, a production-ready template"
     },
     {
       "kind": "skill",
@@ -5444,6 +5625,20 @@
     },
     {
       "kind": "skill",
+      "id": "github-skill-xixu-me-xget",
+      "name": "xget",
+      "tags": [
+        "agent-skills",
+        "xget"
+      ],
+      "taskPatterns": [
+        "agent skills",
+        "xget"
+      ],
+      "oneLiner": "Ultra-high-performance, secure, all-in-one acceleration engine for developer resources"
+    },
+    {
+      "kind": "skill",
       "id": "github-skill-yaoapp-yao",
       "name": "yao",
       "tags": [
@@ -5468,27 +5663,23 @@
     },
     {
       "kind": "skill",
-      "id": "github-skill-refly-ai-refly",
-      "name": "refly",
+      "id": "github-skill-tigerless-labs-autoharness",
+      "name": "autoharness",
       "tags": [
-        "agent",
         "agent-skills",
-        "automation",
-        "claude",
-        "clawdbot",
-        "codex",
-        "cursor",
-        "lark-bot"
+        "claude-code",
+        "claude-code-plugin",
+        "llm-agents",
+        "python"
       ],
       "taskPatterns": [
-        "agent",
         "agent skills",
-        "automation",
-        "claude",
-        "clawdbot",
-        "codex"
+        "claude code",
+        "claude code plugin",
+        "llm agents",
+        "python"
       ],
-      "oneLiner": "The first open-source agent skills builder. Define skills by vibe workflow, run on Claude Code, Cursor, Codex & more. Build Clawdbot 🦞· APIs for Lovable · Bots for Slack & Lark/Fe"
+      "oneLiner": "Autoharness — a self-learning skill layer for Claude Code — distills skills from your real sessions, updates them as you work, and prunes the ones that stop getting used. No daemon"
     },
     {
       "kind": "skill",
@@ -5516,6 +5707,30 @@
     },
     {
       "kind": "skill",
+      "id": "github-skill-refly-ai-refly",
+      "name": "refly",
+      "tags": [
+        "agent",
+        "agent-skills",
+        "automation",
+        "claude",
+        "clawdbot",
+        "codex",
+        "cursor",
+        "lark-bot"
+      ],
+      "taskPatterns": [
+        "agent",
+        "agent skills",
+        "automation",
+        "claude",
+        "clawdbot",
+        "codex"
+      ],
+      "oneLiner": "The first open-source agent skills builder. Define skills by vibe workflow, run on Claude Code, Cursor, Codex & more. Build Clawdbot 🦞· APIs for Lovable · Bots for Slack & Lark/Fe"
+    },
+    {
+      "kind": "skill",
       "id": "github-skill-anbeime-skill",
       "name": "skill",
       "tags": [
@@ -5537,18 +5752,6 @@
         "developer tools"
       ],
       "oneLiner": "收录最全、更新最快的技能Skills商店：精选原创技能包（涵盖文档处理、内容创作、编程开发、机器学习、自动化工作流），全部打包好可直接安装使用！同时自动抓取GitHub上万个Skills项目，按分类、更新时间、Star数量整理。The most comprehensive and frequently updated AI Agent skill libra"
-    },
-    {
-      "kind": "skill",
-      "id": "github-skill-trailofbits-skills",
-      "name": "skills",
-      "tags": [
-        "agent-skills"
-      ],
-      "taskPatterns": [
-        "agent skills"
-      ],
-      "oneLiner": "Trail of Bits Claude Code skills for security research, vulnerability detection, and audit workflows"
     },
     {
       "kind": "skill",
@@ -5576,6 +5779,18 @@
     },
     {
       "kind": "skill",
+      "id": "github-skill-trailofbits-skills",
+      "name": "skills",
+      "tags": [
+        "agent-skills"
+      ],
+      "taskPatterns": [
+        "agent skills"
+      ],
+      "oneLiner": "Trail of Bits Claude Code skills for security research, vulnerability detection, and audit workflows"
+    },
+    {
+      "kind": "skill",
       "id": "github-skill-zenstory-ai-oh-story-claudecode",
       "name": "oh-story-claudecode",
       "tags": [
@@ -5600,26 +5815,6 @@
     },
     {
       "kind": "skill",
-      "id": "github-skill-deanpeters-product-manager-skills",
-      "name": "Product-Manager-Skills",
-      "tags": [
-        "ai-agents",
-        "ai-product-management",
-        "claude-skills",
-        "pm-frameworks",
-        "product-management"
-      ],
-      "taskPatterns": [
-        "ai agents",
-        "ai product management",
-        "claude skills",
-        "pm frameworks",
-        "product management"
-      ],
-      "oneLiner": "Product Management skills framework built on battle-tested methods for Claude Code, Cowork, Codex, and AI agents."
-    },
-    {
-      "kind": "skill",
       "id": "github-skill-snailsploit-claude-red",
       "name": "Claude-Red",
       "tags": [
@@ -5639,6 +5834,26 @@
         "skills"
       ],
       "oneLiner": "claude-red is a curated library of offensive security skills designed for the Claude skills system. Each skill is a structured SKILL.md file that primes Claude with expert-level me"
+    },
+    {
+      "kind": "skill",
+      "id": "github-skill-deanpeters-product-manager-skills",
+      "name": "Product-Manager-Skills",
+      "tags": [
+        "ai-agents",
+        "ai-product-management",
+        "claude-skills",
+        "pm-frameworks",
+        "product-management"
+      ],
+      "taskPatterns": [
+        "ai agents",
+        "ai product management",
+        "claude skills",
+        "pm frameworks",
+        "product management"
+      ],
+      "oneLiner": "Product Management skills framework built on battle-tested methods for Claude Code, Cowork, Codex, and AI agents."
     },
     {
       "kind": "skill",
@@ -5684,30 +5899,6 @@
     },
     {
       "kind": "skill",
-      "id": "github-skill-ikaijua-awesome-aitools",
-      "name": "Awesome-AITools",
-      "tags": [
-        "agent-skills",
-        "ai",
-        "artificial-intelligence",
-        "awesome",
-        "awesome-list",
-        "awesome-lists",
-        "chatgpt",
-        "claude"
-      ],
-      "taskPatterns": [
-        "agent skills",
-        "ai",
-        "artificial intelligence",
-        "awesome",
-        "awesome list",
-        "awesome lists"
-      ],
-      "oneLiner": "Collection of AI-related utilities. Welcome to submit pull requests /收藏AI相关的实用工具，欢迎提交pull requests"
-    },
-    {
-      "kind": "skill",
       "id": "github-skill-gosom-google-maps-scraper",
       "name": "google-maps-scraper",
       "tags": [
@@ -5729,6 +5920,32 @@
         "golang"
       ],
       "oneLiner": "scrape data  from Google Maps. Extracts data such as the name, address, phone number, website URL, rating,  reviews number, latitude and longitude, reviews,email and more for each "
+    },
+    {
+      "kind": "skill",
+      "id": "github-skill-ikaijua-awesome-aitools",
+      "name": "Awesome-AITools",
+      "tags": [
+        "agent-skills",
+        "ai",
+        "artificial-intelligence",
+        "awesome",
+        "awesome-list",
+        "awesome-lists",
+        "chatgpt",
+        "claude",
+        "agents"
+      ],
+      "taskPatterns": [
+        "agent skills",
+        "ai",
+        "artificial intelligence",
+        "awesome",
+        "awesome list",
+        "awesome lists",
+        "agents"
+      ],
+      "oneLiner": "Collection of AI-related utilities. Welcome to submit pull requests /收藏AI相关的实用工具，欢迎提交pull requests"
     },
     {
       "kind": "skill",
@@ -5910,7 +6127,8 @@
         "anthropic",
         "chatbot",
         "chatgpt",
-        "cli"
+        "cli",
+        "autonomous-agents"
       ],
       "taskPatterns": [
         "agent",
@@ -5918,9 +6136,34 @@
         "ai agents",
         "ai assistant",
         "anthropic",
-        "chatbot"
+        "chatbot",
+        "autonomous agents"
       ],
       "oneLiner": "Your agent in your terminal, equipped with local tools: writes code, uses the terminal, browses the web. Make your own persistent autonomous agent on top!"
+    },
+    {
+      "kind": "skill",
+      "id": "github-skill-liustack-modlens",
+      "name": "modlens",
+      "tags": [
+        "agent-skills",
+        "claude-code",
+        "claude-skills",
+        "codex",
+        "cordis",
+        "deepseek",
+        "dsh",
+        "dsh-plugin"
+      ],
+      "taskPatterns": [
+        "agent skills",
+        "claude code",
+        "claude skills",
+        "codex",
+        "cordis",
+        "deepseek"
+      ],
+      "oneLiner": "The first vision plugin for DeepSeek Harness, and the vision bridge for every text-only coding agent. Paste an image, get structured JSON evidence (OCR, layout, semantics). | 全网最强 "
     },
     {
       "kind": "skill",
@@ -5948,27 +6191,27 @@
     },
     {
       "kind": "skill",
-      "id": "github-skill-liustack-modlens",
-      "name": "modlens",
+      "id": "github-skill-sergebulaev-linkedin-skills",
+      "name": "linkedin-skills",
       "tags": [
+        "agent-skill",
         "agent-skills",
-        "claude-code",
-        "claude-skills",
-        "codex",
-        "cordis",
-        "deepseek",
-        "dsh",
-        "dsh-plugin"
+        "ai-agents",
+        "ai-content",
+        "ai-marketing",
+        "anthropic",
+        "awesome-claude",
+        "claude-code"
       ],
       "taskPatterns": [
+        "agent skill",
         "agent skills",
-        "claude code",
-        "claude skills",
-        "codex",
-        "cordis",
-        "deepseek"
+        "ai agents",
+        "ai content",
+        "ai marketing",
+        "anthropic"
       ],
-      "oneLiner": "The first vision plugin for DeepSeek Harness, and the vision bridge for every text-only coding agent. Paste an image, get structured JSON evidence (OCR, layout, semantics). | 全网最强 "
+      "oneLiner": "Claude skills for LinkedIn. 11 Claude Code and Codex skills that write human-sounding LinkedIn posts, craft comments that get noticed, analyze your feed, and build a publishing cad"
     },
     {
       "kind": "skill",
@@ -6126,27 +6369,75 @@
     },
     {
       "kind": "skill",
-      "id": "github-skill-sergebulaev-linkedin-skills",
-      "name": "linkedin-skills",
+      "id": "github-skill-wangnov-codex-app-mirror",
+      "name": "codex-app-mirror",
       "tags": [
-        "agent-skill",
-        "agent-skills",
-        "ai-agents",
-        "ai-content",
-        "ai-marketing",
-        "anthropic",
-        "awesome-claude",
-        "claude-code"
+        "codex-app",
+        "github-actions",
+        "installer-mirror",
+        "macos",
+        "microsoft-store",
+        "msix",
+        "openai-codex",
+        "windows"
       ],
       "taskPatterns": [
-        "agent skill",
-        "agent skills",
-        "ai agents",
-        "ai content",
-        "ai marketing",
-        "anthropic"
+        "codex app",
+        "github actions",
+        "installer mirror",
+        "macos",
+        "microsoft store",
+        "msix"
       ],
-      "oneLiner": "Claude skills for LinkedIn. 11 Claude Code and Codex skills that write human-sounding LinkedIn posts, craft comments that get noticed, analyze your feed, and build a publishing cad"
+      "oneLiner": "原样镜像官方 Codex 桌面应用:每 15 分钟探测、SHA256 可校验、国内直连下载、 Mac 可增量更新 | Verbatim, verifiable mirror of the official Codex desktop app — probed every 15 min, with a Sparkle delta-update feed."
+    },
+    {
+      "kind": "skill",
+      "id": "github-skill-ryze-ai-adgent-open-seo-mcp-skills",
+      "name": "open-seo-mcp-skills",
+      "tags": [
+        "ai-seo",
+        "ai-visibility",
+        "backlinks",
+        "claude",
+        "claude-code",
+        "claude-skills",
+        "dataforseo",
+        "generative-engine-optimization"
+      ],
+      "taskPatterns": [
+        "ai seo",
+        "ai visibility",
+        "backlinks",
+        "claude",
+        "claude code",
+        "claude skills"
+      ],
+      "oneLiner": "Free SEO MCP server + open-source SEO and GEO skills for Claude: keyword research, rank tracking, audits, backlinks, AI visibility on your real GSC/GA4/ads data. claude mcp add ryz"
+    },
+    {
+      "kind": "skill",
+      "id": "github-skill-zenbu-labs-terminal-browser",
+      "name": "terminal-browser",
+      "tags": [
+        "browser",
+        "claude-code",
+        "claude-code-plugin",
+        "claude-skills",
+        "cli",
+        "codex",
+        "herdr-plugin",
+        "rust"
+      ],
+      "taskPatterns": [
+        "browser",
+        "claude code",
+        "claude code plugin",
+        "claude skills",
+        "cli",
+        "codex"
+      ],
+      "oneLiner": "A browser inside your terminal"
     },
     {
       "kind": "skill",
@@ -6171,30 +6462,6 @@
         "commands"
       ],
       "oneLiner": "A single hub to find Claude Skills, Agents, Commands, Hooks, Plugins, and Marketplace collections to extend Claude Code, Claude Desktop, Agent SDK and OpenClaw"
-    },
-    {
-      "kind": "skill",
-      "id": "github-skill-wangnov-codex-app-mirror",
-      "name": "codex-app-mirror",
-      "tags": [
-        "codex-app",
-        "github-actions",
-        "installer-mirror",
-        "macos",
-        "microsoft-store",
-        "msix",
-        "openai-codex",
-        "windows"
-      ],
-      "taskPatterns": [
-        "codex app",
-        "github actions",
-        "installer mirror",
-        "macos",
-        "microsoft store",
-        "msix"
-      ],
-      "oneLiner": "原样镜像官方 Codex 桌面应用:每 15 分钟探测、SHA256 可校验、国内直连下载、 Mac 可增量更新 | Verbatim, verifiable mirror of the official Codex desktop app — probed every 15 min, with a Sparkle delta-update feed."
     },
     {
       "kind": "skill",
@@ -6246,27 +6513,27 @@
     },
     {
       "kind": "skill",
-      "id": "github-skill-zenbu-labs-terminal-browser",
-      "name": "terminal-browser",
+      "id": "github-skill-ar9av-obsidian-wiki",
+      "name": "obsidian-wiki",
       "tags": [
-        "browser",
+        "agent-memory",
+        "agent-skills",
+        "brain",
         "claude-code",
-        "claude-code-plugin",
         "claude-skills",
-        "cli",
         "codex",
-        "herdr-plugin",
-        "rust"
+        "karpathy",
+        "knowledge-base"
       ],
       "taskPatterns": [
-        "browser",
+        "agent memory",
+        "agent skills",
+        "brain",
         "claude code",
-        "claude code plugin",
         "claude skills",
-        "cli",
         "codex"
       ],
-      "oneLiner": "A browser inside your terminal"
+      "oneLiner": "Framework for AI agents to build and maintain a digital brain through Obsidian wiki | Memory System for Agents"
     },
     {
       "kind": "skill",
@@ -6342,6 +6609,30 @@
     },
     {
       "kind": "skill",
+      "id": "github-skill-irinabuht12-oss-marketing-skills",
+      "name": "marketing-skills",
+      "tags": [
+        "ai-visibility",
+        "claude-code",
+        "claude-desktop",
+        "claude-marketing-skills",
+        "claude-plugin",
+        "claude-skills",
+        "claude-skills-for-marketing",
+        "cursor"
+      ],
+      "taskPatterns": [
+        "ai visibility",
+        "claude code",
+        "claude desktop",
+        "claude marketing skills",
+        "claude plugin",
+        "claude skills"
+      ],
+      "oneLiner": "Claude skills for marketing: 49 free marketing skills for Claude Code and claude.ai (Google Ads, Meta Ads, SEO, AI visibility) + the Ryze Google Ads MCP / Meta Ads MCP: claude mcp "
+    },
+    {
+      "kind": "skill",
       "id": "github-skill-yilewang-llm-for-zotero",
       "name": "llm-for-zotero",
       "tags": [
@@ -6363,6 +6654,54 @@
         "rag"
       ],
       "oneLiner": "An open-source research agent system for your Zotero library."
+    },
+    {
+      "kind": "skill",
+      "id": "github-skill-scrapecreators-social-media-research-skills",
+      "name": "social-media-research-skills",
+      "tags": [
+        "agent-skills",
+        "ai-agents",
+        "claude-code",
+        "claude-skills",
+        "competitor-analysis",
+        "content-marketing",
+        "cursor",
+        "influencer-marketing"
+      ],
+      "taskPatterns": [
+        "agent skills",
+        "ai agents",
+        "claude code",
+        "claude skills",
+        "competitor analysis",
+        "content marketing"
+      ],
+      "oneLiner": "AI agent skills for social media research. Outlier posts, comment mining, competitor teardowns, ad libraries & trends across TikTok, Instagram, YouTube, Reddit, X, LinkedIn & more."
+    },
+    {
+      "kind": "skill",
+      "id": "github-skill-rebelytics-one-skill-to-rule-them-all",
+      "name": "one-skill-to-rule-them-all",
+      "tags": [
+        "agent-skills",
+        "ai-skills",
+        "augmented-expertise",
+        "awesome-skills",
+        "claude",
+        "claude-code",
+        "claude-code-skills",
+        "claude-cowork"
+      ],
+      "taskPatterns": [
+        "agent skills",
+        "ai skills",
+        "augmented expertise",
+        "awesome skills",
+        "claude",
+        "claude code"
+      ],
+      "oneLiner": "The meta-skill that builds and improves all your skills, including itself. Watches your work sessions (autonomous or human-led), captures patterns, corrections and judgement calls,"
     },
     {
       "kind": "skill",
@@ -6414,30 +6753,6 @@
     },
     {
       "kind": "skill",
-      "id": "github-skill-scrapecreators-social-media-research-skills",
-      "name": "social-media-research-skills",
-      "tags": [
-        "agent-skills",
-        "ai-agents",
-        "claude-code",
-        "claude-skills",
-        "competitor-analysis",
-        "content-marketing",
-        "cursor",
-        "influencer-marketing"
-      ],
-      "taskPatterns": [
-        "agent skills",
-        "ai agents",
-        "claude code",
-        "claude skills",
-        "competitor analysis",
-        "content marketing"
-      ],
-      "oneLiner": "AI agent skills for social media research. Outlier posts, comment mining, competitor teardowns, ad libraries & trends across TikTok, Instagram, YouTube, Reddit, X, LinkedIn & more."
-    },
-    {
-      "kind": "skill",
       "id": "github-skill-rohitg00-pro-workflow",
       "name": "pro-workflow",
       "tags": [
@@ -6486,75 +6801,27 @@
     },
     {
       "kind": "skill",
-      "id": "github-skill-genieincodebottle-generative-ai",
-      "name": "generative-ai",
+      "id": "github-skill-filtalgo-filtmall-shopping-skill",
+      "name": "Filtmall-Shopping-Skill",
       "tags": [
-        "agentic-ai",
-        "agentic-framework",
-        "claude",
-        "gemini",
-        "genai",
-        "genai-usecase",
-        "generative-ai",
-        "interview-questions"
-      ],
-      "taskPatterns": [
-        "agentic ai",
-        "agentic framework",
-        "claude",
-        "gemini",
-        "genai",
-        "genai usecase"
-      ],
-      "oneLiner": "Comprehensive resources on Generative AI, including a detailed roadmap, projects, use cases, interview preparation, and coding preparation."
-    },
-    {
-      "kind": "skill",
-      "id": "github-skill-ryze-ai-adgent-open-seo-mcp-skills",
-      "name": "open-seo-mcp-skills",
-      "tags": [
-        "ai-seo",
-        "ai-visibility",
-        "backlinks",
-        "claude",
-        "claude-code",
+        "agent-skills",
+        "ai-agent",
         "claude-skills",
-        "dataforseo",
-        "generative-engine-optimization"
+        "ecommerce",
+        "filtalgo",
+        "filtmall",
+        "openclaw",
+        "product-search"
       ],
       "taskPatterns": [
-        "ai seo",
-        "ai visibility",
-        "backlinks",
-        "claude",
-        "claude code",
-        "claude skills"
+        "agent skills",
+        "ai agent",
+        "claude skills",
+        "ecommerce",
+        "filtalgo",
+        "filtmall"
       ],
-      "oneLiner": "Free SEO MCP server + open-source SEO and GEO skills for Claude: keyword research, rank tracking, audits, backlinks, AI visibility on your real GSC/GA4/ads data. claude mcp add ryz"
-    },
-    {
-      "kind": "skill",
-      "id": "github-skill-irinabuht12-oss-marketing-skills",
-      "name": "marketing-skills",
-      "tags": [
-        "ai-visibility",
-        "claude-code",
-        "claude-desktop",
-        "claude-marketing-skills",
-        "claude-plugin",
-        "claude-skills",
-        "claude-skills-for-marketing",
-        "cursor"
-      ],
-      "taskPatterns": [
-        "ai visibility",
-        "claude code",
-        "claude desktop",
-        "claude marketing skills",
-        "claude plugin",
-        "claude skills"
-      ],
-      "oneLiner": "Claude skills for marketing: 49 free marketing skills for Claude Code and claude.ai (Google Ads, Meta Ads, SEO, AI visibility) + the Ryze Google Ads MCP / Meta Ads MCP: claude mcp "
+      "oneLiner": "Agent-native shopping for extreme value: verifiable same-product price evidence, checkout, orders, delivery, and after-sales."
     },
     {
       "kind": "skill",
@@ -6579,6 +6846,54 @@
         "cheating"
       ],
       "oneLiner": "Natively — Free open-source AI meeting assistant, interview copilot, and note taker. The best alternative to Cluely, Otter, Granola, Final Round AI, Fireflies, and Interview Coder."
+    },
+    {
+      "kind": "skill",
+      "id": "github-skill-genieincodebottle-generative-ai",
+      "name": "generative-ai",
+      "tags": [
+        "agentic-ai",
+        "agentic-framework",
+        "claude",
+        "gemini",
+        "genai",
+        "genai-usecase",
+        "generative-ai",
+        "interview-questions"
+      ],
+      "taskPatterns": [
+        "agentic ai",
+        "agentic framework",
+        "claude",
+        "gemini",
+        "genai",
+        "genai usecase"
+      ],
+      "oneLiner": "Comprehensive resources on Generative AI, including a detailed roadmap, projects, use cases, interview preparation, and coding preparation."
+    },
+    {
+      "kind": "skill",
+      "id": "github-skill-feder-cr-dots",
+      "name": "dots",
+      "tags": [
+        "ai-agent",
+        "ai-agents",
+        "ai-browser",
+        "anti-detect-browser",
+        "browser-agent",
+        "browser-automation",
+        "chatgpt",
+        "dotfiles"
+      ],
+      "taskPatterns": [
+        "ai agent",
+        "ai agents",
+        "ai browser",
+        "anti detect browser",
+        "browser agent",
+        "browser automation"
+      ],
+      "oneLiner": "Open-source dots for the web: an AI agent with its own browser, one that does not get blocked."
     },
     {
       "kind": "skill",
@@ -6672,30 +6987,6 @@
     },
     {
       "kind": "skill",
-      "id": "github-skill-wondelai-skills",
-      "name": "skills",
-      "tags": [
-        "agent-skills",
-        "ai-skills",
-        "business",
-        "claude-code",
-        "claude-code-marketplace",
-        "claude-code-plugin",
-        "claude-code-skills",
-        "claude-plugins"
-      ],
-      "taskPatterns": [
-        "agent skills",
-        "ai skills",
-        "business",
-        "claude code",
-        "claude code marketplace",
-        "claude code plugin"
-      ],
-      "oneLiner": "Wondel.ai Agent Skills — Business, Marketing, UX & Coding Frameworks from Bestselling Books. 50 skills + 12 guided journeys for Claude Code, Codex, Cursor & other agentskills.io ag"
-    },
-    {
-      "kind": "skill",
       "id": "github-skill-ifuryst-open-codex-computer-use",
       "name": "open-codex-computer-use",
       "tags": [
@@ -6717,6 +7008,30 @@
         "codex computer use"
       ],
       "oneLiner": "👾 Open Computer Use – Open-Source Alternative to Codex Computer Use"
+    },
+    {
+      "kind": "skill",
+      "id": "github-skill-amelnagdy-delegate-skills",
+      "name": "delegate-skills",
+      "tags": [
+        "agent-skills",
+        "ai-coding-agent",
+        "antigravity",
+        "claude-code",
+        "claude-code-skills",
+        "codex",
+        "coding-agent",
+        "cursor"
+      ],
+      "taskPatterns": [
+        "agent skills",
+        "ai coding agent",
+        "antigravity",
+        "claude code",
+        "claude code skills",
+        "codex"
+      ],
+      "oneLiner": "Delegate a coding task to a separate coding agent CLI, review the diff, land the commit yourself — one per implementer."
     },
     {
       "kind": "skill",
@@ -6744,27 +7059,27 @@
     },
     {
       "kind": "skill",
-      "id": "github-skill-amelnagdy-delegate-skills",
-      "name": "delegate-skills",
+      "id": "github-skill-wondelai-skills",
+      "name": "skills",
       "tags": [
         "agent-skills",
-        "ai-coding-agent",
-        "antigravity",
+        "ai-skills",
+        "business",
         "claude-code",
+        "claude-code-marketplace",
+        "claude-code-plugin",
         "claude-code-skills",
-        "codex",
-        "coding-agent",
-        "cursor"
+        "claude-plugins"
       ],
       "taskPatterns": [
         "agent skills",
-        "ai coding agent",
-        "antigravity",
+        "ai skills",
+        "business",
         "claude code",
-        "claude code skills",
-        "codex"
+        "claude code marketplace",
+        "claude code plugin"
       ],
-      "oneLiner": "Delegate a coding task to a separate coding agent CLI, review the diff, land the commit yourself — one per implementer."
+      "oneLiner": "Wondel.ai Agent Skills — Business, Marketing, UX & Coding Frameworks from Bestselling Books. 50 skills + 12 guided journeys for Claude Code, Codex, Cursor & other agentskills.io ag"
     },
     {
       "kind": "skill",
@@ -6995,30 +7310,6 @@
     },
     {
       "kind": "skill",
-      "id": "github-skill-xiangyue-zhang-auto-deep-researcher-24x7",
-      "name": "auto-deep-researcher-24x7",
-      "tags": [
-        "ai-agent",
-        "autonomous-agent",
-        "claude-code",
-        "deep-learning",
-        "experiment-automation",
-        "gpu",
-        "hyperparameter-tuning",
-        "llm-agent"
-      ],
-      "taskPatterns": [
-        "ai agent",
-        "autonomous agent",
-        "claude code",
-        "deep learning",
-        "experiment automation",
-        "gpu"
-      ],
-      "oneLiner": "🔥 An autonomous AI agent that runs your deep learning experiments 24/7 while you sleep. Zero-cost monitoring, Leader-Worker architecture, constant-size memory."
-    },
-    {
-      "kind": "skill",
       "id": "github-skill-caliber-ai-org-ai-setup",
       "name": "ai-setup",
       "tags": [
@@ -7040,6 +7331,30 @@
         "cli"
       ],
       "oneLiner": "Continuously sync your AI setups with one command. Codebase tailor suited agent skills, MCPs and config files for Claude Code, Cursor, and Codex."
+    },
+    {
+      "kind": "skill",
+      "id": "github-skill-xiangyue-zhang-auto-deep-researcher-24x7",
+      "name": "auto-deep-researcher-24x7",
+      "tags": [
+        "ai-agent",
+        "autonomous-agent",
+        "claude-code",
+        "deep-learning",
+        "experiment-automation",
+        "gpu",
+        "hyperparameter-tuning",
+        "llm-agent"
+      ],
+      "taskPatterns": [
+        "ai agent",
+        "autonomous agent",
+        "claude code",
+        "deep learning",
+        "experiment automation",
+        "gpu"
+      ],
+      "oneLiner": "🔥 An autonomous AI agent that runs your deep learning experiments 24/7 while you sleep. Zero-cost monitoring, Leader-Worker architecture, constant-size memory."
     },
     {
       "kind": "skill",
@@ -7091,6 +7406,30 @@
     },
     {
       "kind": "skill",
+      "id": "github-skill-jundizhou-easy-stock",
+      "name": "easy-stock",
+      "tags": [
+        "a-share",
+        "ai",
+        "ai-agent",
+        "china-stock",
+        "desktop-app",
+        "electron",
+        "go",
+        "golang"
+      ],
+      "taskPatterns": [
+        "a share",
+        "ai",
+        "ai agent",
+        "china stock",
+        "desktop app",
+        "electron"
+      ],
+      "oneLiner": "A股行情分析与AI智能投研智能体：股票分析、量化交易分析、盘后复盘桌面工作台——easy stock"
+    },
+    {
+      "kind": "skill",
       "id": "github-skill-showlab-awesome-gui-agent",
       "name": "Awesome-GUI-Agent",
       "tags": [
@@ -7135,30 +7474,6 @@
     },
     {
       "kind": "skill",
-      "id": "github-skill-streetlamb-tribe",
-      "name": "tribe",
-      "tags": [
-        "agent-based-framework",
-        "agent-oriented-programming",
-        "agentic",
-        "agentic-agi",
-        "ai",
-        "ai-tools",
-        "chat",
-        "chatbot"
-      ],
-      "taskPatterns": [
-        "agent based framework",
-        "agent oriented programming",
-        "agentic",
-        "agentic agi",
-        "ai",
-        "ai tools"
-      ],
-      "oneLiner": "Low code tool to rapidly build and coordinate multi-agent teams"
-    },
-    {
-      "kind": "skill",
       "id": "github-skill-ongridio-ongrid",
       "name": "ongrid",
       "tags": [
@@ -7180,6 +7495,30 @@
         "golang"
       ],
       "oneLiner": "An ops AI Agent that understands your infrastructure, finds the root cause, and fixes it — right from Slack, Telegram, Lark or DingTalk."
+    },
+    {
+      "kind": "skill",
+      "id": "github-skill-streetlamb-tribe",
+      "name": "tribe",
+      "tags": [
+        "agent-based-framework",
+        "agent-oriented-programming",
+        "agentic",
+        "agentic-agi",
+        "ai",
+        "ai-tools",
+        "chat",
+        "chatbot"
+      ],
+      "taskPatterns": [
+        "agent based framework",
+        "agent oriented programming",
+        "agentic",
+        "agentic agi",
+        "ai",
+        "ai tools"
+      ],
+      "oneLiner": "Low code tool to rapidly build and coordinate multi-agent teams"
     },
     {
       "kind": "skill",
@@ -7231,30 +7570,6 @@
     },
     {
       "kind": "skill",
-      "id": "github-skill-jundizhou-easy-stock",
-      "name": "easy-stock",
-      "tags": [
-        "a-share",
-        "ai",
-        "ai-agent",
-        "china-stock",
-        "desktop-app",
-        "electron",
-        "go",
-        "golang"
-      ],
-      "taskPatterns": [
-        "a share",
-        "ai",
-        "ai agent",
-        "china stock",
-        "desktop app",
-        "electron"
-      ],
-      "oneLiner": "A股行情分析与AI智能投研智能体：股票分析、量化交易分析、盘后复盘桌面工作台——easy stock"
-    },
-    {
-      "kind": "skill",
       "id": "github-skill-mbzuai-oryx-groundinglmm",
       "name": "groundingLMM",
       "tags": [
@@ -7272,6 +7587,54 @@
         "vision language model"
       ],
       "oneLiner": "[CVPR 2024 🔥] Grounding Large Multimodal Model (GLaMM), the first-of-its-kind model capable of generating natural language responses that are seamlessly integrated with object seg"
+    },
+    {
+      "kind": "skill",
+      "id": "github-skill-ant-research-antomnievo",
+      "name": "AntOmniEvo",
+      "tags": [
+        "agentic",
+        "auto-optimization",
+        "automation",
+        "evolutionary-algorithms",
+        "llm-agent",
+        "loop-engineering",
+        "multi-agent",
+        "rsi-ai"
+      ],
+      "taskPatterns": [
+        "agentic",
+        "auto optimization",
+        "automation",
+        "evolutionary algorithms",
+        "llm agent",
+        "loop engineering"
+      ],
+      "oneLiner": "An auto-evolution framework that optimizes anything — your 7×24 team of algorithm engineers."
+    },
+    {
+      "kind": "skill",
+      "id": "github-skill-aimeoa-hanshuang-codex",
+      "name": "hanshuang-codex",
+      "tags": [
+        "ai",
+        "codex",
+        "codex-cli",
+        "desktop-app",
+        "jailbreak",
+        "llm",
+        "openai-codex",
+        "prompt-injection"
+      ],
+      "taskPatterns": [
+        "ai",
+        "codex",
+        "codex cli",
+        "desktop app",
+        "jailbreak",
+        "llm"
+      ],
+      "oneLiner": "针对GPT 6.0,workbuddyV4.1flash的破甲实验项目"
     },
     {
       "kind": "skill",
@@ -7322,6 +7685,32 @@
     },
     {
       "kind": "skill",
+      "id": "github-skill-desplega-ai-agent-swarm",
+      "name": "agent-swarm",
+      "tags": [
+        "agent-coordination",
+        "agent-harness",
+        "agent-infrastructure",
+        "agent-os",
+        "agent-runtime",
+        "agent-swarm",
+        "agent-teams",
+        "agentic-os",
+        "agentic-workflows"
+      ],
+      "taskPatterns": [
+        "agent coordination",
+        "agent harness",
+        "agent infrastructure",
+        "agent os",
+        "agent runtime",
+        "agent swarm",
+        "agent teams"
+      ],
+      "oneLiner": "Your Company Agentic Operating System"
+    },
+    {
+      "kind": "skill",
       "id": "github-skill-indranilbanerjee-digital-marketing-pro",
       "name": "digital-marketing-pro",
       "tags": [
@@ -7343,30 +7732,6 @@
         "claude plugin"
       ],
       "oneLiner": "An open-source AI marketing operating system for strategy, SEO, AEO/GEO, paid media, content, CRM, and analytics - grounded in brand context, human approval, and verifiable outputs"
-    },
-    {
-      "kind": "skill",
-      "id": "github-skill-desplega-ai-agent-swarm",
-      "name": "agent-swarm",
-      "tags": [
-        "agent-coordination",
-        "agent-harness",
-        "agent-infrastructure",
-        "agent-os",
-        "agent-runtime",
-        "agent-swarm",
-        "agent-teams",
-        "agentic-os"
-      ],
-      "taskPatterns": [
-        "agent coordination",
-        "agent harness",
-        "agent infrastructure",
-        "agent os",
-        "agent runtime",
-        "agent swarm"
-      ],
-      "oneLiner": "Your Company Agentic Operating System"
     },
     {
       "kind": "skill",
@@ -7561,27 +7926,27 @@
     },
     {
       "kind": "skill",
-      "id": "github-skill-aimeoa-hanshuang-codex",
-      "name": "hanshuang-codex",
+      "id": "github-skill-keli-wen-agy-staff",
+      "name": "agy-staff",
       "tags": [
-        "ai",
-        "codex",
-        "codex-cli",
-        "desktop-app",
-        "jailbreak",
-        "llm",
-        "openai-codex",
-        "prompt-injection"
+        "agentic-ai",
+        "ai-agents",
+        "antigravity",
+        "antigravity-cli",
+        "chatgpt",
+        "claude-code",
+        "claude-code-plugin",
+        "code-review"
       ],
       "taskPatterns": [
-        "ai",
-        "codex",
-        "codex cli",
-        "desktop app",
-        "jailbreak",
-        "llm"
+        "agentic ai",
+        "ai agents",
+        "antigravity",
+        "antigravity cli",
+        "chatgpt",
+        "claude code"
       ],
-      "oneLiner": "针对GPT 6.0,workbuddyV4.1flash的破甲实验项目"
+      "oneLiner": "Hire Google's Antigravity CLI (agy) as a fast Gemini staffer for Claude Code and OpenAI Codex."
     },
     {
       "kind": "skill",
@@ -7605,7 +7970,7 @@
         "autonomous agent",
         "claude code"
       ],
-      "oneLiner": "Repeatable agentic engineering. The workflow layer that turns AI coding agents into a disciplined factory: durable specs, fresh-context workers, adversarial cross-model reviews, re"
+      "oneLiner": "Faster than your agent alone. And better. A workflow plugin that takes a bug, idea or ticket to a verified pull request: specs, cross-model review by risk, live QA, receipts in you"
     },
     {
       "kind": "skill",
@@ -7630,30 +7995,6 @@
         "autonomous agents"
       ],
       "oneLiner": "🛠️ The meta-harness for AI agents — scaffold your own focused, branded agent harness with its own npx CLI, MCP server, memory, learning loop, and witness-signed releases. Works wi"
-    },
-    {
-      "kind": "skill",
-      "id": "github-skill-keli-wen-agy-staff",
-      "name": "agy-staff",
-      "tags": [
-        "agentic-ai",
-        "ai-agents",
-        "antigravity",
-        "antigravity-cli",
-        "chatgpt",
-        "claude-code",
-        "claude-code-plugin",
-        "code-review"
-      ],
-      "taskPatterns": [
-        "agentic ai",
-        "ai agents",
-        "antigravity",
-        "antigravity cli",
-        "chatgpt",
-        "claude code"
-      ],
-      "oneLiner": "Hire Google's Antigravity CLI (agy) as a fast Gemini staffer for Claude Code and OpenAI Codex."
     },
     {
       "kind": "skill",
@@ -7883,6 +8224,30 @@
     },
     {
       "kind": "skill",
+      "id": "github-skill-prekuter-dryforge",
+      "name": "dryforge",
+      "tags": [
+        "agent-harness",
+        "agent-plugins",
+        "agent-skills",
+        "agentic-coding",
+        "agentic-engineering",
+        "antigravity",
+        "bounded-autonomy",
+        "claude-code"
+      ],
+      "taskPatterns": [
+        "agent harness",
+        "agent plugins",
+        "agent skills",
+        "agentic coding",
+        "agentic engineering",
+        "antigravity"
+      ],
+      "oneLiner": "Bounded-autonomy plugin harness for agents. Intent to implementation: ready, then go."
+    },
+    {
+      "kind": "skill",
       "id": "github-skill-leeguooooo-image-use",
       "name": "image-use",
       "tags": [
@@ -7928,6 +8293,30 @@
         "claude skill"
       ],
       "oneLiner": "Project memory system for AI coding assistants (Claude Code, Cursor, Codex): session logs, project wiki, rules, TODOs, and handoff."
+    },
+    {
+      "kind": "skill",
+      "id": "github-skill-ifuryst-open-browser-use",
+      "name": "open-browser-use",
+      "tags": [
+        "ai-agent",
+        "ai-agents",
+        "browser-automation",
+        "browser-use",
+        "browser-use-agent",
+        "cdp",
+        "chrome-automation",
+        "chrome-devtools-protocol"
+      ],
+      "taskPatterns": [
+        "ai agent",
+        "ai agents",
+        "browser automation",
+        "browser use",
+        "browser use agent",
+        "cdp"
+      ],
+      "oneLiner": "🔮 Platform-neutral Browser Use for AI agents: real Chrome automation with a CLI + SDKs, no lock-in, dead simple."
     },
     {
       "kind": "skill",
@@ -7979,54 +8368,6 @@
     },
     {
       "kind": "skill",
-      "id": "github-skill-prekuter-dryforge",
-      "name": "dryforge",
-      "tags": [
-        "agent-harness",
-        "agent-plugins",
-        "agent-skills",
-        "agentic-coding",
-        "agentic-engineering",
-        "antigravity",
-        "bounded-autonomy",
-        "claude-code"
-      ],
-      "taskPatterns": [
-        "agent harness",
-        "agent plugins",
-        "agent skills",
-        "agentic coding",
-        "agentic engineering",
-        "antigravity"
-      ],
-      "oneLiner": "Bounded-autonomy plugin harness for agents. Intent to implementation: ready, then go."
-    },
-    {
-      "kind": "skill",
-      "id": "github-skill-ifuryst-open-browser-use",
-      "name": "open-browser-use",
-      "tags": [
-        "ai-agent",
-        "ai-agents",
-        "browser-automation",
-        "browser-use",
-        "browser-use-agent",
-        "cdp",
-        "chrome-automation",
-        "chrome-devtools-protocol"
-      ],
-      "taskPatterns": [
-        "ai agent",
-        "ai agents",
-        "browser automation",
-        "browser use",
-        "browser use agent",
-        "cdp"
-      ],
-      "oneLiner": "🔮 Platform-neutral Browser Use for AI agents: real Chrome automation with a CLI + SDKs, no lock-in, dead simple."
-    },
-    {
-      "kind": "skill",
       "id": "github-skill-neeeophytee-finding-unknowns-skills",
       "name": "finding-unknowns-skills",
       "tags": [
@@ -8075,30 +8416,6 @@
     },
     {
       "kind": "skill",
-      "id": "github-skill-wanyichen06-llminternskill",
-      "name": "LLMInternSkill",
-      "tags": [
-        "agent",
-        "ai-career",
-        "aigc",
-        "chinese",
-        "codex-skill",
-        "interview-prep",
-        "jd-tailoring",
-        "job-search"
-      ],
-      "taskPatterns": [
-        "agent",
-        "ai career",
-        "aigc",
-        "chinese",
-        "codex skill",
-        "interview prep"
-      ],
-      "oneLiner": "LLMInternSkill: LLM internship resume and job-search Codex Skill for resume polish, JD tailoring, evidence guard, interview grilling, and Project Scout. 大模型实习简历与求职工具箱。"
-    },
-    {
-      "kind": "skill",
       "id": "github-skill-calebycj-codex-rehome",
       "name": "codex-rehome",
       "tags": [
@@ -8120,6 +8437,30 @@
         "codex migration"
       ],
       "oneLiner": "Offline Codex Desktop migration for Windows and macOS."
+    },
+    {
+      "kind": "skill",
+      "id": "github-skill-wanyichen06-llminternskill",
+      "name": "LLMInternSkill",
+      "tags": [
+        "agent",
+        "ai-career",
+        "aigc",
+        "chinese",
+        "codex-skill",
+        "interview-prep",
+        "jd-tailoring",
+        "job-search"
+      ],
+      "taskPatterns": [
+        "agent",
+        "ai career",
+        "aigc",
+        "chinese",
+        "codex skill",
+        "interview prep"
+      ],
+      "oneLiner": "LLMInternSkill: LLM internship resume and job-search Codex Skill for resume polish, JD tailoring, evidence guard, interview grilling, and Project Scout. 大模型实习简历与求职工具箱。"
     },
     {
       "kind": "skill",
@@ -8216,6 +8557,30 @@
         "codex limit reset notifier"
       ],
       "oneLiner": "Cross-platform desktop notifications for Claude Code, Codex, and Gemini CLI. Install via Homebrew, npm, or script."
+    },
+    {
+      "kind": "skill",
+      "id": "github-skill-tninja-ai-code-interface-el",
+      "name": "ai-code-interface.el",
+      "tags": [
+        "agile-development",
+        "ai-coding-assistant",
+        "aider",
+        "antigravity-cli",
+        "claude-code",
+        "codebuddy",
+        "codex-cli",
+        "context-enginnering"
+      ],
+      "taskPatterns": [
+        "agile development",
+        "ai coding assistant",
+        "aider",
+        "antigravity cli",
+        "claude code",
+        "codebuddy"
+      ],
+      "oneLiner": "Unified Emacs interface supporting OpenAI Codex, Antigravity CLI, Claude Code, GitHub Copilot CLI,  Opencode, and more"
     },
     {
       "kind": "skill",

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-28T17:04:13.596Z",
+  "updatedAt": "2026-10-04T18:58:13.395Z",
   "items": [
     {
       "id": "github-n8n-io-n8n",
@@ -53,7 +53,7 @@
       "github": "https://github.com/n8n-io/n8n",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 206204,
+      "stars": 206651,
       "sourceUpdatedAt": "2026-09-28T15:37:19Z"
     },
     {
@@ -93,7 +93,7 @@
       "github": "https://github.com/google-gemini/gemini-cli",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 107172,
+      "stars": 107234,
       "sourceUpdatedAt": "2026-09-28T14:31:33Z"
     },
     {
@@ -139,7 +139,7 @@
       "github": "https://github.com/koala73/worldmonitor",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 87507,
+      "stars": 87764,
       "sourceUpdatedAt": "2026-09-28T15:44:24Z"
     },
     {
@@ -193,7 +193,7 @@
       "github": "https://github.com/D4Vinci/Scrapling",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 84277,
+      "stars": 85653,
       "sourceUpdatedAt": "2026-09-28T15:44:45Z"
     },
     {
@@ -247,8 +247,40 @@
       "github": "https://github.com/ruvnet/ruflo",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 73429,
+      "stars": 73851,
       "sourceUpdatedAt": "2026-09-28T15:40:25Z"
+    },
+    {
+      "id": "github-upstash-context7",
+      "name": "context7",
+      "url": "https://github.com/upstash/context7",
+      "oneLiner": "Context7 Platform -- Up-to-date code documentation for LLMs and AI code editors",
+      "tags": [
+        "llm",
+        "mcp",
+        "mcp-server",
+        "vibe-coding"
+      ],
+      "taskPatterns": [
+        "llm",
+        "mcp",
+        "mcp server",
+        "vibe coding"
+      ],
+      "keywords": [
+        "upstash/context7",
+        "upstash",
+        "llm",
+        "mcp",
+        "mcp-server",
+        "vibe-coding"
+      ],
+      "transport": "stdio",
+      "github": "https://github.com/upstash/context7",
+      "verified": false,
+      "securityNote": "Community MCP repository. Review permissions and source before use.",
+      "stars": 62672,
+      "sourceUpdatedAt": "2026-09-28T15:28:25Z"
     },
     {
       "id": "github-sansan0-trendradar",
@@ -297,40 +329,8 @@
       "github": "https://github.com/sansan0/TrendRadar",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 62598,
+      "stars": 62671,
       "sourceUpdatedAt": "2026-09-28T15:36:49Z"
-    },
-    {
-      "id": "github-upstash-context7",
-      "name": "context7",
-      "url": "https://github.com/upstash/context7",
-      "oneLiner": "Context7 Platform -- Up-to-date code documentation for LLMs and AI code editors",
-      "tags": [
-        "llm",
-        "mcp",
-        "mcp-server",
-        "vibe-coding"
-      ],
-      "taskPatterns": [
-        "llm",
-        "mcp",
-        "mcp server",
-        "vibe coding"
-      ],
-      "keywords": [
-        "upstash/context7",
-        "upstash",
-        "llm",
-        "mcp",
-        "mcp-server",
-        "vibe-coding"
-      ],
-      "transport": "stdio",
-      "github": "https://github.com/upstash/context7",
-      "verified": false,
-      "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 62494,
-      "sourceUpdatedAt": "2026-09-28T15:28:25Z"
     },
     {
       "id": "github-chromedevtools-chrome-devtools-mcp",
@@ -371,7 +371,7 @@
       "github": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 52698,
+      "stars": 52950,
       "sourceUpdatedAt": "2026-09-28T15:12:39Z"
     },
     {
@@ -425,7 +425,7 @@
       "github": "https://github.com/DeusData/codebase-memory-mcp",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 45307,
+      "stars": 45785,
       "sourceUpdatedAt": "2026-09-28T15:49:56Z"
     },
     {
@@ -469,7 +469,7 @@
       "github": "https://github.com/reactive-resume/reactive-resume",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 43513,
+      "stars": 43761,
       "sourceUpdatedAt": "2026-09-28T15:36:22Z"
     },
     {
@@ -517,7 +517,7 @@
       "github": "https://github.com/bytedance/UI-TARS-desktop",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 39143,
+      "stars": 39211,
       "sourceUpdatedAt": "2026-09-28T14:33:05Z"
     },
     {
@@ -546,7 +546,7 @@
       "github": "https://github.com/github/github-mcp-server",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 33259,
+      "stars": 33363,
       "sourceUpdatedAt": "2026-09-28T15:29:55Z"
     },
     {
@@ -600,7 +600,7 @@
       "github": "https://github.com/feder-cr/invisible_playwright_mcp",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 31691,
+      "stars": 31773,
       "sourceUpdatedAt": "2026-09-28T15:35:25Z"
     },
     {
@@ -646,7 +646,7 @@
       "github": "https://github.com/oraios/serena",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 29873,
+      "stars": 29989,
       "sourceUpdatedAt": "2026-09-28T14:42:12Z"
     },
     {
@@ -691,139 +691,8 @@
       "github": "https://github.com/assafelovic/gpt-researcher",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 29681,
+      "stars": 29916,
       "sourceUpdatedAt": "2026-09-28T15:50:38Z"
-    },
-    {
-      "id": "github-activepieces-activepieces",
-      "name": "activepieces",
-      "url": "https://github.com/activepieces/activepieces",
-      "oneLiner": "AI Agents & MCPs & AI Workflow Automation • (~400 MCP servers for AI agents) • AI Automation / AI Agent with MCPs • AI Workflows & AI Agents • MCPs for AI Agents",
-      "tags": [
-        "ai-agent",
-        "ai-agent-tools",
-        "ai-agents",
-        "ai-agents-framework",
-        "mcp",
-        "mcp-server",
-        "mcp-tools",
-        "mcps"
-      ],
-      "taskPatterns": [
-        "ai agent",
-        "ai agent tools",
-        "ai agents",
-        "ai agents framework",
-        "mcp",
-        "mcp server"
-      ],
-      "keywords": [
-        "activepieces/activepieces",
-        "activepieces",
-        "ai-agent",
-        "ai-agent-tools",
-        "ai-agents",
-        "ai-agents-framework",
-        "mcp",
-        "mcp-server",
-        "mcp-tools",
-        "mcps",
-        "n8n-alternative",
-        "no-code-automation",
-        "workflow",
-        "workflow-automation",
-        "workflows"
-      ],
-      "transport": "stdio",
-      "github": "https://github.com/activepieces/activepieces",
-      "verified": false,
-      "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 24771,
-      "sourceUpdatedAt": "2026-09-28T15:16:15Z"
-    },
-    {
-      "id": "github-modelcontextprotocol-python-sdk",
-      "name": "python-sdk",
-      "url": "https://github.com/modelcontextprotocol/python-sdk",
-      "oneLiner": "The official Python SDK for Model Context Protocol servers and clients",
-      "tags": [
-        "mcp",
-        "mcp-client",
-        "mcp-server",
-        "python"
-      ],
-      "taskPatterns": [
-        "mcp",
-        "mcp client",
-        "mcp server",
-        "python"
-      ],
-      "keywords": [
-        "modelcontextprotocol/python-sdk",
-        "modelcontextprotocol",
-        "mcp",
-        "mcp-client",
-        "mcp-server",
-        "python"
-      ],
-      "transport": "stdio",
-      "github": "https://github.com/modelcontextprotocol/python-sdk",
-      "verified": false,
-      "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 24423,
-      "sourceUpdatedAt": "2026-09-28T15:12:30Z"
-    },
-    {
-      "id": "github-pascalorg-editor",
-      "name": "editor",
-      "url": "https://github.com/pascalorg/editor",
-      "oneLiner": "Open-source 3D architectural editor with a local CLI, MCP tools, and practical workflows for humans and AI agents.",
-      "tags": [
-        "3d",
-        "agent-skills",
-        "ai-agents",
-        "architecture",
-        "bim",
-        "cad",
-        "editor",
-        "floorplan"
-      ],
-      "taskPatterns": [
-        "3d",
-        "agent skills",
-        "ai agents",
-        "architecture",
-        "bim",
-        "cad"
-      ],
-      "keywords": [
-        "pascalorg/editor",
-        "pascalorg",
-        "3d",
-        "agent-skills",
-        "ai-agents",
-        "architecture",
-        "bim",
-        "cad",
-        "editor",
-        "floorplan",
-        "gemini-cli-extension",
-        "local-first",
-        "mcp",
-        "mcp-server",
-        "model-context-protocol",
-        "nextjs",
-        "parametric-design",
-        "react-three-fiber",
-        "threejs",
-        "typescript"
-      ],
-      "transport": "stdio",
-      "github": "https://github.com/pascalorg/editor",
-      "verified": false,
-      "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 24348,
-      "sourceUpdatedAt": "2026-09-28T14:46:18Z"
     },
     {
       "id": "github-mksglu-context-mode",
@@ -876,8 +745,139 @@
       "github": "https://github.com/mksglu/context-mode",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 24172,
+      "stars": 25375,
       "sourceUpdatedAt": "2026-09-28T15:25:15Z"
+    },
+    {
+      "id": "github-activepieces-activepieces",
+      "name": "activepieces",
+      "url": "https://github.com/activepieces/activepieces",
+      "oneLiner": "AI Agents & MCPs & AI Workflow Automation • (~400 MCP servers for AI agents) • AI Automation / AI Agent with MCPs • AI Workflows & AI Agents • MCPs for AI Agents",
+      "tags": [
+        "ai-agent",
+        "ai-agent-tools",
+        "ai-agents",
+        "ai-agents-framework",
+        "mcp",
+        "mcp-server",
+        "mcp-tools",
+        "mcps"
+      ],
+      "taskPatterns": [
+        "ai agent",
+        "ai agent tools",
+        "ai agents",
+        "ai agents framework",
+        "mcp",
+        "mcp server"
+      ],
+      "keywords": [
+        "activepieces/activepieces",
+        "activepieces",
+        "ai-agent",
+        "ai-agent-tools",
+        "ai-agents",
+        "ai-agents-framework",
+        "mcp",
+        "mcp-server",
+        "mcp-tools",
+        "mcps",
+        "n8n-alternative",
+        "no-code-automation",
+        "workflow",
+        "workflow-automation",
+        "workflows"
+      ],
+      "transport": "stdio",
+      "github": "https://github.com/activepieces/activepieces",
+      "verified": false,
+      "securityNote": "Community MCP repository. Review permissions and source before use.",
+      "stars": 24896,
+      "sourceUpdatedAt": "2026-09-28T15:16:15Z"
+    },
+    {
+      "id": "github-pascalorg-editor",
+      "name": "editor",
+      "url": "https://github.com/pascalorg/editor",
+      "oneLiner": "Open-source 3D architectural editor with a local CLI, MCP tools, and practical workflows for humans and AI agents.",
+      "tags": [
+        "3d",
+        "agent-skills",
+        "ai-agents",
+        "architecture",
+        "bim",
+        "cad",
+        "editor",
+        "floorplan"
+      ],
+      "taskPatterns": [
+        "3d",
+        "agent skills",
+        "ai agents",
+        "architecture",
+        "bim",
+        "cad"
+      ],
+      "keywords": [
+        "pascalorg/editor",
+        "pascalorg",
+        "3d",
+        "agent-skills",
+        "ai-agents",
+        "architecture",
+        "bim",
+        "cad",
+        "editor",
+        "floorplan",
+        "gemini-cli-extension",
+        "local-first",
+        "mcp",
+        "mcp-server",
+        "model-context-protocol",
+        "nextjs",
+        "parametric-design",
+        "react-three-fiber",
+        "threejs",
+        "typescript"
+      ],
+      "transport": "stdio",
+      "github": "https://github.com/pascalorg/editor",
+      "verified": false,
+      "securityNote": "Community MCP repository. Review permissions and source before use.",
+      "stars": 24622,
+      "sourceUpdatedAt": "2026-09-28T14:46:18Z"
+    },
+    {
+      "id": "github-modelcontextprotocol-python-sdk",
+      "name": "python-sdk",
+      "url": "https://github.com/modelcontextprotocol/python-sdk",
+      "oneLiner": "The official Python SDK for Model Context Protocol servers and clients",
+      "tags": [
+        "mcp",
+        "mcp-client",
+        "mcp-server",
+        "python"
+      ],
+      "taskPatterns": [
+        "mcp",
+        "mcp client",
+        "mcp server",
+        "python"
+      ],
+      "keywords": [
+        "modelcontextprotocol/python-sdk",
+        "modelcontextprotocol",
+        "mcp",
+        "mcp-client",
+        "mcp-server",
+        "python"
+      ],
+      "transport": "stdio",
+      "github": "https://github.com/modelcontextprotocol/python-sdk",
+      "verified": false,
+      "securityNote": "Community MCP repository. Review permissions and source before use.",
+      "stars": 24479,
+      "sourceUpdatedAt": "2026-09-28T15:12:30Z"
     },
     {
       "id": "github-czlonkowski-n8n-mcp",
@@ -908,7 +908,7 @@
       "github": "https://github.com/czlonkowski/n8n-mcp",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 23014,
+      "stars": 23037,
       "sourceUpdatedAt": "2026-09-28T15:43:01Z"
     },
     {
@@ -956,7 +956,7 @@
       "github": "https://github.com/1Panel-dev/MaxKB",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 22885,
+      "stars": 22900,
       "sourceUpdatedAt": "2026-09-28T10:03:27Z"
     },
     {
@@ -1010,7 +1010,7 @@
       "github": "https://github.com/modelscope/FunASR",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 20534,
+      "stars": 20580,
       "sourceUpdatedAt": "2026-09-28T13:57:30Z"
     },
     {
@@ -1064,7 +1064,7 @@
       "github": "https://github.com/Evil0ctal/Douyin_TikTok_Download_API",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 20379,
+      "stars": 20464,
       "sourceUpdatedAt": "2026-09-28T15:07:53Z"
     },
     {
@@ -1114,7 +1114,7 @@
       "github": "https://github.com/nukeop/nuclear",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 18543,
+      "stars": 18603,
       "sourceUpdatedAt": "2026-09-28T15:27:59Z"
     },
     {
@@ -1162,7 +1162,7 @@
       "github": "https://github.com/microsoft/mcp-for-beginners",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 17345,
+      "stars": 17394,
       "sourceUpdatedAt": "2026-09-28T15:38:41Z"
     },
     {
@@ -1216,7 +1216,7 @@
       "github": "https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 16767,
+      "stars": 16960,
       "sourceUpdatedAt": "2026-09-28T15:49:12Z"
     },
     {
@@ -1263,7 +1263,7 @@
       "github": "https://github.com/triggerdotdev/trigger.dev",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 16430,
+      "stars": 16466,
       "sourceUpdatedAt": "2026-09-28T15:09:20Z"
     },
     {
@@ -1292,7 +1292,7 @@
       "github": "https://github.com/xpzouying/xiaohongshu-mcp",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 16028,
+      "stars": 16108,
       "sourceUpdatedAt": "2026-09-28T15:38:55Z"
     },
     {
@@ -1346,7 +1346,7 @@
       "github": "https://github.com/budtmo/docker-android",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 15893,
+      "stars": 15938,
       "sourceUpdatedAt": "2026-09-28T14:44:26Z"
     },
     {
@@ -1400,7 +1400,7 @@
       "github": "https://github.com/open-metadata/OpenMetadata",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 15349,
+      "stars": 15373,
       "sourceUpdatedAt": "2026-09-28T15:35:20Z"
     },
     {

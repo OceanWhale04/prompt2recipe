@@ -1,107 +1,7 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-28T17:04:13.596Z",
+  "updatedAt": "2026-10-04T18:58:13.395Z",
   "items": [
-    {
-      "id": "openrouter-z-ai-glm-flash-latest",
-      "name": "Z.ai: GLM Flash Latest",
-      "url": "https://openrouter.ai/models/~z-ai/glm-flash-latest",
-      "oneLiner": "This model always redirects to the latest model in the GLM Flash family.",
-      "tags": [
-        "openrouter",
-        "z-ai",
-        "low"
-      ],
-      "taskPatterns": [
-        "general reasoning",
-        "chat",
-        "structured generation"
-      ],
-      "keywords": [
-        "~z-ai/glm-flash-latest",
-        "z-ai",
-        "Z.ai: GLM Flash Latest"
-      ],
-      "provider": "z-ai",
-      "category": "text+image+video->text",
-      "costTier": "low",
-      "contextWindow": 1310720
-    },
-    {
-      "id": "openrouter-z-ai-glm-5-3-flash",
-      "name": "Z.ai: GLM 5.3 Flash",
-      "url": "https://openrouter.ai/models/z-ai/glm-5.3-flash",
-      "oneLiner": "GLM-5.3-Flash is a native multimodal model from Z.ai. It is suited for efficient coding and long-horizon agent tasks. Its hybrid sparse and linear attention architecture maintains ",
-      "tags": [
-        "openrouter",
-        "z-ai",
-        "low"
-      ],
-      "taskPatterns": [
-        "general reasoning",
-        "chat",
-        "structured generation"
-      ],
-      "keywords": [
-        "z-ai/glm-5.3-flash",
-        "z-ai",
-        "Z.ai: GLM 5.3 Flash"
-      ],
-      "provider": "z-ai",
-      "category": "text+image+video->text",
-      "costTier": "low",
-      "contextWindow": 1310720
-    },
-    {
-      "id": "openrouter-z-ai-glm-latest",
-      "name": "Z.ai: GLM Latest",
-      "url": "https://openrouter.ai/models/~z-ai/glm-latest",
-      "oneLiner": "This model always redirects to the latest GLM model from Z.ai.",
-      "tags": [
-        "openrouter",
-        "z-ai",
-        "low"
-      ],
-      "taskPatterns": [
-        "general reasoning",
-        "chat",
-        "structured generation"
-      ],
-      "keywords": [
-        "~z-ai/glm-latest",
-        "z-ai",
-        "Z.ai: GLM Latest"
-      ],
-      "provider": "z-ai",
-      "category": "text->text",
-      "costTier": "low",
-      "contextWindow": 1310720
-    },
-    {
-      "id": "openrouter-z-ai-glm-5-3",
-      "name": "Z.ai: GLM 5.3",
-      "url": "https://openrouter.ai/models/z-ai/glm-5.3",
-      "oneLiner": "GLM-5.3 is a large-scale reasoning model from Z.ai, built for complex software engineering and long-horizon agent tasks. It supports text input and output with a 1M-token context w",
-      "tags": [
-        "openrouter",
-        "z-ai",
-        "medium"
-      ],
-      "taskPatterns": [
-        "general reasoning",
-        "chat",
-        "structured generation"
-      ],
-      "keywords": [
-        "z-ai/glm-5.3",
-        "z-ai",
-        "Z.ai: GLM 5.3"
-      ],
-      "provider": "z-ai",
-      "category": "text->text",
-      "costTier": "medium",
-      "contextWindow": 1310720
-    },
     {
       "id": "openrouter-openai-gpt-6-luna-pro",
       "name": "OpenAI: GPT-6 Luna Pro",
@@ -528,6 +428,181 @@
       "contextWindow": 1050000
     },
     {
+      "id": "openrouter-xiaomi-mimo-v2-6-flash",
+      "name": "Xiaomi: MiMo-V2.6-Flash",
+      "url": "https://openrouter.ai/models/xiaomi/mimo-v2.6-flash",
+      "oneLiner": "MiMo-V2.6-Flash is an open-source foundation model developed by Xiaomi. Built on a Mixture-of-Experts architecture with 309B total parameters and 15B activated per token, it employ",
+      "tags": [
+        "openrouter",
+        "xiaomi",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "xiaomi/mimo-v2.6-flash",
+        "xiaomi",
+        "Xiaomi: MiMo-V2.6-Flash"
+      ],
+      "provider": "xiaomi",
+      "category": "text+image+audio+video->text",
+      "costTier": "low",
+      "contextWindow": 1050000
+    },
+    {
+      "id": "openrouter-openai-gpt-6-1-sol-pro",
+      "name": "OpenAI: GPT-6.1 Sol Pro",
+      "url": "https://openrouter.ai/models/openai/gpt-6.1-sol-pro",
+      "oneLiner": "GPT-6.1 Sol Pro is the same underlying model as [GPT-6.1 Sol](https://openrouter.ai/openai/gpt-6.1-sol), served with `reasoning.mode` set to `pro` for higher-quality responses on c",
+      "tags": [
+        "openrouter",
+        "openai",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "openai/gpt-6.1-sol-pro",
+        "openai",
+        "OpenAI: GPT-6.1 Sol Pro"
+      ],
+      "provider": "openai",
+      "category": "text+image+file->text",
+      "costTier": "medium",
+      "contextWindow": 1050000
+    },
+    {
+      "id": "openrouter-openai-gpt-6-1-sol",
+      "name": "OpenAI: GPT-6.1 Sol",
+      "url": "https://openrouter.ai/models/openai/gpt-6.1-sol",
+      "oneLiner": "GPT-6.1 Sol is an upgrade to GPT-6 Sol from OpenAI, positioned below the flagship GPT-6 Astra in the GPT-6 series. It is suited for agentic coding, computer use, document-heavy pro",
+      "tags": [
+        "openrouter",
+        "openai",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "openai/gpt-6.1-sol",
+        "openai",
+        "OpenAI: GPT-6.1 Sol"
+      ],
+      "provider": "openai",
+      "category": "text+image+file->text",
+      "costTier": "medium",
+      "contextWindow": 1050000
+    },
+    {
+      "id": "openrouter-z-ai-glm-flash-latest",
+      "name": "Z.ai: GLM Flash Latest",
+      "url": "https://openrouter.ai/models/~z-ai/glm-flash-latest",
+      "oneLiner": "This model always redirects to the latest model in the GLM Flash family.",
+      "tags": [
+        "openrouter",
+        "z-ai",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "~z-ai/glm-flash-latest",
+        "z-ai",
+        "Z.ai: GLM Flash Latest"
+      ],
+      "provider": "z-ai",
+      "category": "text+image+video->text",
+      "costTier": "low",
+      "contextWindow": 1048576
+    },
+    {
+      "id": "openrouter-z-ai-glm-5-3-flash",
+      "name": "Z.ai: GLM 5.3 Flash",
+      "url": "https://openrouter.ai/models/z-ai/glm-5.3-flash",
+      "oneLiner": "GLM-5.3-Flash is a native multimodal model from Z.ai. It is suited for efficient coding and long-horizon agent tasks. Its hybrid sparse and linear attention architecture maintains ",
+      "tags": [
+        "openrouter",
+        "z-ai",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "z-ai/glm-5.3-flash",
+        "z-ai",
+        "Z.ai: GLM 5.3 Flash"
+      ],
+      "provider": "z-ai",
+      "category": "text+image+video->text",
+      "costTier": "low",
+      "contextWindow": 1048576
+    },
+    {
+      "id": "openrouter-z-ai-glm-latest",
+      "name": "Z.ai: GLM Latest",
+      "url": "https://openrouter.ai/models/~z-ai/glm-latest",
+      "oneLiner": "This model always redirects to the latest GLM model from Z.ai.",
+      "tags": [
+        "openrouter",
+        "z-ai",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "~z-ai/glm-latest",
+        "z-ai",
+        "Z.ai: GLM Latest"
+      ],
+      "provider": "z-ai",
+      "category": "text->text",
+      "costTier": "medium",
+      "contextWindow": 1048576
+    },
+    {
+      "id": "openrouter-z-ai-glm-5-3",
+      "name": "Z.ai: GLM 5.3",
+      "url": "https://openrouter.ai/models/z-ai/glm-5.3",
+      "oneLiner": "GLM-5.3 is a large-scale reasoning model from Z.ai, built for complex software engineering and long-horizon agent tasks. It supports text input and output with a 1M-token context w",
+      "tags": [
+        "openrouter",
+        "z-ai",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "z-ai/glm-5.3",
+        "z-ai",
+        "Z.ai: GLM 5.3"
+      ],
+      "provider": "z-ai",
+      "category": "text->text",
+      "costTier": "medium",
+      "contextWindow": 1048576
+    },
+    {
       "id": "openrouter-fireworks-ember-1",
       "name": "Fireworks: Ember-1",
       "url": "https://openrouter.ai/models/fireworks/ember-1",
@@ -578,31 +653,6 @@
       "contextWindow": 1048576
     },
     {
-      "id": "openrouter-xiaomi-mimo-v2-6-flash",
-      "name": "Xiaomi: MiMo-V2.6-Flash",
-      "url": "https://openrouter.ai/models/xiaomi/mimo-v2.6-flash",
-      "oneLiner": "MiMo-V2.6-Flash is an open-source foundation model developed by Xiaomi. Built on a Mixture-of-Experts architecture with 309B total parameters and 15B activated per token, it employ",
-      "tags": [
-        "openrouter",
-        "xiaomi",
-        "low"
-      ],
-      "taskPatterns": [
-        "general reasoning",
-        "chat",
-        "structured generation"
-      ],
-      "keywords": [
-        "xiaomi/mimo-v2.6-flash",
-        "xiaomi",
-        "Xiaomi: MiMo-V2.6-Flash"
-      ],
-      "provider": "xiaomi",
-      "category": "text+image+audio+video->text",
-      "costTier": "low",
-      "contextWindow": 1048576
-    },
-    {
       "id": "openrouter-z-ai-glm-5-3-flashx",
       "name": "Z.ai: GLM 5.3 FlashX",
       "url": "https://openrouter.ai/models/z-ai/glm-5.3-flashx",
@@ -635,7 +685,7 @@
       "tags": [
         "openrouter",
         "deepseek",
-        "low"
+        "medium"
       ],
       "taskPatterns": [
         "general reasoning",
@@ -649,7 +699,7 @@
       ],
       "provider": "deepseek",
       "category": "text->text",
-      "costTier": "low",
+      "costTier": "medium",
       "contextWindow": 1048576
     },
     {
@@ -1049,6 +1099,31 @@
       ],
       "provider": "deepseek",
       "category": "text->text",
+      "costTier": "medium",
+      "contextWindow": 1048576
+    },
+    {
+      "id": "openrouter-unbiased-pareto-26-10-preview",
+      "name": "Pareto 26.10 Preview",
+      "url": "https://openrouter.ai/models/unbiased/pareto-26.10-preview",
+      "oneLiner": "Pareto is a multimodal composite model built for research, coding, and agentic workflows, while delivering frontier-level performance across a broad range of general-purpose tasks.",
+      "tags": [
+        "openrouter",
+        "unbiased",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "unbiased/pareto-26.10-preview",
+        "unbiased",
+        "Pareto 26.10 Preview"
+      ],
+      "provider": "unbiased",
+      "category": "text+image->text",
       "costTier": "medium",
       "contextWindow": 1048576
     },
@@ -1506,6 +1581,81 @@
       "contextWindow": 1000000
     },
     {
+      "id": "openrouter-anthropic-claude-sonnet-5-5",
+      "name": "Anthropic: Claude Sonnet 5.5",
+      "url": "https://openrouter.ai/models/anthropic/claude-sonnet-5.5",
+      "oneLiner": "Claude Sonnet 5.5 is Anthropic's Sonnet-class model for well-scoped everyday work, succeeding Claude Sonnet 5 as a direct upgrade. It is especially strong at building features, fix",
+      "tags": [
+        "openrouter",
+        "anthropic",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "anthropic/claude-sonnet-5.5",
+        "anthropic",
+        "Anthropic: Claude Sonnet 5.5"
+      ],
+      "provider": "anthropic",
+      "category": "text+image+file->text",
+      "costTier": "medium",
+      "contextWindow": 1000000
+    },
+    {
+      "id": "openrouter-anthropic-claude-sonnet-5-5-batch",
+      "name": "Anthropic: Claude Sonnet 5.5 (batch)",
+      "url": "https://openrouter.ai/models/anthropic/claude-sonnet-5.5:batch",
+      "oneLiner": "Claude Sonnet 5.5 is Anthropic's Sonnet-class model for well-scoped everyday work, succeeding Claude Sonnet 5 as a direct upgrade. It is especially strong at building features, fix",
+      "tags": [
+        "openrouter",
+        "anthropic",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "anthropic/claude-sonnet-5.5:batch",
+        "anthropic",
+        "Anthropic: Claude Sonnet 5.5 (batch)"
+      ],
+      "provider": "anthropic",
+      "category": "text+image+file->text",
+      "costTier": "medium",
+      "contextWindow": 1000000
+    },
+    {
+      "id": "openrouter-nvidia-switchyard",
+      "name": "NVIDIA: Switchyard",
+      "url": "https://openrouter.ai/models/nvidia/switchyard",
+      "oneLiner": "Switchyard is an open-source model router that switches between multiple models to optimize the cost of requests. By default it will use OpenRouter market data to select the most p",
+      "tags": [
+        "openrouter",
+        "nvidia",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "nvidia/switchyard",
+        "nvidia",
+        "NVIDIA: Switchyard"
+      ],
+      "provider": "nvidia",
+      "category": "text->text",
+      "costTier": "low",
+      "contextWindow": 1000000
+    },
+    {
       "id": "openrouter-upstage-solar-mini4",
       "name": "Upstage: Solar Mini 4",
       "url": "https://openrouter.ai/models/upstage/solar-mini4",
@@ -1927,6 +2077,56 @@
       ],
       "provider": "nex-agi",
       "category": "text+image->text",
+      "costTier": "low",
+      "contextWindow": 262144
+    },
+    {
+      "id": "openrouter-inclusionai-ling-3-1-flash",
+      "name": "inclusionAI: Ling 3.1 Flash",
+      "url": "https://openrouter.ai/models/inclusionai/ling-3.1-flash",
+      "oneLiner": "Ling 3.1 Flash is a hybrid reasoning mixture-of-experts model from inclusionAI, with 25B active parameters out of 560B total.",
+      "tags": [
+        "openrouter",
+        "inclusionai",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "inclusionai/ling-3.1-flash",
+        "inclusionai",
+        "inclusionAI: Ling 3.1 Flash"
+      ],
+      "provider": "inclusionai",
+      "category": "text->text",
+      "costTier": "low",
+      "contextWindow": 262144
+    },
+    {
+      "id": "openrouter-apodex-apodex-1-1-mini-free",
+      "name": "Apodex: Apodex 1.1 Mini (free)",
+      "url": "https://openrouter.ai/models/apodex/apodex-1.1-mini:free",
+      "oneLiner": "Apodex 1.1 Mini is a reasoning-first model from Apodex, built for complex, long-horizon research and forecasting tasks. It works directly with files, data, code, and tools to produ",
+      "tags": [
+        "openrouter",
+        "apodex",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "apodex/apodex-1.1-mini:free",
+        "apodex",
+        "Apodex: Apodex 1.1 Mini (free)"
+      ],
+      "provider": "apodex",
+      "category": "text->text",
       "costTier": "low",
       "contextWindow": 262144
     },
