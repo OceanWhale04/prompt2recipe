@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-04T18:58:13.395Z",
+  "updatedAt": "2026-10-11T19:52:37.196Z",
   "items": [
     {
       "id": "openrouter-openai-gpt-6-luna-pro",
@@ -503,6 +503,56 @@
       "contextWindow": 1050000
     },
     {
+      "id": "openrouter-openai-gpt-6-1-sol-pro-batch",
+      "name": "OpenAI: GPT-6.1 Sol Pro (batch)",
+      "url": "https://openrouter.ai/models/openai/gpt-6.1-sol-pro:batch",
+      "oneLiner": "GPT-6.1 Sol Pro is the same underlying model as [GPT-6.1 Sol](https://openrouter.ai/openai/gpt-6.1-sol), served with `reasoning.mode` set to `pro` for higher-quality responses on c",
+      "tags": [
+        "openrouter",
+        "openai",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "openai/gpt-6.1-sol-pro:batch",
+        "openai",
+        "OpenAI: GPT-6.1 Sol Pro (batch)"
+      ],
+      "provider": "openai",
+      "category": "text+image+file->text",
+      "costTier": "medium",
+      "contextWindow": 1050000
+    },
+    {
+      "id": "openrouter-openai-gpt-6-1-sol-batch",
+      "name": "OpenAI: GPT-6.1 Sol (batch)",
+      "url": "https://openrouter.ai/models/openai/gpt-6.1-sol:batch",
+      "oneLiner": "GPT-6.1 Sol is an upgrade to GPT-6 Sol from OpenAI, positioned below the flagship GPT-6 Astra in the GPT-6 series. It is suited for agentic coding, computer use, document-heavy pro",
+      "tags": [
+        "openrouter",
+        "openai",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "openai/gpt-6.1-sol:batch",
+        "openai",
+        "OpenAI: GPT-6.1 Sol (batch)"
+      ],
+      "provider": "openai",
+      "category": "text+image+file->text",
+      "costTier": "medium",
+      "contextWindow": 1050000
+    },
+    {
       "id": "openrouter-z-ai-glm-flash-latest",
       "name": "Z.ai: GLM Flash Latest",
       "url": "https://openrouter.ai/models/~z-ai/glm-flash-latest",
@@ -685,7 +735,7 @@
       "tags": [
         "openrouter",
         "deepseek",
-        "medium"
+        "low"
       ],
       "taskPatterns": [
         "general reasoning",
@@ -699,7 +749,7 @@
       ],
       "provider": "deepseek",
       "category": "text->text",
-      "costTier": "medium",
+      "costTier": "low",
       "contextWindow": 1048576
     },
     {
@@ -1125,6 +1175,31 @@
       "provider": "unbiased",
       "category": "text+image->text",
       "costTier": "medium",
+      "contextWindow": 1048576
+    },
+    {
+      "id": "openrouter-mistralai-mistral-large-4-0",
+      "name": "Mistral: Mistral Large 4",
+      "url": "https://openrouter.ai/models/mistralai/mistral-large-4-0",
+      "oneLiner": "Mistral Large 4 is a frontier multimodal (text and image input) model from Mistral AI built for reasoning, coding, and agentic workloads. It offers a 1M-token context window with u",
+      "tags": [
+        "openrouter",
+        "mistralai",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "mistralai/mistral-large-4-0",
+        "mistralai",
+        "Mistral: Mistral Large 4"
+      ],
+      "provider": "mistralai",
+      "category": "text+image->text",
+      "costTier": "low",
       "contextWindow": 1048576
     },
     {
@@ -1656,6 +1731,81 @@
       "contextWindow": 1000000
     },
     {
+      "id": "openrouter-stepfun-step-5-preview",
+      "name": "StepFun: Step 5 Preview",
+      "url": "https://openrouter.ai/models/stepfun/step-5-preview",
+      "oneLiner": "Step 5 Preview is StepFun's flagship model for agentic work, built on a sparse Mixture-of-Experts architecture (27B active / 600B total parameters). It performs strongly in softwar",
+      "tags": [
+        "openrouter",
+        "stepfun",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "stepfun/step-5-preview",
+        "stepfun",
+        "StepFun: Step 5 Preview"
+      ],
+      "provider": "stepfun",
+      "category": "text+image+video->text",
+      "costTier": "low",
+      "contextWindow": 1000000
+    },
+    {
+      "id": "openrouter-anthropic-claude-haiku-5-5",
+      "name": "Anthropic: Claude Haiku 5.5",
+      "url": "https://openrouter.ai/models/anthropic/claude-haiku-5.5",
+      "oneLiner": "Claude Haiku 5.5 is Anthropic's small, fast model for high-volume, cost-sensitive work such as summarization, subagents, and browser use. It succeeds Claude Haiku 4.5 with stronger",
+      "tags": [
+        "openrouter",
+        "anthropic",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "anthropic/claude-haiku-5.5",
+        "anthropic",
+        "Anthropic: Claude Haiku 5.5"
+      ],
+      "provider": "anthropic",
+      "category": "text+image+file->text",
+      "costTier": "low",
+      "contextWindow": 1000000
+    },
+    {
+      "id": "openrouter-anthropic-claude-haiku-5-5-batch",
+      "name": "Anthropic: Claude Haiku 5.5 (batch)",
+      "url": "https://openrouter.ai/models/anthropic/claude-haiku-5.5:batch",
+      "oneLiner": "Claude Haiku 5.5 is Anthropic's small, fast model for high-volume, cost-sensitive work such as summarization, subagents, and browser use. It succeeds Claude Haiku 4.5 with stronger",
+      "tags": [
+        "openrouter",
+        "anthropic",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "anthropic/claude-haiku-5.5:batch",
+        "anthropic",
+        "Anthropic: Claude Haiku 5.5 (batch)"
+      ],
+      "provider": "anthropic",
+      "category": "text+image+file->text",
+      "costTier": "low",
+      "contextWindow": 1000000
+    },
+    {
       "id": "openrouter-upstage-solar-mini4",
       "name": "Upstage: Solar Mini 4",
       "url": "https://openrouter.ai/models/upstage/solar-mini4",
@@ -2131,6 +2281,31 @@
       "contextWindow": 262144
     },
     {
+      "id": "openrouter-inclusionai-ling-3-0-flash-sante",
+      "name": "inclusionAI: Ling 3.0 Flash Sante",
+      "url": "https://openrouter.ai/models/inclusionai/ling-3.0-flash-sante",
+      "oneLiner": "Ling 3.0 Flash Sante is a health and medicine-focused mixture-of-experts model from InclusionAI, built on Ling 3.0 Flash with 5.1B active parameters out of 124B total. It is design",
+      "tags": [
+        "openrouter",
+        "inclusionai",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "inclusionai/ling-3.0-flash-sante",
+        "inclusionai",
+        "inclusionAI: Ling 3.0 Flash Sante"
+      ],
+      "provider": "inclusionai",
+      "category": "text->text",
+      "costTier": "low",
+      "contextWindow": 262144
+    },
+    {
       "id": "openrouter-inception-mercury-2-5",
       "name": "Inception: Mercury 2.5",
       "url": "https://openrouter.ai/models/inception/mercury-2.5",
@@ -2598,6 +2773,31 @@
       "category": "text->text",
       "costTier": "low",
       "contextWindow": 128000
+    },
+    {
+      "id": "openrouter-google-gemini-nano-banana-2-1",
+      "name": "Google: Nano Banana 2.1",
+      "url": "https://openrouter.ai/models/google/gemini-nano-banana-2.1",
+      "oneLiner": "Nano Banana 2.1 (Gemini Nano Banana 2.1) is Google's image generation and editing model on the Flash tier, succeeding Nano Banana 2 and Nano Banana Pro. It improves product reconte",
+      "tags": [
+        "openrouter",
+        "google",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "google/gemini-nano-banana-2.1",
+        "google",
+        "Google: Nano Banana 2.1"
+      ],
+      "provider": "google",
+      "category": "text+image->text+image",
+      "costTier": "medium",
+      "contextWindow": 65536
     },
     {
       "id": "openrouter-perceptron-perceptron-mk1-5",

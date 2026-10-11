@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-04T18:58:13.395Z",
+  "updatedAt": "2026-10-11T19:52:37.196Z",
   "items": [
     {
       "id": "github-n8n-io-n8n",
@@ -53,7 +53,7 @@
       "github": "https://github.com/n8n-io/n8n",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 206651,
+      "stars": 207012,
       "sourceUpdatedAt": "2026-09-28T15:37:19Z"
     },
     {
@@ -93,7 +93,7 @@
       "github": "https://github.com/google-gemini/gemini-cli",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 107234,
+      "stars": 107285,
       "sourceUpdatedAt": "2026-09-28T14:31:33Z"
     },
     {
@@ -139,7 +139,7 @@
       "github": "https://github.com/koala73/worldmonitor",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 87764,
+      "stars": 88243,
       "sourceUpdatedAt": "2026-09-28T15:44:24Z"
     },
     {
@@ -193,7 +193,7 @@
       "github": "https://github.com/D4Vinci/Scrapling",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 85653,
+      "stars": 86828,
       "sourceUpdatedAt": "2026-09-28T15:44:45Z"
     },
     {
@@ -247,7 +247,7 @@
       "github": "https://github.com/ruvnet/ruflo",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 73851,
+      "stars": 74351,
       "sourceUpdatedAt": "2026-09-28T15:40:25Z"
     },
     {
@@ -279,7 +279,7 @@
       "github": "https://github.com/upstash/context7",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 62672,
+      "stars": 62907,
       "sourceUpdatedAt": "2026-09-28T15:28:25Z"
     },
     {
@@ -329,7 +329,7 @@
       "github": "https://github.com/sansan0/TrendRadar",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 62671,
+      "stars": 62806,
       "sourceUpdatedAt": "2026-09-28T15:36:49Z"
     },
     {
@@ -371,7 +371,7 @@
       "github": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 52950,
+      "stars": 53288,
       "sourceUpdatedAt": "2026-09-28T15:12:39Z"
     },
     {
@@ -425,7 +425,7 @@
       "github": "https://github.com/DeusData/codebase-memory-mcp",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 45785,
+      "stars": 46364,
       "sourceUpdatedAt": "2026-09-28T15:49:56Z"
     },
     {
@@ -469,7 +469,7 @@
       "github": "https://github.com/reactive-resume/reactive-resume",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 43761,
+      "stars": 44140,
       "sourceUpdatedAt": "2026-09-28T15:36:22Z"
     },
     {
@@ -517,7 +517,7 @@
       "github": "https://github.com/bytedance/UI-TARS-desktop",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 39211,
+      "stars": 39234,
       "sourceUpdatedAt": "2026-09-28T14:33:05Z"
     },
     {
@@ -546,7 +546,7 @@
       "github": "https://github.com/github/github-mcp-server",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 33363,
+      "stars": 33518,
       "sourceUpdatedAt": "2026-09-28T15:29:55Z"
     },
     {
@@ -646,7 +646,7 @@
       "github": "https://github.com/oraios/serena",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 29989,
+      "stars": 30187,
       "sourceUpdatedAt": "2026-09-28T14:42:12Z"
     },
     {
@@ -691,7 +691,7 @@
       "github": "https://github.com/assafelovic/gpt-researcher",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 29916,
+      "stars": 30019,
       "sourceUpdatedAt": "2026-09-28T15:50:38Z"
     },
     {
@@ -745,7 +745,7 @@
       "github": "https://github.com/mksglu/context-mode",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 25375,
+      "stars": 26639,
       "sourceUpdatedAt": "2026-09-28T15:25:15Z"
     },
     {
@@ -792,7 +792,7 @@
       "github": "https://github.com/activepieces/activepieces",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 24896,
+      "stars": 25002,
       "sourceUpdatedAt": "2026-09-28T15:16:15Z"
     },
     {
@@ -844,7 +844,7 @@
       "github": "https://github.com/pascalorg/editor",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 24622,
+      "stars": 24799,
       "sourceUpdatedAt": "2026-09-28T14:46:18Z"
     },
     {
@@ -876,7 +876,7 @@
       "github": "https://github.com/modelcontextprotocol/python-sdk",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 24479,
+      "stars": 24546,
       "sourceUpdatedAt": "2026-09-28T15:12:30Z"
     },
     {
@@ -908,7 +908,7 @@
       "github": "https://github.com/czlonkowski/n8n-mcp",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 23037,
+      "stars": 23055,
       "sourceUpdatedAt": "2026-09-28T15:43:01Z"
     },
     {
@@ -956,7 +956,7 @@
       "github": "https://github.com/1Panel-dev/MaxKB",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 22900,
+      "stars": 22943,
       "sourceUpdatedAt": "2026-09-28T10:03:27Z"
     },
     {
@@ -1010,7 +1010,7 @@
       "github": "https://github.com/modelscope/FunASR",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 20580,
+      "stars": 20645,
       "sourceUpdatedAt": "2026-09-28T13:57:30Z"
     },
     {
@@ -1064,7 +1064,7 @@
       "github": "https://github.com/Evil0ctal/Douyin_TikTok_Download_API",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 20464,
+      "stars": 20588,
       "sourceUpdatedAt": "2026-09-28T15:07:53Z"
     },
     {
@@ -1114,7 +1114,7 @@
       "github": "https://github.com/nukeop/nuclear",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 18603,
+      "stars": 18655,
       "sourceUpdatedAt": "2026-09-28T15:27:59Z"
     },
     {
@@ -1162,7 +1162,7 @@
       "github": "https://github.com/microsoft/mcp-for-beginners",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 17394,
+      "stars": 17430,
       "sourceUpdatedAt": "2026-09-28T15:38:41Z"
     },
     {
@@ -1216,7 +1216,7 @@
       "github": "https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 16960,
+      "stars": 17267,
       "sourceUpdatedAt": "2026-09-28T15:49:12Z"
     },
     {
@@ -1263,7 +1263,7 @@
       "github": "https://github.com/triggerdotdev/trigger.dev",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 16466,
+      "stars": 16519,
       "sourceUpdatedAt": "2026-09-28T15:09:20Z"
     },
     {
@@ -1292,7 +1292,7 @@
       "github": "https://github.com/xpzouying/xiaohongshu-mcp",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 16108,
+      "stars": 16208,
       "sourceUpdatedAt": "2026-09-28T15:38:55Z"
     },
     {
@@ -1346,7 +1346,7 @@
       "github": "https://github.com/budtmo/docker-android",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 15938,
+      "stars": 15959,
       "sourceUpdatedAt": "2026-09-28T14:44:26Z"
     },
     {
@@ -1400,8 +1400,60 @@
       "github": "https://github.com/open-metadata/OpenMetadata",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 15373,
+      "stars": 15438,
       "sourceUpdatedAt": "2026-09-28T15:35:20Z"
+    },
+    {
+      "id": "github-yusufkaraaslan-skill-seekers",
+      "name": "Skill_Seekers",
+      "url": "https://github.com/yusufkaraaslan/Skill_Seekers",
+      "oneLiner": "Convert documentation websites, GitHub repositories, and PDFs into Claude AI skills with automatic conflict detection",
+      "tags": [
+        "ai-tools",
+        "ast-parser",
+        "automation",
+        "claude-ai",
+        "claude-skills",
+        "code-analysis",
+        "conflict-detection",
+        "documentation"
+      ],
+      "taskPatterns": [
+        "ai tools",
+        "ast parser",
+        "automation",
+        "claude ai",
+        "claude skills",
+        "code analysis"
+      ],
+      "keywords": [
+        "yusufkaraaslan/Skill_Seekers",
+        "yusufkaraaslan",
+        "ai-tools",
+        "ast-parser",
+        "automation",
+        "claude-ai",
+        "claude-skills",
+        "code-analysis",
+        "conflict-detection",
+        "documentation",
+        "documentation-generator",
+        "github",
+        "github-scraper",
+        "mcp",
+        "mcp-server",
+        "multi-source",
+        "ocr",
+        "pdf",
+        "python",
+        "web-scraping"
+      ],
+      "transport": "stdio",
+      "github": "https://github.com/yusufkaraaslan/Skill_Seekers",
+      "verified": false,
+      "securityNote": "Community MCP repository. Review permissions and source before use.",
+      "stars": 15130,
+      "sourceUpdatedAt": "2026-10-11T17:43:11Z"
     },
     {
       "id": "filesystem",
