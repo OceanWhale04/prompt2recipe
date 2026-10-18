@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-11T19:52:37.196Z",
+  "updatedAt": "2026-10-18T18:25:33.050Z",
   "items": [
     {
       "id": "openrouter-openai-gpt-6-luna-pro",
@@ -735,7 +735,7 @@
       "tags": [
         "openrouter",
         "deepseek",
-        "low"
+        "medium"
       ],
       "taskPatterns": [
         "general reasoning",
@@ -749,7 +749,7 @@
       ],
       "provider": "deepseek",
       "category": "text->text",
-      "costTier": "low",
+      "costTier": "medium",
       "contextWindow": 1048576
     },
     {
@@ -1200,6 +1200,256 @@
       "provider": "mistralai",
       "category": "text+image->text",
       "costTier": "low",
+      "contextWindow": 1048576
+    },
+    {
+      "id": "openrouter-stepfun-step-5-preview",
+      "name": "StepFun: Step 5 Preview",
+      "url": "https://openrouter.ai/models/stepfun/step-5-preview",
+      "oneLiner": "Step 5 Preview is StepFun's flagship model for agentic work, built on a sparse Mixture-of-Experts architecture (27B active / 600B total parameters). It performs strongly in softwar",
+      "tags": [
+        "openrouter",
+        "stepfun",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "stepfun/step-5-preview",
+        "stepfun",
+        "StepFun: Step 5 Preview"
+      ],
+      "provider": "stepfun",
+      "category": "text+image+video->text",
+      "costTier": "low",
+      "contextWindow": 1048576
+    },
+    {
+      "id": "openrouter-deepseek-deepseek-v4-1-flash-1017",
+      "name": "DeepSeek: DeepSeek V4.1 Flash 1017",
+      "url": "https://openrouter.ai/models/deepseek/deepseek-v4.1-flash-1017",
+      "oneLiner": "DeepSeek V4.1 Flash 1017 is the October 17, 2026 snapshot of DeepSeek V4.1 Flash, served by DeepSeek under the `deepseek-flash` API model name. V4.1 Flash is a sparse mixture-of-ex",
+      "tags": [
+        "openrouter",
+        "deepseek",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "deepseek/deepseek-v4.1-flash-1017",
+        "deepseek",
+        "DeepSeek: DeepSeek V4.1 Flash 1017"
+      ],
+      "provider": "deepseek",
+      "category": "text+image->text",
+      "costTier": "low",
+      "contextWindow": 1048576
+    },
+    {
+      "id": "openrouter-reflection-beam-1-0-501b-a23b",
+      "name": "Reflection: Beam 1.0 501B A23B",
+      "url": "https://openrouter.ai/models/reflection/beam-1.0-501b-a23b",
+      "oneLiner": "Beam 1.0 is Reflection's open-weight reasoning model for coding and long-horizon agentic workflows. It uses a sparse mixture-of-experts architecture with 501B total and 23B active ",
+      "tags": [
+        "openrouter",
+        "reflection",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "reflection/beam-1.0-501b-a23b",
+        "reflection",
+        "Reflection: Beam 1.0 501B A23B"
+      ],
+      "provider": "reflection",
+      "category": "text->text",
+      "costTier": "medium",
+      "contextWindow": 1048576
+    },
+    {
+      "id": "openrouter-meta-muse-spark-open",
+      "name": "Meta: Muse Spark Open",
+      "url": "https://openrouter.ai/models/meta/muse-spark-open",
+      "oneLiner": "Muse Spark Open is a coding-optimized open-weight model. Trained specifically for agentic coding workflows, it delivers higher first-attempt accuracy, reliable tool calling, and de",
+      "tags": [
+        "openrouter",
+        "meta",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "meta/muse-spark-open",
+        "meta",
+        "Meta: Muse Spark Open"
+      ],
+      "provider": "meta",
+      "category": "text+image+file+audio+video->text",
+      "costTier": "medium",
+      "contextWindow": 1048576
+    },
+    {
+      "id": "openrouter-nvidia-nemotron-3-5-super-vl",
+      "name": "NVIDIA: Nemotron 3.5 Super VL",
+      "url": "https://openrouter.ai/models/nvidia/nemotron-3.5-super-vl",
+      "oneLiner": "NVIDIA Nemotron 3.5 Super VL is an open multimodal mixture-of-experts model from NVIDIA, with 12B active parameters out of 120B total. It takes text, images, documents, GUI screens",
+      "tags": [
+        "openrouter",
+        "nvidia",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "nvidia/nemotron-3.5-super-vl",
+        "nvidia",
+        "NVIDIA: Nemotron 3.5 Super VL"
+      ],
+      "provider": "nvidia",
+      "category": "text+image+video->text",
+      "costTier": "low",
+      "contextWindow": 1048576
+    },
+    {
+      "id": "openrouter-unbiased-pareto-26-10",
+      "name": "Pareto 26.10",
+      "url": "https://openrouter.ai/models/unbiased/pareto-26.10",
+      "oneLiner": "Pareto is a multimodal composite model built for research, coding, and agentic workflows, while delivering frontier-level performance across a broad range of general-purpose tasks.",
+      "tags": [
+        "openrouter",
+        "unbiased",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "unbiased/pareto-26.10",
+        "unbiased",
+        "Pareto 26.10"
+      ],
+      "provider": "unbiased",
+      "category": "text+image->text",
+      "costTier": "medium",
+      "contextWindow": 1048576
+    },
+    {
+      "id": "openrouter-unbiased-pareto-latest",
+      "name": "Pareto Latest",
+      "url": "https://openrouter.ai/models/~unbiased/pareto-latest",
+      "oneLiner": "This model always redirects to the latest model in the Pareto family.",
+      "tags": [
+        "openrouter",
+        "unbiased",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "~unbiased/pareto-latest",
+        "unbiased",
+        "Pareto Latest"
+      ],
+      "provider": "unbiased",
+      "category": "text+image->text",
+      "costTier": "medium",
+      "contextWindow": 1048576
+    },
+    {
+      "id": "openrouter-google-gemini-4-argon",
+      "name": "Google: Gemini 4 Argon",
+      "url": "https://openrouter.ai/models/google/gemini-4-argon",
+      "oneLiner": "Gemini 4 Argon is Google's flagship reasoning model, built for complex software engineering, deep mathematical and scientific problem solving, and autonomous multi-step agents. Goo",
+      "tags": [
+        "openrouter",
+        "google",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "google/gemini-4-argon",
+        "google",
+        "Google: Gemini 4 Argon"
+      ],
+      "provider": "google",
+      "category": "text+image+file+audio+video->text",
+      "costTier": "medium",
+      "contextWindow": 1048576
+    },
+    {
+      "id": "openrouter-google-gemini-4-argon-batch",
+      "name": "Google: Gemini 4 Argon (batch)",
+      "url": "https://openrouter.ai/models/google/gemini-4-argon:batch",
+      "oneLiner": "Gemini 4 Argon is Google's flagship reasoning model, built for complex software engineering, deep mathematical and scientific problem solving, and autonomous multi-step agents. Goo",
+      "tags": [
+        "openrouter",
+        "google",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "google/gemini-4-argon:batch",
+        "google",
+        "Google: Gemini 4 Argon (batch)"
+      ],
+      "provider": "google",
+      "category": "text+image+file+audio+video->text",
+      "costTier": "medium",
+      "contextWindow": 1048576
+    },
+    {
+      "id": "openrouter-meta-muse-wonder",
+      "name": "Meta: Muse Wonder",
+      "url": "https://openrouter.ai/models/meta/muse-wonder",
+      "oneLiner": "Muse Wonder is a frontier reasoning model from Meta, designed for complex personal and professional agentic tasks. It accepts text, images, video, audio, and PDF documents and retu",
+      "tags": [
+        "openrouter",
+        "meta",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "meta/muse-wonder",
+        "meta",
+        "Meta: Muse Wonder"
+      ],
+      "provider": "meta",
+      "category": "text+image+file+audio+video->text",
+      "costTier": "medium",
       "contextWindow": 1048576
     },
     {
@@ -1731,31 +1981,6 @@
       "contextWindow": 1000000
     },
     {
-      "id": "openrouter-stepfun-step-5-preview",
-      "name": "StepFun: Step 5 Preview",
-      "url": "https://openrouter.ai/models/stepfun/step-5-preview",
-      "oneLiner": "Step 5 Preview is StepFun's flagship model for agentic work, built on a sparse Mixture-of-Experts architecture (27B active / 600B total parameters). It performs strongly in softwar",
-      "tags": [
-        "openrouter",
-        "stepfun",
-        "low"
-      ],
-      "taskPatterns": [
-        "general reasoning",
-        "chat",
-        "structured generation"
-      ],
-      "keywords": [
-        "stepfun/step-5-preview",
-        "stepfun",
-        "StepFun: Step 5 Preview"
-      ],
-      "provider": "stepfun",
-      "category": "text+image+video->text",
-      "costTier": "low",
-      "contextWindow": 1000000
-    },
-    {
       "id": "openrouter-anthropic-claude-haiku-5-5",
       "name": "Anthropic: Claude Haiku 5.5",
       "url": "https://openrouter.ai/models/anthropic/claude-haiku-5.5",
@@ -1801,6 +2026,81 @@
         "Anthropic: Claude Haiku 5.5 (batch)"
       ],
       "provider": "anthropic",
+      "category": "text+image+file->text",
+      "costTier": "low",
+      "contextWindow": 1000000
+    },
+    {
+      "id": "openrouter-nvidia-nemotron-3-5-super-vl-free",
+      "name": "NVIDIA: Nemotron 3.5 Super VL (free)",
+      "url": "https://openrouter.ai/models/nvidia/nemotron-3.5-super-vl:free",
+      "oneLiner": "NVIDIA Nemotron 3.5 Super VL is an open multimodal mixture-of-experts model from NVIDIA, with 12B active parameters out of 120B total. It takes text, images, documents, GUI screens",
+      "tags": [
+        "openrouter",
+        "nvidia",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "nvidia/nemotron-3.5-super-vl:free",
+        "nvidia",
+        "NVIDIA: Nemotron 3.5 Super VL (free)"
+      ],
+      "provider": "nvidia",
+      "category": "text+image+video->text",
+      "costTier": "low",
+      "contextWindow": 1000000
+    },
+    {
+      "id": "openrouter-scaledown-summarize",
+      "name": "ScaleDown: Summarize",
+      "url": "https://openrouter.ai/models/scaledown/summarize",
+      "oneLiner": "Summarize is an abstractive summarization model from ScaleDown. It condenses long text and documents into a fluent, faithful rewrite rather than lifting sentences from the source, ",
+      "tags": [
+        "openrouter",
+        "scaledown",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "scaledown/summarize",
+        "scaledown",
+        "ScaleDown: Summarize"
+      ],
+      "provider": "scaledown",
+      "category": "text+image+file->text",
+      "costTier": "low",
+      "contextWindow": 1000000
+    },
+    {
+      "id": "openrouter-scaledown-extract",
+      "name": "ScaleDown: Extract",
+      "url": "https://openrouter.ai/models/scaledown/extract",
+      "oneLiner": "Extract is a description-driven entity extraction model from ScaleDown. Instead of a fixed set of entity types, callers describe the fields they want in plain English through `prov",
+      "tags": [
+        "openrouter",
+        "scaledown",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "scaledown/extract",
+        "scaledown",
+        "ScaleDown: Extract"
+      ],
+      "provider": "scaledown",
       "category": "text+image+file->text",
       "costTier": "low",
       "contextWindow": 1000000
@@ -2003,31 +2303,6 @@
       "provider": "unbiased",
       "category": "text+image->text",
       "costTier": "medium",
-      "contextWindow": 262144
-    },
-    {
-      "id": "openrouter-inclusionai-ling-3-0-flash-vl",
-      "name": "inclusionAI: Ling 3.0 Flash VL",
-      "url": "https://openrouter.ai/models/inclusionai/ling-3.0-flash-vl",
-      "oneLiner": "Ling 3.0 Flash VL builds on Ling 3.0 Flash (124B total / 5.5B active MoE from InclusionAI), further strengthening its language capabilities while adding native visual perception an",
-      "tags": [
-        "openrouter",
-        "inclusionai",
-        "low"
-      ],
-      "taskPatterns": [
-        "general reasoning",
-        "chat",
-        "structured generation"
-      ],
-      "keywords": [
-        "inclusionai/ling-3.0-flash-vl",
-        "inclusionai",
-        "inclusionAI: Ling 3.0 Flash VL"
-      ],
-      "provider": "inclusionai",
-      "category": "text+image+video->text",
-      "costTier": "low",
       "contextWindow": 262144
     },
     {
@@ -2306,6 +2581,81 @@
       "contextWindow": 262144
     },
     {
+      "id": "openrouter-elorian-glimpse",
+      "name": "Elorian: Glimpse",
+      "url": "https://openrouter.ai/models/elorian/glimpse",
+      "oneLiner": "Glimpse is a multimodal visual reasoning model from Elorian, built for visual understanding and complex visual reasoning in the physical world. It reasons directly over images and ",
+      "tags": [
+        "openrouter",
+        "elorian",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "elorian/glimpse",
+        "elorian",
+        "Elorian: Glimpse"
+      ],
+      "provider": "elorian",
+      "category": "text+image+video->text",
+      "costTier": "low",
+      "contextWindow": 262144
+    },
+    {
+      "id": "openrouter-xingchen-agi-xing4-0-29b-a4b-free",
+      "name": "XingChen: Xing4.0 29B A4B (free)",
+      "url": "https://openrouter.ai/models/xingchen-agi/xing4.0-29b-a4b:free",
+      "oneLiner": "Xing4.0-29B-A4B is an open-weight mixture-of-experts language model from China Telecom's AI team (TeleAI) and the successor to the TeleChat series. It has 29B total parameters with",
+      "tags": [
+        "openrouter",
+        "xingchen-agi",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "xingchen-agi/xing4.0-29b-a4b:free",
+        "xingchen-agi",
+        "XingChen: Xing4.0 29B A4B (free)"
+      ],
+      "provider": "xingchen-agi",
+      "category": "text->text",
+      "costTier": "low",
+      "contextWindow": 262144
+    },
+    {
+      "id": "openrouter-unbiased-pareto-26-9",
+      "name": "Pareto 26.9",
+      "url": "https://openrouter.ai/models/unbiased/pareto-26.9",
+      "oneLiner": "Pareto is a multimodal composite model built for research, coding, and agentic workflows, while delivering frontier-level performance across a broad range of general-purpose tasks.",
+      "tags": [
+        "openrouter",
+        "unbiased",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "unbiased/pareto-26.9",
+        "unbiased",
+        "Pareto 26.9"
+      ],
+      "provider": "unbiased",
+      "category": "text+image->text",
+      "costTier": "medium",
+      "contextWindow": 262144
+    },
+    {
       "id": "openrouter-inception-mercury-2-5",
       "name": "Inception: Mercury 2.5",
       "url": "https://openrouter.ai/models/inception/mercury-2.5",
@@ -2511,6 +2861,31 @@
       "category": "text+image->text",
       "costTier": "low",
       "contextWindow": 192000
+    },
+    {
+      "id": "openrouter-inclusionai-ling-3-0-flash-vl",
+      "name": "inclusionAI: Ling 3.0 Flash VL",
+      "url": "https://openrouter.ai/models/inclusionai/ling-3.0-flash-vl",
+      "oneLiner": "Ling 3.0 Flash VL builds on Ling 3.0 Flash (124B total / 5.5B active MoE from InclusionAI), further strengthening its language capabilities while adding native visual perception an",
+      "tags": [
+        "openrouter",
+        "inclusionai",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "inclusionai/ling-3.0-flash-vl",
+        "inclusionai",
+        "inclusionAI: Ling 3.0 Flash VL"
+      ],
+      "provider": "inclusionai",
+      "category": "text+image+video->text",
+      "costTier": "low",
+      "contextWindow": 131072
     },
     {
       "id": "qwen3-235b",
@@ -2775,6 +3150,31 @@
       "contextWindow": 128000
     },
     {
+      "id": "openrouter-liquid-lfm-2-5-24b-a2b",
+      "name": "LiquidAI: LFM2.5-24B-A2B",
+      "url": "https://openrouter.ai/models/liquid/lfm-2.5-24b-a2b",
+      "oneLiner": "LFM2.5-24B-A2B is a mixture-of-experts reasoning model from Liquid AI with 24B total and 2.45B active parameters. It always reasons before answering and is built for agents that ca",
+      "tags": [
+        "openrouter",
+        "liquid",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "liquid/lfm-2.5-24b-a2b",
+        "liquid",
+        "LiquidAI: LFM2.5-24B-A2B"
+      ],
+      "provider": "liquid",
+      "category": "text->text",
+      "costTier": "low",
+      "contextWindow": 128000
+    },
+    {
       "id": "openrouter-google-gemini-nano-banana-2-1",
       "name": "Google: Nano Banana 2.1",
       "url": "https://openrouter.ai/models/google/gemini-nano-banana-2.1",
@@ -2849,6 +3249,56 @@
       "category": "general",
       "costTier": "medium",
       "contextWindow": 32768
+    },
+    {
+      "id": "openrouter-moondream-moondream3-preview",
+      "name": "Moondream: Moondream 3 Preview",
+      "url": "https://openrouter.ai/models/moondream/moondream3-preview",
+      "oneLiner": "Moondream 3 Preview is a vision-language model from Moondream with 9B total parameters and 2B active (mixture-of-experts). It handles visual question answering, captioning, OCR, an",
+      "tags": [
+        "openrouter",
+        "moondream",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "moondream/moondream3-preview",
+        "moondream",
+        "Moondream: Moondream 3 Preview"
+      ],
+      "provider": "moondream",
+      "category": "text+image->text",
+      "costTier": "low",
+      "contextWindow": 32000
+    },
+    {
+      "id": "openrouter-moondream-moondream3-1-9b-a2b",
+      "name": "Moondream: Moondream 3.1",
+      "url": "https://openrouter.ai/models/moondream/moondream3.1-9b-a2b",
+      "oneLiner": "Moondream 3.1 is a vision-language model from Moondream, the successor to Moondream 3 Preview, with 9B total parameters and 2B active (mixture-of-experts). It handles visual questi",
+      "tags": [
+        "openrouter",
+        "moondream",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "moondream/moondream3.1-9b-a2b",
+        "moondream",
+        "Moondream: Moondream 3.1"
+      ],
+      "provider": "moondream",
+      "category": "text+image->text",
+      "costTier": "low",
+      "contextWindow": 32000
     },
     {
       "id": "openrouter-tencent-hy-mt2-1-8b",

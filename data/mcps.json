@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-11T19:52:37.196Z",
+  "updatedAt": "2026-10-18T18:25:33.050Z",
   "items": [
     {
       "id": "github-n8n-io-n8n",
@@ -53,7 +53,7 @@
       "github": "https://github.com/n8n-io/n8n",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 207012,
+      "stars": 207904,
       "sourceUpdatedAt": "2026-09-28T15:37:19Z"
     },
     {
@@ -93,7 +93,7 @@
       "github": "https://github.com/google-gemini/gemini-cli",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 107285,
+      "stars": 107436,
       "sourceUpdatedAt": "2026-09-28T14:31:33Z"
     },
     {
@@ -139,7 +139,7 @@
       "github": "https://github.com/koala73/worldmonitor",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 88243,
+      "stars": 88710,
       "sourceUpdatedAt": "2026-09-28T15:44:24Z"
     },
     {
@@ -193,7 +193,7 @@
       "github": "https://github.com/D4Vinci/Scrapling",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 86828,
+      "stars": 88450,
       "sourceUpdatedAt": "2026-09-28T15:44:45Z"
     },
     {
@@ -247,7 +247,7 @@
       "github": "https://github.com/ruvnet/ruflo",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 74351,
+      "stars": 76410,
       "sourceUpdatedAt": "2026-09-28T15:40:25Z"
     },
     {
@@ -279,7 +279,7 @@
       "github": "https://github.com/upstash/context7",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 62907,
+      "stars": 63248,
       "sourceUpdatedAt": "2026-09-28T15:28:25Z"
     },
     {
@@ -329,7 +329,7 @@
       "github": "https://github.com/sansan0/TrendRadar",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 62806,
+      "stars": 62997,
       "sourceUpdatedAt": "2026-09-28T15:36:49Z"
     },
     {
@@ -371,7 +371,7 @@
       "github": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 53288,
+      "stars": 53790,
       "sourceUpdatedAt": "2026-09-28T15:12:39Z"
     },
     {
@@ -425,7 +425,7 @@
       "github": "https://github.com/DeusData/codebase-memory-mcp",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 46364,
+      "stars": 46845,
       "sourceUpdatedAt": "2026-09-28T15:49:56Z"
     },
     {
@@ -469,7 +469,7 @@
       "github": "https://github.com/reactive-resume/reactive-resume",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 44140,
+      "stars": 44486,
       "sourceUpdatedAt": "2026-09-28T15:36:22Z"
     },
     {
@@ -517,8 +517,56 @@
       "github": "https://github.com/bytedance/UI-TARS-desktop",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 39234,
+      "stars": 39314,
       "sourceUpdatedAt": "2026-09-28T14:33:05Z"
+    },
+    {
+      "id": "github-dayuanjiang-next-ai-draw-io",
+      "name": "next-ai-draw-io",
+      "url": "https://github.com/DayuanJiang/next-ai-draw-io",
+      "oneLiner": "Draw and edit draw.io diagrams by chatting with an AI. Web app, desktop app, and an MCP server for Claude Code, Cursor, Codex and VS Code.",
+      "tags": [
+        "ai",
+        "architecture-diagram",
+        "claude-code",
+        "diagram-generator",
+        "diagrams",
+        "draw-io",
+        "drawio",
+        "electron"
+      ],
+      "taskPatterns": [
+        "ai",
+        "architecture diagram",
+        "claude code",
+        "diagram generator",
+        "diagrams",
+        "draw io"
+      ],
+      "keywords": [
+        "DayuanJiang/next-ai-draw-io",
+        "DayuanJiang",
+        "ai",
+        "architecture-diagram",
+        "claude-code",
+        "diagram-generator",
+        "diagrams",
+        "draw-io",
+        "drawio",
+        "electron",
+        "flowchart",
+        "gemini-cli-extension",
+        "llm",
+        "mcp",
+        "mcp-server",
+        "nextjs"
+      ],
+      "transport": "stdio",
+      "github": "https://github.com/DayuanJiang/next-ai-draw-io",
+      "verified": false,
+      "securityNote": "Community MCP repository. Review permissions and source before use.",
+      "stars": 36314,
+      "sourceUpdatedAt": "2026-10-18T17:19:45Z"
     },
     {
       "id": "github-github-github-mcp-server",
@@ -546,7 +594,7 @@
       "github": "https://github.com/github/github-mcp-server",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 33518,
+      "stars": 33725,
       "sourceUpdatedAt": "2026-09-28T15:29:55Z"
     },
     {
@@ -604,97 +652,6 @@
       "sourceUpdatedAt": "2026-09-28T15:35:25Z"
     },
     {
-      "id": "github-oraios-serena",
-      "name": "serena",
-      "url": "https://github.com/oraios/serena",
-      "oneLiner": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
-      "tags": [
-        "agent",
-        "ai",
-        "ai-coding",
-        "claude",
-        "claude-code",
-        "codex",
-        "ide",
-        "jetbrains"
-      ],
-      "taskPatterns": [
-        "agent",
-        "ai",
-        "ai coding",
-        "claude",
-        "claude code",
-        "codex"
-      ],
-      "keywords": [
-        "oraios/serena",
-        "oraios",
-        "agent",
-        "ai",
-        "ai-coding",
-        "claude",
-        "claude-code",
-        "codex",
-        "ide",
-        "jetbrains",
-        "language-server",
-        "mcp-server",
-        "programming",
-        "vibe-coding"
-      ],
-      "transport": "stdio",
-      "github": "https://github.com/oraios/serena",
-      "verified": false,
-      "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 30187,
-      "sourceUpdatedAt": "2026-09-28T14:42:12Z"
-    },
-    {
-      "id": "github-assafelovic-gpt-researcher",
-      "name": "gpt-researcher",
-      "url": "https://github.com/assafelovic/gpt-researcher",
-      "oneLiner": "An autonomous agent that conducts deep research on any data using any LLM providers",
-      "tags": [
-        "agent",
-        "ai",
-        "automation",
-        "deepresearch",
-        "llms",
-        "mcp",
-        "mcp-server",
-        "python"
-      ],
-      "taskPatterns": [
-        "agent",
-        "ai",
-        "automation",
-        "deepresearch",
-        "llms",
-        "mcp"
-      ],
-      "keywords": [
-        "assafelovic/gpt-researcher",
-        "assafelovic",
-        "agent",
-        "ai",
-        "automation",
-        "deepresearch",
-        "llms",
-        "mcp",
-        "mcp-server",
-        "python",
-        "research",
-        "search",
-        "webscraping"
-      ],
-      "transport": "stdio",
-      "github": "https://github.com/assafelovic/gpt-researcher",
-      "verified": false,
-      "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 30019,
-      "sourceUpdatedAt": "2026-09-28T15:50:38Z"
-    },
-    {
       "id": "github-mksglu-context-mode",
       "name": "context-mode",
       "url": "https://github.com/mksglu/context-mode",
@@ -745,8 +702,99 @@
       "github": "https://github.com/mksglu/context-mode",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 26639,
+      "stars": 30681,
       "sourceUpdatedAt": "2026-09-28T15:25:15Z"
+    },
+    {
+      "id": "github-oraios-serena",
+      "name": "serena",
+      "url": "https://github.com/oraios/serena",
+      "oneLiner": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
+      "tags": [
+        "agent",
+        "ai",
+        "ai-coding",
+        "claude",
+        "claude-code",
+        "codex",
+        "ide",
+        "jetbrains"
+      ],
+      "taskPatterns": [
+        "agent",
+        "ai",
+        "ai coding",
+        "claude",
+        "claude code",
+        "codex"
+      ],
+      "keywords": [
+        "oraios/serena",
+        "oraios",
+        "agent",
+        "ai",
+        "ai-coding",
+        "claude",
+        "claude-code",
+        "codex",
+        "ide",
+        "jetbrains",
+        "language-server",
+        "mcp-server",
+        "programming",
+        "vibe-coding"
+      ],
+      "transport": "stdio",
+      "github": "https://github.com/oraios/serena",
+      "verified": false,
+      "securityNote": "Community MCP repository. Review permissions and source before use.",
+      "stars": 30365,
+      "sourceUpdatedAt": "2026-09-28T14:42:12Z"
+    },
+    {
+      "id": "github-assafelovic-gpt-researcher",
+      "name": "gpt-researcher",
+      "url": "https://github.com/assafelovic/gpt-researcher",
+      "oneLiner": "An autonomous agent that conducts deep research on any data using any LLM providers",
+      "tags": [
+        "agent",
+        "ai",
+        "automation",
+        "deepresearch",
+        "llms",
+        "mcp",
+        "mcp-server",
+        "python"
+      ],
+      "taskPatterns": [
+        "agent",
+        "ai",
+        "automation",
+        "deepresearch",
+        "llms",
+        "mcp"
+      ],
+      "keywords": [
+        "assafelovic/gpt-researcher",
+        "assafelovic",
+        "agent",
+        "ai",
+        "automation",
+        "deepresearch",
+        "llms",
+        "mcp",
+        "mcp-server",
+        "python",
+        "research",
+        "search",
+        "webscraping"
+      ],
+      "transport": "stdio",
+      "github": "https://github.com/assafelovic/gpt-researcher",
+      "verified": false,
+      "securityNote": "Community MCP repository. Review permissions and source before use.",
+      "stars": 30159,
+      "sourceUpdatedAt": "2026-09-28T15:50:38Z"
     },
     {
       "id": "github-activepieces-activepieces",
@@ -792,7 +840,7 @@
       "github": "https://github.com/activepieces/activepieces",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 25002,
+      "stars": 25095,
       "sourceUpdatedAt": "2026-09-28T15:16:15Z"
     },
     {
@@ -844,7 +892,7 @@
       "github": "https://github.com/pascalorg/editor",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 24799,
+      "stars": 24962,
       "sourceUpdatedAt": "2026-09-28T14:46:18Z"
     },
     {
@@ -876,7 +924,7 @@
       "github": "https://github.com/modelcontextprotocol/python-sdk",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 24546,
+      "stars": 24607,
       "sourceUpdatedAt": "2026-09-28T15:12:30Z"
     },
     {
@@ -908,7 +956,7 @@
       "github": "https://github.com/czlonkowski/n8n-mcp",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 23055,
+      "stars": 23099,
       "sourceUpdatedAt": "2026-09-28T15:43:01Z"
     },
     {
@@ -956,62 +1004,8 @@
       "github": "https://github.com/1Panel-dev/MaxKB",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 22943,
+      "stars": 22992,
       "sourceUpdatedAt": "2026-09-28T10:03:27Z"
-    },
-    {
-      "id": "github-modelscope-funasr",
-      "name": "FunASR",
-      "url": "https://github.com/modelscope/FunASR",
-      "oneLiner": "Open-source speech recognition toolkit for training, inference, streaming ASR, VAD, punctuation, speaker diarization pipelines, and OpenAI-compatible/MCP serving.",
-      "tags": [
-        "asr",
-        "audio",
-        "chinese",
-        "emotion-recognition",
-        "funasr",
-        "mcp-server",
-        "multilingual-asr",
-        "openai-compatible-api"
-      ],
-      "taskPatterns": [
-        "asr",
-        "audio",
-        "chinese",
-        "emotion recognition",
-        "funasr",
-        "mcp server"
-      ],
-      "keywords": [
-        "modelscope/FunASR",
-        "modelscope",
-        "asr",
-        "audio",
-        "chinese",
-        "emotion-recognition",
-        "funasr",
-        "mcp-server",
-        "multilingual-asr",
-        "openai-compatible-api",
-        "paraformer",
-        "punctuation",
-        "pytorch",
-        "real-time-asr",
-        "speaker-diarization",
-        "speech-recognition",
-        "speech-to-text",
-        "streaming-asr",
-        "transcription",
-        "vllm",
-        "voice-activity-detection",
-        "whisper-alternative"
-      ],
-      "transport": "stdio",
-      "github": "https://github.com/modelscope/FunASR",
-      "verified": false,
-      "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 20645,
-      "sourceUpdatedAt": "2026-09-28T13:57:30Z"
     },
     {
       "id": "github-evil0ctal-douyin-tiktok-download-api",
@@ -1064,8 +1058,62 @@
       "github": "https://github.com/Evil0ctal/Douyin_TikTok_Download_API",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 20588,
+      "stars": 20771,
       "sourceUpdatedAt": "2026-09-28T15:07:53Z"
+    },
+    {
+      "id": "github-modelscope-funasr",
+      "name": "FunASR",
+      "url": "https://github.com/modelscope/FunASR",
+      "oneLiner": "Open-source speech recognition toolkit for training, inference, streaming ASR, VAD, punctuation, speaker diarization pipelines, and OpenAI-compatible/MCP serving.",
+      "tags": [
+        "asr",
+        "audio",
+        "chinese",
+        "emotion-recognition",
+        "funasr",
+        "mcp-server",
+        "multilingual-asr",
+        "openai-compatible-api"
+      ],
+      "taskPatterns": [
+        "asr",
+        "audio",
+        "chinese",
+        "emotion recognition",
+        "funasr",
+        "mcp server"
+      ],
+      "keywords": [
+        "modelscope/FunASR",
+        "modelscope",
+        "asr",
+        "audio",
+        "chinese",
+        "emotion-recognition",
+        "funasr",
+        "mcp-server",
+        "multilingual-asr",
+        "openai-compatible-api",
+        "paraformer",
+        "punctuation",
+        "pytorch",
+        "real-time-asr",
+        "speaker-diarization",
+        "speech-recognition",
+        "speech-to-text",
+        "streaming-asr",
+        "transcription",
+        "vllm",
+        "voice-activity-detection",
+        "whisper-alternative"
+      ],
+      "transport": "stdio",
+      "github": "https://github.com/modelscope/FunASR",
+      "verified": false,
+      "securityNote": "Community MCP repository. Review permissions and source before use.",
+      "stars": 20745,
+      "sourceUpdatedAt": "2026-09-28T13:57:30Z"
     },
     {
       "id": "github-nukeop-nuclear",
@@ -1114,56 +1162,8 @@
       "github": "https://github.com/nukeop/nuclear",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 18655,
+      "stars": 18735,
       "sourceUpdatedAt": "2026-09-28T15:27:59Z"
-    },
-    {
-      "id": "github-microsoft-mcp-for-beginners",
-      "name": "mcp-for-beginners",
-      "url": "https://github.com/microsoft/mcp-for-beginners",
-      "oneLiner": "This open-source curriculum introduces the fundamentals of Model Context Protocol (MCP) through real-world, cross-language examples in .NET, Java, TypeScript, JavaScript, Rust and ",
-      "tags": [
-        "csharp",
-        "java",
-        "javascript",
-        "javascript-applications",
-        "mcp",
-        "mcp-client",
-        "mcp-security",
-        "mcp-server"
-      ],
-      "taskPatterns": [
-        "csharp",
-        "java",
-        "javascript",
-        "javascript applications",
-        "mcp",
-        "mcp client"
-      ],
-      "keywords": [
-        "microsoft/mcp-for-beginners",
-        "microsoft",
-        "csharp",
-        "java",
-        "javascript",
-        "javascript-applications",
-        "mcp",
-        "mcp-client",
-        "mcp-security",
-        "mcp-server",
-        "model",
-        "model-context-protocol",
-        "modelcontextprotocol",
-        "python",
-        "rust",
-        "typescript"
-      ],
-      "transport": "stdio",
-      "github": "https://github.com/microsoft/mcp-for-beginners",
-      "verified": false,
-      "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 17430,
-      "sourceUpdatedAt": "2026-09-28T15:38:41Z"
     },
     {
       "id": "github-wanshuiyin-auto-claude-code-research-in-sleep",
@@ -1216,8 +1216,56 @@
       "github": "https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 17267,
+      "stars": 17661,
       "sourceUpdatedAt": "2026-09-28T15:49:12Z"
+    },
+    {
+      "id": "github-microsoft-mcp-for-beginners",
+      "name": "mcp-for-beginners",
+      "url": "https://github.com/microsoft/mcp-for-beginners",
+      "oneLiner": "This open-source curriculum introduces the fundamentals of Model Context Protocol (MCP) through real-world, cross-language examples in .NET, Java, TypeScript, JavaScript, Rust and ",
+      "tags": [
+        "csharp",
+        "java",
+        "javascript",
+        "javascript-applications",
+        "mcp",
+        "mcp-client",
+        "mcp-security",
+        "mcp-server"
+      ],
+      "taskPatterns": [
+        "csharp",
+        "java",
+        "javascript",
+        "javascript applications",
+        "mcp",
+        "mcp client"
+      ],
+      "keywords": [
+        "microsoft/mcp-for-beginners",
+        "microsoft",
+        "csharp",
+        "java",
+        "javascript",
+        "javascript-applications",
+        "mcp",
+        "mcp-client",
+        "mcp-security",
+        "mcp-server",
+        "model",
+        "model-context-protocol",
+        "modelcontextprotocol",
+        "python",
+        "rust",
+        "typescript"
+      ],
+      "transport": "stdio",
+      "github": "https://github.com/microsoft/mcp-for-beginners",
+      "verified": false,
+      "securityNote": "Community MCP repository. Review permissions and source before use.",
+      "stars": 17468,
+      "sourceUpdatedAt": "2026-09-28T15:38:41Z"
     },
     {
       "id": "github-triggerdotdev-trigger-dev",
@@ -1263,7 +1311,7 @@
       "github": "https://github.com/triggerdotdev/trigger.dev",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 16519,
+      "stars": 16569,
       "sourceUpdatedAt": "2026-09-28T15:09:20Z"
     },
     {
@@ -1292,7 +1340,7 @@
       "github": "https://github.com/xpzouying/xiaohongshu-mcp",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 16208,
+      "stars": 16357,
       "sourceUpdatedAt": "2026-09-28T15:38:55Z"
     },
     {
@@ -1346,7 +1394,7 @@
       "github": "https://github.com/budtmo/docker-android",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 15959,
+      "stars": 15987,
       "sourceUpdatedAt": "2026-09-28T14:44:26Z"
     },
     {
@@ -1400,7 +1448,7 @@
       "github": "https://github.com/open-metadata/OpenMetadata",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 15438,
+      "stars": 15510,
       "sourceUpdatedAt": "2026-09-28T15:35:20Z"
     },
     {
