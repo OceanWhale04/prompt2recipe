@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-18T18:25:33.050Z",
+  "updatedAt": "2026-10-25T18:40:54.909Z",
   "items": [
     {
       "id": "github-n8n-io-n8n",
@@ -53,7 +53,7 @@
       "github": "https://github.com/n8n-io/n8n",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 207904,
+      "stars": 208572,
       "sourceUpdatedAt": "2026-09-28T15:37:19Z"
     },
     {
@@ -93,54 +93,8 @@
       "github": "https://github.com/google-gemini/gemini-cli",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 107436,
+      "stars": 108379,
       "sourceUpdatedAt": "2026-09-28T14:31:33Z"
-    },
-    {
-      "id": "github-koala73-worldmonitor",
-      "name": "worldmonitor",
-      "url": "https://github.com/koala73/worldmonitor",
-      "oneLiner": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface",
-      "tags": [
-        "agent",
-        "ai",
-        "dashboard",
-        "geopolitics",
-        "mcp",
-        "mcp-server",
-        "monitoring",
-        "news"
-      ],
-      "taskPatterns": [
-        "agent",
-        "ai",
-        "dashboard",
-        "geopolitics",
-        "mcp",
-        "mcp server"
-      ],
-      "keywords": [
-        "koala73/worldmonitor",
-        "koala73",
-        "agent",
-        "ai",
-        "dashboard",
-        "geopolitics",
-        "mcp",
-        "mcp-server",
-        "monitoring",
-        "news",
-        "opensource",
-        "osint",
-        "palantir",
-        "situation"
-      ],
-      "transport": "stdio",
-      "github": "https://github.com/koala73/worldmonitor",
-      "verified": false,
-      "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 88710,
-      "sourceUpdatedAt": "2026-09-28T15:44:24Z"
     },
     {
       "id": "github-d4vinci-scrapling",
@@ -193,8 +147,54 @@
       "github": "https://github.com/D4Vinci/Scrapling",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 88450,
+      "stars": 89678,
       "sourceUpdatedAt": "2026-09-28T15:44:45Z"
+    },
+    {
+      "id": "github-koala73-worldmonitor",
+      "name": "worldmonitor",
+      "url": "https://github.com/koala73/worldmonitor",
+      "oneLiner": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface",
+      "tags": [
+        "agent",
+        "ai",
+        "dashboard",
+        "geopolitics",
+        "mcp",
+        "mcp-server",
+        "monitoring",
+        "news"
+      ],
+      "taskPatterns": [
+        "agent",
+        "ai",
+        "dashboard",
+        "geopolitics",
+        "mcp",
+        "mcp server"
+      ],
+      "keywords": [
+        "koala73/worldmonitor",
+        "koala73",
+        "agent",
+        "ai",
+        "dashboard",
+        "geopolitics",
+        "mcp",
+        "mcp-server",
+        "monitoring",
+        "news",
+        "opensource",
+        "osint",
+        "palantir",
+        "situation"
+      ],
+      "transport": "stdio",
+      "github": "https://github.com/koala73/worldmonitor",
+      "verified": false,
+      "securityNote": "Community MCP repository. Review permissions and source before use.",
+      "stars": 89500,
+      "sourceUpdatedAt": "2026-09-28T15:44:24Z"
     },
     {
       "id": "github-ruvnet-ruflo",
@@ -247,7 +247,7 @@
       "github": "https://github.com/ruvnet/ruflo",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 76410,
+      "stars": 79235,
       "sourceUpdatedAt": "2026-09-28T15:40:25Z"
     },
     {
@@ -279,7 +279,7 @@
       "github": "https://github.com/upstash/context7",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 63248,
+      "stars": 63660,
       "sourceUpdatedAt": "2026-09-28T15:28:25Z"
     },
     {
@@ -329,7 +329,7 @@
       "github": "https://github.com/sansan0/TrendRadar",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 62997,
+      "stars": 63168,
       "sourceUpdatedAt": "2026-09-28T15:36:49Z"
     },
     {
@@ -371,7 +371,7 @@
       "github": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 53790,
+      "stars": 54122,
       "sourceUpdatedAt": "2026-09-28T15:12:39Z"
     },
     {
@@ -425,7 +425,7 @@
       "github": "https://github.com/DeusData/codebase-memory-mcp",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 46845,
+      "stars": 47460,
       "sourceUpdatedAt": "2026-09-28T15:49:56Z"
     },
     {
@@ -469,7 +469,7 @@
       "github": "https://github.com/reactive-resume/reactive-resume",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 44486,
+      "stars": 44846,
       "sourceUpdatedAt": "2026-09-28T15:36:22Z"
     },
     {
@@ -517,7 +517,7 @@
       "github": "https://github.com/bytedance/UI-TARS-desktop",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 39314,
+      "stars": 39385,
       "sourceUpdatedAt": "2026-09-28T14:33:05Z"
     },
     {
@@ -565,7 +565,7 @@
       "github": "https://github.com/DayuanJiang/next-ai-draw-io",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 36314,
+      "stars": 36407,
       "sourceUpdatedAt": "2026-10-18T17:19:45Z"
     },
     {
@@ -594,8 +594,62 @@
       "github": "https://github.com/github/github-mcp-server",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 33725,
+      "stars": 33944,
       "sourceUpdatedAt": "2026-09-28T15:29:55Z"
+    },
+    {
+      "id": "github-mksglu-context-mode",
+      "name": "context-mode",
+      "url": "https://github.com/mksglu/context-mode",
+      "oneLiner": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and   enforces routing across 17 platforms via MCP + hooks.",
+      "tags": [
+        "antigravity",
+        "claude",
+        "claude-code",
+        "claude-code-hooks",
+        "claude-code-plugins",
+        "claude-code-skill",
+        "codex",
+        "codex-cli"
+      ],
+      "taskPatterns": [
+        "antigravity",
+        "claude",
+        "claude code",
+        "claude code hooks",
+        "claude code plugins",
+        "claude code skill"
+      ],
+      "keywords": [
+        "mksglu/context-mode",
+        "mksglu",
+        "antigravity",
+        "claude",
+        "claude-code",
+        "claude-code-hooks",
+        "claude-code-plugins",
+        "claude-code-skill",
+        "codex",
+        "codex-cli",
+        "context-mode",
+        "copilot",
+        "cursor-plugin",
+        "kiro",
+        "mcp",
+        "mcp-server",
+        "mcp-tools",
+        "openclaw",
+        "opencode",
+        "pi-agent",
+        "skills",
+        "zed-extension"
+      ],
+      "transport": "stdio",
+      "github": "https://github.com/mksglu/context-mode",
+      "verified": false,
+      "securityNote": "Community MCP repository. Review permissions and source before use.",
+      "stars": 32212,
+      "sourceUpdatedAt": "2026-09-28T15:25:15Z"
     },
     {
       "id": "github-feder-cr-invisible-playwright-mcp",
@@ -652,60 +706,6 @@
       "sourceUpdatedAt": "2026-09-28T15:35:25Z"
     },
     {
-      "id": "github-mksglu-context-mode",
-      "name": "context-mode",
-      "url": "https://github.com/mksglu/context-mode",
-      "oneLiner": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and   enforces routing across 17 platforms via MCP + hooks.",
-      "tags": [
-        "antigravity",
-        "claude",
-        "claude-code",
-        "claude-code-hooks",
-        "claude-code-plugins",
-        "claude-code-skill",
-        "codex",
-        "codex-cli"
-      ],
-      "taskPatterns": [
-        "antigravity",
-        "claude",
-        "claude code",
-        "claude code hooks",
-        "claude code plugins",
-        "claude code skill"
-      ],
-      "keywords": [
-        "mksglu/context-mode",
-        "mksglu",
-        "antigravity",
-        "claude",
-        "claude-code",
-        "claude-code-hooks",
-        "claude-code-plugins",
-        "claude-code-skill",
-        "codex",
-        "codex-cli",
-        "context-mode",
-        "copilot",
-        "cursor-plugin",
-        "kiro",
-        "mcp",
-        "mcp-server",
-        "mcp-tools",
-        "openclaw",
-        "opencode",
-        "pi-agent",
-        "skills",
-        "zed-extension"
-      ],
-      "transport": "stdio",
-      "github": "https://github.com/mksglu/context-mode",
-      "verified": false,
-      "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 30681,
-      "sourceUpdatedAt": "2026-09-28T15:25:15Z"
-    },
-    {
       "id": "github-oraios-serena",
       "name": "serena",
       "url": "https://github.com/oraios/serena",
@@ -748,7 +748,7 @@
       "github": "https://github.com/oraios/serena",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 30365,
+      "stars": 30704,
       "sourceUpdatedAt": "2026-09-28T14:42:12Z"
     },
     {
@@ -793,7 +793,7 @@
       "github": "https://github.com/assafelovic/gpt-researcher",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 30159,
+      "stars": 30291,
       "sourceUpdatedAt": "2026-09-28T15:50:38Z"
     },
     {
@@ -840,7 +840,7 @@
       "github": "https://github.com/activepieces/activepieces",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 25095,
+      "stars": 25219,
       "sourceUpdatedAt": "2026-09-28T15:16:15Z"
     },
     {
@@ -892,7 +892,7 @@
       "github": "https://github.com/pascalorg/editor",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 24962,
+      "stars": 25100,
       "sourceUpdatedAt": "2026-09-28T14:46:18Z"
     },
     {
@@ -924,7 +924,7 @@
       "github": "https://github.com/modelcontextprotocol/python-sdk",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 24607,
+      "stars": 24666,
       "sourceUpdatedAt": "2026-09-28T15:12:30Z"
     },
     {
@@ -956,7 +956,7 @@
       "github": "https://github.com/czlonkowski/n8n-mcp",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 23099,
+      "stars": 23133,
       "sourceUpdatedAt": "2026-09-28T15:43:01Z"
     },
     {
@@ -1004,7 +1004,7 @@
       "github": "https://github.com/1Panel-dev/MaxKB",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 22992,
+      "stars": 23035,
       "sourceUpdatedAt": "2026-09-28T10:03:27Z"
     },
     {
@@ -1058,7 +1058,7 @@
       "github": "https://github.com/Evil0ctal/Douyin_TikTok_Download_API",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 20771,
+      "stars": 20894,
       "sourceUpdatedAt": "2026-09-28T15:07:53Z"
     },
     {
@@ -1112,7 +1112,7 @@
       "github": "https://github.com/modelscope/FunASR",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 20745,
+      "stars": 20812,
       "sourceUpdatedAt": "2026-09-28T13:57:30Z"
     },
     {
@@ -1162,7 +1162,7 @@
       "github": "https://github.com/nukeop/nuclear",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 18735,
+      "stars": 18780,
       "sourceUpdatedAt": "2026-09-28T15:27:59Z"
     },
     {
@@ -1216,7 +1216,7 @@
       "github": "https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 17661,
+      "stars": 18057,
       "sourceUpdatedAt": "2026-09-28T15:49:12Z"
     },
     {
@@ -1264,7 +1264,7 @@
       "github": "https://github.com/microsoft/mcp-for-beginners",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 17468,
+      "stars": 17509,
       "sourceUpdatedAt": "2026-09-28T15:38:41Z"
     },
     {
@@ -1311,7 +1311,7 @@
       "github": "https://github.com/triggerdotdev/trigger.dev",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 16569,
+      "stars": 16616,
       "sourceUpdatedAt": "2026-09-28T15:09:20Z"
     },
     {
@@ -1340,7 +1340,7 @@
       "github": "https://github.com/xpzouying/xiaohongshu-mcp",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 16357,
+      "stars": 16559,
       "sourceUpdatedAt": "2026-09-28T15:38:55Z"
     },
     {
@@ -1394,7 +1394,7 @@
       "github": "https://github.com/budtmo/docker-android",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 15987,
+      "stars": 16032,
       "sourceUpdatedAt": "2026-09-28T14:44:26Z"
     },
     {
@@ -1448,7 +1448,7 @@
       "github": "https://github.com/open-metadata/OpenMetadata",
       "verified": false,
       "securityNote": "Community MCP repository. Review permissions and source before use.",
-      "stars": 15510,
+      "stars": 15577,
       "sourceUpdatedAt": "2026-09-28T15:35:20Z"
     },
     {
