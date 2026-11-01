@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-25T18:40:54.909Z",
+  "updatedAt": "2026-11-01T20:05:22.922Z",
   "items": [
     {
       "id": "openrouter-openai-gpt-6-luna-pro",
@@ -550,6 +550,106 @@
       "provider": "openai",
       "category": "text+image+file->text",
       "costTier": "medium",
+      "contextWindow": 1050000
+    },
+    {
+      "id": "openrouter-openai-gpt-6-1-terra-pro",
+      "name": "OpenAI: GPT-6.1 Terra Pro",
+      "url": "https://openrouter.ai/models/openai/gpt-6.1-terra-pro",
+      "oneLiner": "GPT-6.1 Terra Pro is the same underlying model as [GPT-6.1 Terra](https://openrouter.ai/openai/gpt-6.1-terra), served with `reasoning.mode` set to `pro` for higher-quality response",
+      "tags": [
+        "openrouter",
+        "openai",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "openai/gpt-6.1-terra-pro",
+        "openai",
+        "OpenAI: GPT-6.1 Terra Pro"
+      ],
+      "provider": "openai",
+      "category": "text+image+file->text",
+      "costTier": "medium",
+      "contextWindow": 1050000
+    },
+    {
+      "id": "openrouter-openai-gpt-6-1-terra-pro-batch",
+      "name": "OpenAI: GPT-6.1 Terra Pro (batch)",
+      "url": "https://openrouter.ai/models/openai/gpt-6.1-terra-pro:batch",
+      "oneLiner": "GPT-6.1 Terra Pro is the same underlying model as [GPT-6.1 Terra](https://openrouter.ai/openai/gpt-6.1-terra), served with `reasoning.mode` set to `pro` for higher-quality response",
+      "tags": [
+        "openrouter",
+        "openai",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "openai/gpt-6.1-terra-pro:batch",
+        "openai",
+        "OpenAI: GPT-6.1 Terra Pro (batch)"
+      ],
+      "provider": "openai",
+      "category": "text+image+file->text",
+      "costTier": "low",
+      "contextWindow": 1050000
+    },
+    {
+      "id": "openrouter-openai-gpt-6-1-terra",
+      "name": "OpenAI: GPT-6.1 Terra",
+      "url": "https://openrouter.ai/models/openai/gpt-6.1-terra",
+      "oneLiner": "GPT-6.1 Terra is the mid-tier model in OpenAI's GPT-6.1 series, priced below GPT-6.1 Sol. It is suited for everyday agentic, coding, and writing work, is particularly strong at und",
+      "tags": [
+        "openrouter",
+        "openai",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "openai/gpt-6.1-terra",
+        "openai",
+        "OpenAI: GPT-6.1 Terra"
+      ],
+      "provider": "openai",
+      "category": "text+image+file->text",
+      "costTier": "medium",
+      "contextWindow": 1050000
+    },
+    {
+      "id": "openrouter-openai-gpt-6-1-terra-batch",
+      "name": "OpenAI: GPT-6.1 Terra (batch)",
+      "url": "https://openrouter.ai/models/openai/gpt-6.1-terra:batch",
+      "oneLiner": "GPT-6.1 Terra is the mid-tier model in OpenAI's GPT-6.1 series, priced below GPT-6.1 Sol. It is suited for everyday agentic, coding, and writing work, is particularly strong at und",
+      "tags": [
+        "openrouter",
+        "openai",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "openai/gpt-6.1-terra:batch",
+        "openai",
+        "OpenAI: GPT-6.1 Terra (batch)"
+      ],
+      "provider": "openai",
+      "category": "text+image+file->text",
+      "costTier": "low",
       "contextWindow": 1050000
     },
     {
@@ -1185,7 +1285,7 @@
       "tags": [
         "openrouter",
         "mistralai",
-        "medium"
+        "low"
       ],
       "taskPatterns": [
         "general reasoning",
@@ -1199,7 +1299,7 @@
       ],
       "provider": "mistralai",
       "category": "text+image->text",
-      "costTier": "medium",
+      "costTier": "low",
       "contextWindow": 1048576
     },
     {
@@ -1499,6 +1599,31 @@
       ],
       "provider": "minimax",
       "category": "text+image+video->text",
+      "costTier": "low",
+      "contextWindow": 1048576
+    },
+    {
+      "id": "openrouter-particle-ai-particle-1",
+      "name": "Particle AI: Particle-1",
+      "url": "https://openrouter.ai/models/particle-ai/particle-1",
+      "oneLiner": "Particle-1 is a token-efficient agentic coding model from Particle AI, post-trained on DeepSeek V4.1 Flash. It is suited for software engineering work such as terminal workflows, c",
+      "tags": [
+        "openrouter",
+        "particle-ai",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "particle-ai/particle-1",
+        "particle-ai",
+        "Particle AI: Particle-1"
+      ],
+      "provider": "particle-ai",
+      "category": "text+image->text",
       "costTier": "low",
       "contextWindow": 1048576
     },
@@ -2181,6 +2306,31 @@
       "contextWindow": 1000000
     },
     {
+      "id": "openrouter-inclusionai-ling-3-1-flash",
+      "name": "inclusionAI: Ling 3.1 Flash",
+      "url": "https://openrouter.ai/models/inclusionai/ling-3.1-flash",
+      "oneLiner": "Ling 3.1 Flash is a hybrid reasoning mixture-of-experts model from inclusionAI, with 25B active parameters out of 560B total.",
+      "tags": [
+        "openrouter",
+        "inclusionai",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "inclusionai/ling-3.1-flash",
+        "inclusionai",
+        "inclusionAI: Ling 3.1 Flash"
+      ],
+      "provider": "inclusionai",
+      "category": "text->text",
+      "costTier": "low",
+      "contextWindow": 1000000
+    },
+    {
       "id": "openrouter-upstage-solar-mini4",
       "name": "Upstage: Solar Mini 4",
       "url": "https://openrouter.ai/models/upstage/solar-mini4",
@@ -2581,31 +2731,6 @@
       "contextWindow": 262144
     },
     {
-      "id": "openrouter-inclusionai-ling-3-1-flash",
-      "name": "inclusionAI: Ling 3.1 Flash",
-      "url": "https://openrouter.ai/models/inclusionai/ling-3.1-flash",
-      "oneLiner": "Ling 3.1 Flash is a hybrid reasoning mixture-of-experts model from inclusionAI, with 25B active parameters out of 560B total.",
-      "tags": [
-        "openrouter",
-        "inclusionai",
-        "low"
-      ],
-      "taskPatterns": [
-        "general reasoning",
-        "chat",
-        "structured generation"
-      ],
-      "keywords": [
-        "inclusionai/ling-3.1-flash",
-        "inclusionai",
-        "inclusionAI: Ling 3.1 Flash"
-      ],
-      "provider": "inclusionai",
-      "category": "text->text",
-      "costTier": "low",
-      "contextWindow": 262144
-    },
-    {
       "id": "openrouter-apodex-apodex-1-1-mini-free",
       "name": "Apodex: Apodex 1.1 Mini (free)",
       "url": "https://openrouter.ai/models/apodex/apodex-1.1-mini:free",
@@ -2752,6 +2877,31 @@
       ],
       "provider": "recursive",
       "category": "text->text",
+      "costTier": "low",
+      "contextWindow": 262144
+    },
+    {
+      "id": "openrouter-prism-ml-ternary-bonsai-2-9b",
+      "name": "PrismML: Ternary Bonsai 2 9B",
+      "url": "https://openrouter.ai/models/prism-ml/ternary-bonsai-2-9b",
+      "oneLiner": "Ternary Bonsai 2 9B is PrismML’s compact, open-weight language model for conversational AI, reasoning, and tool use. Built on Qwen3.5, it uses ternary weights packed into 2 bits fo",
+      "tags": [
+        "openrouter",
+        "prism-ml",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "prism-ml/ternary-bonsai-2-9b",
+        "prism-ml",
+        "PrismML: Ternary Bonsai 2 9B"
+      ],
+      "provider": "prism-ml",
+      "category": "text+image->text",
       "costTier": "low",
       "contextWindow": 262144
     },
