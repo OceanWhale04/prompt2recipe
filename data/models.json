@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-01T20:05:22.922Z",
+  "updatedAt": "2026-11-08T20:06:10.308Z",
   "items": [
     {
       "id": "openrouter-openai-gpt-6-luna-pro",
@@ -1628,6 +1628,131 @@
       "contextWindow": 1048576
     },
     {
+      "id": "openrouter-ricursiveai-ripple-65b-preview",
+      "name": "Ricursive: Ripple 65B Preview",
+      "url": "https://openrouter.ai/models/ricursiveai/ripple-65b-preview",
+      "oneLiner": "Ripple-65B-Preview by ricursiveAI, a 65B model with native tool calling, served in BF16.",
+      "tags": [
+        "openrouter",
+        "ricursiveai",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "ricursiveai/ripple-65b-preview",
+        "ricursiveai",
+        "Ricursive: Ripple 65B Preview"
+      ],
+      "provider": "ricursiveai",
+      "category": "text->text",
+      "costTier": "low",
+      "contextWindow": 1048576
+    },
+    {
+      "id": "openrouter-tencent-hy4",
+      "name": "Tencent: Hy4",
+      "url": "https://openrouter.ai/models/tencent/hy4",
+      "oneLiner": "The official release of Hy4 delivers comprehensive and substantial improvements over Hy4 Preview, with particularly strong gains in agentic capabilities and performance across a wi",
+      "tags": [
+        "openrouter",
+        "tencent",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "tencent/hy4",
+        "tencent",
+        "Tencent: Hy4"
+      ],
+      "provider": "tencent",
+      "category": "text+image->text",
+      "costTier": "low",
+      "contextWindow": 1048576
+    },
+    {
+      "id": "openrouter-stealth-crouton-alpha",
+      "name": "Crouton Alpha",
+      "url": "https://openrouter.ai/models/stealth/crouton-alpha",
+      "oneLiner": "Crouton Alpha is a lightweight model built for scalable coding, agentic, and multimodal workflows. It's ideal for executing agentic sub-tasks, tool use, and document analysis in hi",
+      "tags": [
+        "openrouter",
+        "stealth",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "stealth/crouton-alpha",
+        "stealth",
+        "Crouton Alpha"
+      ],
+      "provider": "stealth",
+      "category": "text+image+file+audio+video->text",
+      "costTier": "low",
+      "contextWindow": 1048576
+    },
+    {
+      "id": "openrouter-z-ai-glm-5-3-flashx-legal",
+      "name": "Z.ai: GLM 5.3 FlashX Legal",
+      "url": "https://openrouter.ai/models/z-ai/glm-5.3-flashx-legal",
+      "oneLiner": "GLM-5.3-FlashX-Legal (GLM-Legal) is Z.ai's legal-domain variant of GLM-5.3-FlashX, a native multimodal model that accepts text, image, and video input and produces text. It adds le",
+      "tags": [
+        "openrouter",
+        "z-ai",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "z-ai/glm-5.3-flashx-legal",
+        "z-ai",
+        "Z.ai: GLM 5.3 FlashX Legal"
+      ],
+      "provider": "z-ai",
+      "category": "text+image+video->text",
+      "costTier": "low",
+      "contextWindow": 1048576
+    },
+    {
+      "id": "openrouter-deepseek-deepseek-v4-1-flash-1017-batch",
+      "name": "DeepSeek: DeepSeek V4.1 Flash 1017 (batch)",
+      "url": "https://openrouter.ai/models/deepseek/deepseek-v4.1-flash-1017:batch",
+      "oneLiner": "DeepSeek V4.1 Flash 1017 is the October 17, 2026 snapshot of DeepSeek V4.1 Flash, served by DeepSeek under the `deepseek-flash` API model name. V4.1 Flash is a sparse mixture-of-ex",
+      "tags": [
+        "openrouter",
+        "deepseek",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "deepseek/deepseek-v4.1-flash-1017:batch",
+        "deepseek",
+        "DeepSeek: DeepSeek V4.1 Flash 1017 (batch)"
+      ],
+      "provider": "deepseek",
+      "category": "text+image->text",
+      "costTier": "low",
+      "contextWindow": 1048576
+    },
+    {
       "id": "gpt-4.1",
       "name": "GPT-4.1",
       "url": "https://platform.openai.com/docs/models/gpt-4.1",
@@ -2431,6 +2556,31 @@
       "contextWindow": 500000
     },
     {
+      "id": "openrouter-x-ai-grok-4-7-batch",
+      "name": "SpaceXAI: Grok 4.7 (batch)",
+      "url": "https://openrouter.ai/models/x-ai/grok-4.7:batch",
+      "oneLiner": "Grok 4.7 is SpaceXAI's flagship model for coding, agentic tasks, and knowledge work, succeeding Grok 4.6. It is particularly strong at long-running software engineering tasks, veri",
+      "tags": [
+        "openrouter",
+        "x-ai",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "x-ai/grok-4.7:batch",
+        "x-ai",
+        "SpaceXAI: Grok 4.7 (batch)"
+      ],
+      "provider": "x-ai",
+      "category": "text+image+file->text",
+      "costTier": "medium",
+      "contextWindow": 500000
+    },
+    {
       "id": "openrouter-aion-labs-aion-3-5-mini",
       "name": "AionLabs: Aion 3.5 Mini",
       "url": "https://openrouter.ai/models/aion-labs/aion-3.5-mini",
@@ -2906,6 +3056,56 @@
       "contextWindow": 262144
     },
     {
+      "id": "openrouter-liquid-lfm-3-1-7b",
+      "name": "LiquidAI: LFM3-1.7B",
+      "url": "https://openrouter.ai/models/liquid/lfm-3-1.7b",
+      "oneLiner": "A compact 1.7B-parameter text model with a 256K-token context, post-trained for agents, tool calling, and structured outputs. It reasons before it answers. Prompts and outputs may ",
+      "tags": [
+        "openrouter",
+        "liquid",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "liquid/lfm-3-1.7b",
+        "liquid",
+        "LiquidAI: LFM3-1.7B"
+      ],
+      "provider": "liquid",
+      "category": "text->text",
+      "costTier": "low",
+      "contextWindow": 262144
+    },
+    {
+      "id": "openrouter-liquid-lfm-3-1-7b-free",
+      "name": "LiquidAI: LFM3-1.7B (free)",
+      "url": "https://openrouter.ai/models/liquid/lfm-3-1.7b:free",
+      "oneLiner": "A compact 1.7B-parameter text model with a 256K-token context, post-trained for agents, tool calling, and structured outputs. It reasons before it answers. Prompts and outputs may ",
+      "tags": [
+        "openrouter",
+        "liquid",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "liquid/lfm-3-1.7b:free",
+        "liquid",
+        "LiquidAI: LFM3-1.7B (free)"
+      ],
+      "provider": "liquid",
+      "category": "text->text",
+      "costTier": "low",
+      "contextWindow": 262144
+    },
+    {
       "id": "openrouter-inception-mercury-2-5",
       "name": "Inception: Mercury 2.5",
       "url": "https://openrouter.ai/models/inception/mercury-2.5",
@@ -3187,6 +3387,56 @@
       "provider": "ibm-granite",
       "category": "text->text",
       "costTier": "low",
+      "contextWindow": 131072
+    },
+    {
+      "id": "openrouter-google-gemini-omni-1-2-flash",
+      "name": "Google: Gemini Omni 1.2 Flash",
+      "url": "https://openrouter.ai/models/google/gemini-omni-1.2-flash",
+      "oneLiner": "Gemini Omni 1.2 Flash is Google's native multimodal video generation and editing model, the successor to Gemini Omni 1.1 Flash. It generates clips up to 15 seconds long with native",
+      "tags": [
+        "openrouter",
+        "google",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "google/gemini-omni-1.2-flash",
+        "google",
+        "Google: Gemini Omni 1.2 Flash"
+      ],
+      "provider": "google",
+      "category": "text+image+video->text+video",
+      "costTier": "medium",
+      "contextWindow": 131072
+    },
+    {
+      "id": "openrouter-google-gemini-omni-1-1-flash",
+      "name": "Google: Gemini Omni 1.1 Flash",
+      "url": "https://openrouter.ai/models/google/gemini-omni-1.1-flash",
+      "oneLiner": "Gemini Omni 1.1 Flash is Google's native multimodal video generation and editing model, the generally available successor to Gemini Omni Flash Preview. It is suited for text-to-vid",
+      "tags": [
+        "openrouter",
+        "google",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "google/gemini-omni-1.1-flash",
+        "google",
+        "Google: Gemini Omni 1.1 Flash"
+      ],
+      "provider": "google",
+      "category": "text+image+video->text+video",
+      "costTier": "medium",
       "contextWindow": 131072
     },
     {
