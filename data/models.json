@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-08T20:06:10.308Z",
+  "updatedAt": "2026-11-15T20:43:55.646Z",
   "items": [
     {
       "id": "openrouter-openai-gpt-6-luna-pro",
@@ -1303,31 +1303,6 @@
       "contextWindow": 1048576
     },
     {
-      "id": "openrouter-stepfun-step-5-preview",
-      "name": "StepFun: Step 5 Preview",
-      "url": "https://openrouter.ai/models/stepfun/step-5-preview",
-      "oneLiner": "Step 5 Preview is StepFun's flagship model for agentic work, built on a sparse Mixture-of-Experts architecture (27B active / 600B total parameters). It performs strongly in softwar",
-      "tags": [
-        "openrouter",
-        "stepfun",
-        "low"
-      ],
-      "taskPatterns": [
-        "general reasoning",
-        "chat",
-        "structured generation"
-      ],
-      "keywords": [
-        "stepfun/step-5-preview",
-        "stepfun",
-        "StepFun: Step 5 Preview"
-      ],
-      "provider": "stepfun",
-      "category": "text+image+video->text",
-      "costTier": "low",
-      "contextWindow": 1048576
-    },
-    {
       "id": "openrouter-deepseek-deepseek-v4-1-flash-1017",
       "name": "DeepSeek: DeepSeek V4.1 Flash 1017",
       "url": "https://openrouter.ai/models/deepseek/deepseek-v4.1-flash-1017",
@@ -1751,6 +1726,331 @@
       "category": "text+image->text",
       "costTier": "low",
       "contextWindow": 1048576
+    },
+    {
+      "id": "openrouter-inclusionai-ling-3-2-flash-free",
+      "name": "inclusionAI: Ling 3.2 Flash (free)",
+      "url": "https://openrouter.ai/models/inclusionai/ling-3.2-flash:free",
+      "oneLiner": "Ling 3.2 Flash is a hybrid reasoning model from inclusionAI that accepts text and image input, with a 1M-token context window and up to 200 images per request. Thinking can...",
+      "tags": [
+        "openrouter",
+        "inclusionai",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "inclusionai/ling-3.2-flash:free",
+        "inclusionai",
+        "inclusionAI: Ling 3.2 Flash (free)"
+      ],
+      "provider": "inclusionai",
+      "category": "text+image->text",
+      "costTier": "low",
+      "contextWindow": 1048576
+    },
+    {
+      "id": "openrouter-google-gemini-4-hydrogen",
+      "name": "Google: Gemini 4 Hydrogen",
+      "url": "https://openrouter.ai/models/google/gemini-4-hydrogen",
+      "oneLiner": "Gemini 4 Hydrogen is the high-efficiency workhorse model of the Gemini 4 family from Google, built for high-throughput agentic workflows, coding and multi-model routing at lower co",
+      "tags": [
+        "openrouter",
+        "google",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "google/gemini-4-hydrogen",
+        "google",
+        "Google: Gemini 4 Hydrogen"
+      ],
+      "provider": "google",
+      "category": "text+image+file+audio+video->text",
+      "costTier": "medium",
+      "contextWindow": 1048576
+    },
+    {
+      "id": "openrouter-google-gemini-4-hydrogen-batch",
+      "name": "Google: Gemini 4 Hydrogen (batch)",
+      "url": "https://openrouter.ai/models/google/gemini-4-hydrogen:batch",
+      "oneLiner": "Gemini 4 Hydrogen is the high-efficiency workhorse model of the Gemini 4 family from Google, built for high-throughput agentic workflows, coding and multi-model routing at lower co",
+      "tags": [
+        "openrouter",
+        "google",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "google/gemini-4-hydrogen:batch",
+        "google",
+        "Google: Gemini 4 Hydrogen (batch)"
+      ],
+      "provider": "google",
+      "category": "text+image+file+audio+video->text",
+      "costTier": "medium",
+      "contextWindow": 1048576
+    },
+    {
+      "id": "openrouter-google-gemini-4-carbon",
+      "name": "Google: Gemini 4 Carbon",
+      "url": "https://openrouter.ai/models/google/gemini-4-carbon",
+      "oneLiner": "Gemini 4 Carbon is a frontier Gemini 4 model from Google for coding, agentic and complex reasoning work. It takes text, image, audio, video and file input, supports long decode...",
+      "tags": [
+        "openrouter",
+        "google",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "google/gemini-4-carbon",
+        "google",
+        "Google: Gemini 4 Carbon"
+      ],
+      "provider": "google",
+      "category": "text+image+file+audio+video->text",
+      "costTier": "medium",
+      "contextWindow": 1048576
+    },
+    {
+      "id": "openrouter-google-gemini-4-carbon-batch",
+      "name": "Google: Gemini 4 Carbon (batch)",
+      "url": "https://openrouter.ai/models/google/gemini-4-carbon:batch",
+      "oneLiner": "Gemini 4 Carbon is a frontier Gemini 4 model from Google for coding, agentic and complex reasoning work. It takes text, image, audio, video and file input, supports long decode...",
+      "tags": [
+        "openrouter",
+        "google",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "google/gemini-4-carbon:batch",
+        "google",
+        "Google: Gemini 4 Carbon (batch)"
+      ],
+      "provider": "google",
+      "category": "text+image+file+audio+video->text",
+      "costTier": "medium",
+      "contextWindow": 1048576
+    },
+    {
+      "id": "openrouter-thinkingmachines-inkling-2-small",
+      "name": "Thinking Machines: Inkling 2 Small",
+      "url": "https://openrouter.ai/models/thinkingmachines/inkling-2-small",
+      "oneLiner": "Inkling 2 Small is an open-weight multimodal mixture-of-experts reasoning model from Thinking Machines Lab, with 17B active parameters out of 594B total. It is the first model in t",
+      "tags": [
+        "openrouter",
+        "thinkingmachines",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "thinkingmachines/inkling-2-small",
+        "thinkingmachines",
+        "Thinking Machines: Inkling 2 Small"
+      ],
+      "provider": "thinkingmachines",
+      "category": "text+image->text",
+      "costTier": "low",
+      "contextWindow": 1048576
+    },
+    {
+      "id": "openrouter-thinkingmachines-inkling-2-small-free",
+      "name": "Thinking Machines: Inkling 2 Small (free)",
+      "url": "https://openrouter.ai/models/thinkingmachines/inkling-2-small:free",
+      "oneLiner": "Inkling 2 Small is an open-weight multimodal mixture-of-experts reasoning model from Thinking Machines Lab, with 17B active parameters out of 594B total. It is the first model in t",
+      "tags": [
+        "openrouter",
+        "thinkingmachines",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "thinkingmachines/inkling-2-small:free",
+        "thinkingmachines",
+        "Thinking Machines: Inkling 2 Small (free)"
+      ],
+      "provider": "thinkingmachines",
+      "category": "text+image->text",
+      "costTier": "low",
+      "contextWindow": 1048576
+    },
+    {
+      "id": "openrouter-meta-muse-ember",
+      "name": "Meta: Muse Ember",
+      "url": "https://openrouter.ai/models/meta/muse-ember",
+      "oneLiner": "Muse Ember is the smallest and most efficient model from Meta that’s designed for complex reasoning execution and the work agents repeat all day: tool calls, coding agent subtasks,",
+      "tags": [
+        "openrouter",
+        "meta",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "meta/muse-ember",
+        "meta",
+        "Meta: Muse Ember"
+      ],
+      "provider": "meta",
+      "category": "text+image+file+audio+video->text",
+      "costTier": "low",
+      "contextWindow": 1048576
+    },
+    {
+      "id": "openrouter-particle-ai-particle-1-free",
+      "name": "Particle AI: Particle-1 (free)",
+      "url": "https://openrouter.ai/models/particle-ai/particle-1:free",
+      "oneLiner": "Particle-1 is a token-efficient agentic coding model from Particle AI, post-trained on DeepSeek V4.1 Flash. It is suited for software engineering work such as terminal workflows, c",
+      "tags": [
+        "openrouter",
+        "particle-ai",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "particle-ai/particle-1:free",
+        "particle-ai",
+        "Particle AI: Particle-1 (free)"
+      ],
+      "provider": "particle-ai",
+      "category": "text+image->text",
+      "costTier": "low",
+      "contextWindow": 1048576
+    },
+    {
+      "id": "openrouter-moonshotai-kimi-k3-1-pro-batch",
+      "name": "MoonshotAI: Kimi K3.1 Pro (batch)",
+      "url": "https://openrouter.ai/models/moonshotai/kimi-k3.1-pro:batch",
+      "oneLiner": "Kimi K3.1 Pro is Moonshot AI's flagship open-weight multimodal reasoning model and a post-trained successor to Kimi K3, with a 1M-token context window. It is built for long-horizon",
+      "tags": [
+        "openrouter",
+        "moonshotai",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "moonshotai/kimi-k3.1-pro:batch",
+        "moonshotai",
+        "MoonshotAI: Kimi K3.1 Pro (batch)"
+      ],
+      "provider": "moonshotai",
+      "category": "text+image+video->text",
+      "costTier": "medium",
+      "contextWindow": 1048576
+    },
+    {
+      "id": "openrouter-baidu-ernie-5-5-flash-preview-free",
+      "name": "Baidu: ERNIE-5.5-Flash-Preview (free)",
+      "url": "https://openrouter.ai/models/baidu/ernie-5.5-flash-preview:free",
+      "oneLiner": "ERNIE 5.5 Flash Preview is the latest foundation model in the ERNIE family, with comprehensive improvements in coding, agentic capabilities, knowledge work, and deep research. It h",
+      "tags": [
+        "openrouter",
+        "baidu",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "baidu/ernie-5.5-flash-preview:free",
+        "baidu",
+        "Baidu: ERNIE-5.5-Flash-Preview (free)"
+      ],
+      "provider": "baidu",
+      "category": "text->text",
+      "costTier": "low",
+      "contextWindow": 1024000
+    },
+    {
+      "id": "openrouter-baidu-ernie-light-dt-1-0-intl",
+      "name": "Baidu: ERNIE-Light-DT-1.0",
+      "url": "https://openrouter.ai/models/baidu/ernie-light-dt-1.0-intl",
+      "oneLiner": "ERNIE-Light-DT-1.0 is based on open-source GLM models and includes research findings from Baidu Search's Lightning large model. It features Baidu Sparse Attention (BSA), a unique s",
+      "tags": [
+        "openrouter",
+        "baidu",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "baidu/ernie-light-dt-1.0-intl",
+        "baidu",
+        "Baidu: ERNIE-Light-DT-1.0"
+      ],
+      "provider": "baidu",
+      "category": "text->text",
+      "costTier": "medium",
+      "contextWindow": 1024000
+    },
+    {
+      "id": "openrouter-stepfun-step-5-preview",
+      "name": "StepFun: Step 5 Preview",
+      "url": "https://openrouter.ai/models/stepfun/step-5-preview",
+      "oneLiner": "Step 5 Preview is StepFun's flagship model for agentic work, built on a sparse Mixture-of-Experts architecture (27B active / 600B total parameters). It performs strongly in softwar",
+      "tags": [
+        "openrouter",
+        "stepfun",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "stepfun/step-5-preview",
+        "stepfun",
+        "StepFun: Step 5 Preview"
+      ],
+      "provider": "stepfun",
+      "category": "text+image+video->text",
+      "costTier": "low",
+      "contextWindow": 1000000
     },
     {
       "id": "gpt-4.1",
@@ -2456,6 +2756,56 @@
       "contextWindow": 1000000
     },
     {
+      "id": "openrouter-anthropic-claude-fable-5-2",
+      "name": "Anthropic: Claude Fable 5.2",
+      "url": "https://openrouter.ai/models/anthropic/claude-fable-5.2",
+      "oneLiner": "Claude Fable 5.2 is Anthropic's most capable model for the most demanding technical work, with gains over Fable 5.1 in coding, reasoning, and vision. In prerelease testing it compl",
+      "tags": [
+        "openrouter",
+        "anthropic",
+        "high"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "anthropic/claude-fable-5.2",
+        "anthropic",
+        "Anthropic: Claude Fable 5.2"
+      ],
+      "provider": "anthropic",
+      "category": "text+image+file->text",
+      "costTier": "high",
+      "contextWindow": 1000000
+    },
+    {
+      "id": "openrouter-anthropic-claude-fable-5-2-batch",
+      "name": "Anthropic: Claude Fable 5.2 (batch)",
+      "url": "https://openrouter.ai/models/anthropic/claude-fable-5.2:batch",
+      "oneLiner": "Claude Fable 5.2 is Anthropic's most capable model for the most demanding technical work, with gains over Fable 5.1 in coding, reasoning, and vision. In prerelease testing it compl",
+      "tags": [
+        "openrouter",
+        "anthropic",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "anthropic/claude-fable-5.2:batch",
+        "anthropic",
+        "Anthropic: Claude Fable 5.2 (batch)"
+      ],
+      "provider": "anthropic",
+      "category": "text+image+file->text",
+      "costTier": "medium",
+      "contextWindow": 1000000
+    },
+    {
       "id": "openrouter-upstage-solar-mini4",
       "name": "Upstage: Solar Mini 4",
       "url": "https://openrouter.ai/models/upstage/solar-mini4",
@@ -3104,6 +3454,81 @@
       "category": "text->text",
       "costTier": "low",
       "contextWindow": 262144
+    },
+    {
+      "id": "openrouter-nex-agi-nex-n2-6",
+      "name": "Nex AGI: Nex-N2.6",
+      "url": "https://openrouter.ai/models/nex-agi/nex-n2.6",
+      "oneLiner": "Nex-N2.6 is an agentic model from Nex AGI, built on [GLM-5.3-Flash](https://huggingface.co/zai-org/GLM-5.3-Flash-BF16) with about 321B parameters. It is suited for computer use, co",
+      "tags": [
+        "openrouter",
+        "nex-agi",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "nex-agi/nex-n2.6",
+        "nex-agi",
+        "Nex AGI: Nex-N2.6"
+      ],
+      "provider": "nex-agi",
+      "category": "text+image->text",
+      "costTier": "low",
+      "contextWindow": 262144
+    },
+    {
+      "id": "openrouter-motif-technologies-motif-3",
+      "name": "Motif Technologies: Motif 3",
+      "url": "https://openrouter.ai/models/motif-technologies/motif-3",
+      "oneLiner": "Motif 3 is a Mixture-of-Experts language model from Motif Technologies, with 314B total and 13.2B active parameters. It is a general-purpose multilingual model for English and Kore",
+      "tags": [
+        "openrouter",
+        "motif-technologies",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "motif-technologies/motif-3",
+        "motif-technologies",
+        "Motif Technologies: Motif 3"
+      ],
+      "provider": "motif-technologies",
+      "category": "text->text",
+      "costTier": "low",
+      "contextWindow": 262144
+    },
+    {
+      "id": "openrouter-kt-midm-k-3-0-pro",
+      "name": "KT: Mi:dm K 3.0 Pro",
+      "url": "https://openrouter.ai/models/kt/midm-k-3.0-pro",
+      "oneLiner": "Mi:dm K 3.0 Pro is a Mixture-of-Experts reasoning model from KT, with 120B total and 12B active parameters. It uses a hybrid architecture that mixes Mamba, MoE and attention layers",
+      "tags": [
+        "openrouter",
+        "kt",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "kt/midm-k-3.0-pro",
+        "kt",
+        "KT: Mi:dm K 3.0 Pro"
+      ],
+      "provider": "kt",
+      "category": "text->text",
+      "costTier": "low",
+      "contextWindow": 261795
     },
     {
       "id": "openrouter-inception-mercury-2-5",
