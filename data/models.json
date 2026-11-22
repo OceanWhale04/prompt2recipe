@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-15T20:43:55.646Z",
+  "updatedAt": "2026-11-22T21:27:22.333Z",
   "items": [
     {
       "id": "openrouter-openai-gpt-6-luna-pro",
@@ -650,6 +650,206 @@
       "provider": "openai",
       "category": "text+image+file->text",
       "costTier": "low",
+      "contextWindow": 1050000
+    },
+    {
+      "id": "openrouter-openai-gpt-6-2-astra-pro",
+      "name": "OpenAI: GPT-6.2 Astra Pro",
+      "url": "https://openrouter.ai/models/openai/gpt-6.2-astra-pro",
+      "oneLiner": "GPT-6.2 Astra Pro is the same underlying model as [GPT-6.2 Astra](https://openrouter.ai/openai/gpt-6.2-astra), served with `reasoning.mode` set to `pro` for higher-quality response",
+      "tags": [
+        "openrouter",
+        "openai",
+        "high"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "openai/gpt-6.2-astra-pro",
+        "openai",
+        "OpenAI: GPT-6.2 Astra Pro"
+      ],
+      "provider": "openai",
+      "category": "text+image+file->text",
+      "costTier": "high",
+      "contextWindow": 1050000
+    },
+    {
+      "id": "openrouter-openai-gpt-6-2-astra-pro-batch",
+      "name": "OpenAI: GPT-6.2 Astra Pro (batch)",
+      "url": "https://openrouter.ai/models/openai/gpt-6.2-astra-pro:batch",
+      "oneLiner": "GPT-6.2 Astra Pro is the same underlying model as [GPT-6.2 Astra](https://openrouter.ai/openai/gpt-6.2-astra), served with `reasoning.mode` set to `pro` for higher-quality response",
+      "tags": [
+        "openrouter",
+        "openai",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "openai/gpt-6.2-astra-pro:batch",
+        "openai",
+        "OpenAI: GPT-6.2 Astra Pro (batch)"
+      ],
+      "provider": "openai",
+      "category": "text+image+file->text",
+      "costTier": "medium",
+      "contextWindow": 1050000
+    },
+    {
+      "id": "openrouter-openai-gpt-6-2-astra",
+      "name": "OpenAI: GPT-6.2 Astra",
+      "url": "https://openrouter.ai/models/openai/gpt-6.2-astra",
+      "oneLiner": "GPT-6.2 Astra is the flagship model in the GPT-6.2 series from OpenAI, built for the hardest projects. It is suited for real-world engineering, professional work and scientific res",
+      "tags": [
+        "openrouter",
+        "openai",
+        "high"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "openai/gpt-6.2-astra",
+        "openai",
+        "OpenAI: GPT-6.2 Astra"
+      ],
+      "provider": "openai",
+      "category": "text+image+file->text",
+      "costTier": "high",
+      "contextWindow": 1050000
+    },
+    {
+      "id": "openrouter-openai-gpt-6-2-astra-batch",
+      "name": "OpenAI: GPT-6.2 Astra (batch)",
+      "url": "https://openrouter.ai/models/openai/gpt-6.2-astra:batch",
+      "oneLiner": "GPT-6.2 Astra is the flagship model in the GPT-6.2 series from OpenAI, built for the hardest projects. It is suited for real-world engineering, professional work and scientific res",
+      "tags": [
+        "openrouter",
+        "openai",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "openai/gpt-6.2-astra:batch",
+        "openai",
+        "OpenAI: GPT-6.2 Astra (batch)"
+      ],
+      "provider": "openai",
+      "category": "text+image+file->text",
+      "costTier": "medium",
+      "contextWindow": 1050000
+    },
+    {
+      "id": "openrouter-openai-gpt-6-2-sol-pro",
+      "name": "OpenAI: GPT-6.2 Sol Pro",
+      "url": "https://openrouter.ai/models/openai/gpt-6.2-sol-pro",
+      "oneLiner": "GPT-6.2 Sol Pro is the same underlying model as [GPT-6.2 Sol](https://openrouter.ai/openai/gpt-6.2-sol), served with `reasoning.mode` set to `pro` for higher-quality responses on c",
+      "tags": [
+        "openrouter",
+        "openai",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "openai/gpt-6.2-sol-pro",
+        "openai",
+        "OpenAI: GPT-6.2 Sol Pro"
+      ],
+      "provider": "openai",
+      "category": "text+image+file->text",
+      "costTier": "medium",
+      "contextWindow": 1050000
+    },
+    {
+      "id": "openrouter-openai-gpt-6-2-sol-pro-batch",
+      "name": "OpenAI: GPT-6.2 Sol Pro (batch)",
+      "url": "https://openrouter.ai/models/openai/gpt-6.2-sol-pro:batch",
+      "oneLiner": "GPT-6.2 Sol Pro is the same underlying model as [GPT-6.2 Sol](https://openrouter.ai/openai/gpt-6.2-sol), served with `reasoning.mode` set to `pro` for higher-quality responses on c",
+      "tags": [
+        "openrouter",
+        "openai",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "openai/gpt-6.2-sol-pro:batch",
+        "openai",
+        "OpenAI: GPT-6.2 Sol Pro (batch)"
+      ],
+      "provider": "openai",
+      "category": "text+image+file->text",
+      "costTier": "medium",
+      "contextWindow": 1050000
+    },
+    {
+      "id": "openrouter-openai-gpt-6-2-sol",
+      "name": "OpenAI: GPT-6.2 Sol",
+      "url": "https://openrouter.ai/models/openai/gpt-6.2-sol",
+      "oneLiner": "GPT-6.2 Sol is an upgrade to GPT-6.1 Sol from OpenAI, positioned below the flagship GPT-6.2 Astra in the GPT-6.2 series. It is an efficient, versatile model for everyday work, suit",
+      "tags": [
+        "openrouter",
+        "openai",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "openai/gpt-6.2-sol",
+        "openai",
+        "OpenAI: GPT-6.2 Sol"
+      ],
+      "provider": "openai",
+      "category": "text+image+file->text",
+      "costTier": "medium",
+      "contextWindow": 1050000
+    },
+    {
+      "id": "openrouter-openai-gpt-6-2-sol-batch",
+      "name": "OpenAI: GPT-6.2 Sol (batch)",
+      "url": "https://openrouter.ai/models/openai/gpt-6.2-sol:batch",
+      "oneLiner": "GPT-6.2 Sol is an upgrade to GPT-6.1 Sol from OpenAI, positioned below the flagship GPT-6.2 Astra in the GPT-6.2 series. It is an efficient, versatile model for everyday work, suit",
+      "tags": [
+        "openrouter",
+        "openai",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "openai/gpt-6.2-sol:batch",
+        "openai",
+        "OpenAI: GPT-6.2 Sol (batch)"
+      ],
+      "provider": "openai",
+      "category": "text+image+file->text",
+      "costTier": "medium",
       "contextWindow": 1050000
     },
     {
@@ -1978,6 +2178,106 @@
       "contextWindow": 1048576
     },
     {
+      "id": "openrouter-thinkingmachines-inkling-2-mini",
+      "name": "Thinking Machines: Inkling 2 Mini",
+      "url": "https://openrouter.ai/models/thinkingmachines/inkling-2-mini",
+      "oneLiner": "Inkling 2 Mini is an open-weight multimodal looped transformer from Thinking Machines Lab, with 3.4B active parameters out of 26.4B total (MoE). Its middle layers run three times w",
+      "tags": [
+        "openrouter",
+        "thinkingmachines",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "thinkingmachines/inkling-2-mini",
+        "thinkingmachines",
+        "Thinking Machines: Inkling 2 Mini"
+      ],
+      "provider": "thinkingmachines",
+      "category": "text+image->text",
+      "costTier": "low",
+      "contextWindow": 1048576
+    },
+    {
+      "id": "openrouter-google-gemini-4-neon",
+      "name": "Google: Gemini 4 Neon",
+      "url": "https://openrouter.ai/models/google/gemini-4-neon",
+      "oneLiner": "Gemini 4 Neon is a fast, mid-priced model in the Gemini 4 family from Google, built for coding and agentic work. It is suited for repository and terminal coding, web...",
+      "tags": [
+        "openrouter",
+        "google",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "google/gemini-4-neon",
+        "google",
+        "Google: Gemini 4 Neon"
+      ],
+      "provider": "google",
+      "category": "text+image+file+audio+video->text",
+      "costTier": "medium",
+      "contextWindow": 1048576
+    },
+    {
+      "id": "openrouter-google-gemini-4-neon-batch",
+      "name": "Google: Gemini 4 Neon (batch)",
+      "url": "https://openrouter.ai/models/google/gemini-4-neon:batch",
+      "oneLiner": "Gemini 4 Neon is a fast, mid-priced model in the Gemini 4 family from Google, built for coding and agentic work. It is suited for repository and terminal coding, web...",
+      "tags": [
+        "openrouter",
+        "google",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "google/gemini-4-neon:batch",
+        "google",
+        "Google: Gemini 4 Neon (batch)"
+      ],
+      "provider": "google",
+      "category": "text+image+file+audio+video->text",
+      "costTier": "medium",
+      "contextWindow": 1048576
+    },
+    {
+      "id": "openrouter-tencent-hy4-flash",
+      "name": "Tencent: Hy4 flash",
+      "url": "https://openrouter.ai/models/tencent/hy4-flash",
+      "oneLiner": "Hy4 flash is a cost-efficient variant of [Hy4](https://openrouter.ai/tencent/hy4) from Tencent, served with roughly a quarter of the flagship's parameter count for lower latency an",
+      "tags": [
+        "openrouter",
+        "tencent",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "tencent/hy4-flash",
+        "tencent",
+        "Tencent: Hy4 flash"
+      ],
+      "provider": "tencent",
+      "category": "text+image->text",
+      "costTier": "low",
+      "contextWindow": 1048576
+    },
+    {
       "id": "openrouter-baidu-ernie-5-5-flash-preview-free",
       "name": "Baidu: ERNIE-5.5-Flash-Preview (free)",
       "url": "https://openrouter.ai/models/baidu/ernie-5.5-flash-preview:free",
@@ -2806,6 +3106,31 @@
       "contextWindow": 1000000
     },
     {
+      "id": "openrouter-qwen-qwen4-max",
+      "name": "Qwen: Qwen4 Max",
+      "url": "https://openrouter.ai/models/qwen/qwen4-max",
+      "oneLiner": "Qwen4 Max is the flagship model in Alibaba's Qwen4 series. It accepts text, image, and video input and returns text, with a 1M-token context window and reasoning enabled by default",
+      "tags": [
+        "openrouter",
+        "qwen",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "qwen/qwen4-max",
+        "qwen",
+        "Qwen: Qwen4 Max"
+      ],
+      "provider": "qwen",
+      "category": "text+image+video->text",
+      "costTier": "medium",
+      "contextWindow": 1000000
+    },
+    {
       "id": "openrouter-upstage-solar-mini4",
       "name": "Upstage: Solar Mini 4",
       "url": "https://openrouter.ai/models/upstage/solar-mini4",
@@ -3506,6 +3831,31 @@
       "contextWindow": 262144
     },
     {
+      "id": "openrouter-radixark-daisyrose-27b",
+      "name": "RadixArk: DaisyRose 27B",
+      "url": "https://openrouter.ai/models/radixark/daisyrose-27b",
+      "oneLiner": "DaisyRose 27B is an open-weight multimodal reasoning model from RadixArk, trained from [Qwen3.8 27B](https://openrouter.ai/qwen/qwen3.8-27b) using reinforcement learning only on lo",
+      "tags": [
+        "openrouter",
+        "radixark",
+        "low"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "radixark/daisyrose-27b",
+        "radixark",
+        "RadixArk: DaisyRose 27B"
+      ],
+      "provider": "radixark",
+      "category": "text+image->text",
+      "costTier": "low",
+      "contextWindow": 262144
+    },
+    {
       "id": "openrouter-kt-midm-k-3-0-pro",
       "name": "KT: Mi:dm K 3.0 Pro",
       "url": "https://openrouter.ai/models/kt/midm-k-3.0-pro",
@@ -4097,6 +4447,31 @@
       "provider": "liquid",
       "category": "text->text",
       "costTier": "low",
+      "contextWindow": 128000
+    },
+    {
+      "id": "openrouter-mistralai-pixtral-large-2502",
+      "name": "Mistral: Pixtral Large 2502",
+      "url": "https://openrouter.ai/models/mistralai/pixtral-large-2502",
+      "oneLiner": "Pixtral Large 2502 is the February 2025 version of Mistral AI's large multimodal model, following [Pixtral Large 2411](https://openrouter.ai/mistralai/pixtral-large-2411). It accep",
+      "tags": [
+        "openrouter",
+        "mistralai",
+        "medium"
+      ],
+      "taskPatterns": [
+        "general reasoning",
+        "chat",
+        "structured generation"
+      ],
+      "keywords": [
+        "mistralai/pixtral-large-2502",
+        "mistralai",
+        "Mistral: Pixtral Large 2502"
+      ],
+      "provider": "mistralai",
+      "category": "text+image->text",
+      "costTier": "medium",
       "contextWindow": 128000
     },
     {
